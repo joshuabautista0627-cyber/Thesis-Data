@@ -1,0 +1,19 @@
+figure,family,claim
+fig01_automatic_condition_coverage,heatmap,Each exact permitted automatic condition has two independent sessions: one 10-cycle and one 20-cycle run.
+fig02_manual_static_response,faceted line,All ROI are shown with equal session influence.
+fig03_spatial_sensitivity_uniformity,three-panel bar,Integrated and area-normalized sensitivity plus manual-only low-force nonlinearity are shown for every ROI.
+fig04_manual_repeatability,bar + point,"Session-level, not frame-level, spread is reported."
+fig05_cross_talk_matrix,heatmap,The complete 9x9 target/measured ROI matrix is retained.
+fig06_no_contact_noise_drift,box plot + scatter,Noise and drift use dedicated no-contact evidence.
+fig07_snr_detection,paired bars,Detection is explicitly characterization-only.
+fig08_automatic_hysteresis,faceted loop,Loading/unloading and speeds remain separate.
+fig09_speed_dependence,multi-series line,Speed remains a hysteresis stratum and is not promoted to a general sensor metric.
+fig10_cycle_repeatability,multi-series line,Cycles never become independent replicates.
+fig11_relaxation_recovery,faceted paired-axis traces,Only short-term creep-related exploratory trajectories are shown; no numerical true-creep value is claimed.
+fig12_noise_equivalent_force,grouped bar,The result is reported only as a stability proxy.
+fig13_manual_force_bin_coverage,heatmap,General-metric support is determined entirely from manual complete sessions.
+fig14_manual_local_sensitivity,diverging heatmap,Local slopes retain negative and positive supported-bin behavior without filling force gaps.
+fig15_manual_plateau_observations,bar + point,Per-ROI manual support and plateau observations replace the former automatic-derived common-range procedure.
+fig16_manual_system_lag,faceted lag curves,The published standalone lag is manual-only and explicitly system-level.
+fig17_automatic_hysteresis_1_75mm,faceted loop,Loading/unloading loops are retained for every speed and displacement stratum.
+fig18_automatic_hysteresis_2_625mm,faceted loop,Loading/unloading loops are retained for every speed and displacement stratum.

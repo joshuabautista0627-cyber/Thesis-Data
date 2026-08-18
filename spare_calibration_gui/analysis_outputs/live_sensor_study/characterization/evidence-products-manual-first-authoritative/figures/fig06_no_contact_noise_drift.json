@@ -1,0 +1,39 @@
+{
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:27.881956Z",
+  "exports": {
+    "csv": "fig06_no_contact_noise_drift.csv",
+    "json": "fig06_no_contact_noise_drift.json",
+    "pdf": "fig06_no_contact_noise_drift.pdf",
+    "png": "fig06_no_contact_noise_drift.png",
+    "svg": "fig06_no_contact_noise_drift.svg"
+  },
+  "filters": [
+    "dedicated no-contact only"
+  ],
+  "independent_session_count": "11 sessions observing all nine ROI",
+  "plotted_columns": [
+    "session_id",
+    "roi",
+    "baseline_id",
+    "camera_sharpness",
+    "frame_count",
+    "duration_s",
+    "positive_floor_median",
+    "signed_median",
+    "signed_mad",
+    "signed_p95_absolute",
+    "signed_drift_light_per_min",
+    "signed_total_change"
+  ],
+  "plotted_data_hash": "8534749b6b8d7050dd245bb489badfb7707fe93baa8896782e1fa8d91bef1523",
+  "plotted_rows": 99,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "no_contact_session",
+  "source_table_hash": "cc1ddb5b9858385f3e678d54388356d9a61ace17dc91763daf6bfae2dbd86bac",
+  "title": "Dedicated no-contact noise and drift",
+  "uncertainty_method": "session MAD and least-squares slope",
+  "units": "signed V-sum and signed V-sum/min"
+}

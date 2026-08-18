@@ -1,0 +1,24 @@
+{
+  "blocking_reasons": [
+    "The six existing outer TEST folds were reused after inspection; no untouched confirmation data remain.",
+    "The force estimator failed the combined improvement/rank/response-resolution gate.",
+    "The authoritative all-ROI common safe-range procedure remains failed.",
+    "Known-force physical, latency/soak, and representative-user validation were not performed."
+  ],
+  "force_output_available": true,
+  "force_resolution_established": false,
+  "model_eligible_under_authoritative_plan": false,
+  "numerical_recovery_checks": {
+    "event_localization_macro_f1_at_least_0_891": true,
+    "force_mae_at_most_0_75N": true,
+    "force_resolution_established": false,
+    "max_no_contact_frame_fpr_at_most_0_05": true,
+    "min_contact_recall_at_least_0_90": true
+  },
+  "physical_validation_complete": false,
+  "posthoc_outer_fold_reuse": true,
+  "schema_version": "3.0.0",
+  "status": "experimental",
+  "usability_validation_complete": false,
+  "validated_claim_allowed": false
+}

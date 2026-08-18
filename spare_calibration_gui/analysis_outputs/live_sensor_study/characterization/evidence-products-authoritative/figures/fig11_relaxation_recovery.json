@@ -1,0 +1,37 @@
+{
+  "code_hash": "d3e8aa60f6c95fc212fbc46277c26e752467af29718ab1975599fb5047cca68d",
+  "created_at": "2026-08-13T09:06:51.960684Z",
+  "exports": {
+    "csv": "fig11_relaxation_recovery.csv",
+    "json": "fig11_relaxation_recovery.json",
+    "pdf": "fig11_relaxation_recovery.pdf",
+    "png": "fig11_relaxation_recovery.png",
+    "svg": "fig11_relaxation_recovery.svg"
+  },
+  "filters": [
+    "holding and inter-cycle dwell shown separately"
+  ],
+  "independent_session_count": "162 sessions",
+  "plotted_columns": [
+    "roi",
+    "phase",
+    "independent_sessions",
+    "median_duration_s",
+    "median_light_change",
+    "q25_light_change",
+    "q75_light_change",
+    "median_force_change_N",
+    "median_residual_light_end",
+    "median_residual_force_end_N"
+  ],
+  "plotted_data_hash": "97dd28391b6fb785e1e00df7168580b82dfc14b8417d16f9b73069b7877bb0d1",
+  "plotted_rows": 18,
+  "schema_version": "1.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "automatic_phase_session",
+  "source_table_hash": "7d8ca0bb618b679db66a4e9320c9bde0a33a3959b852ccf4ece543f122753908",
+  "title": "Fixed-displacement relaxation and unloaded recovery",
+  "uncertainty_method": "cycle deltas averaged within session then median across sessions",
+  "units": "positive V-sum"
+}

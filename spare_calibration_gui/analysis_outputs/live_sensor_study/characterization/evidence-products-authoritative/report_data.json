@@ -1,0 +1,134 @@
+{
+  "headline": {
+    "automatic_sessions": 162,
+    "established_or_qualified_metrics": 10,
+    "frames": 179176,
+    "manual_primary_sessions": 54,
+    "no_contact_sessions": 11,
+    "not_established_metrics": 3,
+    "replay_only_sessions": 18,
+    "sessions": 245
+  },
+  "metric_status": [
+    {
+      "claim_boundary": "Source and pipeline evidence only",
+      "independent_evidence": "245 complete sessions; 179,176 reconciled frames",
+      "metric": "Archive integrity and original-frame reconciliation",
+      "source": "Both archives / immutable feature store",
+      "status": "primary"
+    },
+    {
+      "claim_boundary": "Characterization only; no deployed force range",
+      "independent_evidence": "Six TEST sessions per ROI; supported-bin rule >=3 sessions",
+      "metric": "Manual low-force sensitivity and nonlinearity",
+      "source": "54 manual TEST1-TEST6 sessions",
+      "status": "primary"
+    },
+    {
+      "claim_boundary": "Retains raw and area-normalized response",
+      "independent_evidence": "Six independent sessions per ROI",
+      "metric": "Between-session repeatability and spatial uniformity",
+      "source": "54 manual TEST1-TEST6 sessions",
+      "status": "primary"
+    },
+    {
+      "claim_boundary": "Single-ROI presses only",
+      "independent_evidence": "Complete 9x9 target/measured ROI matrix",
+      "metric": "Cross-talk",
+      "source": "54 manual TEST1-TEST6 sessions",
+      "status": "primary"
+    },
+    {
+      "claim_boundary": "Short-term recorded durations only",
+      "independent_evidence": "All nine ROIs observed in each session",
+      "metric": "No-contact noise, SNR, and drift",
+      "source": "11 dedicated manual no-contact sessions",
+      "status": "primary"
+    },
+    {
+      "claim_boundary": "Not an application threshold",
+      "independent_evidence": "Frozen 1% empirical FPR / 95% recall rule; >=3 press sessions",
+      "metric": "Optical detection region",
+      "source": "Manual press vs dedicated no-contact sessions",
+      "status": "conditional-qualified"
+    },
+    {
+      "claim_boundary": "Condition-specific intervals descriptive; speeds not pooled",
+      "independent_evidence": "2 sessions per exact ROI x speed x displacement condition",
+      "metric": "Automatic hysteresis and speed dependence",
+      "source": "162 automatic sessions",
+      "status": "conditional-qualified"
+    },
+    {
+      "claim_boundary": "Cycles are repeated observations, not replicates",
+      "independent_evidence": "Cycles summarized within session; 10- and 20-cycle sessions remain independent units",
+      "metric": "Within-session cyclic repeatability",
+      "source": "162 automatic sessions",
+      "status": "conditional-qualified"
+    },
+    {
+      "claim_boundary": "Not constant-force creep",
+      "independent_evidence": "Cycle estimates averaged within complete session",
+      "metric": "Fixed-displacement relaxation and unloaded recovery",
+      "source": "Automatic holding and inter-cycle dwell phases",
+      "status": "conditional-qualified"
+    },
+    {
+      "claim_boundary": "System-level lag; grid-limited exploratory estimate",
+      "independent_evidence": "162 session-level lag estimates",
+      "metric": "Approximate system lag",
+      "source": "Automatic synchronized optical/reference traces",
+      "status": "exploratory-insufficient"
+    },
+    {
+      "claim_boundary": "Noise-limited stability proxy, not true resolution",
+      "independent_evidence": "Per-ROI proxy from independent no-contact and press sessions",
+      "metric": "Noise-equivalent force",
+      "source": "Dedicated no-contact noise / manual low-force sensitivity",
+      "status": "conditional-qualified"
+    },
+    {
+      "claim_boundary": "Failed scientific finding; does not control application/model track",
+      "independent_evidence": "All nine ROI monotonic gate pass = False",
+      "metric": "Common supported force range / monotonicity",
+      "source": "Preserved characterization-dade466f019e6d15",
+      "status": "not-established"
+    },
+    {
+      "claim_boundary": "No creep number reported",
+      "independent_evidence": "Required >=5 s constant-force holds were not collected",
+      "metric": "True creep",
+      "source": "No qualifying constant-force protocol",
+      "status": "not-established"
+    },
+    {
+      "claim_boundary": "No resolution claim reported",
+      "independent_evidence": "Continuous ramps cannot establish resolution",
+      "metric": "True force resolution",
+      "source": "No qualifying randomized settled-step protocol",
+      "status": "not-established"
+    }
+  ],
+  "ranges": {
+    "approximate_system_lag_ms": [
+      0.0,
+      300.0
+    ],
+    "detection_region_N": [
+      0.875,
+      1.875
+    ],
+    "manual_low_force_sensitivity_light_per_N": [
+      -115.46399275763684,
+      310.256098734066
+    ],
+    "no_contact_signed_noise_mad": [
+      352.0,
+      538.5
+    ],
+    "noise_equivalent_force_proxy_N": [
+      1.4278526733481383,
+      17.505996303391154
+    ]
+  }
+}

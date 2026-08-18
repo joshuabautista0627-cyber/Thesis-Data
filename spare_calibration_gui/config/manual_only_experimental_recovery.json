@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "spec_id": "manual-only-posthoc-recovery-v1",
+  "status": "posthoc_experimental",
+  "disclosure": "Candidate choices were made after the original frozen preprocessing gate failed and after inspecting the six existing folds. Metrics are cross-validated recovery evidence, not an untouched confirmation set.",
+  "operating_range_N": {
+    "minimum": 1.7,
+    "maximum": 3.0
+  },
+  "temporal_filter": {
+    "method": "causal_mean",
+    "window_frames": 9,
+    "minimum_periods": 1
+  },
+  "normalization": {
+    "center": "median_of_no_contact_session_medians",
+    "scale": "median_of_no_contact_session_q99_absolute_deviation",
+    "scale_floor": 1e-6
+  },
+  "contact": {
+    "score": "normalized_signed_delta_v_sum_spatial_range",
+    "training_fallback": "median_session_q95",
+    "unloaded_warmup_quantile": 0.99,
+    "warmup_fraction_for_replay": 0.5,
+    "minimum_warmup_frames": 120,
+    "acquire_frames": 2,
+    "clear_frames": 2,
+    "frame_fpr_target": 0.05,
+    "recall_target": 0.9
+  },
+  "force": {
+    "model": "isotonic_signed_range",
+    "fit_only_inside_operating_range": true,
+    "out_of_bounds": "unavailable",
+    "balance_by": ["session_id", "0.25N_force_bin"]
+  },
+  "localization": {
+    "model": "normalized_active_fraction_argmax",
+    "forced_class_count": 9,
+    "score_filter": "causal_mean_9_frames"
+  },
+  "release": {
+    "status": "experimental",
+    "validated_claim_allowed": false,
+    "known_gate_failure": "The original frozen all-ROI common safe-range procedure did not establish a supported range; physical known-force and usability validation are unavailable."
+  },
+  "seed": 1729
+}

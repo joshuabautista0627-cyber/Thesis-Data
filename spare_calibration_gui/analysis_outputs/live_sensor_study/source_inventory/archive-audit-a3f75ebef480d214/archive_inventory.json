@@ -1,0 +1,36 @@
+{
+  "automated": {
+    "actual_sha256": "f81a41b635aa2b893e9fa1faff0bda2db41ad0717d8c134fb6d907e1471e344d",
+    "archive_path": "C:\\Users\\DLSU\\Downloads\\THESIS DATA\\Data Collection\\Auto Calibration.zip",
+    "archive_role": "characterization",
+    "archive_size_bytes": 31171632642,
+    "bad_member": null,
+    "crc_error": null,
+    "crc_ok": true,
+    "entry_count": 5545,
+    "expanded_bytes": 32335527726,
+    "expected_session_count": 162,
+    "expected_sha256": "f81a41b635aa2b893e9fa1faff0bda2db41ad0717d8c134fb6d907e1471e344d",
+    "file_entry_count": 5210,
+    "hash_ok": true,
+    "session_count": 162,
+    "session_count_ok": true
+  },
+  "manual": {
+    "actual_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+    "archive_path": "C:\\Users\\DLSU\\Downloads\\THESIS DATA\\Data Collection\\Manual Calibration (2).zip",
+    "archive_role": "model_primary",
+    "archive_size_bytes": 1283430583,
+    "bad_member": null,
+    "crc_error": null,
+    "crc_ok": true,
+    "entry_count": 2727,
+    "expanded_bytes": 1518724267,
+    "expected_session_count": 83,
+    "expected_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+    "file_entry_count": 2551,
+    "hash_ok": true,
+    "session_count": 83,
+    "session_count_ok": true
+  }
+}

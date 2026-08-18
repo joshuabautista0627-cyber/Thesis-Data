@@ -1,0 +1,35 @@
+{
+  "code_hash": "a8d00fcf568d7e45483f631b13c0121d3a9aafef954b12bbb2321e8cea7fec0e",
+  "created_at": "2026-08-14T07:22:42.995576Z",
+  "exports": {
+    "csv": "fig04_global_system_lag.csv",
+    "json": "fig04_global_system_lag.json",
+    "pdf": "fig04_global_system_lag.pdf",
+    "png": "fig04_global_system_lag.png",
+    "svg": "fig04_global_system_lag.svg"
+  },
+  "filters": [
+    "manual TEST1-TEST6 only",
+    "-500 to +500 ms",
+    "not intrinsic material response time"
+  ],
+  "global_estimand": "equal-target global total-light response; no ROI excluded",
+  "independent_session_count": "54 manual sessions",
+  "plotted_columns": [
+    "lag_ms",
+    "independent_sessions",
+    "median_absolute_correlation",
+    "q25_absolute_correlation",
+    "q75_absolute_correlation"
+  ],
+  "plotted_data_hash": "7d9d305efe40a5c06b16d702e493b0bb169e5eb0ca498b9419e731508ba5749f",
+  "plotted_rows": 41,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "9cefaf71cb15a28dde729f26cbc837bde9fa713a1ccea1f57f84b3edcf85557b",
+  "source_table": "global_system_lag_curve_summary",
+  "source_table_hash": "b8a4c51b65207bed27aef4336f4bab8b37289b54a2e8d76bc6a3370fc30e1425",
+  "title": "Global manual system-lag curve",
+  "uncertainty_method": "session derivative cross-correlation; median and IQR",
+  "units": "ms and absolute correlation"
+}

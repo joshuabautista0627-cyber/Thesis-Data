@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "spec_id": "manual-only-posthoc-recovery-v2",
+  "bundle_id": "live-sensor-experimental-manual-recovery-v2",
+  "status": "posthoc_experimental",
+  "disclosure": "This v2 analysis reuses the six already-inspected manual-only folds. It corrects the end-to-end state replay to process complete sequences, adds the frozen two-frame ROI switch rule, and reports force resolution against a fold-fitted constant baseline. Metrics are post-hoc grouped cross-validation evidence, not untouched confirmation.",
+  "operating_range_N": {
+    "minimum": 1.7,
+    "maximum": 3.0
+  },
+  "temporal_filter": {
+    "method": "causal_mean",
+    "window_frames": 9,
+    "minimum_periods": 1
+  },
+  "normalization": {
+    "center": "median_of_no_contact_session_medians",
+    "scale": "median_of_no_contact_session_q99_absolute_deviation",
+    "scale_floor": 1e-6
+  },
+  "contact": {
+    "score": "normalized_signed_delta_v_sum_spatial_range",
+    "training_fallback": "median_session_q95",
+    "unloaded_warmup_quantile": 0.99,
+    "warmup_fraction_for_replay": 0.5,
+    "minimum_warmup_frames": 120,
+    "acquire_frames": 2,
+    "clear_frames": 2,
+    "frame_fpr_target": 0.05,
+    "recall_target": 0.9
+  },
+  "force": {
+    "model": "isotonic_signed_range",
+    "fit_only_inside_operating_range": true,
+    "out_of_bounds": "unavailable",
+    "balance_by": ["session_id", "0.25N_force_bin"],
+    "resolution_checks": {
+      "baseline": "fold_fitted_session_balanced_weighted_median",
+      "minimum_relative_mae_gain_over_constant": 0.05,
+      "minimum_mean_spearman_rho": 0.3,
+      "minimum_mean_predicted_to_true_sd_ratio": 0.25
+    }
+  },
+  "localization": {
+    "model": "normalized_active_fraction_argmax",
+    "forced_class_count": 9,
+    "score_filter": "causal_mean_9_frames",
+    "switch_frames": 2,
+    "selective_output": {
+      "enabled": true,
+      "score": "top_two_normalized_active_fraction_margin",
+      "minimum_training_coverage": 0.8,
+      "threshold_selection": "maximize_training_macro_f1_then_prefer_lower_threshold"
+    }
+  },
+  "evaluation": {
+    "full_sequence_contact_state": true,
+    "report_debounced_contact_recall": true,
+    "forced_localization_remains_primary": true,
+    "selective_metrics_are_secondary": true
+  },
+  "release": {
+    "status": "experimental",
+    "validated_claim_allowed": false,
+    "known_gate_failure": "The original frozen all-ROI common safe-range procedure did not establish a supported range; force resolution does not satisfy the combined baseline-improvement and response-resolution gate; physical known-force and usability validation are unavailable."
+  },
+  "seed": 1729
+}

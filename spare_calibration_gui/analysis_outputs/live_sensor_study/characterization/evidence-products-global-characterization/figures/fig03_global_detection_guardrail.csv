@@ -1,0 +1,13 @@
+force_bin_N,independent_sessions,contributing_target_roi,minimum_sessions_per_target,global_total_light_threshold,overall_recall,median_target_recall,minimum_target_recall,all_nine_targets_supported,passes_average_only,passes_device_wide_guardrail
+0.125,51,9,5,2924.0,0.13725490196078433,0.16666666666666666,0.0,True,False,False
+0.375,42,9,3,2924.0,0.14285714285714285,0.2,0.0,True,False,False
+0.625,46,9,3,2924.0,0.13043478260869565,0.16666666666666666,0.0,True,False,False
+0.875,41,9,2,2924.0,0.21951219512195122,0.2,0.0,False,False,False
+1.125,50,9,5,2924.0,0.16,0.16666666666666666,0.0,True,False,False
+1.375,48,9,3,2924.0,0.2708333333333333,0.3333333333333333,0.0,True,False,False
+1.625,53,9,5,2924.0,0.2641509433962264,0.16666666666666666,0.0,True,False,False
+1.875,52,9,5,2924.0,0.3076923076923077,0.2,0.0,True,False,False
+2.125,51,9,5,2924.0,0.37254901960784315,0.2,0.0,True,False,False
+2.375,51,9,4,2924.0,0.37254901960784315,0.25,0.0,True,False,False
+2.625,53,9,5,2924.0,0.39622641509433965,0.4,0.0,True,False,False
+2.875,54,9,6,2924.0,0.37037037037037035,0.16666666666666666,0.0,True,False,False

@@ -1,0 +1,34 @@
+{
+  "code_hash": "d3e8aa60f6c95fc212fbc46277c26e752467af29718ab1975599fb5047cca68d",
+  "created_at": "2026-08-13T09:06:48.807785Z",
+  "exports": {
+    "csv": "fig09_speed_dependence.csv",
+    "json": "fig09_speed_dependence.json",
+    "pdf": "fig09_speed_dependence.pdf",
+    "png": "fig09_speed_dependence.png",
+    "svg": "fig09_speed_dependence.svg"
+  },
+  "filters": [
+    "absolute displacement=3.5 mm",
+    "loading only"
+  ],
+  "independent_session_count": "two sessions per exact condition",
+  "plotted_columns": [
+    "roi",
+    "speed_mm_min",
+    "displacement_mm_abs",
+    "independent_sessions",
+    "peak_median_light",
+    "median_light_across_supported_bins"
+  ],
+  "plotted_data_hash": "07031b9e6764c10509e3b897856f845cf0869a19775fd6c255273cf3301298cc",
+  "plotted_rows": 27,
+  "schema_version": "1.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "automatic_speed_dependence",
+  "source_table_hash": "d4fbd4636c941c9bfaf54154dbdf93b8dc2000ddba3eb228f3c70041d430402c",
+  "title": "Automatic speed dependence at 3.5 mm",
+  "uncertainty_method": "cycle estimates averaged within session; descriptive condition comparison",
+  "units": "positive V-sum"
+}

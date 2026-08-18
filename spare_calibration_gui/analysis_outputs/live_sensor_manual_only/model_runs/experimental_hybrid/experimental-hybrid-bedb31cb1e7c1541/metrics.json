@@ -1,0 +1,850 @@
+{
+  "aggregate": {
+    "cross_validated_p95_absolute_error_N": 0.6428524217104038,
+    "event_count": 102,
+    "event_localization_accuracy": 0.9341168091168093,
+    "event_localization_macro_f1": 0.9342785558588881,
+    "expanded_force_search_mae_N": 0.32564287927661323,
+    "expanded_force_search_relative_gain_over_constant": 0.04493589729011051,
+    "fold_count": 6,
+    "force_output_available": true,
+    "force_output_status": "approximate_unvalidated",
+    "force_resolution_established": false,
+    "independent_session_count": 54,
+    "localization_selected_family": "accumulated_argmax",
+    "max_false_contact_episodes_per_minute": 0.0,
+    "max_no_contact_frame_fpr": 0.024390243902439025,
+    "mean_conditional_force_mae_N": 0.32798681555113973,
+    "mean_contact_recall": 0.9779024004612419,
+    "mean_force_spearman_rho": 0.2067750595161444,
+    "mean_no_contact_frame_fpr": 0.0040650406504065045,
+    "min_contact_recall": 0.9419924337957125,
+    "operating_range_N": [
+      1.7,
+      3.0
+    ],
+    "peak_signal_ratio": {
+      "maximum": 11.811814519132687,
+      "median": 2.462310372887259,
+      "minimum": 1.014986713016493
+    },
+    "per_roi_event_localization_recall": {
+      "1": 1.0,
+      "2": 0.9166666666666666,
+      "3": 0.9166666666666666,
+      "4": 0.9027777777777777,
+      "5": 0.9209401709401712,
+      "6": 0.9166666666666666,
+      "7": 1.0,
+      "8": 0.9166666666666666,
+      "9": 0.9166666666666666
+    },
+    "selective_localization_coverage": 0.8292735042735042,
+    "selective_localization_macro_f1": 1.0,
+    "signal_unit": "threshold_ratio"
+  },
+  "disclosure": "This v4 hybrid reuses already-inspected manual-only folds. It combines v3 event detection/localization with v2 monotonic frame-force recovery. The Newton output is approximate, force resolution remains unestablished, and no result is untouched confirmation evidence.",
+  "event_source_metrics": {
+    "aggregate": {
+      "event_count": 102,
+      "event_localization_accuracy": 0.9341168091168093,
+      "event_localization_macro_f1": 0.9342785558588881,
+      "fold_count": 6,
+      "force_output_available": false,
+      "independent_session_count": 54,
+      "max_false_contact_episodes_per_minute": 0.0,
+      "max_no_contact_frame_fpr": 0.024390243902439025,
+      "mean_contact_recall": 0.9779024004612419,
+      "mean_no_contact_frame_fpr": 0.0040650406504065045,
+      "min_contact_recall": 0.9419924337957125,
+      "peak_signal_ratio": {
+        "maximum": 11.811814519132687,
+        "median": 2.462310372887259,
+        "minimum": 1.014986713016493
+      },
+      "per_roi_event_localization_recall": {
+        "1": 1.0,
+        "2": 0.9166666666666666,
+        "3": 0.9166666666666666,
+        "4": 0.9027777777777777,
+        "5": 0.9209401709401712,
+        "6": 0.9166666666666666,
+        "7": 1.0,
+        "8": 0.9166666666666666,
+        "9": 0.9166666666666666
+      },
+      "selective_localization_coverage": 0.8292735042735042,
+      "selective_localization_macro_f1": 1.0,
+      "signal_unit": "threshold_ratio"
+    },
+    "disclosure": "This v3 analysis reuses the six already-inspected manual-only folds. It reports threshold-normalized optical event strength and discrete ROI only. It does not estimate force in Newtons and is not untouched confirmation evidence.",
+    "folds": [
+      {
+        "contact_recall": 0.9957657021877205,
+        "event_count": 13,
+        "event_localization_accuracy": 0.9444444444444445,
+        "event_localization_macro_f1": 0.9407407407407408,
+        "fallback_threshold": 0.5787566309913001,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "lag_ms": 260,
+        "mean_peak_signal_ratio": 6.965707471314219,
+        "median_detection_delay_frames": 1.0,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.0,
+        "no_contact_test_frames": 122,
+        "outer_fold": 1,
+        "raw_contact_recall": 0.9971771347918137,
+        "selective_localization_coverage": 0.888888888888889,
+        "selective_localization_macro_f1": 1.0,
+        "selective_localization_threshold": 0.3756574201937836,
+        "session_count": 9,
+        "threshold": 0.8209088213513052,
+        "warmup_threshold": 0.8209088213513052
+      },
+      {
+        "contact_recall": 0.9982078853046595,
+        "event_count": 11,
+        "event_localization_accuracy": 0.8888888888888891,
+        "event_localization_macro_f1": 0.8814814814814815,
+        "fallback_threshold": 0.5997687553618358,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "lag_ms": 220,
+        "mean_peak_signal_ratio": 4.737128834528479,
+        "median_detection_delay_frames": 1.0,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.0,
+        "no_contact_test_frames": 122,
+        "outer_fold": 2,
+        "raw_contact_recall": 0.992831541218638,
+        "selective_localization_coverage": 0.7777777777777779,
+        "selective_localization_macro_f1": 0.8888888888888888,
+        "selective_localization_threshold": 0.37845249480106413,
+        "session_count": 9,
+        "threshold": 0.9127509964792964,
+        "warmup_threshold": 0.9127509964792964
+      },
+      {
+        "contact_recall": 0.9688109161793372,
+        "event_count": 16,
+        "event_localization_accuracy": 1.0,
+        "event_localization_macro_f1": 1.0,
+        "fallback_threshold": 0.5935236017339847,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "lag_ms": 240,
+        "mean_peak_signal_ratio": 2.8735871296415305,
+        "median_detection_delay_frames": 1.0,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.0,
+        "no_contact_test_frames": 127,
+        "outer_fold": 3,
+        "raw_contact_recall": 0.9649122807017544,
+        "selective_localization_coverage": 0.9222222222222223,
+        "selective_localization_macro_f1": 1.0,
+        "selective_localization_threshold": 0.38901788329063575,
+        "session_count": 9,
+        "threshold": 1.6138873525254842,
+        "warmup_threshold": 1.6138873525254842
+      },
+      {
+        "contact_recall": 0.9419924337957125,
+        "event_count": 27,
+        "event_localization_accuracy": 0.9722222222222222,
+        "event_localization_macro_f1": 0.9727223930122482,
+        "fallback_threshold": 0.6036504987877829,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "lag_ms": 240,
+        "mean_peak_signal_ratio": 3.381997870235599,
+        "median_detection_delay_frames": 1.0,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.024390243902439025,
+        "no_contact_test_frames": 123,
+        "outer_fold": 4,
+        "raw_contact_recall": 0.9419924337957125,
+        "selective_localization_coverage": 0.75,
+        "selective_localization_macro_f1": 1.0,
+        "selective_localization_threshold": 0.306298370804942,
+        "session_count": 9,
+        "threshold": 1.4459098321157744,
+        "warmup_threshold": 1.4459098321157744
+      },
+      {
+        "contact_recall": 0.9641255605381166,
+        "event_count": 23,
+        "event_localization_accuracy": 0.9102564102564104,
+        "event_localization_macro_f1": 0.9060414987284704,
+        "fallback_threshold": 0.5849399692808938,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "lag_ms": 240,
+        "mean_peak_signal_ratio": 3.419027894481799,
+        "median_detection_delay_frames": 1.0,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.0,
+        "no_contact_test_frames": 125,
+        "outer_fold": 5,
+        "raw_contact_recall": 0.9626307922272048,
+        "selective_localization_coverage": 0.8034188034188033,
+        "selective_localization_macro_f1": 0.8888888888888888,
+        "selective_localization_threshold": 0.3747257286580235,
+        "session_count": 9,
+        "threshold": 1.467589169463305,
+        "warmup_threshold": 1.467589169463305
+      },
+      {
+        "contact_recall": 0.9985119047619048,
+        "event_count": 12,
+        "event_localization_accuracy": 0.8888888888888887,
+        "event_localization_macro_f1": 0.8814814814814815,
+        "fallback_threshold": 0.5492076702267977,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "lag_ms": 240,
+        "mean_peak_signal_ratio": 6.047420953787802,
+        "median_detection_delay_frames": 1.0,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.0,
+        "no_contact_test_frames": 60,
+        "outer_fold": 6,
+        "raw_contact_recall": 0.9985119047619048,
+        "selective_localization_coverage": 0.8333333333333331,
+        "selective_localization_macro_f1": 1.0,
+        "selective_localization_threshold": 0.2881492252701795,
+        "session_count": 9,
+        "threshold": 0.73463709700422,
+        "warmup_threshold": 0.73463709700422
+      }
+    ],
+    "schema_version": "2.0.0",
+    "status": "posthoc_experimental"
+  },
+  "force_candidate_benchmark": {
+    "aggregate": {
+      "cross_validated_p95_absolute_error_N": 0.6454768744249331,
+      "fold_count": 6,
+      "frame_count": 4622,
+      "mean_conditional_force_mae_N": 0.32564287927661323,
+      "mean_constant_force_mae_N": 0.340964421500753,
+      "mean_session_spearman_rho": 0.13569773359019252,
+      "relative_mae_gain_over_constant": 0.04493589729011051,
+      "selected_family_counts": {
+        "extra_trees": 4,
+        "isotonic": 1,
+        "ridge": 1
+      },
+      "session_count": 54
+    },
+    "data_quality": {
+      "feature_names": [
+        "signed_roi1",
+        "signed_roi2",
+        "signed_roi3",
+        "signed_roi4",
+        "signed_roi5",
+        "signed_roi6",
+        "signed_roi7",
+        "signed_roi8",
+        "signed_roi9",
+        "active_roi1",
+        "active_roi2",
+        "active_roi3",
+        "active_roi4",
+        "active_roi5",
+        "active_roi6",
+        "active_roi7",
+        "active_roi8",
+        "active_roi9",
+        "signed_range",
+        "signed_max",
+        "signed_min",
+        "signed_mean",
+        "signed_std",
+        "positive_active_sum",
+        "active_max",
+        "active_mean",
+        "active_std",
+        "active_top_two_margin",
+        "log1p_signed_range",
+        "signed_range_squared"
+      ],
+      "operating_range_N": [
+        1.7,
+        3.0
+      ],
+      "outer_group_field": "test_group",
+      "session_grouped": true,
+      "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+      "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1",
+      "target_is_never_an_input": true
+    },
+    "disclosure": "The six manual-only outer TEST groups were already inspected before this benchmark. Hyperparameters are selected within each outer training partition, but the aggregate is recovery evidence and not untouched validation.",
+    "folds": [
+      {
+        "conditional_force_mae_N": 0.324164614083302,
+        "constant_force_mae_N": 0.32650898084498925,
+        "force_spearman_rho": 0.06104159675892443,
+        "lag_ms": 260,
+        "mean_inner_group_mae_N": 0.33677647209450495,
+        "outer_fold": 1,
+        "prediction_sd_N": 0.08803305982664358,
+        "relative_mae_gain_over_constant": 0.007180098861661168,
+        "selected_candidate": "extra_trees_w5_leaf60",
+        "selected_family": "extra_trees",
+        "selected_parameters": {
+          "min_samples_leaf": 60
+        },
+        "selected_window_frames": 5,
+        "truth_sd_N": 0.3703804219650816
+      },
+      {
+        "conditional_force_mae_N": 0.31881191930775254,
+        "constant_force_mae_N": 0.3385485871542219,
+        "force_spearman_rho": 0.20875380700161836,
+        "lag_ms": 220,
+        "mean_inner_group_mae_N": 0.3236048658098336,
+        "outer_fold": 2,
+        "prediction_sd_N": 0.1166004395908291,
+        "relative_mae_gain_over_constant": 0.058297888679353926,
+        "selected_candidate": "extra_trees_w5_leaf60",
+        "selected_family": "extra_trees",
+        "selected_parameters": {
+          "min_samples_leaf": 60
+        },
+        "selected_window_frames": 5,
+        "truth_sd_N": 0.36966590801155264
+      },
+      {
+        "conditional_force_mae_N": 0.33306814236749166,
+        "constant_force_mae_N": 0.3543829047808718,
+        "force_spearman_rho": 0.15646165372457432,
+        "lag_ms": 240,
+        "mean_inner_group_mae_N": 0.3221151928257556,
+        "outer_fold": 3,
+        "prediction_sd_N": 0.05774397160249302,
+        "relative_mae_gain_over_constant": 0.060146136074368105,
+        "selected_candidate": "isotonic_w5",
+        "selected_family": "isotonic",
+        "selected_parameters": {},
+        "selected_window_frames": 5,
+        "truth_sd_N": 0.36899970644619606
+      },
+      {
+        "conditional_force_mae_N": 0.32204713820477066,
+        "constant_force_mae_N": 0.3383963530305265,
+        "force_spearman_rho": 0.19795450292280772,
+        "lag_ms": 240,
+        "mean_inner_group_mae_N": 0.3210955342765807,
+        "outer_fold": 4,
+        "prediction_sd_N": 0.0710379986299225,
+        "relative_mae_gain_over_constant": 0.04831380326454346,
+        "selected_candidate": "ridge_w5_a1000",
+        "selected_family": "ridge",
+        "selected_parameters": {
+          "alpha": 1000.0
+        },
+        "selected_window_frames": 5,
+        "truth_sd_N": 0.36565270599066074
+      },
+      {
+        "conditional_force_mae_N": 0.30447045158969693,
+        "constant_force_mae_N": 0.3189553371730397,
+        "force_spearman_rho": 0.11568618970205066,
+        "lag_ms": 240,
+        "mean_inner_group_mae_N": 0.325193268374737,
+        "outer_fold": 5,
+        "prediction_sd_N": 0.08748307854538279,
+        "relative_mae_gain_over_constant": 0.04541352313375595,
+        "selected_candidate": "extra_trees_w5_leaf60",
+        "selected_family": "extra_trees",
+        "selected_parameters": {
+          "min_samples_leaf": 60
+        },
+        "selected_window_frames": 5,
+        "truth_sd_N": 0.350586896698079
+      },
+      {
+        "conditional_force_mae_N": 0.3512950101066655,
+        "constant_force_mae_N": 0.36899436602086877,
+        "force_spearman_rho": 0.0742886514311796,
+        "lag_ms": 240,
+        "mean_inner_group_mae_N": 0.3180922175982557,
+        "outer_fold": 6,
+        "prediction_sd_N": 0.09113775499518671,
+        "relative_mae_gain_over_constant": 0.047966466548170265,
+        "selected_candidate": "extra_trees_w5_leaf60",
+        "selected_family": "extra_trees",
+        "selected_parameters": {
+          "min_samples_leaf": 60
+        },
+        "selected_window_frames": 5,
+        "truth_sd_N": 0.37209427447502913
+      }
+    ],
+    "schema_version": "1.0.0",
+    "status": "posthoc_experimental_model_selection"
+  },
+  "force_source_metrics": {
+    "aggregate": {
+      "absolute_force_bias_N": 0.11549198001831533,
+      "conditional_mae_gain_over_constant_N": 0.01297760594961328,
+      "conditional_mae_relative_gain_over_constant": 0.038061466626026316,
+      "cross_validated_p95_absolute_error_N": 0.6428524217104038,
+      "fold_count": 6,
+      "force_resolution_established": false,
+      "forced_localization_accuracy": 0.8913890090869754,
+      "forced_localization_macro_f1": 0.891284606057344,
+      "max_false_contact_episodes_per_minute": 0.0,
+      "max_no_contact_frame_fpr": 0.024390243902439025,
+      "mean_conditional_force_mae_N": 0.32798681555113973,
+      "mean_contact_recall": 0.9726595960966966,
+      "mean_displayed_force_mae_N": 0.38038054411923644,
+      "mean_force_pearson_r": 0.1772017437417962,
+      "mean_force_rmse_N": 0.38427882621574655,
+      "mean_force_spearman_rho": 0.2067750595161444,
+      "mean_no_contact_frame_fpr": 0.0040650406504065045,
+      "mean_predicted_to_true_sd_ratio": 0.20660057648186317,
+      "mean_raw_contact_recall": 0.9711368908460201,
+      "mean_weighted_median_constant_mae_N": 0.340964421500753,
+      "min_contact_recall": 0.9110883014026319,
+      "operating_range_N": [
+        1.7,
+        3.0
+      ],
+      "per_roi_conditional_force_mae_N": {
+        "1": 0.3265916771553217,
+        "2": 0.40798797056857344,
+        "3": 0.32078052795418194,
+        "4": 0.33379685753593274,
+        "5": 0.3139235909920632,
+        "6": 0.3162859912086648,
+        "7": 0.30668364202405696,
+        "8": 0.32119317019094756,
+        "9": 0.30463791233051557
+      },
+      "per_roi_localization_recall": {
+        "1": 0.9794721407624634,
+        "2": 0.9420731707317073,
+        "3": 0.9655172413793104,
+        "4": 0.7540453074433657,
+        "5": 0.8890625,
+        "6": 0.8096590909090909,
+        "7": 0.8886043533930857,
+        "8": 0.9617590822179732,
+        "9": 0.9912087912087912
+      },
+      "raw_localization_accuracy": 0.8816529640848118,
+      "raw_localization_macro_f1": 0.8804345012565108,
+      "selective_localization_accuracy": 0.9777415852334419,
+      "selective_localization_coverage": 0.7970575508437906,
+      "selective_localization_macro_f1": 0.9762544638282145
+    },
+    "disclosure": "This v2 analysis reuses the six already-inspected manual-only folds. It corrects the end-to-end state replay to process complete sequences, adds the frozen two-frame ROI switch rule, and reports force resolution against a fold-fitted constant baseline. Metrics are post-hoc grouped cross-validation evidence, not untouched confirmation.",
+    "folds": [
+      {
+        "conditional_force_mae_N": 0.3207949539619197,
+        "conditional_mae_gain_over_constant_N": 0.005714026883069545,
+        "contact_recall": 0.9961676384440613,
+        "debounced_contact_recall": 0.9961676384440613,
+        "displayed_force_mae_N": 0.3279273361494619,
+        "fallback_threshold": 0.5787566309913001,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "force_bias_N": -0.06468720760212777,
+        "force_pearson_r": 0.03447392083390924,
+        "force_rmse_N": 0.37612591886160285,
+        "force_spearman_rho": 0.0750403756446727,
+        "forced_localization_accuracy": 0.940014114326041,
+        "forced_localization_macro_f1": 0.9404469657398487,
+        "lag_ms": 260,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.0,
+        "no_contact_test_frames": 122,
+        "outer_fold": 1,
+        "predicted_force_sd_N": 0.06838144473242835,
+        "predicted_to_true_sd_ratio": 0.18462489018621822,
+        "raw_contact_recall": 0.9978319783197832,
+        "raw_localization_accuracy": 0.9301340860973889,
+        "raw_localization_macro_f1": 0.9289866693236285,
+        "selective_localization_accuracy": 0.98125,
+        "selective_localization_coverage": 0.903316866619619,
+        "selective_localization_macro_f1": 0.979182823818096,
+        "selective_localization_threshold": 0.2222222222222222,
+        "threshold": 0.8209088213513052,
+        "true_force_sd_N": 0.3703804219650816,
+        "warmup_threshold": 0.8209088213513052,
+        "weighted_median_constant_N": 2.2989202129011788,
+        "weighted_median_constant_mae_N": 0.32650898084498925
+      },
+      {
+        "conditional_force_mae_N": 0.32526324285653563,
+        "conditional_mae_gain_over_constant_N": 0.013285344297686297,
+        "contact_recall": 0.9962962962962963,
+        "debounced_contact_recall": 0.9962962962962963,
+        "displayed_force_mae_N": 0.33274776568311226,
+        "fallback_threshold": 0.5997687553618358,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "force_bias_N": -0.1653560115859696,
+        "force_pearson_r": 0.19545318310062906,
+        "force_rmse_N": 0.38651597403696875,
+        "force_spearman_rho": 0.2287044525057858,
+        "forced_localization_accuracy": 0.7168458781362007,
+        "forced_localization_macro_f1": 0.6773740822657524,
+        "lag_ms": 220,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.0,
+        "no_contact_test_frames": 122,
+        "outer_fold": 2,
+        "predicted_force_sd_N": 0.07877463804147555,
+        "predicted_to_true_sd_ratio": 0.21309684321501923,
+        "raw_contact_recall": 0.9922802320392682,
+        "raw_localization_accuracy": 0.7060931899641577,
+        "raw_localization_macro_f1": 0.6637321300400172,
+        "selective_localization_accuracy": 0.9338842975206612,
+        "selective_localization_coverage": 0.6505376344086021,
+        "selective_localization_macro_f1": 0.8714616052036642,
+        "selective_localization_threshold": 0.2777777777777778,
+        "threshold": 0.9127509964792964,
+        "true_force_sd_N": 0.36966590801155264,
+        "warmup_threshold": 0.9127509964792964,
+        "weighted_median_constant_N": 2.2908146430783494,
+        "weighted_median_constant_mae_N": 0.3385485871542219
+      },
+      {
+        "conditional_force_mae_N": 0.3380159472633578,
+        "conditional_mae_gain_over_constant_N": 0.01636695751751399,
+        "contact_recall": 0.968978828657159,
+        "debounced_contact_recall": 0.968978828657159,
+        "displayed_force_mae_N": 0.39924185815519375,
+        "fallback_threshold": 0.5935236017339847,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "force_bias_N": -0.14311358723849313,
+        "force_pearson_r": 0.20981636446134935,
+        "force_rmse_N": 0.3888240617682001,
+        "force_spearman_rho": 0.25296939350017594,
+        "forced_localization_accuracy": 0.9278752436647173,
+        "forced_localization_macro_f1": 0.9246674254778028,
+        "lag_ms": 240,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.0,
+        "no_contact_test_frames": 127,
+        "outer_fold": 3,
+        "predicted_force_sd_N": 0.04999405017273702,
+        "predicted_to_true_sd_ratio": 0.13548533860426434,
+        "raw_contact_recall": 0.9655855723876342,
+        "raw_localization_accuracy": 0.9200779727095516,
+        "raw_localization_macro_f1": 0.9172606795279425,
+        "selective_localization_accuracy": 0.9775280898876404,
+        "selective_localization_coverage": 0.8674463937621832,
+        "selective_localization_macro_f1": 0.9752725733079683,
+        "selective_localization_threshold": 0.2612942612942606,
+        "threshold": 1.6138873525254842,
+        "true_force_sd_N": 0.36899970644619606,
+        "warmup_threshold": 1.6138873525254842,
+        "weighted_median_constant_N": 2.309089579456973,
+        "weighted_median_constant_mae_N": 0.3543829047808718
+      },
+      {
+        "conditional_force_mae_N": 0.32187215741674524,
+        "conditional_mae_gain_over_constant_N": 0.016524195613781267,
+        "contact_recall": 0.9110883014026319,
+        "debounced_contact_recall": 0.9110883014026319,
+        "displayed_force_mae_N": 0.4903273348968086,
+        "fallback_threshold": 0.6036504987877829,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "force_bias_N": -0.11259553792964432,
+        "force_pearson_r": 0.18583886150134768,
+        "force_rmse_N": 0.3740021238608951,
+        "force_spearman_rho": 0.19432398154125416,
+        "forced_localization_accuracy": 0.8991172761664565,
+        "forced_localization_macro_f1": 0.8142170173158099,
+        "lag_ms": 240,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.024390243902439025,
+        "no_contact_test_frames": 123,
+        "outer_fold": 4,
+        "predicted_force_sd_N": 0.07695508386409797,
+        "predicted_to_true_sd_ratio": 0.21045949504353867,
+        "raw_contact_recall": 0.9094842429262032,
+        "raw_localization_accuracy": 0.8890290037831021,
+        "raw_localization_macro_f1": 0.8033333443039754,
+        "selective_localization_accuracy": 0.9887850467289719,
+        "selective_localization_coverage": 0.6746532156368222,
+        "selective_localization_macro_f1": 0.9299625665270975,
+        "selective_localization_threshold": 0.3333333333333333,
+        "threshold": 1.4459098321157744,
+        "true_force_sd_N": 0.36565270599066074,
+        "warmup_threshold": 1.4459098321157744,
+        "weighted_median_constant_N": 2.307457051963133,
+        "weighted_median_constant_mae_N": 0.3383963530305265
+      },
+      {
+        "conditional_force_mae_N": 0.3082818379582898,
+        "conditional_mae_gain_over_constant_N": 0.010673499214749915,
+        "contact_recall": 0.9646475130010326,
+        "debounced_contact_recall": 0.9646475130010326,
+        "displayed_force_mae_N": 0.3759058029067728,
+        "fallback_threshold": 0.5849399692808938,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "force_bias_N": -0.0852380322441948,
+        "force_pearson_r": 0.1321511391199632,
+        "force_rmse_N": 0.36390428533696845,
+        "force_spearman_rho": 0.15694612410253522,
+        "forced_localization_accuracy": 0.9177877428998505,
+        "forced_localization_macro_f1": 0.9145232941093013,
+        "lag_ms": 240,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.0,
+        "no_contact_test_frames": 125,
+        "outer_fold": 5,
+        "predicted_force_sd_N": 0.08795310919744279,
+        "predicted_to_true_sd_ratio": 0.25087392034844613,
+        "raw_contact_recall": 0.9628603206242333,
+        "raw_localization_accuracy": 0.9043348281016442,
+        "raw_localization_macro_f1": 0.8953782043304379,
+        "selective_localization_accuracy": 0.9736842105263158,
+        "selective_localization_coverage": 0.852017937219731,
+        "selective_localization_macro_f1": 0.9649998821318415,
+        "selective_localization_threshold": 0.22222222222222227,
+        "threshold": 1.467589169463305,
+        "true_force_sd_N": 0.350586896698079,
+        "warmup_threshold": 1.467589169463305,
+        "weighted_median_constant_N": 2.309089579456973,
+        "weighted_median_constant_mae_N": 0.3189553371730397
+      },
+      {
+        "conditional_force_mae_N": 0.3536927538499904,
+        "conditional_mae_gain_over_constant_N": 0.015301612170878387,
+        "contact_recall": 0.9987789987789988,
+        "debounced_contact_recall": 0.9987789987789988,
+        "displayed_force_mae_N": 0.35613316692406927,
+        "fallback_threshold": 0.5492076702267977,
+        "false_contact_episodes": 0,
+        "false_contact_episodes_per_minute": 0.0,
+        "force_bias_N": -0.12196150350946236,
+        "force_pearson_r": 0.3054769934335787,
+        "force_rmse_N": 0.4163005934298439,
+        "force_spearman_rho": 0.3326660298024423,
+        "forced_localization_accuracy": 0.8705357142857143,
+        "forced_localization_macro_f1": 0.793619209091684,
+        "lag_ms": 240,
+        "no_contact_debounced_frame_fpr": 0.0,
+        "no_contact_frame_fpr": 0.0,
+        "no_contact_test_frames": 60,
+        "outer_fold": 6,
+        "predicted_force_sd_N": 0.09118652857864024,
+        "predicted_to_true_sd_ratio": 0.24506297149369244,
+        "raw_contact_recall": 0.9987789987789988,
+        "raw_localization_accuracy": 0.8645833333333334,
+        "raw_localization_macro_f1": 0.7793707621830005,
+        "selective_localization_accuracy": 0.9938900203665988,
+        "selective_localization_coverage": 0.7306547619047619,
+        "selective_localization_macro_f1": 0.8774917445444164,
+        "selective_localization_threshold": 0.27777777777777785,
+        "threshold": 0.73463709700422,
+        "true_force_sd_N": 0.37209427447502913,
+        "warmup_threshold": 0.73463709700422,
+        "weighted_median_constant_N": 2.2957474206022725,
+        "weighted_median_constant_mae_N": 0.36899436602086877
+      }
+    ],
+    "schema_version": "1.0.0",
+    "status": "posthoc_experimental"
+  },
+  "localization_candidate_benchmark": {
+    "aggregate": {
+      "argmax": {
+        "accuracy": 0.9341168091168093,
+        "event_count": 102,
+        "macro_f1": 0.9342785558588881,
+        "minimum_fold_macro_f1": 0.8814814814814815,
+        "session_count": 54
+      },
+      "extra_trees": {
+        "accuracy": 0.9063152896486231,
+        "event_count": 102,
+        "macro_f1": 0.9114207911133396,
+        "minimum_fold_macro_f1": 0.811111111111111,
+        "session_count": 54
+      },
+      "logistic": {
+        "accuracy": 0.8429724596391265,
+        "event_count": 102,
+        "macro_f1": 0.8526618144271683,
+        "minimum_fold_macro_f1": 0.7812260536398468,
+        "session_count": 54
+      },
+      "shrinkage_lda": {
+        "accuracy": 0.885636277302944,
+        "event_count": 102,
+        "macro_f1": 0.892472193456062,
+        "minimum_fold_macro_f1": 0.7907647907647907,
+        "session_count": 54
+      }
+    },
+    "data_quality": {
+      "frame_labels_are_aggregated_before_event_classification": true,
+      "session_grouped": true,
+      "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+      "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1"
+    },
+    "disclosure": "The six existing outer TEST groups were reused post-hoc. Every outer prediction excludes its complete TEST group, while logistic regularization is chosen only within the outer training partition.",
+    "folds": [
+      {
+        "models": {
+          "argmax": {
+            "accuracy": 0.9444444444444445,
+            "macro_f1": 0.9407407407407408
+          },
+          "extra_trees": {
+            "accuracy": 1.0,
+            "macro_f1": 1.0
+          },
+          "logistic": {
+            "accuracy": 0.888888888888889,
+            "macro_f1": 0.8814814814814815
+          },
+          "shrinkage_lda": {
+            "accuracy": 0.9444444444444445,
+            "macro_f1": 0.9407407407407408
+          }
+        },
+        "outer_event_count": 13,
+        "outer_fold": 1,
+        "selected_logistic_C": 10.0,
+        "training_event_count": 54
+      },
+      {
+        "models": {
+          "argmax": {
+            "accuracy": 0.8888888888888891,
+            "macro_f1": 0.8814814814814815
+          },
+          "extra_trees": {
+            "accuracy": 0.8888888888888891,
+            "macro_f1": 0.8814814814814815
+          },
+          "logistic": {
+            "accuracy": 0.8888888888888891,
+            "macro_f1": 0.8814814814814815
+          },
+          "shrinkage_lda": {
+            "accuracy": 0.8888888888888891,
+            "macro_f1": 0.8814814814814815
+          }
+        },
+        "outer_event_count": 11,
+        "outer_fold": 2,
+        "selected_logistic_C": 10.0,
+        "training_event_count": 51
+      },
+      {
+        "models": {
+          "argmax": {
+            "accuracy": 1.0,
+            "macro_f1": 1.0
+          },
+          "extra_trees": {
+            "accuracy": 0.9777777777777777,
+            "macro_f1": 0.9775533108866442
+          },
+          "logistic": {
+            "accuracy": 0.8555555555555555,
+            "macro_f1": 0.8451178451178452
+          },
+          "shrinkage_lda": {
+            "accuracy": 0.9277777777777777,
+            "macro_f1": 0.9290955375861036
+          }
+        },
+        "outer_event_count": 16,
+        "outer_fold": 3,
+        "selected_logistic_C": 100.0,
+        "training_event_count": 50
+      },
+      {
+        "models": {
+          "argmax": {
+            "accuracy": 0.9722222222222222,
+            "macro_f1": 0.9727223930122482
+          },
+          "extra_trees": {
+            "accuracy": 0.8148148148148148,
+            "macro_f1": 0.811111111111111
+          },
+          "logistic": {
+            "accuracy": 0.7962962962962963,
+            "macro_f1": 0.7934472934472935
+          },
+          "shrinkage_lda": {
+            "accuracy": 0.7962962962962963,
+            "macro_f1": 0.7907647907647907
+          }
+        },
+        "outer_event_count": 27,
+        "outer_fold": 4,
+        "selected_logistic_C": 10.0,
+        "training_event_count": 51
+      },
+      {
+        "models": {
+          "argmax": {
+            "accuracy": 0.9102564102564104,
+            "macro_f1": 0.9060414987284704
+          },
+          "extra_trees": {
+            "accuracy": 0.8675213675213677,
+            "macro_f1": 0.8626401028952411
+          },
+          "logistic": {
+            "accuracy": 0.7948717948717948,
+            "macro_f1": 0.7812260536398468
+          },
+          "shrinkage_lda": {
+            "accuracy": 0.8675213675213677,
+            "macro_f1": 0.8626401028952411
+          }
+        },
+        "outer_event_count": 23,
+        "outer_fold": 5,
+        "selected_logistic_C": 10.0,
+        "training_event_count": 54
+      },
+      {
+        "models": {
+          "argmax": {
+            "accuracy": 0.8888888888888887,
+            "macro_f1": 0.8814814814814815
+          },
+          "extra_trees": {
+            "accuracy": 0.8888888888888887,
+            "macro_f1": 0.8814814814814814
+          },
+          "logistic": {
+            "accuracy": 0.8333333333333331,
+            "macro_f1": 0.7925925925925926
+          },
+          "shrinkage_lda": {
+            "accuracy": 0.8888888888888887,
+            "macro_f1": 0.8814814814814814
+          }
+        },
+        "outer_event_count": 12,
+        "outer_fold": 6,
+        "selected_logistic_C": 100.0,
+        "training_event_count": 53
+      }
+    ],
+    "schema_version": "1.0.0",
+    "selected_family": "argmax",
+    "status": "posthoc_experimental_model_selection"
+  },
+  "schema_version": "3.0.0",
+  "status": "posthoc_experimental"
+}

@@ -1,0 +1,38 @@
+{
+  "code_hash": "d3e8aa60f6c95fc212fbc46277c26e752467af29718ab1975599fb5047cca68d",
+  "created_at": "2026-08-13T09:06:47.352427Z",
+  "exports": {
+    "csv": "fig08_automatic_hysteresis.csv",
+    "json": "fig08_automatic_hysteresis.json",
+    "pdf": "fig08_automatic_hysteresis.pdf",
+    "png": "fig08_automatic_hysteresis.png",
+    "svg": "fig08_automatic_hysteresis.svg"
+  },
+  "filters": [
+    "absolute displacement=3.5 mm",
+    "speeds shown separately"
+  ],
+  "independent_session_count": "two sessions per exact condition",
+  "plotted_columns": [
+    "roi",
+    "speed_mm_min",
+    "displacement_mm_abs",
+    "force_bin_N",
+    "independent_sessions",
+    "collection_days",
+    "median_loading_light",
+    "median_unloading_light",
+    "median_hysteresis_light",
+    "median_hysteresis_percent_observed_span"
+  ],
+  "plotted_data_hash": "7a21cc3ed5d8e083afdcd96960b24a845b3a7bb2ab6dc6f01629d14ea2372ae0",
+  "plotted_rows": 117,
+  "schema_version": "1.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "automatic_hysteresis",
+  "source_table_hash": "2124262319585de0a21e826be274c95b228fde80b950b42124098e57560ed282",
+  "title": "Automatic hysteresis at 3.5 mm",
+  "uncertainty_method": "cycle estimates averaged within session; across-session median",
+  "units": "positive V-sum and N"
+}

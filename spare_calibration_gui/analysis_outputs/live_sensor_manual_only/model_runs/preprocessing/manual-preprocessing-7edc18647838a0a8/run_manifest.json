@@ -1,0 +1,76 @@
+{
+  "argv": [
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\scripts\\fit_manual_only_preprocessing.py",
+    "--config",
+    "config\\live_sensor_manual_only.json",
+    "--spec",
+    "config\\manual_only_preprocessing.json"
+  ],
+  "code_hash": "ac8dac63002ee4bec1a18414f743c30bdd5cc16325c3a77cbd1bf0584d741c1f",
+  "command": "fit-manual-only-preprocessing",
+  "completed_at": "2026-08-13T09:12:31.947981Z",
+  "config_path": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\config\\live_sensor_manual_only.json",
+  "created_at": "2026-08-13T09:12:31.947981Z",
+  "dataset_policy": "manual_only",
+  "elapsed_s": 76.674333,
+  "environment": {
+    "machine": "AMD64",
+    "operating_system": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "jsonschema": "4.26.0",
+      "matplotlib": "3.11.1",
+      "numpy": "2.5.1",
+      "onnx": "1.22.0",
+      "opencv-python": "4.14.0.94",
+      "pandas": "3.0.5",
+      "pyarrow": "21.0.0",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.0",
+      "skl2onnx": "1.20.0",
+      "xgboost": "3.4.0"
+    },
+    "python_executable": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\.venv\\Scripts\\python.exe",
+    "python_implementation": "CPython",
+    "python_version": "3.12.13"
+  },
+  "exclusions": [
+    "replay_only"
+  ],
+  "gate_pass": false,
+  "input_identity_hash": "380e8d681f4230a5476d87ad0fd80ff597d6607155c26db2f0b10f4bda1733b1",
+  "inputs": {
+    "manual_archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+    "manual_feature_store": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\analysis_outputs\\live_sensor_manual_only\\feature_store\\feature-store-fa2500440adab6ca",
+    "manual_split_manifest": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\analysis_outputs\\live_sensor_manual_only\\splits\\splits-da608c2b8581adff"
+  },
+  "outputs": {
+    "contact_training_bins.csv": "a06f4cab8753bc7f77b52078e52e65da582f1c6123ec46fc036601ea3bc964ef",
+    "events.jsonl": "b967bdea0824c820d5c8538de0075e4597e4d05d7c7aa796f50af7dfce015162",
+    "fold_1/fold_summary.json": "1c59e13287fe6ce44ffb5279372e87cf32534172b2b7d2b278557aed4a65e676",
+    "fold_1/optical_support_arrays.npz": "c03f6e1167e7bbf58af882f712ccefc7e1f68dc91fd0b806c01822cc12fbb091",
+    "fold_2/fold_summary.json": "cff9f947ec6791b0ee222c7725b4f652dea17bbbade71dbd453031d5308d9463",
+    "fold_2/optical_support_arrays.npz": "a9e2fa74bd52c7b14efd55976ca2c28291b722cd86d62b79f6dcc2fc9fdbfc04",
+    "fold_3/fold_summary.json": "dd38fc2205b4be3b01fb05b088f0b359728cde5dbc5d606fe2b68faf5c858536",
+    "fold_3/optical_support_arrays.npz": "fdc13872f7f6f4bd6078057f646aaa86211b32f8521c6cecef2a0897ef1e9c8f",
+    "fold_4/fold_summary.json": "2705a171a88c134ad0e86d40c78bcbbeb234d19925bfb701a6d0b2811c5ecf53",
+    "fold_4/optical_support_arrays.npz": "bd6136c3d1f33ad3a8b5b758689ab95d8070a772214d8e479d7b0a2d26306580",
+    "fold_5/fold_summary.json": "9c08218b5d5bc3aa496b3603b5090546b528351c86d933206682b57e7beab25d",
+    "fold_5/optical_support_arrays.npz": "69cf7de6c2f905caff5157bb96f002140ff569d97aeb1913be0af29a0e4baf6e",
+    "fold_6/fold_summary.json": "1eb6c95bc1ea39ebac2c83c56e71f7cc1a1c2b67157bc4ea93fc5dae2faa7fef",
+    "fold_6/optical_support_arrays.npz": "c7f1260135d20c00cd928ed1d89e33befdda5d5e50503e7efeeb14c0ab7d949c",
+    "fold_development/fold_summary.json": "6270a4ac030e5e948903c819e279a97f18e2acdbc8e875cdec35b8828fd083e5",
+    "fold_development/optical_support_arrays.npz": "a59789c26ed3ed852df4b6897d32da11c26439d3542b1436ecda7c6a495c1166",
+    "lag_inner_scores.csv": "31522ed26baf3a590fb94d3c528cc0c7fc9173b3d961bff4504fc136d8680144",
+    "optical_support_inner_tuning.csv": "8a1112d804184b816a329b2a5dfa7c7da5d111cfba215a894ab937e74936e249",
+    "preprocessing_summary.json": "60ec06155f124aa0bd6489988eab4dadd7999d652431231a1927e00aac63da23",
+    "range_loading_response.csv": "f317ae4573a3e8618d7d14d4bfe69c00625f9ae580cebcedbefa2fe244a04c08"
+  },
+  "preprocessing_spec_hash": "2a3b012ee728b7967670376d36dec804edb4c2862024a51096247533c58d303e",
+  "preprocessing_spec_path": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\config\\manual_only_preprocessing.json",
+  "run_id": "manual-preprocessing-7edc18647838a0a8",
+  "schema_version": "1.0.0",
+  "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+  "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1",
+  "study_config_hash": "6f461b755c26b227c1454a3f35e6683b7b47185c7e533043f0c09e9db5ab1fa5",
+  "warnings": []
+}

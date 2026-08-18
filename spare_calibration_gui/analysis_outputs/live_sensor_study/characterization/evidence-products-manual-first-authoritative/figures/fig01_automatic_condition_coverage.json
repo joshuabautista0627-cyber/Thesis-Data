@@ -1,0 +1,35 @@
+{
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:21.037180Z",
+  "exports": {
+    "csv": "fig01_automatic_condition_coverage.csv",
+    "json": "fig01_automatic_condition_coverage.json",
+    "pdf": "fig01_automatic_condition_coverage.pdf",
+    "png": "fig01_automatic_condition_coverage.png",
+    "svg": "fig01_automatic_condition_coverage.svg"
+  },
+  "filters": [
+    "automatic archive limited to hysteresis and creep-related sufficiency"
+  ],
+  "independent_session_count": "162",
+  "plotted_columns": [
+    "target_roi",
+    "speed_mm_min",
+    "displacement_mm_abs",
+    "independent_sessions",
+    "frames",
+    "collection_days",
+    "ten_cycle_sessions",
+    "twenty_cycle_sessions"
+  ],
+  "plotted_data_hash": "a4e9bd7675e0b09fdfd19613fac4dea0d95dcde037c416cfe1ac3bf53d9ae983",
+  "plotted_rows": 81,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "coverage_automatic_conditions",
+  "source_table_hash": "fac617c1a60506ef3b2210e255cd1eade1a9eb6f6b8d211eed37a3ea872b2c82",
+  "title": "Automatic hysteresis/creep-related condition coverage",
+  "uncertainty_method": "exact counts including one 10-cycle and one 20-cycle session per cell",
+  "units": "sessions"
+}

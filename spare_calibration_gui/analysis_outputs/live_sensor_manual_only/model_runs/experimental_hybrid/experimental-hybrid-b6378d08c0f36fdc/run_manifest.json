@@ -1,0 +1,17 @@
+{
+  "run_id": "experimental-hybrid-b6378d08c0f36fdc",
+  "schema_version": "3.0.0",
+  "source": {
+    "dataset_policy": "manual_only",
+    "force_benchmark_sha256": "d4ee0d1e9cc4a62af5b0ac4e2a91de0352dbcdb10c0b8f0ded5948611426a907",
+    "localization_benchmark_sha256": "d68584eedeca06bbb49ae89c8e25bd35bd067242af8301aedc0f34fa5f33c22e",
+    "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1",
+    "v2_bundle_id": "live-sensor-experimental-manual-recovery-v2",
+    "v2_manifest_sha256": "4f6bf0659bb752fa3f3209220dadf7aaf2ae437f13d6d6f416ba535a64beeb8c",
+    "v3_bundle_id": "live-sensor-experimental-event-signal-v3",
+    "v3_manifest_sha256": "4836274c12d9424be23d58c228f165ece478b8b610e3aa4ced1c8d9e28e5b73b"
+  },
+  "spec_hash": "7b806973d9ec88a685aee4c7aebc5eaa043743ab1737d1a255e0e3ec6f872933",
+  "status": "posthoc_experimental"
+}

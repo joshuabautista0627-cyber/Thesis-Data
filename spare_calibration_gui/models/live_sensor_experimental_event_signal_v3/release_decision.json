@@ -1,0 +1,21 @@
+{
+  "blocking_reasons": [
+    "Existing outer folds were reused post-hoc; no untouched confirmation data remain.",
+    "No event-level calibration peaks exist in the declared 1.7-3.0 N band.",
+    "Known-force physical, soak, and representative-user validation were not performed."
+  ],
+  "force_output_available": false,
+  "model_eligible_under_authoritative_plan": false,
+  "numerical_recovery_checks": {
+    "event_localization_macro_f1_at_least_0_891": true,
+    "force_output_absent": true,
+    "max_no_contact_frame_fpr_at_most_0_05": true,
+    "min_contact_recall_at_least_0_90": true
+  },
+  "physical_validation_complete": false,
+  "posthoc_outer_fold_reuse": true,
+  "schema_version": "2.0.0",
+  "status": "experimental",
+  "usability_validation_complete": false,
+  "validated_claim_allowed": false
+}

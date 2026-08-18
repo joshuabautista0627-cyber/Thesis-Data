@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "status": "frozen-before-outer-results",
+  "evaluation_populations": {
+    "force_primary": "valid synchronized single-contact outer-held-out frames from fold-training-derived Fdetect through independently frozen Fmax",
+    "force_end_to_end": "force_primary with missed contact represented by displayed 0.00 N",
+    "no_contact": "dedicated held-out no-contact sessions only",
+    "localization_primary": "forced prediction on every eligible held-out contact frame",
+    "invalid_inputs": "stale, OOD, wrong-layout, wrong-geometry, invalid-baseline, and optical-limit frames"
+  },
+  "primary": {
+    "end_to_end_force_mae_max_N": 0.75,
+    "forced_localization_macro_accuracy_min": 0.80,
+    "forced_localization_macro_f1_min": 0.80,
+    "no_contact_frame_false_positive_rate_max": 0.05
+  },
+  "force_guardrails": {
+    "conditional_mae_max_N": 0.75,
+    "per_roi_mae_max_N": 1.0,
+    "absolute_bias_max_N": 0.20,
+    "rmse_max_N": 1.0,
+    "contact_recall_min": 0.90,
+    "negative_prediction_tolerance_N": -0.000001,
+    "monotonic_finite_difference_tolerance_N": -0.000001,
+    "monotonic_audit_random_points": 10000,
+    "above_range_numeric_estimates_max": 0
+  },
+  "localization_guardrails": {
+    "per_roi_recall_min": 0.70,
+    "box_geometry_exact_match_rate": 1.0,
+    "acquire_switch_clear_max_frames": 2
+  },
+  "safety_guardrails": {
+    "invalid_geometry_layout_baseline_inference_max": 0,
+    "stale_or_ood_exact_output_max": 0,
+    "false_contact_episodes_max": 1,
+    "false_contact_evidence_minutes": 5,
+    "archive_no_contact_minimum_minutes_when_available": 10,
+    "phase_h_no_contact_minimum_minutes": 10
+  },
+  "performance": {
+    "inference_p95_ms_max": 30,
+    "bundle_size_mb_max": 50,
+    "bundle_integrity_load_s_max": 2,
+    "camera_to_display_p95_ms_max": 300,
+    "soak_minutes": 60,
+    "post_warmup_memory_growth_mb_max": 100
+  },
+  "usability": {
+    "minimum_representative_operators": 5,
+    "first_time_setup_success_min": 0.90,
+    "first_time_ready_median_minutes_max": 5,
+    "returning_ready_median_minutes_max": 2,
+    "recovery_task_success_min": 0.90,
+    "state_recognition_min": 0.90,
+    "optical_limit_recognition_min": 1.0,
+    "critical_errors_max": 0,
+    "text_icon_noncolor_coverage_min": 1.0,
+    "keyboard_accessible_controls_min": 1.0,
+    "supported_scaling_percent": [100, 125, 150, 200],
+    "minimum_window_width": 1366,
+    "minimum_window_height": 768,
+    "progress_feedback_operation_ms": 250
+  }
+}

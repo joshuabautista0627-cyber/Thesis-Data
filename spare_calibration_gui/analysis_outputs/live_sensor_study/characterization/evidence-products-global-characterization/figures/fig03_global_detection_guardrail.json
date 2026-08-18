@@ -1,0 +1,40 @@
+{
+  "code_hash": "a8d00fcf568d7e45483f631b13c0121d3a9aafef954b12bbb2321e8cea7fec0e",
+  "created_at": "2026-08-14T07:22:41.743812Z",
+  "exports": {
+    "csv": "fig03_global_detection_guardrail.csv",
+    "json": "fig03_global_detection_guardrail.json",
+    "pdf": "fig03_global_detection_guardrail.pdf",
+    "png": "fig03_global_detection_guardrail.png",
+    "svg": "fig03_global_detection_guardrail.svg"
+  },
+  "filters": [
+    "manual only",
+    "all nine targets required for device-wide claim"
+  ],
+  "global_estimand": "equal-target global total-light response; no ROI excluded",
+  "independent_session_count": "54 press + 11 no-contact sessions",
+  "plotted_columns": [
+    "force_bin_N",
+    "independent_sessions",
+    "contributing_target_roi",
+    "minimum_sessions_per_target",
+    "global_total_light_threshold",
+    "overall_recall",
+    "median_target_recall",
+    "minimum_target_recall",
+    "all_nine_targets_supported",
+    "passes_average_only",
+    "passes_device_wide_guardrail"
+  ],
+  "plotted_data_hash": "86ce7a474c2f237e3332680654f0be3931f57dce5a51c64fcd616f7571d3fa70",
+  "plotted_rows": 12,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "9cefaf71cb15a28dde729f26cbc837bde9fa713a1ccea1f57f84b3edcf85557b",
+  "source_table": "global_detection_detail",
+  "source_table_hash": "c134ff6d015cf109ed6c2d189e0bf4ea48b723a242f11b6680759e7a444ef610",
+  "title": "Global optical detection recall",
+  "uncertainty_method": "frozen 1% FPR and 95% recall; worst target retained",
+  "units": "recall"
+}

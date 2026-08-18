@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "all_179176_frames_present": true,
+    "all_245_sessions_present": true,
+    "all_figure_companions_present": true,
+    "archive_hashes_match": true,
+    "archive_member_crc_pass": true,
+    "automatic_conditions_have_one_10_and_one_20_cycle_session": true,
+    "automatic_exact_conditions_two_sessions": true,
+    "automatic_outputs_role_limited": true,
+    "automatic_sessions_162": true,
+    "creep_not_claimed": true,
+    "cross_talk_complete_9x9": true,
+    "cycles_nested_within_session": true,
+    "failed_prior_gate_preserved": true,
+    "general_metrics_manual_only": true,
+    "manual_no_contact_sessions_11": true,
+    "manual_primary_sessions_54": true,
+    "manual_replay_sessions_18": true,
+    "manual_six_sessions_per_roi": true,
+    "standalone_lag_manual_only": true,
+    "true_resolution_not_claimed": true
+  },
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:49.337320Z",
+  "feature_store_hash": "e5b29e8223a8aaa4847601f1644c5fcd77c6ff106397fdc238da17c4a67eb807",
+  "gate_pass": true,
+  "master_plan_hash": "9cbf072ba6951ef09e3f4f0be5be21dc998dbf3ffbfe89d7d2e1431eb351fa05",
+  "prior_characterization_summary_hash": "f14a89ed07cc867abd86c5bc6681f0fde9211d393c22a9dfb558d44ac6c5e0a2",
+  "schema_version": "2.0.0",
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43"
+}

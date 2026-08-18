@@ -1,0 +1,33 @@
+{
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:26.870238Z",
+  "exports": {
+    "csv": "fig05_cross_talk_matrix.csv",
+    "json": "fig05_cross_talk_matrix.json",
+    "pdf": "fig05_cross_talk_matrix.pdf",
+    "png": "fig05_cross_talk_matrix.png",
+    "svg": "fig05_cross_talk_matrix.svg"
+  },
+  "filters": [
+    "0.75-1.25 N"
+  ],
+  "independent_session_count": "54 (six per target ROI)",
+  "plotted_columns": [
+    "target_roi",
+    "measured_roi",
+    "independent_sessions",
+    "median_response",
+    "median_share_total",
+    "median_relative_target"
+  ],
+  "plotted_data_hash": "7fd627cd7d59138ee769a5852098206527e1d3c9e79b7b187de0e9c1a745cf6b",
+  "plotted_rows": 81,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "cross_talk",
+  "source_table_hash": "ab0d6d2bde02706729de5c18083e8f3bc510682d2d2752b47d65c91eb893a49d",
+  "title": "Single-ROI press response distribution",
+  "uncertainty_method": "session median then across-session median",
+  "units": "share of total response"
+}

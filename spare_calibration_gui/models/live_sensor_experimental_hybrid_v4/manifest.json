@@ -1,0 +1,63 @@
+{
+  "bundle_id": "live-sensor-experimental-hybrid-v4",
+  "created_at": "2026-08-17T08:22:43.446067Z",
+  "files": {
+    "event_model.json": {
+      "sha256": "0aae5b8ec3ef41308f3b26cc83d7b53df55b4c12c4f8e9c3122fea5150fbf308",
+      "size_bytes": 457
+    },
+    "force_model.json": {
+      "sha256": "35f98fe51a24a4ce289e1aee8d2126180d0e15de5a995ac4212384c7a60feab8",
+      "size_bytes": 2061
+    },
+    "localization_model.json": {
+      "sha256": "c708e550f4d258ee1ae7c84e457e209837321a7971544a3aab0ee2a11361cf2b",
+      "size_bytes": 617
+    },
+    "metrics.json": {
+      "sha256": "e02e1aa40adf056864a2220b05d8a6aab3851b55fea5d1d4288cac5ae2eb3b2f",
+      "size_bytes": 34385
+    },
+    "preprocessing.json": {
+      "sha256": "fc97157ff215c8ff46542481c2217297b24ed22d157e0a0e7d1090d1c9769269",
+      "size_bytes": 2078
+    },
+    "release_decision.json": {
+      "sha256": "1df32921bf226e7b2877a09f7a83367d4ec63f9a53386f8ef0e774e8e633cfc5",
+      "size_bytes": 1039
+    },
+    "replay_demo.jsonl": {
+      "sha256": "ab783512d3c45f3cbca2808d7cf82a25e5852b083d5128ac1b05f81f21f7ce99",
+      "size_bytes": 207246
+    }
+  },
+  "inference_inputs": {
+    "camera_roi_features": [
+      "signed_delta_v_sum",
+      "active_fraction"
+    ],
+    "load_cell": "forbidden",
+    "printer": "forbidden"
+  },
+  "manual_only": true,
+  "operating_range_N": {
+    "maximum": 3.0,
+    "minimum": 1.7
+  },
+  "runtime": "reviewed_numpy_json",
+  "schema_version": "3.0.0",
+  "sensor_mode": "hybrid_force_event",
+  "source": {
+    "dataset_policy": "manual_only",
+    "force_benchmark_sha256": "d4ee0d1e9cc4a62af5b0ac4e2a91de0352dbcdb10c0b8f0ded5948611426a907",
+    "localization_benchmark_sha256": "d68584eedeca06bbb49ae89c8e25bd35bd067242af8301aedc0f34fa5f33c22e",
+    "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1",
+    "v2_bundle_id": "live-sensor-experimental-manual-recovery-v2",
+    "v2_manifest_sha256": "4f6bf0659bb752fa3f3209220dadf7aaf2ae437f13d6d6f416ba535a64beeb8c",
+    "v3_bundle_id": "live-sensor-experimental-event-signal-v3",
+    "v3_manifest_sha256": "4836274c12d9424be23d58c228f165ece478b8b610e3aa4ced1c8d9e28e5b73b"
+  },
+  "spec_hash": "d3049505eab2035948fb46d74ffbcf695aadb6ecb0881a7c727ea0885382d92d",
+  "status": "experimental"
+}

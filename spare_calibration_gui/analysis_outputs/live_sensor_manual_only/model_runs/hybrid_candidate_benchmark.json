@@ -1,0 +1,165 @@
+{
+  "aggregate": {
+    "cross_validated_p95_absolute_error_N": 0.6454768744249331,
+    "fold_count": 6,
+    "frame_count": 4622,
+    "mean_conditional_force_mae_N": 0.32564287927661323,
+    "mean_constant_force_mae_N": 0.340964421500753,
+    "mean_session_spearman_rho": 0.13569773359019252,
+    "relative_mae_gain_over_constant": 0.04493589729011051,
+    "selected_family_counts": {
+      "extra_trees": 4,
+      "isotonic": 1,
+      "ridge": 1
+    },
+    "session_count": 54
+  },
+  "data_quality": {
+    "feature_names": [
+      "signed_roi1",
+      "signed_roi2",
+      "signed_roi3",
+      "signed_roi4",
+      "signed_roi5",
+      "signed_roi6",
+      "signed_roi7",
+      "signed_roi8",
+      "signed_roi9",
+      "active_roi1",
+      "active_roi2",
+      "active_roi3",
+      "active_roi4",
+      "active_roi5",
+      "active_roi6",
+      "active_roi7",
+      "active_roi8",
+      "active_roi9",
+      "signed_range",
+      "signed_max",
+      "signed_min",
+      "signed_mean",
+      "signed_std",
+      "positive_active_sum",
+      "active_max",
+      "active_mean",
+      "active_std",
+      "active_top_two_margin",
+      "log1p_signed_range",
+      "signed_range_squared"
+    ],
+    "operating_range_N": [
+      1.7,
+      3.0
+    ],
+    "outer_group_field": "test_group",
+    "session_grouped": true,
+    "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1",
+    "target_is_never_an_input": true
+  },
+  "disclosure": "The six manual-only outer TEST groups were already inspected before this benchmark. Hyperparameters are selected within each outer training partition, but the aggregate is recovery evidence and not untouched validation.",
+  "folds": [
+    {
+      "conditional_force_mae_N": 0.324164614083302,
+      "constant_force_mae_N": 0.32650898084498925,
+      "force_spearman_rho": 0.06104159675892443,
+      "lag_ms": 260,
+      "mean_inner_group_mae_N": 0.33677647209450495,
+      "outer_fold": 1,
+      "prediction_sd_N": 0.08803305982664358,
+      "relative_mae_gain_over_constant": 0.007180098861661168,
+      "selected_candidate": "extra_trees_w5_leaf60",
+      "selected_family": "extra_trees",
+      "selected_parameters": {
+        "min_samples_leaf": 60
+      },
+      "selected_window_frames": 5,
+      "truth_sd_N": 0.3703804219650816
+    },
+    {
+      "conditional_force_mae_N": 0.31881191930775254,
+      "constant_force_mae_N": 0.3385485871542219,
+      "force_spearman_rho": 0.20875380700161836,
+      "lag_ms": 220,
+      "mean_inner_group_mae_N": 0.3236048658098336,
+      "outer_fold": 2,
+      "prediction_sd_N": 0.1166004395908291,
+      "relative_mae_gain_over_constant": 0.058297888679353926,
+      "selected_candidate": "extra_trees_w5_leaf60",
+      "selected_family": "extra_trees",
+      "selected_parameters": {
+        "min_samples_leaf": 60
+      },
+      "selected_window_frames": 5,
+      "truth_sd_N": 0.36966590801155264
+    },
+    {
+      "conditional_force_mae_N": 0.33306814236749166,
+      "constant_force_mae_N": 0.3543829047808718,
+      "force_spearman_rho": 0.15646165372457432,
+      "lag_ms": 240,
+      "mean_inner_group_mae_N": 0.3221151928257556,
+      "outer_fold": 3,
+      "prediction_sd_N": 0.05774397160249302,
+      "relative_mae_gain_over_constant": 0.060146136074368105,
+      "selected_candidate": "isotonic_w5",
+      "selected_family": "isotonic",
+      "selected_parameters": {},
+      "selected_window_frames": 5,
+      "truth_sd_N": 0.36899970644619606
+    },
+    {
+      "conditional_force_mae_N": 0.32204713820477066,
+      "constant_force_mae_N": 0.3383963530305265,
+      "force_spearman_rho": 0.19795450292280772,
+      "lag_ms": 240,
+      "mean_inner_group_mae_N": 0.3210955342765807,
+      "outer_fold": 4,
+      "prediction_sd_N": 0.0710379986299225,
+      "relative_mae_gain_over_constant": 0.04831380326454346,
+      "selected_candidate": "ridge_w5_a1000",
+      "selected_family": "ridge",
+      "selected_parameters": {
+        "alpha": 1000.0
+      },
+      "selected_window_frames": 5,
+      "truth_sd_N": 0.36565270599066074
+    },
+    {
+      "conditional_force_mae_N": 0.30447045158969693,
+      "constant_force_mae_N": 0.3189553371730397,
+      "force_spearman_rho": 0.11568618970205066,
+      "lag_ms": 240,
+      "mean_inner_group_mae_N": 0.325193268374737,
+      "outer_fold": 5,
+      "prediction_sd_N": 0.08748307854538279,
+      "relative_mae_gain_over_constant": 0.04541352313375595,
+      "selected_candidate": "extra_trees_w5_leaf60",
+      "selected_family": "extra_trees",
+      "selected_parameters": {
+        "min_samples_leaf": 60
+      },
+      "selected_window_frames": 5,
+      "truth_sd_N": 0.350586896698079
+    },
+    {
+      "conditional_force_mae_N": 0.3512950101066655,
+      "constant_force_mae_N": 0.36899436602086877,
+      "force_spearman_rho": 0.0742886514311796,
+      "lag_ms": 240,
+      "mean_inner_group_mae_N": 0.3180922175982557,
+      "outer_fold": 6,
+      "prediction_sd_N": 0.09113775499518671,
+      "relative_mae_gain_over_constant": 0.047966466548170265,
+      "selected_candidate": "extra_trees_w5_leaf60",
+      "selected_family": "extra_trees",
+      "selected_parameters": {
+        "min_samples_leaf": 60
+      },
+      "selected_window_frames": 5,
+      "truth_sd_N": 0.37209427447502913
+    }
+  ],
+  "schema_version": "1.0.0",
+  "status": "posthoc_experimental_model_selection"
+}

@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "all_179176_frames_present": true,
+    "all_245_sessions_present": true,
+    "all_figure_companions_present": true,
+    "archive_hashes_match": true,
+    "archive_member_crc_pass": true,
+    "automatic_exact_conditions_two_sessions": true,
+    "automatic_sessions_162": true,
+    "creep_not_claimed": true,
+    "cross_talk_complete_9x9": true,
+    "cycles_nested_within_session": true,
+    "failed_prior_gate_preserved": true,
+    "manual_no_contact_sessions_11": true,
+    "manual_primary_sessions_54": true,
+    "manual_replay_sessions_18": true,
+    "manual_six_sessions_per_roi": true,
+    "true_resolution_not_claimed": true
+  },
+  "code_hash": "d3e8aa60f6c95fc212fbc46277c26e752467af29718ab1975599fb5047cca68d",
+  "created_at": "2026-08-13T09:06:53.431995Z",
+  "feature_store_hash": "e5b29e8223a8aaa4847601f1644c5fcd77c6ff106397fdc238da17c4a67eb807",
+  "gate_pass": true,
+  "prior_characterization_summary_hash": "f14a89ed07cc867abd86c5bc6681f0fde9211d393c22a9dfb558d44ac6c5e0a2",
+  "schema_version": "1.0.0",
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43"
+}

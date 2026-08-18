@@ -1,0 +1,38 @@
+{
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:40.139050Z",
+  "exports": {
+    "csv": "fig14_manual_local_sensitivity.csv",
+    "json": "fig14_manual_local_sensitivity.json",
+    "pdf": "fig14_manual_local_sensitivity.pdf",
+    "png": "fig14_manual_local_sensitivity.png",
+    "svg": "fig14_manual_local_sensitivity.svg"
+  },
+  "filters": [
+    "manual only",
+    "no interpolation across gaps",
+    ">=3 sessions at both endpoints",
+    "force midpoint <=5 N"
+  ],
+  "independent_session_count": "54 (six per ROI)",
+  "plotted_columns": [
+    "roi",
+    "left_force_bin_N",
+    "right_force_bin_N",
+    "force_midpoint_N",
+    "minimum_independent_sessions",
+    "local_sensitivity_light_per_N",
+    "local_sensitivity_light_per_pixel_per_N",
+    "qualification"
+  ],
+  "plotted_data_hash": "830d6ae93c8b8b65b84f100e29027aa24d8d0c021d4ab0fb23d679920dcbbc44",
+  "plotted_rows": 178,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "manual_local_sensitivity",
+  "source_table_hash": "103e443ec8266d915a11b88ea8a8c77e4a7cd3d22ffb52a946f0dfe54f3cbb16",
+  "title": "Manual adjacent-bin local sensitivity",
+  "uncertainty_method": "adjacent supported-bin slope",
+  "units": "positive V-sum/N"
+}

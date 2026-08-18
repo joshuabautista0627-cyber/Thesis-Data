@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/live-sensor/live_sensor_manual_only_contract.schema.json",
+  "title": "Manual-only live sensor study contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "study_id", "status", "dataset_firewall", "sources", "paths", "frame_contract", "feature_contract", "force_study", "candidates", "seeds", "runtime"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "study_id": {"const": "live-sensor-v1-manual-only"},
+    "status": {"const": "frozen-before-outer-results"},
+    "dataset_firewall": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "allowed_archive_ids", "allowed_archive_filenames", "forbidden_archive_filenames", "reject_derived_lineage"],
+      "properties": {
+        "mode": {"const": "manual_only"},
+        "allowed_archive_ids": {"const": ["manual"]},
+        "allowed_archive_filenames": {"const": ["Manual Calibration (2).zip"]},
+        "forbidden_archive_filenames": {"const": ["Auto Calibration.zip"]},
+        "reject_derived_lineage": {"const": true}
+      }
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manual"],
+      "properties": {
+        "manual": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["archive_path", "archive_role", "expected_sha256", "expected_session_count", "primary_test_groups"],
+          "properties": {
+            "archive_path": {"type": "string", "pattern": "Manual Calibration \\(2\\)\\.zip$"},
+            "archive_role": {"const": "model_primary"},
+            "expected_sha256": {"const": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a"},
+            "expected_session_count": {"const": 83},
+            "primary_test_groups": {"const": ["TEST1", "TEST2", "TEST3", "TEST4", "TEST5", "TEST6"]}
+          }
+        }
+      }
+    },
+    "paths": {
+      "type": "object",
+      "additionalProperties": {"type": "string", "minLength": 1},
+      "required": ["roi_layout", "analysis_root", "cache_root", "feature_store_root", "source_inventory_root", "split_root", "model_run_root", "figure_root", "run_manifest_root"]
+    },
+    "frame_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["raw_width", "raw_height", "oriented_width", "oriented_height", "rotation_degrees_clockwise", "mirror_horizontal_after_rotation", "color_input", "quantitative_channel", "quantitative_video_member"],
+      "properties": {
+        "raw_width": {"const": 640},
+        "raw_height": {"const": 480},
+        "oriented_width": {"const": 480},
+        "oriented_height": {"const": 640},
+        "rotation_degrees_clockwise": {"const": 90},
+        "mirror_horizontal_after_rotation": {"const": true},
+        "color_input": {"const": "BGR_uint8"},
+        "quantitative_channel": {"const": "OpenCV_HSV_V"},
+        "quantitative_video_member": {"const": "session_video.mp4"}
+      }
+    },
+    "feature_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "baseline_statistic", "signed_delta_formula", "positive_delta_formula", "force_input_order", "global_fit_values_forbidden_in_feature_store"],
+      "properties": {
+        "version": {"const": "optical-v1-signed-positive"},
+        "baseline_statistic": {"const": "per_pixel_median_v"},
+        "signed_delta_formula": {"const": "current_v - baseline_median_v"},
+        "positive_delta_formula": {"const": "max(current_v - baseline_median_v, 0)"},
+        "force_input_order": {"const": ["roi1_light", "roi2_light", "roi3_light", "roi4_light", "roi5_light", "roi6_light", "roi7_light", "roi8_light", "roi9_light"]},
+        "global_fit_values_forbidden_in_feature_store": {"const": ["no_contact_floor", "response_scale", "contact_threshold", "imputation", "fdetect", "fmax", "model_transform"]}
+      }
+    },
+    "force_study": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nominal_min_N", "nominal_max_N", "force_bin_width_N", "minimum_sessions_per_bin", "plateau_initial_force_max_N", "plateau_sensitivity_fraction", "plateau_consecutive_bins", "safe_limit_fraction_below_knee", "lag_search_ms", "lag_tie_relative_tolerance", "no_contact_frame_fpr_target", "outer_group_field", "outer_groups", "inner_group_folds", "support_envelope_quantiles", "support_margin_options", "support_distance_quantiles", "support_max_samples_per_stratum"],
+      "properties": {
+        "nominal_min_N": {"const": 0.0},
+        "nominal_max_N": {"const": 3.0},
+        "force_bin_width_N": {"const": 0.25},
+        "minimum_sessions_per_bin": {"const": 3},
+        "plateau_initial_force_max_N": {"const": 1.0},
+        "plateau_sensitivity_fraction": {"const": 0.2},
+        "plateau_consecutive_bins": {"const": 3},
+        "safe_limit_fraction_below_knee": {"const": 0.9},
+        "lag_search_ms": {"const": {"minimum": 0, "maximum": 500, "step": 10}},
+        "lag_tie_relative_tolerance": {"const": 0.005},
+        "no_contact_frame_fpr_target": {"const": 0.05},
+        "outer_group_field": {"const": "test_group"},
+        "outer_groups": {"const": ["TEST1", "TEST2", "TEST3", "TEST4", "TEST5", "TEST6"]},
+        "inner_group_folds": {"const": 5},
+        "support_envelope_quantiles": {"const": [0.001, 0.999]},
+        "support_margin_options": {"const": [0.0, 0.05, 0.1]},
+        "support_distance_quantiles": {"const": [0.99, 0.995, 0.999]},
+        "support_max_samples_per_stratum": {"const": 200}
+      }
+    },
+    "candidates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["force", "localization", "maximum_tuning_trials_per_candidate"],
+      "properties": {
+        "force": {"const": ["total_light_zero_intercept", "nnls", "positive_ridge", "positive_elastic_net", "isotonic_total_light", "monotonic_piecewise", "monotonic_hist_gradient_boosting", "monotonic_xgboost", "rbf_svr_benchmark", "extra_trees_benchmark", "small_mlp_benchmark"]},
+        "localization": {"const": ["normalized_argmax", "multinomial_logistic", "knn", "rbf_svc", "random_forest", "extra_trees", "hist_gradient_boosting", "xgboost", "small_mlp"]},
+        "maximum_tuning_trials_per_candidate": {"const": 40}
+      }
+    },
+    "seeds": {"const": [1729, 8675309, 20260813]},
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contact_debounce_frames", "roi_switch_debounce_frames", "stale_timeout_floor_ms", "newest_only_inference_queue_size", "load_cell_use"],
+      "properties": {
+        "contact_debounce_frames": {"const": 2},
+        "roi_switch_debounce_frames": {"const": 2},
+        "stale_timeout_floor_ms": {"type": "integer", "minimum": 500},
+        "newest_only_inference_queue_size": {"const": 1},
+        "load_cell_use": {"const": "validation_reference_only"}
+      }
+    }
+  }
+}

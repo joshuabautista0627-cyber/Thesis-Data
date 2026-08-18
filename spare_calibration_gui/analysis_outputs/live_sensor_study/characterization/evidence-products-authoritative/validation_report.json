@@ -1,0 +1,81 @@
+{
+  "checks": {
+    "automatic_design_reconciles_two_sessions_per_condition": true,
+    "automatic_sessions_remain_independent_units": true,
+    "coverage_reconciles_245_sessions": true,
+    "cross_talk_is_complete_9x9": true,
+    "cycle_force_bins_unique_at_declared_grain": true,
+    "detection_result_is_frozen_and_sparse": true,
+    "figure_metadata_and_companions_valid": true,
+    "manifest_output_hashes_match": true,
+    "manual_primary_design_reconciles_six_sessions_per_roi": true,
+    "no_infinite_numeric_outputs": true,
+    "noise_equivalent_force_is_proxy_only": true,
+    "relaxation_and_recovery_are_session_nested": true,
+    "required_nonclaims_preserved": true,
+    "roi4_sensitivity_recomputed": true,
+    "roi9_noise_recomputed": true,
+    "source_hash_consistent": true,
+    "twelve_required_figure_bundles": true,
+    "upstream_quality_gate_pass": true
+  },
+  "created_at": "2026-08-13T09:06:59.544970Z",
+  "details": {
+    "conditionally_qualified_detection_rois": [
+      3,
+      9
+    ],
+    "conditionally_qualified_nef_proxy_rois": [
+      1,
+      4,
+      8,
+      9
+    ],
+    "figure_issues": [],
+    "hash_mismatches": [],
+    "partial_cycle_bin_coverage_sessions": [
+      {
+        "contributing_cycles": 19,
+        "expected_cycles": 20,
+        "session_id": "2026-08-06_193621_292128_1_R4_C7"
+      },
+      {
+        "contributing_cycles": 19,
+        "expected_cycles": 20,
+        "session_id": "2026-08-07_100416_759979_1_R7_C9"
+      },
+      {
+        "contributing_cycles": 9,
+        "expected_cycles": 10,
+        "session_id": "2026-08-07_124257_772512_1_R8_C5_10"
+      },
+      {
+        "contributing_cycles": 9,
+        "expected_cycles": 10,
+        "session_id": "2026-08-07_124601_232759_1_R8_C6_10"
+      }
+    ],
+    "roi4_sensitivity_light_per_N": {
+      "recomputed": 310.256098734066,
+      "reported": 310.256098734066
+    },
+    "roi9_signed_noise_mad": {
+      "recomputed": 352.0,
+      "reported": 352.0
+    },
+    "tables_with_infinity": []
+  },
+  "evidence_run_id": "characterization-evidence-736786d69070da26",
+  "gate_pass": true,
+  "methodology_review": "Manual and automatic populations remain separate; session is the independent unit; automatic cycles are nested within session; no frame-level confidence intervals are used.",
+  "overall_assessment": "ready-to-share-with-stated-qualification-boundaries",
+  "required_caveats": [
+    "Only two independent sessions exist per exact automatic condition; condition intervals are descriptive.",
+    "Only two automatic collection days exist; day-level population intervals are descriptive.",
+    "The common supported range/monotonicity gate failed and remains a valid negative result.",
+    "True creep and true force resolution are not established by the collected protocols.",
+    "Noise-equivalent force is a stability proxy only, and approximate lag is exploratory system-level evidence."
+  ],
+  "schema_version": "1.0.0",
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43"
+}

@@ -1,0 +1,52 @@
+{
+  "argv": [
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\scripts\\freeze_live_sensor_splits.py",
+    "--config",
+    "config\\live_sensor_study.json"
+  ],
+  "code_hash": "0359274c90013775b09a5ad72409dcd84faba55b62913998913ccce607b44f0f",
+  "command": "freeze-live-sensor-splits",
+  "completed_at": "2026-08-13T07:56:34.059882Z",
+  "config_path": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\config\\live_sensor_study.json",
+  "created_at": "2026-08-13T07:56:34.059882Z",
+  "elapsed_s": 0.217017,
+  "environment": {
+    "machine": "AMD64",
+    "operating_system": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "jsonschema": "4.26.0",
+      "matplotlib": "3.11.1",
+      "numpy": "2.5.1",
+      "onnx": "1.22.0",
+      "opencv-python": "4.14.0.94",
+      "pandas": "3.0.5",
+      "pyarrow": "21.0.0",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.0",
+      "skl2onnx": "1.20.0",
+      "xgboost": "3.4.0"
+    },
+    "python_executable": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\.venv\\Scripts\\python.exe",
+    "python_implementation": "CPython",
+    "python_version": "3.12.13"
+  },
+  "exclusions": [],
+  "gate_pass": true,
+  "input_identity_hash": "1702c98eda6bdd908f757f7785c75a9c7ecccfd35cd3e0d57d66665050f00170",
+  "inputs": {
+    "feature_store_report": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\analysis_outputs\\live_sensor_study\\feature_store\\feature-store-c0ec762f1dc888a7\\reconciliation_report.json",
+    "source_manifest": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\analysis_outputs\\live_sensor_study\\source_inventory\\archive-audit-a3f75ebef480d214\\session_manifest.parquet"
+  },
+  "outputs": {
+    "events.jsonl": "7a4542e762df1a27e13c6b72b6eea938c672f99dd1d3828b4755fb3073b98bed",
+    "leakage_audit.json": "fa6334b6737d549022fe4d340bf6f5290a21eddbe81afe25d8d8a84c091b63cb",
+    "split_manifest.csv": "b5412aaa4bfda0f1dc9a8cac040e11490c9884af5d4b334ac06a48eb03b600ca",
+    "split_manifest.parquet": "806d5f51ccc184a5098312da9a5b224ca7dd06b514c13e631bd2b66c93e093c7"
+  },
+  "run_id": "splits-6bb0ed572ca5de10",
+  "schema_version": "1.0.0",
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "split_hash": "bef52e5b639d669fa9b9b8e4c7ef60692d4de535d7ec96a42ba1f0164b84aa90",
+  "study_config_hash": "d5fb3939b1d12cfb1dc38e42e0cd5cb9461d3751959c36e94fd5221b100d3e56",
+  "warnings": []
+}

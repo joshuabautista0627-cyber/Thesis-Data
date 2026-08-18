@@ -1,0 +1,34 @@
+{
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:37.975131Z",
+  "exports": {
+    "csv": "fig12_noise_equivalent_force.csv",
+    "json": "fig12_noise_equivalent_force.json",
+    "pdf": "fig12_noise_equivalent_force.pdf",
+    "png": "fig12_noise_equivalent_force.png",
+    "svg": "fig12_noise_equivalent_force.svg"
+  },
+  "filters": [
+    "not true resolution"
+  ],
+  "independent_session_count": "54 press + 11 no-contact sessions",
+  "plotted_columns": [
+    "roi",
+    "low_force_sensitivity_light_per_N",
+    "qualification",
+    "signed_noise_mad_light",
+    "noise_equivalent_force_N",
+    "conservative_3x_noise_force_N",
+    "claim_boundary"
+  ],
+  "plotted_data_hash": "3b4f1afbc629af761d33ad30b91b780b5f860d65a5bf3a8cc132a7d44b8f610f",
+  "plotted_rows": 9,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "noise_equivalent_force_proxy",
+  "source_table_hash": "f748829c2f32111c4b02fa25eac0aece815ee968c6174f8b461a0ea9fccb094c",
+  "title": "Noise-equivalent-force stability proxy",
+  "uncertainty_method": "dedicated no-contact signed-light MAD divided by qualified manual low-force sensitivity",
+  "units": "N"
+}

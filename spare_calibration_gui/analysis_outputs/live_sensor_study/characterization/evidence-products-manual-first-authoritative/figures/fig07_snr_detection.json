@@ -1,0 +1,42 @@
+{
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:28.706863Z",
+  "exports": {
+    "csv": "fig07_snr_detection.csv",
+    "json": "fig07_snr_detection.json",
+    "pdf": "fig07_snr_detection.pdf",
+    "png": "fig07_snr_detection.png",
+    "svg": "fig07_snr_detection.svg"
+  },
+  "filters": [
+    "signal 0.75-1.25 N",
+    ">=3 press sessions/bin"
+  ],
+  "independent_session_count": "54 press + 11 no-contact sessions",
+  "plotted_columns": [
+    "roi",
+    "force_region_N",
+    "independent_press_sessions",
+    "independent_no_contact_sessions",
+    "median_contact_positive_light",
+    "dedicated_no_contact_signed_light_mad",
+    "snr_linear",
+    "snr_dB_amplitude_convention",
+    "qualification_snr",
+    "optical_detection_region_N",
+    "frozen_empirical_fpr",
+    "required_recall",
+    "qualification_detection",
+    "application_threshold"
+  ],
+  "plotted_data_hash": "aea2b92c04e2e4db6e635002d55cc2fee7c48b9247b81cbf81c9c469d7ed40b9",
+  "plotted_rows": 9,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "manual_snr",
+  "source_table_hash": "f1d331615efe635f6489846a13f3756ea61137746bc281fde3716620a35384dd",
+  "title": "Manual SNR and optical detection region",
+  "uncertainty_method": "session-balanced signal/noise; frozen 1% FPR and 95% recall",
+  "units": "dB and N"
+}

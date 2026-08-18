@@ -1,0 +1,10 @@
+{
+  "accumulate_only_raw_contact_frames": true,
+  "force_output": "unavailable",
+  "include_acquisition_buffer": true,
+  "input": "filtered_normalized_signed_spatial_range",
+  "model_type": "threshold_normalized_peak",
+  "output": "peak_optical_signal",
+  "output_unit": "threshold_ratio",
+  "schema_version": "2.0.0"
+}

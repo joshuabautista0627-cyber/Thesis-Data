@@ -1,0 +1,53 @@
+{
+  "bundle_id": "live-sensor-experimental-event-signal-v3",
+  "created_at": "2026-08-17T06:45:38.237538Z",
+  "files": {
+    "event_model.json": {
+      "sha256": "862e67dc12fb33b01490cbbddb8bffa51ab4f537d1b90ff15b5b9df522cf6cfa",
+      "size_bytes": 330
+    },
+    "localization_model.json": {
+      "sha256": "07422194c01a0cfd75a3eeb1c185dd817ad8127f2bc889b2150efb1e04070c2a",
+      "size_bytes": 504
+    },
+    "metrics.json": {
+      "sha256": "67b6456eea44a75a48ee7b93cb85841a11d0f2a600bc05cd856e84c0b6366fa8",
+      "size_bytes": 7049
+    },
+    "preprocessing.json": {
+      "sha256": "d3a90ac941afc4f2273544945b42ae94734f15908b84b2a8053774fd5ae355f2",
+      "size_bytes": 2078
+    },
+    "release_decision.json": {
+      "sha256": "647e5384e5db8236aa814053b08228d382f0b03f59b7a9764fcb4136e54ffd12",
+      "size_bytes": 831
+    },
+    "replay_demo.jsonl": {
+      "sha256": "ab783512d3c45f3cbca2808d7cf82a25e5852b083d5128ac1b05f81f21f7ce99",
+      "size_bytes": 207246
+    }
+  },
+  "manual_only": true,
+  "replay_demo": {
+    "calibration_session_id": "2026-08-08_165945_733163_1_R9_NOCONTACT",
+    "frame_count": 307,
+    "model_fit_role": false,
+    "replay_session_id": "2026-08-08_171040_503476_1_R6_TEST7",
+    "trailing_clear_frames": 10
+  },
+  "runtime": "reviewed_numpy_json",
+  "schema_version": "2.0.0",
+  "sensor_mode": "event_signal",
+  "source": {
+    "dataset_policy": "manual_only",
+    "feature_spec_hash": "38fa59a354306bf39c0b570f57e764f5638b19a3ecbdbd49b177b8df6ac56cf5",
+    "force_output": "unavailable",
+    "manual_archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+    "roi_layout_id": "roi-9fbc67c50ee3bc7145fa",
+    "roi_layout_sha256": "ccc122ecd57d1469bbd5e6c68bede3af4cd37ae20c8287c36beeb37fdfd33c22",
+    "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1"
+  },
+  "spec_hash": "6af060681d347e710caf041c465a740ed3dad6a5227c653efc582aef94b288b0",
+  "status": "experimental"
+}

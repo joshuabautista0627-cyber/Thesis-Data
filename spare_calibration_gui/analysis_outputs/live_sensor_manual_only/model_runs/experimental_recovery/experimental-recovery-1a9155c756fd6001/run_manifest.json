@@ -1,0 +1,16 @@
+{
+  "manual_archive_hash_after": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+  "manual_archive_hash_before": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+  "run_id": "experimental-recovery-1a9155c756fd6001",
+  "schema_version": "1.0.0",
+  "source": {
+    "dataset_policy": "manual_only",
+    "feature_spec_hash": "38fa59a354306bf39c0b570f57e764f5638b19a3ecbdbd49b177b8df6ac56cf5",
+    "final_lag_ms": 240,
+    "manual_archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+    "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1"
+  },
+  "spec_hash": "f893ae2385dd5e76756f117dd46316d6a60b11e50f3e039783888514fed317be",
+  "status": "posthoc_experimental"
+}

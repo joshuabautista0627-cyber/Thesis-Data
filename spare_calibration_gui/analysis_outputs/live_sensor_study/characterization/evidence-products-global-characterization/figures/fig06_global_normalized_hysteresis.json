@@ -1,0 +1,45 @@
+{
+  "code_hash": "a8d00fcf568d7e45483f631b13c0121d3a9aafef954b12bbb2321e8cea7fec0e",
+  "created_at": "2026-08-14T07:22:47.576652Z",
+  "exports": {
+    "csv": "fig06_global_normalized_hysteresis.csv",
+    "json": "fig06_global_normalized_hysteresis.json",
+    "pdf": "fig06_global_normalized_hysteresis.pdf",
+    "png": "fig06_global_normalized_hysteresis.png",
+    "svg": "fig06_global_normalized_hysteresis.svg"
+  },
+  "filters": [
+    "automatic evidence only",
+    "all nine ROI required per plotted bin",
+    "shape only; absolute amplitude removed"
+  ],
+  "global_estimand": "equal-target global total-light response; no ROI excluded",
+  "independent_session_count": "162 sessions; two per exact condition",
+  "plotted_columns": [
+    "speed_mm_min",
+    "displacement_mm_abs",
+    "force_bin_N",
+    "contributing_roi",
+    "minimum_independent_sessions_per_roi",
+    "median_normalized_loading_light",
+    "q25_normalized_loading_light",
+    "q75_normalized_loading_light",
+    "median_normalized_unloading_light",
+    "q25_normalized_unloading_light",
+    "q75_normalized_unloading_light",
+    "all_nine_roi",
+    "evidence_role",
+    "claim_boundary",
+    "data_origin"
+  ],
+  "plotted_data_hash": "097cebd388b43fd64b153308f6bba9af0e6ebc68d4716f62b173a82c298f48fa",
+  "plotted_rows": 9,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "9cefaf71cb15a28dde729f26cbc837bde9fa713a1ccea1f57f84b3edcf85557b",
+  "source_table": "global_automatic_hysteresis",
+  "source_table_hash": "508ab9c79697a9cefb0552e6d479b1b42305c91585a493cdf7052be79498f5d9",
+  "title": "Global normalized hysteresis shape",
+  "uncertainty_method": "session-nested ROI loops normalized before equal-ROI median",
+  "units": "within-condition normalized optical level"
+}

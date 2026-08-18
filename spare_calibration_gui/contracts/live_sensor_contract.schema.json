@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/live-sensor/live_sensor_contract.schema.json",
+  "title": "Live sensor study contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "study_id", "status", "sources", "paths", "frame_contract", "feature_contract", "force_study", "candidates", "seeds", "runtime"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "study_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["draft", "frozen-before-outer-results"]},
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manual", "automated"],
+      "properties": {
+        "manual": {"$ref": "#/$defs/source"},
+        "automated": {"$ref": "#/$defs/source"}
+      }
+    },
+    "paths": {
+      "type": "object",
+      "additionalProperties": {"type": "string", "minLength": 1},
+      "required": ["roi_layout", "analysis_root", "cache_root", "feature_store_root", "source_inventory_root", "split_root", "model_run_root", "figure_root", "run_manifest_root"]
+    },
+    "frame_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["raw_width", "raw_height", "oriented_width", "oriented_height", "rotation_degrees_clockwise", "mirror_horizontal_after_rotation", "color_input", "quantitative_channel", "quantitative_video_member"],
+      "properties": {
+        "raw_width": {"const": 640},
+        "raw_height": {"const": 480},
+        "oriented_width": {"const": 480},
+        "oriented_height": {"const": 640},
+        "rotation_degrees_clockwise": {"const": 90},
+        "mirror_horizontal_after_rotation": {"const": true},
+        "color_input": {"const": "BGR_uint8"},
+        "quantitative_channel": {"const": "OpenCV_HSV_V"},
+        "quantitative_video_member": {"const": "session_video.mp4"}
+      }
+    },
+    "feature_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "baseline_statistic", "signed_delta_formula", "positive_delta_formula", "force_input_order", "global_fit_values_forbidden_in_feature_store"],
+      "properties": {
+        "version": {"const": "optical-v1-signed-positive"},
+        "baseline_statistic": {"const": "per_pixel_median_v"},
+        "signed_delta_formula": {"const": "current_v - baseline_median_v"},
+        "positive_delta_formula": {"const": "max(current_v - baseline_median_v, 0)"},
+        "force_input_order": {
+          "type": "array",
+          "prefixItems": [
+            {"const": "roi1_light"}, {"const": "roi2_light"}, {"const": "roi3_light"},
+            {"const": "roi4_light"}, {"const": "roi5_light"}, {"const": "roi6_light"},
+            {"const": "roi7_light"}, {"const": "roi8_light"}, {"const": "roi9_light"}
+          ],
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "global_fit_values_forbidden_in_feature_store": {"type": "array", "minItems": 7, "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "force_study": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nominal_min_N", "nominal_max_N", "force_bin_width_N", "near_limit_fraction", "plateau_safety_margin_N", "lag_search_ms", "outer_group_field", "outer_groups", "inner_group_folds"],
+      "properties": {
+        "nominal_min_N": {"const": 0.0},
+        "nominal_max_N": {"const": 3.0},
+        "force_bin_width_N": {"type": "number", "exclusiveMinimum": 0},
+        "near_limit_fraction": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+        "plateau_safety_margin_N": {"type": "number", "minimum": 0},
+        "lag_search_ms": {"type": "object", "required": ["minimum", "maximum", "step"], "additionalProperties": false, "properties": {"minimum": {"type": "integer"}, "maximum": {"type": "integer"}, "step": {"type": "integer", "minimum": 1}}},
+        "outer_group_field": {"const": "test_group"},
+        "outer_groups": {"type": "array", "minItems": 6, "maxItems": 6, "uniqueItems": true, "items": {"enum": ["TEST1", "TEST2", "TEST3", "TEST4", "TEST5", "TEST6"]}},
+        "inner_group_folds": {"type": "integer", "minimum": 2}
+      }
+    },
+    "candidates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["force", "localization", "maximum_tuning_trials_per_candidate"],
+      "properties": {
+        "force": {"type": "array", "minItems": 8, "uniqueItems": true, "items": {"type": "string"}},
+        "localization": {"type": "array", "minItems": 6, "uniqueItems": true, "items": {"type": "string"}},
+        "maximum_tuning_trials_per_candidate": {"type": "integer", "minimum": 1}
+      }
+    },
+    "seeds": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "integer", "minimum": 0}},
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contact_debounce_frames", "roi_switch_debounce_frames", "stale_timeout_floor_ms", "newest_only_inference_queue_size", "load_cell_use"],
+      "properties": {
+        "contact_debounce_frames": {"const": 2},
+        "roi_switch_debounce_frames": {"const": 2},
+        "stale_timeout_floor_ms": {"type": "integer", "minimum": 500},
+        "newest_only_inference_queue_size": {"const": 1},
+        "load_cell_use": {"const": "validation_reference_only"}
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["archive_path", "archive_role", "expected_sha256", "expected_session_count"],
+      "properties": {
+        "archive_path": {"type": "string", "minLength": 1},
+        "archive_role": {"enum": ["model_primary", "characterization"]},
+        "expected_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "expected_session_count": {"type": "integer", "minimum": 1},
+        "primary_test_groups": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    }
+  }
+}

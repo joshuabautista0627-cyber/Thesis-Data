@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "printer": {
+    "port": "COM4",
+    "baud_rate": 115200,
+    "read_timeout_s": 0.05,
+    "startup_delay_s": 2.0,
+    "command_timeout_s": 15.0,
+    "x_min_mm": 0.0,
+    "x_max_mm": 220.0,
+    "y_min_mm": 0.0,
+    "y_max_mm": 220.0,
+    "z_min_mm": 0.0,
+    "z_max_mm": 250.0,
+    "default_xy_feed_mm_min": 3000.0,
+    "default_z_feed_mm_min": 300.0,
+    "minimum_z_feed_mm_min": 1.0,
+    "maximum_z_feed_mm_min": 1200.0,
+    "minimum_displacement_mm": -20.0,
+    "maximum_displacement_mm": 20.0,
+    "default_force_limit_N": 20.0,
+    "minimum_force_limit_N": 0.01,
+    "maximum_force_limit_N": 1000.0,
+    "emergency_poll_interval_s": 0.01
+  },
+  "repeated_press": {
+    "cycles": 20,
+    "displacement_mm": -2.625,
+    "down_feed_mm_min": 400.0,
+    "up_feed_mm_min": 400.0,
+    "bottom_hold_s": 0.5,
+    "top_dwell_s": 3.0,
+    "pre_roll_s": 1.0,
+    "post_roll_s": 1.0,
+    "force_limit_N": 50.0,
+    "tare_before_sequence": false,
+    "fresh_baseline_before_sequence": true,
+    "return_to_press_zero_on_finish": true,
+    "negative_z_direction_confirmed": true
+  },
+  "press_zero_persisted": false
+}

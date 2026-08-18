@@ -1,0 +1,10 @@
+roi,optical_detection_region_N,frozen_empirical_fpr,required_recall,qualification,application_threshold
+1,,0.01,0.95,not-established,False
+2,,0.01,0.95,not-established,False
+3,1.875,0.01,0.95,conditional-qualified-characterization-only,False
+4,,0.01,0.95,not-established,False
+5,,0.01,0.95,not-established,False
+6,,0.01,0.95,not-established,False
+7,,0.01,0.95,not-established,False
+8,,0.01,0.95,not-established,False
+9,0.875,0.01,0.95,conditional-qualified-characterization-only,False

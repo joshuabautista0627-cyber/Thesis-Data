@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "mode": "Intensity-only magnification",
+  "amplification": 30.0,
+  "lower_cutoff_hz": 0.5,
+  "upper_cutoff_hz": 1.0,
+  "chrominance_gain": 2.0,
+  "pyramid_levels": 3,
+  "lambda_c": 16.0,
+  "downscale_factor": 0.5,
+  "target_fps": 30.0,
+  "roi_only": false,
+  "processing_width": 0,
+  "processing_height": 0
+}

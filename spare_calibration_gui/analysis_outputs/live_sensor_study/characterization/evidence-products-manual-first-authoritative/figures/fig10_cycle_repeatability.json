@@ -1,0 +1,33 @@
+{
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:32.790425Z",
+  "exports": {
+    "csv": "fig10_cycle_repeatability.csv",
+    "json": "fig10_cycle_repeatability.json",
+    "pdf": "fig10_cycle_repeatability.pdf",
+    "png": "fig10_cycle_repeatability.png",
+    "svg": "fig10_cycle_repeatability.svg"
+  },
+  "filters": [
+    "not standalone general repeatability",
+    "speeds separated"
+  ],
+  "independent_session_count": "162 sessions",
+  "plotted_columns": [
+    "roi",
+    "speed_mm_min",
+    "sessions",
+    "median_session_cycle_cv",
+    "q75_session_cycle_cv"
+  ],
+  "plotted_data_hash": "301739e0a422c3e6e3bcce17a09bb3f6db3fa88d9569e9539b6760f0620be0f2",
+  "plotted_rows": 27,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "automatic_within_session_repeatability",
+  "source_table_hash": "94e61237795849626db1434841c0fa312f2e1e1efa2dcdadabd7cf3a211b2fd2",
+  "title": "Hysteresis internal QA: within-session cycle variability",
+  "uncertainty_method": "cycle CV calculated within force bins, summarized within session, then across sessions",
+  "units": "%"
+}

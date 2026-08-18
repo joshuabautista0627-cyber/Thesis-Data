@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/live-sensor/manual_only_preprocessing.schema.json",
+  "title": "Frozen manual-only preprocessing specification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "spec_id", "lag", "contact", "range", "optical_support", "seed"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "spec_id": {"const": "manual-preprocessing-v1"},
+    "lag": {
+      "type": "object", "additionalProperties": false,
+      "required": ["minimum_ms", "maximum_ms", "step_ms", "tie_relative_tolerance", "fit_force_min_N", "fit_force_max_N"],
+      "properties": {
+        "minimum_ms": {"const": 0}, "maximum_ms": {"const": 500}, "step_ms": {"const": 10},
+        "tie_relative_tolerance": {"const": 0.005}, "fit_force_min_N": {"const": 0.05}, "fit_force_max_N": {"const": 3.0}
+      }
+    },
+    "contact": {
+      "type": "object", "additionalProperties": false,
+      "required": ["no_contact_frame_fpr_target", "recall_target", "scale_force_min_N", "scale_force_max_N", "scale_session_quantile", "noise_scale_session_quantile", "minimum_scale"],
+      "properties": {
+        "no_contact_frame_fpr_target": {"const": 0.05}, "recall_target": {"const": 0.9},
+        "scale_force_min_N": {"const": 0.25}, "scale_force_max_N": {"const": 1.0},
+        "scale_session_quantile": {"const": 0.9}, "noise_scale_session_quantile": {"const": 0.99},
+        "minimum_scale": {"const": 1.0}
+      }
+    },
+    "range": {
+      "type": "object", "additionalProperties": false,
+      "required": ["nominal_max_N", "force_bin_width_N", "minimum_sessions_per_bin", "initial_force_max_N", "sensitivity_fraction", "consecutive_bins", "safe_limit_fraction_below_knee", "loading_derivative_threshold_N_s", "loading_smoothing_frames"],
+      "properties": {
+        "nominal_max_N": {"const": 3.0}, "force_bin_width_N": {"const": 0.25},
+        "minimum_sessions_per_bin": {"const": 3}, "initial_force_max_N": {"const": 1.0},
+        "sensitivity_fraction": {"const": 0.2}, "consecutive_bins": {"const": 3},
+        "safe_limit_fraction_below_knee": {"const": 0.9},
+        "loading_derivative_threshold_N_s": {"const": 0.02}, "loading_smoothing_frames": {"const": 5}
+      }
+    },
+    "optical_support": {
+      "type": "object", "additionalProperties": false,
+      "required": ["feature_order", "envelope_quantiles", "margin_options", "distance_quantile_options", "max_samples_per_stratum", "max_reference_samples", "inner_retention_target", "robust_scale_floor"],
+      "properties": {
+        "feature_order": {"type": "array", "minItems": 27, "maxItems": 27, "uniqueItems": true, "items": {"type": "string"}},
+        "envelope_quantiles": {"const": [0.001, 0.999]}, "margin_options": {"const": [0.0, 0.05, 0.1]},
+        "distance_quantile_options": {"const": [0.99, 0.995, 0.999]},
+        "max_samples_per_stratum": {"const": 200}, "max_reference_samples": {"const": 2000},
+        "inner_retention_target": {"const": 0.99}, "robust_scale_floor": {"const": 1e-06}
+      }
+    },
+    "seed": {"const": 1729}
+  }
+}

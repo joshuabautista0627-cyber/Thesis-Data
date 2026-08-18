@@ -1,0 +1,39 @@
+{
+  "code_hash": "d3e8aa60f6c95fc212fbc46277c26e752467af29718ab1975599fb5047cca68d",
+  "created_at": "2026-08-13T09:06:30.788593Z",
+  "exports": {
+    "csv": "fig02_manual_static_response.csv",
+    "json": "fig02_manual_static_response.json",
+    "pdf": "fig02_manual_static_response.pdf",
+    "png": "fig02_manual_static_response.png",
+    "svg": "fig02_manual_static_response.svg"
+  },
+  "filters": [
+    "manual TEST1-TEST6",
+    ">=3 sessions/bin",
+    "force <=10 N"
+  ],
+  "independent_session_count": "54 (six per ROI)",
+  "plotted_columns": [
+    "roi",
+    "force_bin_N",
+    "independent_sessions",
+    "median_force_N",
+    "median_light",
+    "q25_light",
+    "q75_light",
+    "median_light_per_pixel",
+    "q25_light_per_pixel",
+    "q75_light_per_pixel"
+  ],
+  "plotted_data_hash": "63dbad9c6b8c84f348087edbb50bd46fa0c4316341e90f910d4264c81cbbbe25",
+  "plotted_rows": 344,
+  "schema_version": "1.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "manual_static_response",
+  "source_table_hash": "39c076fef051b6f9f7ab710397a4a16bcd3354512caf5b442ee1aca541c2c25c",
+  "title": "Manual session-balanced static response",
+  "uncertainty_method": "median and interquartile range across sessions",
+  "units": "positive V-sum and N"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "roi_layout_id": "roi-9fbc67c50ee3bc7145fa",
+  "frame_width": 480,
+  "frame_height": 640,
+  "raw_frame_width": 640,
+  "raw_frame_height": 480,
+  "transform_order": [
+    "rotate_90_clockwise",
+    "mirror_horizontal"
+  ],
+  "camera_orientation": {
+    "rotation_degrees": 90,
+    "mirror_horizontal": true
+  },
+  "roi_order": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "rois": [
+    {"roi_id": 1, "row": 1, "column": 1, "x": 98, "y": 161, "width": 82, "height": 89, "area": 7298, "center_x": 139.0, "center_y": 205.5},
+    {"roi_id": 2, "row": 1, "column": 2, "x": 197, "y": 156, "width": 76, "height": 99, "area": 7524, "center_x": 235.0, "center_y": 205.5},
+    {"roi_id": 3, "row": 1, "column": 3, "x": 312, "y": 154, "width": 58, "height": 97, "area": 5626, "center_x": 341.0, "center_y": 202.5},
+    {"roi_id": 4, "row": 2, "column": 1, "x": 100, "y": 268, "width": 73, "height": 89, "area": 6497, "center_x": 136.5, "center_y": 312.5},
+    {"roi_id": 5, "row": 2, "column": 2, "x": 204, "y": 264, "width": 76, "height": 96, "area": 7296, "center_x": 242.0, "center_y": 312.0},
+    {"roi_id": 6, "row": 2, "column": 3, "x": 314, "y": 260, "width": 66, "height": 94, "area": 6204, "center_x": 347.0, "center_y": 307.0},
+    {"roi_id": 7, "row": 3, "column": 1, "x": 104, "y": 383, "width": 73, "height": 77, "area": 5621, "center_x": 140.5, "center_y": 421.5},
+    {"roi_id": 8, "row": 3, "column": 2, "x": 194, "y": 394, "width": 87, "height": 66, "area": 5742, "center_x": 237.5, "center_y": 427.0},
+    {"roi_id": 9, "row": 3, "column": 3, "x": 312, "y": 379, "width": 61, "height": 77, "area": 4697, "center_x": 342.5, "center_y": 417.5}
+  ]
+}

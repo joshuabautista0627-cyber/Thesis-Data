@@ -1,0 +1,10 @@
+﻿chart,analytical_question,takeaway,source,output
+localization_recall,Does every ROI meet the 80% recall benchmark?,"All reported per-ROI event recalls are 90.28-100%, but evidence is post-hoc.",v4 metrics.json,chart_localization_recall.png
+localization_models,Which event-localization family performed best?,Accumulated argmax had the highest aggregate macro F1.,v4 metrics.json,chart_localization_model_comparison.png
+force_mae,Does the force model materially outperform a constant?,The average improvement was only 4.49% and varied by fold.,v4 metrics.json,chart_force_mae_by_fold.png
+force_resolution,Does the estimate track within-session force variation?,"Spread and rank tracking were weak, so resolution is not established.",v4 metrics.json,chart_force_resolution_limits.png
+sensitivity,Is optical sensitivity spatially uniform?,"Slopes are heterogeneous, zero, or negative in several ROIs.",manual_sensitivity_nonlinearity.csv,chart_manual_sensitivity.png
+cross_talk,How concentrated is a single-ROI press response?,Off-target response is substantial for multiple target ROIs.,cross_talk.csv,chart_cross_talk_matrix.png
+noise_drift,What is the unloaded stability?,Noise and short-term drift are material and ROI-dependent.,no_contact_summary.csv,chart_no_contact_noise_drift.png
+hysteresis,How large is automatic loading-unloading separation?,Absolute hysteresis is ROI-dependent and condition estimates are descriptive.,automatic_hysteresis.csv,chart_hysteresis_by_roi.png
+live_sensor_gui,How does the operator see and control the experimental live sensor?,"The tab keeps validation warnings, force/ROI state, setup controls, report export, and archive evidence visible together.",LiveSensorTab bundled replay screenshot [E36],chart_live_sensor_gui.png

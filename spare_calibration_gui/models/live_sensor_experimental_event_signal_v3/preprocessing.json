@@ -1,0 +1,93 @@
+{
+  "active_center": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "active_scale": [
+    0.0002740476842970677,
+    0.0002658160552897395,
+    0.00035549235691432633,
+    0.00030783438510081576,
+    0.00027412280701754384,
+    0.0003223726627981947,
+    0.0003237858032378568,
+    0.00034831069313827936,
+    0.0004258037044922291
+  ],
+  "contact": {
+    "acquire_frames": 2,
+    "clear_frames": 2,
+    "fallback_threshold": 0.5963882530269153,
+    "minimum_warmup_frames": 120,
+    "score": "normalized_signed_delta_v_sum_spatial_range",
+    "unloaded_warmup_quantile": 0.99
+  },
+  "feature_order": {
+    "active": [
+      "roi1_active_fraction",
+      "roi2_active_fraction",
+      "roi3_active_fraction",
+      "roi4_active_fraction",
+      "roi5_active_fraction",
+      "roi6_active_fraction",
+      "roi7_active_fraction",
+      "roi8_active_fraction",
+      "roi9_active_fraction"
+    ],
+    "signed": [
+      "roi1_signed_delta_v_sum",
+      "roi2_signed_delta_v_sum",
+      "roi3_signed_delta_v_sum",
+      "roi4_signed_delta_v_sum",
+      "roi5_signed_delta_v_sum",
+      "roi6_signed_delta_v_sum",
+      "roi7_signed_delta_v_sum",
+      "roi8_signed_delta_v_sum",
+      "roi9_signed_delta_v_sum"
+    ]
+  },
+  "required_layout": {
+    "frame_height": 640,
+    "frame_width": 480,
+    "mirror_horizontal": true,
+    "raw_frame_height": 480,
+    "raw_frame_width": 640,
+    "roi_layout_id": "roi-9fbc67c50ee3bc7145fa",
+    "rotation_degrees": 90
+  },
+  "schema_version": "2.0.0",
+  "signed_center": [
+    -9767.0,
+    -9458.0,
+    -7863.0,
+    -9109.0,
+    -10423.0,
+    -8552.0,
+    -7828.0,
+    -7788.0,
+    -7108.0
+  ],
+  "signed_scale": [
+    2375.3999999999996,
+    2580.03,
+    1849.2800000000009,
+    2108.619999999995,
+    2730.239999999997,
+    1931.6499999999994,
+    1772.31,
+    1742.66,
+    1410.7600000000004
+  ],
+  "temporal_filter": {
+    "method": "causal_mean",
+    "minimum_periods": 1,
+    "window_frames": 9
+  }
+}

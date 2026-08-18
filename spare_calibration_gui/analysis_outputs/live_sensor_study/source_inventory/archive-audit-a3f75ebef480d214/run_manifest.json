@@ -1,0 +1,80 @@
+{
+  "argv": [
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\scripts\\audit_live_sensor_archives.py",
+    "--config",
+    "config\\live_sensor_study.json"
+  ],
+  "code_hash": "5ae28e8bfbd70b9e7f8be99a92c0634163222d00546bd6306c4b41ed8caaecbe",
+  "command": "audit-live-sensor-archives",
+  "completed_at": "2026-08-13T07:12:46.238367Z",
+  "config_path": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\config\\live_sensor_study.json",
+  "created_at": "2026-08-13T07:12:46.238367Z",
+  "elapsed_s": 252.190422,
+  "environment": {
+    "machine": "AMD64",
+    "operating_system": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "jsonschema": "4.26.0",
+      "matplotlib": "3.11.1",
+      "numpy": "2.5.1",
+      "onnx": "1.22.0",
+      "opencv-python": "4.14.0.94",
+      "pandas": "3.0.5",
+      "pyarrow": "21.0.0",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.0",
+      "skl2onnx": "1.20.0",
+      "xgboost": "3.4.0"
+    },
+    "python_executable": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\.venv\\Scripts\\python.exe",
+    "python_implementation": "CPython",
+    "python_version": "3.12.13"
+  },
+  "exclusions": [],
+  "gate_pass": true,
+  "input_identity_hash": "52830a4abf66d49c8c5211ab102ef7813b1affae9d16c69ac7bce47722ce469a",
+  "inputs": {
+    "automated": {
+      "path": "C:\\Users\\DLSU\\Downloads\\THESIS DATA\\Data Collection\\Auto Calibration.zip",
+      "sha256": "f81a41b635aa2b893e9fa1faff0bda2db41ad0717d8c134fb6d907e1471e344d",
+      "size_bytes": 31171632642
+    },
+    "manual": {
+      "path": "C:\\Users\\DLSU\\Downloads\\THESIS DATA\\Data Collection\\Manual Calibration (2).zip",
+      "sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+      "size_bytes": 1283430583
+    }
+  },
+  "outputs": {
+    "archive_inventory.json": "13fcb7ce240d55e398c5f66fd64e5e1201952f37cd5b947c5c3c5339ba56adf4",
+    "archive_members.csv": "333affc36ef119cd3ae114287f708185186c11fd326318bb555813a9f95fb71c",
+    "archive_members.parquet": "b9894ca522dc450ab286120d102c5f7aae8224335fb1455566a23a4d98aea32d",
+    "audit_report.json": "b7ad4f5eddf27739e41a1ea08ace91999a6d9a7f94ab3bbfa7ed6f1ac2a73218",
+    "events.jsonl": "35bf731f195218f3a8302b1420064fe1907842487d4cc80718fad78f755faacd",
+    "session_manifest.csv": "2f987db316bef67cd4542bbc2866af665b94a86d6470b702bafbe3ef7bd2d14c",
+    "session_manifest.parquet": "00664342ea584b9fac9ad1103799240a25f2c0646f25eb94075b642cc6b2d8af"
+  },
+  "run_id": "archive-audit-a3f75ebef480d214",
+  "schema_version": "1.0.0",
+  "study_config_hash": "d5fb3939b1d12cfb1dc38e42e0cd5cb9461d3751959c36e94fd5221b100d3e56",
+  "warnings": [
+    "2026-08-08_170648_802374_1_R1_TEST7:outside_primary_test1_6",
+    "2026-08-08_174349_809996_1_R1_TEST1_v2:outside_primary_test1_6",
+    "2026-08-08_170743_098612_1_R2_TEST7:outside_primary_test1_6",
+    "2026-08-08_174516_188167_1_R2_TEST1_v2:outside_primary_test1_6",
+    "2026-08-08_170830_541922_1_R3_TEST7:outside_primary_test1_6",
+    "2026-08-08_174618_733033_1_R3_TEST1_v2:outside_primary_test1_6",
+    "2026-08-08_170909_598459_1_R4_TEST7:outside_primary_test1_6",
+    "2026-08-08_174710_995995_1_R4_TEST1_v2:outside_primary_test1_6",
+    "2026-08-08_170958_044598_1_R5_TEST7:outside_primary_test1_6",
+    "2026-08-08_174800_577062_1_R5_TEST1_v2:outside_primary_test1_6",
+    "2026-08-08_171040_503476_1_R6_TEST7:outside_primary_test1_6",
+    "2026-08-08_174903_311062_1_R6_TEST1_v2:outside_primary_test1_6",
+    "2026-08-08_171119_484903_1_R7_TEST7:outside_primary_test1_6",
+    "2026-08-08_175002_082760_1_R7_TEST1_v2:outside_primary_test1_6",
+    "2026-08-08_171224_677409_1_R8_TEST7:outside_primary_test1_6",
+    "2026-08-08_175043_606100_1_R8_TEST1_v2:outside_primary_test1_6",
+    "2026-08-08_171310_689179_1_R9_TEST7:outside_primary_test1_6",
+    "2026-08-08_175136_976213_1_R9_TEST1_v2:outside_primary_test1_6"
+  ]
+}

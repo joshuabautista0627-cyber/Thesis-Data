@@ -1,0 +1,95 @@
+{
+  "method": "5-fold grouped cross-validation; entire sessions held out; session-balanced training weights",
+  "fold_session_counts": {
+    "0": 36,
+    "1": 36,
+    "2": 36,
+    "3": 34,
+    "4": 20
+  },
+  "force_all_frames": {
+    "n_frames": 149858,
+    "mae_N": 0.5261545008161647,
+    "rmse_N": 0.8101736112542314,
+    "r2": 0.016534186476053758,
+    "bias_N": -0.0021683776866754257,
+    "noncontact_predicted_contact_rate": 0.9958389563652722,
+    "contact_detection_sensitivity": 0.9975413421996675
+  },
+  "force_contact_frames": {
+    "n_frames": 114290,
+    "mae_N": 0.5269701772516996,
+    "rmse_N": 0.8758672852968734,
+    "r2": -0.04311106221239802,
+    "bias_N": -0.16575417553414706
+  },
+  "localization_contact_frame_accuracy": 0.44970688599177533,
+  "localization_session_accuracy": 0.5493827160493827,
+  "localization_session_correct": 89,
+  "localization_sessions": 162,
+  "localization_per_roi": [
+    {
+      "target_roi": 1,
+      "sessions": 18,
+      "session_accuracy": 1.0
+    },
+    {
+      "target_roi": 2,
+      "sessions": 18,
+      "session_accuracy": 0.6111111111111112
+    },
+    {
+      "target_roi": 3,
+      "sessions": 18,
+      "session_accuracy": 0.1111111111111111
+    },
+    {
+      "target_roi": 4,
+      "sessions": 18,
+      "session_accuracy": 0.5
+    },
+    {
+      "target_roi": 5,
+      "sessions": 18,
+      "session_accuracy": 0.4444444444444444
+    },
+    {
+      "target_roi": 6,
+      "sessions": 18,
+      "session_accuracy": 0.3333333333333333
+    },
+    {
+      "target_roi": 7,
+      "sessions": 18,
+      "session_accuracy": 0.5
+    },
+    {
+      "target_roi": 8,
+      "sessions": 18,
+      "session_accuracy": 1.0
+    },
+    {
+      "target_roi": 9,
+      "sessions": 18,
+      "session_accuracy": 0.4444444444444444
+    }
+  ],
+  "localization_per_camera": [
+    {
+      "camera_configuration": "A",
+      "sessions": 99,
+      "session_accuracy": 0.4444444444444444
+    },
+    {
+      "camera_configuration": "B",
+      "sessions": 63,
+      "session_accuracy": 0.7142857142857143
+    }
+  ],
+  "deployment_assessment": "NOT READY for reliable force estimation or nine-ROI localization at the observed validation accuracy.",
+  "limitations": [
+    "No independent fixed-force run at every ROI was available, so spatial optical sensitivity and local mechanics cannot be fully separated.",
+    "Validation estimates repeat-session performance on the same sensing skin and the two observed camera configurations, not transfer to a new skin or camera setup.",
+    "Force ground truth is frame-aligned/interpolated load-cell data; dynamic timing error may limit instantaneous estimates."
+  ]
+}

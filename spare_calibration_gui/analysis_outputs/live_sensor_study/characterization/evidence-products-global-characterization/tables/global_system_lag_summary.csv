@@ -1,0 +1,2 @@
+independent_sessions,target_roi,median_best_lag_ms,minimum_best_lag_ms,maximum_best_lag_ms,median_best_absolute_correlation,boundary_session_fraction,sign_convention,claim_boundary,data_origin
+54,9,87.5,-400.0,475.0,0.28307126004240657,0.0,positive lag means global optical output follows reference,global camera+acquisition+synchronization+material system lag; not intrinsic response time,empirical-manual

@@ -1,0 +1,27 @@
+{
+  "identity": {
+    "maximum_ms": 500,
+    "minimum_ms": -500,
+    "script_sha256": "a338c11c1fb52d6beb0864d577954d2ddf07e839a3db621a24a8aed159c1b1e7",
+    "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1",
+    "step_ms": 10
+  },
+  "inputs": {
+    "config": "config/live_sensor_manual_only.json",
+    "feature_report_sha256": "d2576d02e764a65594041987b3d774aaacac275ca5dad9a322df3ac47c3bf05a",
+    "preprocessing_spec": "config/manual_only_preprocessing.json",
+    "split_report_sha256": "880898e2a24f1a4b7ae2993951e4a9bb842c345f9fdba421e2b236ff1745d1bd",
+    "v2_feature_source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "v2_spec": "config/manual_only_experimental_recovery.json",
+    "v2_split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1"
+  },
+  "outputs": {
+    "bidirectional_lag_curve.csv": "4cb4ab2ede744b7e15101088ddbba3740e0f29d1b5ee40bc03b8615500b396dc",
+    "outer_validation_nnls.csv": "4e10064137ad27087678ef5df9eaafe8245a9421e115af7098be52dbba869f65",
+    "summary.json": "fb59cecde9b483295f5ed030687eaa8b4ab33ffcfca94f6c11894b09562198f5",
+    "v2_zero_vs_selected_aggregate.csv": "2cf64361ee6e717bad097457f6e07b816c970099585f538d441c0b1ac3c2ad42",
+    "v2_zero_vs_selected_folds.csv": "973a7391cc64c70897c010d219034d569ab60ff840b632b807608ddea2271a02"
+  },
+  "run_id": "lag-sensitivity-f796a0843eb6ec2e"
+}
