@@ -1,0 +1,41 @@
+{
+  "archive_hashes_after": {
+    "automated": "f81a41b635aa2b893e9fa1faff0bda2db41ad0717d8c134fb6d907e1471e344d",
+    "manual": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a"
+  },
+  "archive_hashes_before": {
+    "automated": "f81a41b635aa2b893e9fa1faff0bda2db41ad0717d8c134fb6d907e1471e344d",
+    "manual": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a"
+  },
+  "archive_rows": {
+    "automated": 149858,
+    "manual": 29318
+  },
+  "created_at": "2026-08-13T07:55:46.063669Z",
+  "dataset_path": "sessions",
+  "decoded_video_frames": 179176,
+  "feature_spec_hash": "38fa59a354306bf39c0b570f57e764f5638b19a3ecbdbd49b177b8df6ac56cf5",
+  "gate_checks": {
+    "all_245_sessions_checkpointed": true,
+    "all_frame_differences_reason_coded": true,
+    "archive_hashes_unchanged": true,
+    "canonical_layout_only": true,
+    "no_global_fitted_values": true
+  },
+  "gate_pass": true,
+  "missing_video_frames": 0,
+  "notes": [
+    "session_video.mp4 was the only quantitative image source; overlay, processed, and motion-magnified videos were not read.",
+    "Saved 480x640 originals were not transformed a second time; a 640x480 input would be rotated 90 degrees clockwise and mirrored exactly once.",
+    "Automated force correction uses the median synchronized unloaded dwell immediately preceding each cycle and preserves raw force separately.",
+    "No fold-fitted floor, scale, threshold, imputation, Fdetect, Fmax, or model transform is stored in this immutable dataset."
+  ],
+  "run_id": "feature-store-c0ec762f1dc888a7",
+  "schema_version": "1.0.0",
+  "session_count": 245,
+  "source_audit": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\analysis_outputs\\live_sensor_study\\source_inventory\\archive-audit-a3f75ebef480d214",
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "study_config_hash": "d5fb3939b1d12cfb1dc38e42e0cd5cb9461d3751959c36e94fd5221b100d3e56",
+  "total_rows": 179176,
+  "unmatched_video_frames": 0
+}

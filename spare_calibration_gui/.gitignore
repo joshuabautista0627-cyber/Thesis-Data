@@ -8,7 +8,7 @@ output/
 performance_output/
 *.log
 analysis_outputs/live_sensor_study/cache/
-analysis_outputs/live_sensor_study/feature_store/
+analysis_outputs/live_sensor_study/feature_store/.feature-store-*.tmp/
 analysis_outputs/live_sensor_study/model_runs/
 analysis_outputs/live_sensor_study/**/*.tmp
 analysis_outputs/live_sensor_study/**/*.partial
