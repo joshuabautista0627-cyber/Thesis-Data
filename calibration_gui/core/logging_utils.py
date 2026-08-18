@@ -53,7 +53,7 @@ def configure_structured_logging(
     log_path: str | Path,
     session_id: str,
     *,
-    logger_name: str = "spare_calibration_gui",
+    logger_name: str = "calibration_gui",
     level: int = logging.INFO,
 ) -> LoggingRuntime:
     """Configure a queue-backed JSON-lines file logger for one session."""
@@ -85,4 +85,3 @@ class _SessionContextFilter(logging.Filter):
         if not hasattr(record, "session_id"):
             record.session_id = self._session_id
         return True
-

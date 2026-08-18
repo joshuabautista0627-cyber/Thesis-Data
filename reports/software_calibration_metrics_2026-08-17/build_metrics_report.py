@@ -14,14 +14,14 @@ WORKSPACE = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = Path(__file__).resolve().parent
 
 MANUAL_BASE = Path(
-    "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/"
+    "calibration_gui/analysis_outputs/live_sensor_study/characterization/"
     "evidence-products-manual-first-authoritative"
 )
 GLOBAL_BASE = Path(
-    "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/"
+    "calibration_gui/analysis_outputs/live_sensor_study/characterization/"
     "evidence-products-global-characterization"
 )
-LIVE_BASE = Path("spare_calibration_gui/analysis_outputs/live_sensor_manual_only")
+LIVE_BASE = Path("calibration_gui/analysis_outputs/live_sensor_manual_only")
 LEGACY_BASE = Path("analysis_outputs")
 
 

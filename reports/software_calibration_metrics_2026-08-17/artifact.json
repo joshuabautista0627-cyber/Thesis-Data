@@ -1558,14 +1558,14 @@
       {
         "id": "src_manual_report",
         "label": "Authoritative manual-first characterization summary",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json')",
+          "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json')",
           "description": "Reads the reviewed source file for authoritative manual-first characterization summary.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json"
           ],
           "metric_definitions": []
         }
@@ -1573,14 +1573,14 @@
       {
         "id": "src_metric_status",
         "label": "Authoritative characterization metric status",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv', header = true)",
           "description": "Reads the reviewed source file for authoritative characterization metric status.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv"
           ],
           "metric_definitions": []
         }
@@ -1588,14 +1588,14 @@
       {
         "id": "src_sensitivity",
         "label": "Manual sensitivity and nonlinearity table",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv', header = true)",
           "description": "Reads the reviewed source file for manual sensitivity and nonlinearity table.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv"
           ],
           "metric_definitions": []
         }
@@ -1603,14 +1603,14 @@
       {
         "id": "src_plateau",
         "label": "Manual plateau and supported-force observations",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv', header = true)",
           "description": "Reads the reviewed source file for manual plateau and supported-force observations.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv"
           ],
           "metric_definitions": []
         }
@@ -1618,14 +1618,14 @@
       {
         "id": "src_cross_talk",
         "label": "Manual 9x9 cross-talk table",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv', header = true)",
           "description": "Reads the reviewed source file for manual 9x9 cross-talk table.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv"
           ],
           "metric_definitions": []
         }
@@ -1633,14 +1633,14 @@
       {
         "id": "src_no_contact",
         "label": "Dedicated no-contact noise and drift table",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv', header = true)",
           "description": "Reads the reviewed source file for dedicated no-contact noise and drift table.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv"
           ],
           "metric_definitions": []
         }
@@ -1648,14 +1648,14 @@
       {
         "id": "src_detection",
         "label": "Manual optical detection summary",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv', header = true)",
           "description": "Reads the reviewed source file for manual optical detection summary.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv"
           ],
           "metric_definitions": []
         }
@@ -1663,14 +1663,14 @@
       {
         "id": "src_nef",
         "label": "Noise-equivalent-force proxy table",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv', header = true)",
           "description": "Reads the reviewed source file for noise-equivalent-force proxy table.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv"
           ],
           "metric_definitions": []
         }
@@ -1678,14 +1678,14 @@
       {
         "id": "src_lag",
         "label": "Manual system-lag summary",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv', header = true)",
           "description": "Reads the reviewed source file for manual system-lag summary.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv"
           ],
           "metric_definitions": []
         }
@@ -1693,14 +1693,14 @@
       {
         "id": "src_hysteresis",
         "label": "Automatic hysteresis table",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv', header = true)",
           "description": "Reads the reviewed source file for automatic hysteresis table.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv"
           ],
           "metric_definitions": []
         }
@@ -1708,14 +1708,14 @@
       {
         "id": "src_cycle",
         "label": "Automatic within-session repeatability table",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv', header = true)",
           "description": "Reads the reviewed source file for automatic within-session repeatability table.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv"
           ],
           "metric_definitions": []
         }
@@ -1723,14 +1723,14 @@
       {
         "id": "src_global_models",
         "label": "Global held-out model benchmark",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv', header = true)",
           "description": "Reads the reviewed source file for global held-out model benchmark.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv"
           ],
           "metric_definitions": []
         }
@@ -1738,14 +1738,14 @@
       {
         "id": "src_global_range",
         "label": "Exact live-sensor operating-range summary",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv', header = true)",
+          "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv', header = true)",
           "description": "Reads the reviewed source file for exact live-sensor operating-range summary.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv"
           ],
           "metric_definitions": []
         }
@@ -1753,14 +1753,14 @@
       {
         "id": "src_global_validation",
         "label": "Global characterization validation report",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json')",
+          "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json')",
           "description": "Reads the reviewed source file for global characterization validation report.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json"
           ],
           "metric_definitions": []
         }
@@ -1768,14 +1768,14 @@
       {
         "id": "src_global_quality",
         "label": "Global characterization quality report",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json')",
+          "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json')",
           "description": "Reads the reviewed source file for global characterization quality report.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json"
           ],
           "metric_definitions": []
         }
@@ -1783,14 +1783,14 @@
       {
         "id": "src_hybrid",
         "label": "Experimental v4 hybrid metrics",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json",
+        "path": "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json')",
+          "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json')",
           "description": "Reads the reviewed source file for experimental v4 hybrid metrics.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
+            "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
           ],
           "metric_definitions": []
         }
@@ -1798,14 +1798,14 @@
       {
         "id": "src_event_benchmark",
         "label": "Event-localization candidate benchmark",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json",
+        "path": "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json')",
+          "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json')",
           "description": "Reads the reviewed source file for event-localization candidate benchmark.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json"
+            "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json"
           ],
           "metric_definitions": []
         }
@@ -1813,14 +1813,14 @@
       {
         "id": "src_force_benchmark",
         "label": "Force-candidate benchmark",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json",
+        "path": "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json')",
+          "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json')",
           "description": "Reads the reviewed source file for force-candidate benchmark.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json"
+            "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json"
           ],
           "metric_definitions": []
         }
@@ -1828,14 +1828,14 @@
       {
         "id": "src_application_gate",
         "label": "Manual-only application gate failure report",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md",
+        "path": "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_text('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md')",
+          "sql": "SELECT * FROM read_text('calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md')",
           "description": "Reads the reviewed source file for manual-only application gate failure report.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md"
+            "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md"
           ],
           "metric_definitions": []
         }
@@ -1843,14 +1843,14 @@
       {
         "id": "src_recovery_report",
         "label": "Manual-only experimental recovery report",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md",
+        "path": "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "SELECT * FROM read_text('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md')",
+          "sql": "SELECT * FROM read_text('calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md')",
           "description": "Reads the reviewed source file for manual-only experimental recovery report.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md"
+            "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md"
           ],
           "metric_definitions": []
         }
@@ -1933,17 +1933,17 @@
       {
         "id": "src_validation_gates",
         "label": "Consolidated validation and scientific-gate evidence",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "WITH global_validation AS (SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json')), global_quality AS (SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json')), application_report AS (SELECT * FROM read_text('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md')), recovery_report AS (SELECT * FROM read_text('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md')) SELECT * FROM global_validation CROSS JOIN global_quality CROSS JOIN application_report CROSS JOIN recovery_report",
+          "sql": "WITH global_validation AS (SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json')), global_quality AS (SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json')), application_report AS (SELECT * FROM read_text('calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md')), recovery_report AS (SELECT * FROM read_text('calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md')) SELECT * FROM global_validation CROSS JOIN global_quality CROSS JOIN application_report CROSS JOIN recovery_report",
           "description": "Combines the validated global checks with the frozen application-gate and experimental-recovery dispositions.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json",
-            "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md",
-            "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json",
+            "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md",
+            "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md"
           ],
           "metric_definitions": [
             "A gate is Passed only when its controlling machine-readable report records gate_pass=true.",
@@ -1954,21 +1954,21 @@
       {
         "id": "src_roi_consolidated",
         "label": "Consolidated per-ROI characterization and recovery metrics",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "WITH sensitivity AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv', header=true)), plateau AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv', header=true)), noise AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv', header=true)), detection AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv', header=true)), nef AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv', header=true)), lag AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv', header=true)) SELECT * FROM sensitivity LEFT JOIN plateau USING (roi) LEFT JOIN noise USING (roi) LEFT JOIN detection USING (roi) LEFT JOIN nef USING (roi) LEFT JOIN lag USING (roi)",
+          "sql": "WITH sensitivity AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv', header=true)), plateau AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv', header=true)), noise AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv', header=true)), detection AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv', header=true)), nef AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv', header=true)), lag AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv', header=true)) SELECT * FROM sensitivity LEFT JOIN plateau USING (roi) LEFT JOIN noise USING (roi) LEFT JOIN detection USING (roi) LEFT JOIN nef USING (roi) LEFT JOIN lag USING (roi)",
           "description": "Joins the reviewed ROI-level characterization tables; experimental v4 ROI metrics are added by the reproducible report-building script.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv",
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv",
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv",
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv",
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv",
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv",
-            "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv",
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv",
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv",
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv",
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv",
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv",
+            "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
           ],
           "metric_definitions": [
             "Low-force sensitivity is the frozen session-balanced 0-1 N slope in light per N.",
@@ -1980,15 +1980,15 @@
       {
         "id": "src_auto_effects",
         "label": "Consolidated automatic hysteresis and cycle-repeatability metrics",
-        "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
+        "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "WITH hysteresis AS (SELECT roi, speed_mm_min, median(abs(median_hysteresis_percent_observed_span))/100.0 AS median_abs_hysteresis_fraction FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv', header=true) GROUP BY roi, speed_mm_min), cycles AS (SELECT roi, median(median_within_cycle_cv) AS median_cycle_cv FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv', header=true) GROUP BY roi) SELECT * FROM hysteresis LEFT JOIN cycles USING (roi)",
+          "sql": "WITH hysteresis AS (SELECT roi, speed_mm_min, median(abs(median_hysteresis_percent_observed_span))/100.0 AS median_abs_hysteresis_fraction FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv', header=true) GROUP BY roi, speed_mm_min), cycles AS (SELECT roi, median(median_within_cycle_cv) AS median_cycle_cv FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv', header=true) GROUP BY roi) SELECT * FROM hysteresis LEFT JOIN cycles USING (roi)",
           "description": "Aggregates automatic hysteresis by ROI and speed and joins the session-level cycle-CV summary.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv"
           ],
           "metric_definitions": [
             "Median absolute hysteresis is the median absolute condition-level percent observed-span value, stored as a fractional rate for rendering.",
@@ -2003,15 +2003,15 @@
         "query": {
           "engine": "duckdb",
           "language": "sql",
-          "sql": "WITH legacy_auto AS (SELECT * FROM read_json_auto('analysis_outputs/linear_models/validation_metrics.json')), legacy_manual AS (SELECT * FROM read_json_auto('analysis_outputs/manual_linear_models/validation_metrics.json')), legacy_clean AS (SELECT * FROM read_json_auto('analysis_outputs/clean_global_force_model/validation_metrics.json')), current_global AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv', header=true)), hybrid AS (SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json')) SELECT * FROM legacy_auto CROSS JOIN legacy_manual CROSS JOIN legacy_clean CROSS JOIN current_global CROSS JOIN hybrid",
+          "sql": "WITH legacy_auto AS (SELECT * FROM read_json_auto('analysis_outputs/linear_models/validation_metrics.json')), legacy_manual AS (SELECT * FROM read_json_auto('analysis_outputs/manual_linear_models/validation_metrics.json')), legacy_clean AS (SELECT * FROM read_json_auto('analysis_outputs/clean_global_force_model/validation_metrics.json')), current_global AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv', header=true)), hybrid AS (SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json')) SELECT * FROM legacy_auto CROSS JOIN legacy_manual CROSS JOIN legacy_clean CROSS JOIN current_global CROSS JOIN hybrid",
           "description": "Collects the underlying result objects used to build the non-comparable historical/current model inventory.",
           "tables_used": [
             "analysis_outputs/linear_models/validation_metrics.json",
             "analysis_outputs/manual_linear_models/validation_metrics.json",
             "analysis_outputs/global_force_model/model_comparison.csv",
             "analysis_outputs/clean_global_force_model/validation_metrics.json",
-            "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv",
-            "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
+            "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv",
+            "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
           ],
           "metric_definitions": [
             "Rows retain their original validation population, force interval, grain, and session structure and must not be treated as a single leaderboard."
@@ -2118,7 +2118,7 @@
           "sql": "SELECT * FROM (VALUES (1, 'Our nine-region optical skin', 2026, 'Our system', 5, 'Yes', 'Yes — nine ROI', 'Yes — event macro F1', 'Yes — grouped sessions (post-hoc recovery)', 'Yes — F1 and coverage', 'Nine-class event localization; approximate normal force', '93.43% macro F1; all ROI recall >=90.28%', '0.328 N conditional MAE in 1.7-3.0 N; resolution not established', '102 events; 54 independent sessions; six reused outer TEST groups', 'Internal experimental v4 metrics (2026)', 'local:experimental-v4-metrics', 'Experimental, post-hoc recovery evidence; not prospectively validated.'), (2, 'Insight', 2022, 'Published peer', 4, 'Yes', 'Yes — continuous 3D contact', 'Yes — position error', 'Yes — unseen test contact points', 'Not reported', 'Contact position plus 3D force vector / force map', '~0.4 mm overall localization precision', '~0.03 N force-magnitude precision; ~5 deg direction precision; up to 2 N', 'Test contact points absent from training; curved thumb-sized surface', 'Sun et al., Nature Machine Intelligence (2022)', 'https://www.nature.com/articles/s42256-021-00439-3', 'Continuous position/force regression is not the same task as nine-class event localization.'), (2, 'Minsight', 2023, 'Published peer', 4, 'Yes', 'Yes — continuous contact', 'Yes — position error', 'Yes — held-out test data / trajectories', 'Not reported', 'High-resolution maps of 3D contact-force vectors at 60 Hz', '0.6 mm mean contact-location error', '0.07 N mean absolute force error', 'Fingertip-sized 360-degree surface; test trajectories separated for the classification task', 'Andrussow et al., Advanced Intelligent Systems (2023)', 'https://arxiv.org/abs/2304.10990', 'Continuous location and force-map errors are not event-classification metrics.'), (4, 'ELTac', 2024, 'Published peer', 3, 'Yes', 'Yes — single/multipoint', 'Yes — position error', 'Not reported as a generalization split', 'Not reported', 'Image processing and statistical fitting, not an ML model', '6.63 mm localization accuracy', '9.3%-11.7% error over 3.1-9.4 N', 'Five indenters on a large-area cylindrical electroluminescent skin', 'Fu et al., IEEE Sensors Journal (2024)', 'https://eprints.soton.ac.uk/499673/', 'Included as the closest electroluminescent hardware peer; its inference is not ML-based.'), (4, 'OmniTact', 2020, 'Published peer', 3, 'Yes — five cameras', 'Yes — contact-angle state', 'Yes — angular MAE', 'No split disclosed in the paper', 'Not reported', 'Contact-angle regression and tactile-only insertion control', 'Median angle MAE 1.142 deg, 1.986 deg, and 1.248 deg across three ranges', 'Not reported in the sensor paper', '3,000 angle samples; 80% connector insertion success with top+side cameras', 'Padmanabha et al., ICRA (2020)', 'https://arxiv.org/pdf/2003.06965', 'Contact angle and manipulation success are not spatial event-localization F1.'), (6, '9DTact', 2023, 'Published peer', 2, 'Yes', 'No discrete contact-location output', 'No comparable localization metric', 'Yes — 18 unseen objects', 'Not reported', '3D shape reconstruction and generalizable 6D force', 'No contact-location metric; shape reconstruction MAE 0.0462 mm', '0.370 N mean force MAE and 0.0077 Nm torque MAE on unseen objects', '100,417 image-force pairs from 175 objects; object-based holdout', 'Lin et al., IEEE RA-L / ICRA (2023-2024)', 'https://arxiv.org/pdf/2308.14277', 'Its primary claims are shape and 6D-force generalization, not discrete event localization.'), (7, 'DIGIT', 2020, 'Published peer', 1, 'Yes', 'Not reported as a contact output', 'Not reported', 'Not reported for contact localization', 'Not reported', 'Tactile keypoints and predictive dynamics for in-hand manipulation', 'No contact-localization accuracy in the sensor paper', 'No force-estimation accuracy in the sensor paper', 'Compact 19 x 16 mm sensing field; 640 x 480 at 60 fps', 'Lambeta et al., IEEE RA-L (2020)', 'https://www.seas.upenn.edu/~dineshj/publication/lambeta-2020-digit/lambeta-2020-digit.pdf', 'A hardware/manipulation platform paper, not a contact-localization benchmark.')) AS peer_comparison(\"rank\", \"sensor\", \"year\", \"focus_group\", \"alignment_score\", \"camera_only_inference\", \"explicit_localization\", \"quantitative_localization\", \"held_out_unit\", \"abstention_reported\", \"reported_ml_output\", \"localization_result\", \"force_result\", \"evaluation_scope\", \"citation\", \"source_url\", \"comparison_caveat\") ORDER BY rank, sensor",
           "description": "Source-backed manual extraction from six representative primary papers plus the local experimental v4 metrics.",
           "tables_used": [
-            "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json",
+            "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json",
             "https://www.nature.com/articles/s42256-021-00439-3",
             "https://arxiv.org/abs/2304.10990",
             "https://eprints.soton.ac.uk/499673/",
@@ -4387,14 +4387,14 @@
     {
       "id": "src_manual_report",
       "label": "Authoritative manual-first characterization summary",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json')",
+        "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json')",
         "description": "Reads the reviewed source file for authoritative manual-first characterization summary.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/report_data.json"
         ],
         "metric_definitions": []
       }
@@ -4402,14 +4402,14 @@
     {
       "id": "src_metric_status",
       "label": "Authoritative characterization metric status",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv', header = true)",
         "description": "Reads the reviewed source file for authoritative characterization metric status.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/metric_status.csv"
         ],
         "metric_definitions": []
       }
@@ -4417,14 +4417,14 @@
     {
       "id": "src_sensitivity",
       "label": "Manual sensitivity and nonlinearity table",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv', header = true)",
         "description": "Reads the reviewed source file for manual sensitivity and nonlinearity table.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv"
         ],
         "metric_definitions": []
       }
@@ -4432,14 +4432,14 @@
     {
       "id": "src_plateau",
       "label": "Manual plateau and supported-force observations",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv', header = true)",
         "description": "Reads the reviewed source file for manual plateau and supported-force observations.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv"
         ],
         "metric_definitions": []
       }
@@ -4447,14 +4447,14 @@
     {
       "id": "src_cross_talk",
       "label": "Manual 9x9 cross-talk table",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv', header = true)",
         "description": "Reads the reviewed source file for manual 9x9 cross-talk table.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv"
         ],
         "metric_definitions": []
       }
@@ -4462,14 +4462,14 @@
     {
       "id": "src_no_contact",
       "label": "Dedicated no-contact noise and drift table",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv', header = true)",
         "description": "Reads the reviewed source file for dedicated no-contact noise and drift table.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv"
         ],
         "metric_definitions": []
       }
@@ -4477,14 +4477,14 @@
     {
       "id": "src_detection",
       "label": "Manual optical detection summary",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv', header = true)",
         "description": "Reads the reviewed source file for manual optical detection summary.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv"
         ],
         "metric_definitions": []
       }
@@ -4492,14 +4492,14 @@
     {
       "id": "src_nef",
       "label": "Noise-equivalent-force proxy table",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv', header = true)",
         "description": "Reads the reviewed source file for noise-equivalent-force proxy table.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv"
         ],
         "metric_definitions": []
       }
@@ -4507,14 +4507,14 @@
     {
       "id": "src_lag",
       "label": "Manual system-lag summary",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv', header = true)",
         "description": "Reads the reviewed source file for manual system-lag summary.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv"
         ],
         "metric_definitions": []
       }
@@ -4522,14 +4522,14 @@
     {
       "id": "src_hysteresis",
       "label": "Automatic hysteresis table",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv', header = true)",
         "description": "Reads the reviewed source file for automatic hysteresis table.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv"
         ],
         "metric_definitions": []
       }
@@ -4537,14 +4537,14 @@
     {
       "id": "src_cycle",
       "label": "Automatic within-session repeatability table",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv', header = true)",
         "description": "Reads the reviewed source file for automatic within-session repeatability table.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv"
         ],
         "metric_definitions": []
       }
@@ -4552,14 +4552,14 @@
     {
       "id": "src_global_models",
       "label": "Global held-out model benchmark",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv', header = true)",
         "description": "Reads the reviewed source file for global held-out model benchmark.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv"
         ],
         "metric_definitions": []
       }
@@ -4567,14 +4567,14 @@
     {
       "id": "src_global_range",
       "label": "Exact live-sensor operating-range summary",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv', header = true)",
+        "sql": "SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv', header = true)",
         "description": "Reads the reviewed source file for exact live-sensor operating-range summary.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/live_sensor_operating_range_r2.csv"
         ],
         "metric_definitions": []
       }
@@ -4582,14 +4582,14 @@
     {
       "id": "src_global_validation",
       "label": "Global characterization validation report",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json')",
+        "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json')",
         "description": "Reads the reviewed source file for global characterization validation report.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json"
         ],
         "metric_definitions": []
       }
@@ -4597,14 +4597,14 @@
     {
       "id": "src_global_quality",
       "label": "Global characterization quality report",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json')",
+        "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json')",
         "description": "Reads the reviewed source file for global characterization quality report.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json"
         ],
         "metric_definitions": []
       }
@@ -4612,14 +4612,14 @@
     {
       "id": "src_hybrid",
       "label": "Experimental v4 hybrid metrics",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json",
+      "path": "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json')",
+        "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json')",
         "description": "Reads the reviewed source file for experimental v4 hybrid metrics.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
+          "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
         ],
         "metric_definitions": []
       }
@@ -4627,14 +4627,14 @@
     {
       "id": "src_event_benchmark",
       "label": "Event-localization candidate benchmark",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json",
+      "path": "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json')",
+        "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json')",
         "description": "Reads the reviewed source file for event-localization candidate benchmark.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json"
+          "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/event_localization_candidate_benchmark.json"
         ],
         "metric_definitions": []
       }
@@ -4642,14 +4642,14 @@
     {
       "id": "src_force_benchmark",
       "label": "Force-candidate benchmark",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json",
+      "path": "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json')",
+        "sql": "SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json')",
         "description": "Reads the reviewed source file for force-candidate benchmark.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json"
+          "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/hybrid_candidate_benchmark.json"
         ],
         "metric_definitions": []
       }
@@ -4657,14 +4657,14 @@
     {
       "id": "src_application_gate",
       "label": "Manual-only application gate failure report",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md",
+      "path": "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_text('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md')",
+        "sql": "SELECT * FROM read_text('calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md')",
         "description": "Reads the reviewed source file for manual-only application gate failure report.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md"
+          "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md"
         ],
         "metric_definitions": []
       }
@@ -4672,14 +4672,14 @@
     {
       "id": "src_recovery_report",
       "label": "Manual-only experimental recovery report",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md",
+      "path": "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "SELECT * FROM read_text('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md')",
+        "sql": "SELECT * FROM read_text('calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md')",
         "description": "Reads the reviewed source file for manual-only experimental recovery report.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md"
+          "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md"
         ],
         "metric_definitions": []
       }
@@ -4762,17 +4762,17 @@
     {
       "id": "src_validation_gates",
       "label": "Consolidated validation and scientific-gate evidence",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "WITH global_validation AS (SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json')), global_quality AS (SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json')), application_report AS (SELECT * FROM read_text('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md')), recovery_report AS (SELECT * FROM read_text('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md')) SELECT * FROM global_validation CROSS JOIN global_quality CROSS JOIN application_report CROSS JOIN recovery_report",
+        "sql": "WITH global_validation AS (SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json')), global_quality AS (SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json')), application_report AS (SELECT * FROM read_text('calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md')), recovery_report AS (SELECT * FROM read_text('calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md')) SELECT * FROM global_validation CROSS JOIN global_quality CROSS JOIN application_report CROSS JOIN recovery_report",
         "description": "Combines the validated global checks with the frozen application-gate and experimental-recovery dispositions.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json",
-          "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md",
-          "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/validation_report.json",
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/quality_report.json",
+          "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_APPLICATION_GATE_FAILURE_REPORT.md",
+          "calibration_gui/analysis_outputs/live_sensor_manual_only/MANUAL_ONLY_EXPERIMENTAL_RECOVERY_REPORT.md"
         ],
         "metric_definitions": [
           "A gate is Passed only when its controlling machine-readable report records gate_pass=true.",
@@ -4783,21 +4783,21 @@
     {
       "id": "src_roi_consolidated",
       "label": "Consolidated per-ROI characterization and recovery metrics",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "WITH sensitivity AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv', header=true)), plateau AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv', header=true)), noise AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv', header=true)), detection AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv', header=true)), nef AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv', header=true)), lag AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv', header=true)) SELECT * FROM sensitivity LEFT JOIN plateau USING (roi) LEFT JOIN noise USING (roi) LEFT JOIN detection USING (roi) LEFT JOIN nef USING (roi) LEFT JOIN lag USING (roi)",
+        "sql": "WITH sensitivity AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv', header=true)), plateau AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv', header=true)), noise AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv', header=true)), detection AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv', header=true)), nef AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv', header=true)), lag AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv', header=true)) SELECT * FROM sensitivity LEFT JOIN plateau USING (roi) LEFT JOIN noise USING (roi) LEFT JOIN detection USING (roi) LEFT JOIN nef USING (roi) LEFT JOIN lag USING (roi)",
         "description": "Joins the reviewed ROI-level characterization tables; experimental v4 ROI metrics are added by the reproducible report-building script.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv",
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv",
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv",
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv",
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv",
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv",
-          "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_sensitivity_nonlinearity.csv",
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_plateau_observations.csv",
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/cross_talk.csv",
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/no_contact_summary.csv",
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_detection_summary.csv",
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/noise_equivalent_force_proxy.csv",
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/manual_system_lag_summary.csv",
+          "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
         ],
         "metric_definitions": [
           "Low-force sensitivity is the frozen session-balanced 0-1 N slope in light per N.",
@@ -4809,15 +4809,15 @@
     {
       "id": "src_auto_effects",
       "label": "Consolidated automatic hysteresis and cycle-repeatability metrics",
-      "path": "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
+      "path": "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "WITH hysteresis AS (SELECT roi, speed_mm_min, median(abs(median_hysteresis_percent_observed_span))/100.0 AS median_abs_hysteresis_fraction FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv', header=true) GROUP BY roi, speed_mm_min), cycles AS (SELECT roi, median(median_within_cycle_cv) AS median_cycle_cv FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv', header=true) GROUP BY roi) SELECT * FROM hysteresis LEFT JOIN cycles USING (roi)",
+        "sql": "WITH hysteresis AS (SELECT roi, speed_mm_min, median(abs(median_hysteresis_percent_observed_span))/100.0 AS median_abs_hysteresis_fraction FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv', header=true) GROUP BY roi, speed_mm_min), cycles AS (SELECT roi, median(median_within_cycle_cv) AS median_cycle_cv FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv', header=true) GROUP BY roi) SELECT * FROM hysteresis LEFT JOIN cycles USING (roi)",
         "description": "Aggregates automatic hysteresis by ROI and speed and joins the session-level cycle-CV summary.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_hysteresis.csv",
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables/automatic_within_session_repeatability.csv"
         ],
         "metric_definitions": [
           "Median absolute hysteresis is the median absolute condition-level percent observed-span value, stored as a fractional rate for rendering.",
@@ -4832,15 +4832,15 @@
       "query": {
         "engine": "duckdb",
         "language": "sql",
-        "sql": "WITH legacy_auto AS (SELECT * FROM read_json_auto('analysis_outputs/linear_models/validation_metrics.json')), legacy_manual AS (SELECT * FROM read_json_auto('analysis_outputs/manual_linear_models/validation_metrics.json')), legacy_clean AS (SELECT * FROM read_json_auto('analysis_outputs/clean_global_force_model/validation_metrics.json')), current_global AS (SELECT * FROM read_csv_auto('spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv', header=true)), hybrid AS (SELECT * FROM read_json_auto('spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json')) SELECT * FROM legacy_auto CROSS JOIN legacy_manual CROSS JOIN legacy_clean CROSS JOIN current_global CROSS JOIN hybrid",
+        "sql": "WITH legacy_auto AS (SELECT * FROM read_json_auto('analysis_outputs/linear_models/validation_metrics.json')), legacy_manual AS (SELECT * FROM read_json_auto('analysis_outputs/manual_linear_models/validation_metrics.json')), legacy_clean AS (SELECT * FROM read_json_auto('analysis_outputs/clean_global_force_model/validation_metrics.json')), current_global AS (SELECT * FROM read_csv_auto('calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv', header=true)), hybrid AS (SELECT * FROM read_json_auto('calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json')) SELECT * FROM legacy_auto CROSS JOIN legacy_manual CROSS JOIN legacy_clean CROSS JOIN current_global CROSS JOIN hybrid",
         "description": "Collects the underlying result objects used to build the non-comparable historical/current model inventory.",
         "tables_used": [
           "analysis_outputs/linear_models/validation_metrics.json",
           "analysis_outputs/manual_linear_models/validation_metrics.json",
           "analysis_outputs/global_force_model/model_comparison.csv",
           "analysis_outputs/clean_global_force_model/validation_metrics.json",
-          "spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv",
-          "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
+          "calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-global-characterization/tables/global_model_cv_summary.csv",
+          "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json"
         ],
         "metric_definitions": [
           "Rows retain their original validation population, force interval, grain, and session structure and must not be treated as a single leaderboard."
@@ -4947,7 +4947,7 @@
         "sql": "SELECT * FROM (VALUES (1, 'Our nine-region optical skin', 2026, 'Our system', 5, 'Yes', 'Yes — nine ROI', 'Yes — event macro F1', 'Yes — grouped sessions (post-hoc recovery)', 'Yes — F1 and coverage', 'Nine-class event localization; approximate normal force', '93.43% macro F1; all ROI recall >=90.28%', '0.328 N conditional MAE in 1.7-3.0 N; resolution not established', '102 events; 54 independent sessions; six reused outer TEST groups', 'Internal experimental v4 metrics (2026)', 'local:experimental-v4-metrics', 'Experimental, post-hoc recovery evidence; not prospectively validated.'), (2, 'Insight', 2022, 'Published peer', 4, 'Yes', 'Yes — continuous 3D contact', 'Yes — position error', 'Yes — unseen test contact points', 'Not reported', 'Contact position plus 3D force vector / force map', '~0.4 mm overall localization precision', '~0.03 N force-magnitude precision; ~5 deg direction precision; up to 2 N', 'Test contact points absent from training; curved thumb-sized surface', 'Sun et al., Nature Machine Intelligence (2022)', 'https://www.nature.com/articles/s42256-021-00439-3', 'Continuous position/force regression is not the same task as nine-class event localization.'), (2, 'Minsight', 2023, 'Published peer', 4, 'Yes', 'Yes — continuous contact', 'Yes — position error', 'Yes — held-out test data / trajectories', 'Not reported', 'High-resolution maps of 3D contact-force vectors at 60 Hz', '0.6 mm mean contact-location error', '0.07 N mean absolute force error', 'Fingertip-sized 360-degree surface; test trajectories separated for the classification task', 'Andrussow et al., Advanced Intelligent Systems (2023)', 'https://arxiv.org/abs/2304.10990', 'Continuous location and force-map errors are not event-classification metrics.'), (4, 'ELTac', 2024, 'Published peer', 3, 'Yes', 'Yes — single/multipoint', 'Yes — position error', 'Not reported as a generalization split', 'Not reported', 'Image processing and statistical fitting, not an ML model', '6.63 mm localization accuracy', '9.3%-11.7% error over 3.1-9.4 N', 'Five indenters on a large-area cylindrical electroluminescent skin', 'Fu et al., IEEE Sensors Journal (2024)', 'https://eprints.soton.ac.uk/499673/', 'Included as the closest electroluminescent hardware peer; its inference is not ML-based.'), (4, 'OmniTact', 2020, 'Published peer', 3, 'Yes — five cameras', 'Yes — contact-angle state', 'Yes — angular MAE', 'No split disclosed in the paper', 'Not reported', 'Contact-angle regression and tactile-only insertion control', 'Median angle MAE 1.142 deg, 1.986 deg, and 1.248 deg across three ranges', 'Not reported in the sensor paper', '3,000 angle samples; 80% connector insertion success with top+side cameras', 'Padmanabha et al., ICRA (2020)', 'https://arxiv.org/pdf/2003.06965', 'Contact angle and manipulation success are not spatial event-localization F1.'), (6, '9DTact', 2023, 'Published peer', 2, 'Yes', 'No discrete contact-location output', 'No comparable localization metric', 'Yes — 18 unseen objects', 'Not reported', '3D shape reconstruction and generalizable 6D force', 'No contact-location metric; shape reconstruction MAE 0.0462 mm', '0.370 N mean force MAE and 0.0077 Nm torque MAE on unseen objects', '100,417 image-force pairs from 175 objects; object-based holdout', 'Lin et al., IEEE RA-L / ICRA (2023-2024)', 'https://arxiv.org/pdf/2308.14277', 'Its primary claims are shape and 6D-force generalization, not discrete event localization.'), (7, 'DIGIT', 2020, 'Published peer', 1, 'Yes', 'Not reported as a contact output', 'Not reported', 'Not reported for contact localization', 'Not reported', 'Tactile keypoints and predictive dynamics for in-hand manipulation', 'No contact-localization accuracy in the sensor paper', 'No force-estimation accuracy in the sensor paper', 'Compact 19 x 16 mm sensing field; 640 x 480 at 60 fps', 'Lambeta et al., IEEE RA-L (2020)', 'https://www.seas.upenn.edu/~dineshj/publication/lambeta-2020-digit/lambeta-2020-digit.pdf', 'A hardware/manipulation platform paper, not a contact-localization benchmark.')) AS peer_comparison(\"rank\", \"sensor\", \"year\", \"focus_group\", \"alignment_score\", \"camera_only_inference\", \"explicit_localization\", \"quantitative_localization\", \"held_out_unit\", \"abstention_reported\", \"reported_ml_output\", \"localization_result\", \"force_result\", \"evaluation_scope\", \"citation\", \"source_url\", \"comparison_caveat\") ORDER BY rank, sensor",
         "description": "Source-backed manual extraction from six representative primary papers plus the local experimental v4 metrics.",
         "tables_used": [
-          "spare_calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json",
+          "calibration_gui/analysis_outputs/live_sensor_manual_only/model_runs/experimental_hybrid/experimental-hybrid-bedb31cb1e7c1541/metrics.json",
           "https://www.nature.com/articles/s42256-021-00439-3",
           "https://arxiv.org/abs/2304.10990",
           "https://eprints.soton.ac.uk/499673/",

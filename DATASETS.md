@@ -4,7 +4,7 @@ This repository includes the complete processed automatic and manual calibration
 
 ## Dataset location
 
-`spare_calibration_gui/analysis_outputs/live_sensor_study/feature_store/feature-store-c0ec762f1dc888a7/`
+`calibration_gui/analysis_outputs/live_sensor_study/feature_store/feature-store-c0ec762f1dc888a7/`
 
 The feature store contains:
 
