@@ -1,0 +1,81 @@
+{
+  "bidirectional_matches_existing_v2": false,
+  "capture_rate": {
+    "maximum_session_fps": 7.783251998349691,
+    "median_session_fps": 7.682510007969011,
+    "minimum_session_fps": 7.540073606198491,
+    "session_count": 54
+  },
+  "created_at_utc": "2026-08-17T08:50:10.051355Z",
+  "dataset_policy": "manual_only",
+  "development_selected_lag_frames_at_median_fps": 1.8438024019125625,
+  "development_selected_lag_ms": 240,
+  "existing_v2_lag_ms_by_fold": {
+    "1": 260,
+    "2": 220,
+    "3": 240,
+    "4": 240,
+    "5": 240,
+    "6": 240
+  },
+  "feature_store": "analysis_outputs/live_sensor_manual_only/feature_store/feature-store-fa2500440adab6ca",
+  "lag_convention": "positive lag pairs optical time t with reference force at t-L",
+  "limitations": [
+    "All six outer groups were previously inspected; this is diagnostic reuse, not untouched confirmation.",
+    "The held-out oracle lag is descriptive only and was not used for model selection.",
+    "A constant global lag cannot correct frame jitter or session-specific clock drift.",
+    "Force resolution and physical validation remain unestablished."
+  ],
+  "localization_interpretation": "The deployed v3 event-localization rule uses only accumulated camera ROI activity; shifting reference-force labels does not change live ROI inference.",
+  "outer_nnls": {
+    "fold_count": 6,
+    "folds_improved": 3,
+    "mean_selected_lag_mae_N": 1.5507177700815957,
+    "mean_zero_lag_mae_N": 1.5970034431221205,
+    "relative_mae_reduction": 0.028982826079596236
+  },
+  "run_id": "lag-sensitivity-f796a0843eb6ec2e",
+  "schema_version": "1.0.0",
+  "search": {
+    "candidate_count": 101,
+    "maximum_ms": 500,
+    "minimum_ms": -500,
+    "step_ms": 10
+  },
+  "selected_lag_ms_by_outer_training_fold": {
+    "1": -140,
+    "2": -430,
+    "3": 240,
+    "4": -430,
+    "5": -430,
+    "6": -160
+  },
+  "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+  "split_artifact": "analysis_outputs/live_sensor_manual_only/splits/splits-da608c2b8581adff",
+  "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1",
+  "v2_isotonic_outer_validation": {
+    "aggregate_by_condition": [
+      {
+        "condition": "bidirectional_inner_selected",
+        "mean_conditional_force_mae_N": 0.3260453683312634,
+        "mean_contact_recall": 0.9679832982107509,
+        "mean_displayed_force_mae_N": 0.47544876476934367,
+        "mean_force_spearman_rho": 0.18406845679356962,
+        "mean_forced_localization_macro_f1": 0.8363839713558869,
+        "mean_predicted_to_true_sd_ratio": 0.14202569329350548
+      },
+      {
+        "condition": "zero_lag",
+        "mean_conditional_force_mae_N": 0.3374718647755774,
+        "mean_contact_recall": 0.9729373160588595,
+        "mean_displayed_force_mae_N": 0.4737866726726094,
+        "mean_force_spearman_rho": 0.15455124472108903,
+        "mean_forced_localization_macro_f1": 0.839120267902059,
+        "mean_predicted_to_true_sd_ratio": 0.1628097678829445
+      }
+    ],
+    "relative_force_mae_reduction": 0.03385910837904289,
+    "selected_lag_mean_conditional_force_mae_N": 0.3260453683312634,
+    "zero_lag_mean_conditional_force_mae_N": 0.3374718647755774
+  }
+}

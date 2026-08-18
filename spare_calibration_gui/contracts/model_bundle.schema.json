@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/live-sensor/model_bundle.schema.json",
+  "title": "Safe live sensor model bundle manifest",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["bundle_schema_version", "model_version", "status", "bundle_id", "created_at", "feature_specification_hash", "archives", "roi_layout", "frame_contract", "features", "baseline", "contact_gate", "localization", "force_model", "range", "optical_support", "validation", "members"],
+  "properties": {
+    "bundle_schema_version": {"const": "1.0.0"},
+    "model_version": {"type": "string", "minLength": 1},
+    "status": {"enum": ["experimental", "validated"]},
+    "bundle_id": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "format": "date-time"},
+    "feature_specification_hash": {"$ref": "#/$defs/hash"},
+    "archives": {"type": "object", "required": ["manual", "automated"], "additionalProperties": true},
+    "roi_layout": {"type": "object", "required": ["layout_id", "path"], "properties": {"layout_id": {"const": "roi-9fbc67c50ee3bc7145fa"}, "path": {"const": "roi_layout.json"}}, "additionalProperties": true},
+    "frame_contract": {"type": "object", "required": ["raw_width", "raw_height", "oriented_width", "oriented_height", "rotation_degrees_clockwise", "mirror_horizontal_after_rotation"], "additionalProperties": true},
+    "features": {"type": "object", "required": ["ordered_names", "units", "missing_value_policy"], "additionalProperties": true},
+    "baseline": {"type": "object", "required": ["warmup_seconds", "capture_seconds", "minimum_frames", "acceptance_rules"], "additionalProperties": true},
+    "contact_gate": {"type": "object", "required": ["enter_threshold", "clear_threshold", "debounce_frames", "fdetect_N"], "additionalProperties": true},
+    "localization": {"type": "object", "required": ["model_family", "format", "path", "class_order", "uncertainty_rules"], "additionalProperties": true},
+    "force_model": {"type": "object", "required": ["model_family", "format", "path", "runtime_backend"], "additionalProperties": true},
+    "range": {"type": "object", "required": ["common_fmax_N", "near_limit_N", "above_range_policy"], "additionalProperties": true},
+    "optical_support": {"type": "object", "required": ["path", "ood_policy"], "additionalProperties": true},
+    "validation": {"type": "object", "required": ["release_decision_path", "outer_group_metrics", "selection_rationale"], "additionalProperties": true},
+    "members": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "size_bytes", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1, "not": {"pattern": "(^[A-Za-z]:|^/|(^|/)\\.\\.(/|$))"}},
+          "size_bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"$ref": "#/$defs/hash"}
+        }
+      }
+    }
+  },
+  "$defs": {"hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+}

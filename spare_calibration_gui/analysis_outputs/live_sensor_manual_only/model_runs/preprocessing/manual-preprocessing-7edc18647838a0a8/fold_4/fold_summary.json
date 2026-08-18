@@ -1,0 +1,170 @@
+{
+  "contact_threshold": 667.0,
+  "eligible": false,
+  "fdetect_N": null,
+  "no_contact_floors": [
+    3786.0,
+    4026.0,
+    2952.0,
+    3509.0,
+    3999.0,
+    3470.0,
+    3096.0,
+    3218.0,
+    2608.0
+  ],
+  "optical_support": {
+    "arrays_file": "optical_support_arrays.npz",
+    "contact_threshold": 667.0,
+    "feature_order": [
+      "roi1_corrected_light_per_pixel",
+      "roi1_active_fraction",
+      "roi1_raw_v_mean",
+      "roi2_corrected_light_per_pixel",
+      "roi2_active_fraction",
+      "roi2_raw_v_mean",
+      "roi3_corrected_light_per_pixel",
+      "roi3_active_fraction",
+      "roi3_raw_v_mean",
+      "roi4_corrected_light_per_pixel",
+      "roi4_active_fraction",
+      "roi4_raw_v_mean",
+      "roi5_corrected_light_per_pixel",
+      "roi5_active_fraction",
+      "roi5_raw_v_mean",
+      "roi6_corrected_light_per_pixel",
+      "roi6_active_fraction",
+      "roi6_raw_v_mean",
+      "roi7_corrected_light_per_pixel",
+      "roi7_active_fraction",
+      "roi7_raw_v_mean",
+      "roi8_corrected_light_per_pixel",
+      "roi8_active_fraction",
+      "roi8_raw_v_mean",
+      "roi9_corrected_light_per_pixel",
+      "roi9_active_fraction",
+      "roi9_raw_v_mean"
+    ],
+    "inner_retention": 0.7966,
+    "inner_retention_target": 0.99,
+    "lag_ms": 240,
+    "reference_count": 2000,
+    "selected_distance_quantile": 0.999,
+    "selected_distance_threshold": 647742.124467819,
+    "selected_margin": 0.1,
+    "training_no_contact_fpr": 0.04963898916967509,
+    "tuning_pass": false
+  },
+  "outer_fold": "4",
+  "range": {
+    "common_fmax_N": null,
+    "eligible": false,
+    "fdetect_N": null,
+    "roi_decisions": {
+      "1": {
+        "eligible": false,
+        "initial_low_force_slope": null,
+        "missing_supported_bins": [
+          3
+        ],
+        "plateau_knee_N": null,
+        "reason": "insufficient_session_support",
+        "safe_limit_N": null
+      },
+      "2": {
+        "eligible": false,
+        "initial_low_force_slope": null,
+        "missing_supported_bins": [
+          2,
+          4,
+          7
+        ],
+        "plateau_knee_N": null,
+        "reason": "insufficient_session_support",
+        "safe_limit_N": null
+      },
+      "3": {
+        "eligible": false,
+        "initial_low_force_slope": null,
+        "missing_supported_bins": [
+          3,
+          5,
+          7
+        ],
+        "plateau_knee_N": null,
+        "reason": "insufficient_session_support",
+        "safe_limit_N": null
+      },
+      "4": {
+        "eligible": true,
+        "initial_low_force_slope": 29.099999999999977,
+        "missing_supported_bins": [],
+        "plateau_knee_N": 1.375,
+        "reason": null,
+        "safe_limit_N": 1.2375
+      },
+      "5": {
+        "eligible": false,
+        "initial_low_force_slope": 0.0,
+        "missing_supported_bins": [],
+        "plateau_knee_N": null,
+        "reason": "nonpositive_initial_slope",
+        "safe_limit_N": null
+      },
+      "6": {
+        "eligible": true,
+        "initial_low_force_slope": 66.29999999999994,
+        "missing_supported_bins": [],
+        "plateau_knee_N": 1.375,
+        "reason": null,
+        "safe_limit_N": 1.2375
+      },
+      "7": {
+        "eligible": true,
+        "initial_low_force_slope": 502.3199999999998,
+        "missing_supported_bins": [],
+        "plateau_knee_N": 0.625,
+        "reason": null,
+        "safe_limit_N": 0.5625
+      },
+      "8": {
+        "eligible": true,
+        "initial_low_force_slope": 577.7999999999997,
+        "missing_supported_bins": [],
+        "plateau_knee_N": null,
+        "reason": null,
+        "safe_limit_N": 3.0
+      },
+      "9": {
+        "eligible": true,
+        "initial_low_force_slope": 544.7999999999996,
+        "missing_supported_bins": [],
+        "plateau_knee_N": 1.875,
+        "reason": null,
+        "safe_limit_N": 1.6875
+      }
+    }
+  },
+  "response_scales": [
+    43.0,
+    101.7,
+    194.0,
+    11.700000000000001,
+    1.0,
+    1.0,
+    108.80000000000001,
+    1.0,
+    1.0
+  ],
+  "selected_lag_ms": 240,
+  "training_no_contact_frame_fpr": 0.04963898916967509,
+  "training_no_contact_session_count": 9,
+  "training_primary_session_count": 45,
+  "training_test_groups": [
+    "TEST1",
+    "TEST2",
+    "TEST3",
+    "TEST5",
+    "TEST6"
+  ]
+}

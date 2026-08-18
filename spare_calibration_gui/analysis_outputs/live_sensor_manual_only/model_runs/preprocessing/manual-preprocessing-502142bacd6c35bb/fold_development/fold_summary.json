@@ -1,0 +1,172 @@
+{
+  "contact_threshold": 1.382813923819938,
+  "eligibility_reasons": [
+    "contact_recall_below_target",
+    "common_safe_range_unsupported",
+    "optical_support_inner_retention_below_target"
+  ],
+  "eligible": false,
+  "fdetect_N": null,
+  "no_contact_floors": [
+    3786.0,
+    4026.0,
+    2952.0,
+    3509.0,
+    3999.0,
+    3470.0,
+    3096.0,
+    3218.0,
+    2608.0
+  ],
+  "optical_support": {
+    "arrays_file": "optical_support_arrays.npz",
+    "contact_threshold": 1.382813923819938,
+    "feature_order": [
+      "roi1_corrected_light_per_pixel",
+      "roi1_active_fraction",
+      "roi1_raw_v_mean",
+      "roi2_corrected_light_per_pixel",
+      "roi2_active_fraction",
+      "roi2_raw_v_mean",
+      "roi3_corrected_light_per_pixel",
+      "roi3_active_fraction",
+      "roi3_raw_v_mean",
+      "roi4_corrected_light_per_pixel",
+      "roi4_active_fraction",
+      "roi4_raw_v_mean",
+      "roi5_corrected_light_per_pixel",
+      "roi5_active_fraction",
+      "roi5_raw_v_mean",
+      "roi6_corrected_light_per_pixel",
+      "roi6_active_fraction",
+      "roi6_raw_v_mean",
+      "roi7_corrected_light_per_pixel",
+      "roi7_active_fraction",
+      "roi7_raw_v_mean",
+      "roi8_corrected_light_per_pixel",
+      "roi8_active_fraction",
+      "roi8_raw_v_mean",
+      "roi9_corrected_light_per_pixel",
+      "roi9_active_fraction",
+      "roi9_raw_v_mean"
+    ],
+    "inner_retention": 0.8240833333333333,
+    "inner_retention_target": 0.99,
+    "lag_ms": 240,
+    "reference_count": 2000,
+    "selected_distance_quantile": 0.999,
+    "selected_distance_threshold": 351290.6444168924,
+    "selected_margin": 0.1,
+    "training_no_contact_fpr": 0.04955621301775148,
+    "tuning_pass": false
+  },
+  "outer_fold": "development",
+  "range": {
+    "common_fmax_N": null,
+    "eligible": false,
+    "fdetect_N": null,
+    "roi_decisions": {
+      "1": {
+        "eligible": false,
+        "initial_low_force_slope": null,
+        "missing_supported_bins": [
+          3
+        ],
+        "plateau_knee_N": null,
+        "reason": "insufficient_session_support",
+        "safe_limit_N": null
+      },
+      "2": {
+        "eligible": false,
+        "initial_low_force_slope": null,
+        "missing_supported_bins": [
+          2
+        ],
+        "plateau_knee_N": null,
+        "reason": "insufficient_session_support",
+        "safe_limit_N": null
+      },
+      "3": {
+        "eligible": false,
+        "initial_low_force_slope": null,
+        "missing_supported_bins": [
+          3
+        ],
+        "plateau_knee_N": null,
+        "reason": "insufficient_session_support",
+        "safe_limit_N": null
+      },
+      "4": {
+        "eligible": true,
+        "initial_low_force_slope": 14.549999999999988,
+        "missing_supported_bins": [],
+        "plateau_knee_N": 1.375,
+        "reason": null,
+        "safe_limit_N": 1.2375
+      },
+      "5": {
+        "eligible": false,
+        "initial_low_force_slope": 0.0,
+        "missing_supported_bins": [],
+        "plateau_knee_N": null,
+        "reason": "nonpositive_initial_slope",
+        "safe_limit_N": null
+      },
+      "6": {
+        "eligible": true,
+        "initial_low_force_slope": 33.14999999999997,
+        "missing_supported_bins": [],
+        "plateau_knee_N": null,
+        "reason": null,
+        "safe_limit_N": 3.0
+      },
+      "7": {
+        "eligible": true,
+        "initial_low_force_slope": 525.1999999999997,
+        "missing_supported_bins": [],
+        "plateau_knee_N": 0.625,
+        "reason": null,
+        "safe_limit_N": 0.5625
+      },
+      "8": {
+        "eligible": true,
+        "initial_low_force_slope": 288.89999999999986,
+        "missing_supported_bins": [],
+        "plateau_knee_N": null,
+        "reason": null,
+        "safe_limit_N": 3.0
+      },
+      "9": {
+        "eligible": true,
+        "initial_low_force_slope": 568.9999999999997,
+        "missing_supported_bins": [],
+        "plateau_knee_N": 1.875,
+        "reason": null,
+        "safe_limit_N": 1.6875
+      }
+    }
+  },
+  "response_scales": [
+    589.2399999999998,
+    640.7399999999998,
+    572.34,
+    593.5799999999999,
+    650.0999999999992,
+    438.96000000000004,
+    510.7100000000002,
+    468.0,
+    318.91
+  ],
+  "selected_lag_ms": 240,
+  "training_no_contact_frame_fpr": 0.04955621301775148,
+  "training_no_contact_session_count": 11,
+  "training_primary_session_count": 54,
+  "training_test_groups": [
+    "TEST1",
+    "TEST2",
+    "TEST3",
+    "TEST4",
+    "TEST5",
+    "TEST6"
+  ]
+}

@@ -1,0 +1,13 @@
+figure,family,claim
+fig01_automatic_condition_coverage,heatmap,Each exact condition has two independent sessions.
+fig02_manual_static_response,faceted line,All ROI are shown with equal session influence.
+fig03_spatial_sensitivity_uniformity,grouped bar,Raw and area-normalized sensitivity are compared for every ROI.
+fig04_manual_repeatability,bar + point,"Session-level, not frame-level, spread is reported."
+fig05_cross_talk_matrix,heatmap,The complete 9x9 target/measured ROI matrix is retained.
+fig06_no_contact_noise_drift,box plot + scatter,Noise and drift use dedicated no-contact evidence.
+fig07_snr_detection,paired bars,Detection is explicitly characterization-only.
+fig08_automatic_hysteresis,faceted loop,Loading/unloading and speeds remain separate.
+fig09_speed_dependence,multi-series line,Rate strata are shown rather than pooled.
+fig10_cycle_repeatability,multi-series line,Cycles never become independent replicates.
+fig11_relaxation_recovery,paired bars,"The hold is labeled fixed-displacement relaxation, not creep."
+fig12_noise_equivalent_force,grouped bar,The result is reported only as a stability proxy.

@@ -1,0 +1,10 @@
+roi,qualification,reason,initial_sensitivity_light_per_N,initial_sensitivity_ci_low,initial_sensitivity_ci_high,knee_N,safe_limit_N,nonlinearity_percent_full_scale,three_consecutive_bin_reversal,monotonic_gate_pass
+1,primary,knee_detected,1.0675904070054748e-11,-18988.39999999997,19509.399999999994,0.375,0.3375,9.708469464689694,False,False
+2,exploratory-insufficient,coverage_below_3N_without_knee,8224.200000000006,-15230.899999999983,19530.699999999997,,,68.13982939475758,False,False
+3,exploratory-insufficient,coverage_below_3N_without_knee,627.6000000000096,-16361.169999999986,17016.600000000002,,,93.60860010987359,False,False
+4,primary,knee_detected,5.945036936298376e-12,-21209.69999999998,11109.599999999997,0.375,0.3375,36.657351962741245,False,False
+5,exploratory-insufficient,fewer_than_four_supported_bins,,,,,,,,False
+6,primary,knee_detected,5.017482243582429e-12,-18491.924999999974,0.0,0.375,0.3375,96.79072624975751,False,False
+7,exploratory-insufficient,coverage_below_3N_without_knee,38.60000000000574,-7718.599999999991,7817.6,,,99.39391554173713,False,False
+8,primary,knee_detected,1.1545698129459199e-11,-1690.3999999999885,345.70000000000823,0.375,0.3375,99.82137873290475,False,False
+9,primary,knee_detected,1.3175748616832261e-11,-927.9774999999916,61.100000000014276,0.375,0.3375,33.777994157742555,False,False

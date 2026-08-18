@@ -1,0 +1,59 @@
+{
+  "calculation_spot_checks": {
+    "best_model": "constant_baseline",
+    "best_model_median_session_mae_N": 0.3022945530247328,
+    "best_operating_range_r2": 0.013583547692023412,
+    "best_operating_range_r2_model": "session_zeroed_total_linear",
+    "bootstrap_replicates": 1000,
+    "live_sensor_conditional_session_force_bin_r2": 0.02563185511298116,
+    "recomputed_global_sensitivity_light_per_N": 459.11320999721784,
+    "reported_global_sensitivity_light_per_N": 459.11320999721784,
+    "total_light_linear_median_session_mae_N": 0.30504871204779804
+  },
+  "checks": {
+    "automatic_global_evidence_is_normalized_hysteresis_only": true,
+    "global_claimed_bins_require_all_nine_targets": true,
+    "global_detection_average_and_guardrail_recompute": true,
+    "global_lag_is_manual_only_54_sessions": true,
+    "global_low_force_sensitivity_recomputes": true,
+    "global_model_covers_six_groups_54_sessions_9_targets": true,
+    "global_model_outer_holdout_has_no_session_leakage": true,
+    "global_model_predictions_unique_at_declared_grain": true,
+    "global_model_summary_recomputes": true,
+    "hierarchical_bootstrap_has_1000_finite_replicates": true,
+    "live_sensor_operating_range_r2_recomputes": true,
+    "live_sensor_outer_prediction_hashes_match": true,
+    "manifest_output_hashes_match": true,
+    "manual_global_response_has_54_sessions_and_9_targets": true,
+    "no_infinite_numeric_outputs": true,
+    "no_synthetic_rows_or_labels": true,
+    "required_global_tables_present": true,
+    "six_figure_bundles_and_metadata_valid": true,
+    "upstream_manual_first_quality_gate_pass": true,
+    "upstream_manual_first_validation_gate_pass": true,
+    "upstream_quality_gate_pass": true,
+    "upstream_run_manifest_hash_preserved": true,
+    "zero_to_five_model_comparator_recomputes": true
+  },
+  "created_at": "2026-08-14T07:22:56.624526Z",
+  "details": {
+    "figure_issues": [],
+    "hash_mismatches": [],
+    "tables_with_infinity": []
+  },
+  "gate_pass": true,
+  "global_run_id": "global-characterization-61916650e7e10579",
+  "methodology_review": "The global estimand sums all nine floor-corrected positive optical channels, balances within session and target ROI, requires all nine targets for device-wide claims, and retains worst-target detection as a guardrail. Model comparisons use held-out TEST groups with nested ridge selection. The primary model rerun uses the 1.7-3.0 N range configured in the experimental live-sensor implementation, while the original 0-5 N benchmark is retained as a comparator.",
+  "overall_assessment": "share-with-caveats",
+  "required_caveats": [
+    "The global positive sensitivity estimate has a wide hierarchical bootstrap interval; a positive point estimate is not a device-wide sensitivity guarantee.",
+    "Global optical detection is not established under either the average-only or worst-target guarded rule.",
+    "A global output sacrifices localization and cannot replace per-ROI heterogeneity or cross-talk evidence.",
+    "The best held-out calibration benchmark remains weak in absolute terms and must not be presented as deployment-ready.",
+    "Restricting evaluation to the experimental 1.7-3.0 N implementation range lowers absolute error but does not improve held-out R-squared; the narrower outcome variance makes R-squared harder to improve.",
+    "The 1.7-3.0 N interval is configured in a post-hoc experimental bundle and is not the authoritative common safe range, whose gate failed.",
+    "Automatic global curves are normalized hysteresis shapes only; normalization removes absolute amplitude.",
+    "No synthetic data were added and no empirical observations were modified."
+  ],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,35 @@
+{
+  "code_hash": "a8d00fcf568d7e45483f631b13c0121d3a9aafef954b12bbb2321e8cea7fec0e",
+  "created_at": "2026-08-14T07:22:40.450851Z",
+  "exports": {
+    "csv": "fig02_global_target_heterogeneity.csv",
+    "json": "fig02_global_target_heterogeneity.json",
+    "pdf": "fig02_global_target_heterogeneity.pdf",
+    "png": "fig02_global_target_heterogeneity.png",
+    "svg": "fig02_global_target_heterogeneity.svg"
+  },
+  "filters": [
+    "manual TEST1-TEST6 only",
+    "0.75-1.25 N"
+  ],
+  "global_estimand": "equal-target global total-light response; no ROI excluded",
+  "independent_session_count": "six sessions per target ROI",
+  "plotted_columns": [
+    "target_roi",
+    "independent_sessions",
+    "median_total_light",
+    "q25_total_light",
+    "q75_total_light",
+    "global_equal_target_median"
+  ],
+  "plotted_data_hash": "a2451a421a79d34cb3528aaf4b60f8d7cce5cb9fc0074884b5a883bc577b8a6e",
+  "plotted_rows": 9,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "9cefaf71cb15a28dde729f26cbc837bde9fa713a1ccea1f57f84b3edcf85557b",
+  "source_table": "global_target_signal_heterogeneity",
+  "source_table_hash": "4f650718ed3f8253be293dbeff7cc7e892fa715a6edc4c5da8174c1e15072f03",
+  "title": "Target heterogeneity inside the global response",
+  "uncertainty_method": "session median and interquartile interval",
+  "units": "positive light sum"
+}

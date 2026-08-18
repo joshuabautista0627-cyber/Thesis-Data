@@ -1,0 +1,147 @@
+{
+  "created_for": "SPARE_Calibration_Program_Full_Technical_Report_2026-08-18.docx",
+  "overall_assessment": "share_with_caveats",
+  "checks": [
+    {
+      "check": "feature_store_session_count",
+      "passed": true,
+      "evidence": 245
+    },
+    {
+      "check": "feature_store_frame_count",
+      "passed": true,
+      "evidence": 179176
+    },
+    {
+      "check": "feature_store_video_reconciliation",
+      "passed": true,
+      "evidence": {
+        "missing": 0,
+        "unmatched": 0
+      }
+    },
+    {
+      "check": "characterization_quality_and_validation_gates",
+      "passed": true,
+      "evidence": {
+        "quality": true,
+        "validation": true
+      }
+    },
+    {
+      "check": "characterization_metric_inventory",
+      "passed": true,
+      "evidence": 18
+    },
+    {
+      "check": "v4_event_count",
+      "passed": true,
+      "evidence": 102
+    },
+    {
+      "check": "v4_independent_session_count",
+      "passed": true,
+      "evidence": 54
+    },
+    {
+      "check": "v4_event_localization_macro_f1",
+      "passed": true,
+      "evidence": 0.9342785558588881
+    },
+    {
+      "check": "v4_force_conditional_mae",
+      "passed": true,
+      "evidence": 0.32798681555113973
+    },
+    {
+      "check": "v4_release_claim_is_withheld",
+      "passed": true,
+      "evidence": false
+    },
+    {
+      "check": "v4_force_resolution_is_not_established",
+      "passed": true,
+      "evidence": false
+    },
+    {
+      "check": "characterization_detection_is_sparse",
+      "passed": true,
+      "evidence": [
+        3,
+        9
+      ]
+    },
+    {
+      "check": "force_model_knot_count",
+      "passed": true,
+      "evidence": 32
+    },
+    {
+      "check": "live_sensor_gui_screenshot_exists",
+      "passed": true,
+      "evidence": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\reports\\thesis_technical_report_2026-08-18\\charts\\chart_live_sensor_gui.png"
+    }
+  ],
+  "current_test_result": {
+    "passed": 490,
+    "method": "isolated test-file groups",
+    "live_sensor_followup": "35 dedicated live-sensor/runtime/report/contract cases passed on 18 August 2026",
+    "pip_check": "No broken requirements found.",
+    "monolithic_windows_limitation": "A mixed Qt run reproduced the documented pyqtgraph garbage-collection access violation; all files passed when isolated."
+  },
+  "report_structure": {
+    "tables": 43,
+    "figures": 9,
+    "evidence_items": 38,
+    "schema_dictionary_rows": 812,
+    "notebook_cells": 11
+  },
+  "outputs": {
+    "SPARE_Calibration_Program_Full_Technical_Report_2026-08-18.docx": {
+      "sha256": "a517b9ab0a5e36f722d2301f55dadd33f5016e665e2e17d3167d222a5c0515af",
+      "bytes": 661590
+    },
+    "SPARE_Calibration_Program_Full_Technical_Report_2026-08-18.pdf": {
+      "sha256": "3f60f8c8a2528e04d7a44804f9763fb575045c5f01dddc9cf185226c760ef4e8",
+      "bytes": 1556512
+    },
+    "SPARE_Calibration_Program_Full_Technical_Report_2026-08-18.md": {
+      "sha256": "86f319ac7f96ec5c99cd9bc6a75f1c7c70c914aa83659f7b3c029e958106e11d",
+      "bytes": 124195
+    },
+    "SPARE_Report_Validation_Companion.ipynb": {
+      "sha256": "bebcb7420b790effb671d0e29499973e169659ae3229a008759065b37cb8c3ce",
+      "bytes": 10156
+    },
+    "evidence_manifest.csv": {
+      "sha256": "3adda9134f335c2355b055e5dc1fe7442d0497761770036cc0300501d32203ef",
+      "bytes": 5946
+    },
+    "current_schema_dictionary.csv": {
+      "sha256": "d9296ac2bd485a7b4e5bf8657f05de51c7969daeae5f840ee72e7e590d200302",
+      "bytes": 137412
+    },
+    "chart_map.csv": {
+      "sha256": "b1ee995f1d0311810c1c34220f01ffd66dffa3e5c149279c80a32b021049bdf9",
+      "bytes": 1775
+    }
+  },
+  "all_checks_passed": true,
+  "final_structural_checks": {
+    "docx_opened": true,
+    "inline_figures": 9,
+    "pdf_pages": 47,
+    "notebook_cells": 11,
+    "notebook_has_errors": false,
+    "schema_dictionary_rows": 812,
+    "evidence_items": 38,
+    "required_claim_boundaries_present": true
+  },
+  "visual_qa": {
+    "method": "Microsoft Word field update and PDF export; Poppler rasterization at 120 DPI; complete contact-sheet review plus targeted full-page inspection",
+    "rendered_pages": 47,
+    "all_pages_inspected": true,
+    "result": "pass",
+    "pagination_adjustment": "Table rows marked not to split across pages; appendix evidence and release-gate rows rechecked."
+  }
+}

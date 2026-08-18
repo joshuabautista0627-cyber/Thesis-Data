@@ -1,0 +1,172 @@
+{
+  "validation_design": "five contiguous within-session folds; no ROI labels used as model inputs",
+  "candidate_results": {
+    "total_light_linear": {
+      "instantaneous": {
+        "frames": 8559,
+        "mae_N": 2.6495431013205586,
+        "rmse_N": 3.318771769725678,
+        "r2": 0.04443952634346349,
+        "bias_N": 0.05356060498983353
+      },
+      "five_frame_smoothed": {
+        "frames": 8559,
+        "mae_N": 2.7359187502441187,
+        "rmse_N": 3.3775112418048163,
+        "r2": 0.010314952070076489,
+        "bias_N": 0.05371006678985374
+      }
+    },
+    "global_multichannel_linear": {
+      "instantaneous": {
+        "frames": 8559,
+        "mae_N": 2.574180611663448,
+        "rmse_N": 3.23923226562965,
+        "r2": 0.08969362935943359,
+        "bias_N": 0.06322268767682018
+      },
+      "five_frame_smoothed": {
+        "frames": 8559,
+        "mae_N": 2.6868719368882794,
+        "rmse_N": 3.304911686108364,
+        "r2": 0.05240421534342854,
+        "bias_N": 0.06338137306864579
+      }
+    },
+    "global_nonlinear_basis": {
+      "instantaneous": {
+        "frames": 8559,
+        "mae_N": 2.538674615442621,
+        "rmse_N": 3.2030935392716193,
+        "r2": 0.10989212056760334,
+        "bias_N": 0.05756146139341536
+      },
+      "five_frame_smoothed": {
+        "frames": 8559,
+        "mae_N": 2.6749731798426026,
+        "rmse_N": 3.29285879366069,
+        "r2": 0.05930330656358829,
+        "bias_N": 0.057842277405988025
+      }
+    },
+    "random_fourier_nonlinear": {
+      "instantaneous": {
+        "frames": 8559,
+        "mae_N": 2.6411579645101155,
+        "rmse_N": 3.310474854924887,
+        "r2": 0.049211348058854854,
+        "bias_N": 0.0558235640186259
+      },
+      "five_frame_smoothed": {
+        "frames": 8559,
+        "mae_N": 2.704314659074562,
+        "rmse_N": 3.330649177333266,
+        "r2": 0.03758765987659907,
+        "bias_N": 0.05553748483973166
+      }
+    },
+    "global_nonlinear_basis_1frame_delayed": {
+      "instantaneous": {
+        "frames": 8550,
+        "mae_N": 2.380306031222973,
+        "rmse_N": 3.0039240012811423,
+        "r2": 0.21684782815229164,
+        "bias_N": 0.046960778175967395
+      },
+      "five_frame_smoothed": {
+        "frames": 8550,
+        "mae_N": 2.7120361379342635,
+        "rmse_N": 3.34869881151458,
+        "r2": 0.026758877695110095,
+        "bias_N": 0.04527498641694858
+      }
+    }
+  },
+  "best_candidate_by_instantaneous_rmse": "global_nonlinear_basis_1frame_delayed",
+  "selected_serialized_model": "global_nonlinear_basis_1frame_delayed",
+  "light_force_diagnostics": {
+    "overall_zero_lag_correlation": 0.20189970113538927,
+    "median_force_std_within_same_global_light_decile_N": 3.3502342558900597,
+    "median_force_range_within_same_global_light_decile_N": 18.314858570677913,
+    "per_roi": [
+      {
+        "roi": 1,
+        "zero_lag_correlation": 0.29536436324336235,
+        "best_lag_frames": 1,
+        "best_lag_correlation": 0.3336414232295288,
+        "median_force_std_within_same_light_quintile_N": 3.604074907583371,
+        "median_force_range_within_same_light_quintile_N": 16.93110391704365
+      },
+      {
+        "roi": 2,
+        "zero_lag_correlation": 0.023425229078557493,
+        "best_lag_frames": 1,
+        "best_lag_correlation": 0.37021055221126986,
+        "median_force_std_within_same_light_quintile_N": 3.729383940860618,
+        "median_force_range_within_same_light_quintile_N": 20.141945538172205
+      },
+      {
+        "roi": 3,
+        "zero_lag_correlation": 0.26048367240946835,
+        "best_lag_frames": 1,
+        "best_lag_correlation": 0.33990413017063975,
+        "median_force_std_within_same_light_quintile_N": 3.1105042847521363,
+        "median_force_range_within_same_light_quintile_N": 17.19748287108907
+      },
+      {
+        "roi": 4,
+        "zero_lag_correlation": 0.05574244867561701,
+        "best_lag_frames": 3,
+        "best_lag_correlation": -0.28207946682416707,
+        "median_force_std_within_same_light_quintile_N": 3.196613896909364,
+        "median_force_range_within_same_light_quintile_N": 13.827181575387623
+      },
+      {
+        "roi": 5,
+        "zero_lag_correlation": 0.20118224844891672,
+        "best_lag_frames": 1,
+        "best_lag_correlation": 0.39388098023966867,
+        "median_force_std_within_same_light_quintile_N": 2.820538082232555,
+        "median_force_range_within_same_light_quintile_N": 12.140247446849262
+      },
+      {
+        "roi": 6,
+        "zero_lag_correlation": 0.20468887652119128,
+        "best_lag_frames": 1,
+        "best_lag_correlation": 0.24913331911139816,
+        "median_force_std_within_same_light_quintile_N": 2.9151543918634997,
+        "median_force_range_within_same_light_quintile_N": 12.400625697374181
+      },
+      {
+        "roi": 7,
+        "zero_lag_correlation": 0.17444139544637047,
+        "best_lag_frames": 1,
+        "best_lag_correlation": 0.48576478446261584,
+        "median_force_std_within_same_light_quintile_N": 2.6043678826598566,
+        "median_force_range_within_same_light_quintile_N": 12.526448157532597
+      },
+      {
+        "roi": 8,
+        "zero_lag_correlation": 0.24034708167561056,
+        "best_lag_frames": 1,
+        "best_lag_correlation": 0.5559041868449631,
+        "median_force_std_within_same_light_quintile_N": 3.0028379554678257,
+        "median_force_range_within_same_light_quintile_N": 14.02770683727428
+      },
+      {
+        "roi": 9,
+        "zero_lag_correlation": 0.2008667806374006,
+        "best_lag_frames": 1,
+        "best_lag_correlation": 0.5360725797753424,
+        "median_force_std_within_same_light_quintile_N": 3.066646019117777,
+        "median_force_range_within_same_light_quintile_N": 13.265199621541717
+      }
+    ],
+    "median_best_lag_frames": 1.0,
+    "best_lag_range_frames": [
+      1,
+      3
+    ]
+  },
+  "conclusion": "Nonlinearity alone does not create a strong force signal; repeat-session validation is still unavailable."
+}

@@ -1,0 +1,27 @@
+{
+  "identity": {
+    "maximum_ms": 500,
+    "minimum_ms": -500,
+    "script_sha256": "97430de0472d6c01a634b82de28c3e22e57191d5f965f79bc94d5e38b2ade317",
+    "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1",
+    "step_ms": 10
+  },
+  "inputs": {
+    "config": "config/live_sensor_manual_only.json",
+    "feature_report_sha256": "d2576d02e764a65594041987b3d774aaacac275ca5dad9a322df3ac47c3bf05a",
+    "preprocessing_spec": "config/manual_only_preprocessing.json",
+    "split_report_sha256": "880898e2a24f1a4b7ae2993951e4a9bb842c345f9fdba421e2b236ff1745d1bd",
+    "v2_feature_source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "v2_spec": "config/manual_only_experimental_recovery.json",
+    "v2_split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1"
+  },
+  "outputs": {
+    "bidirectional_lag_curve.csv": "4cb4ab2ede744b7e15101088ddbba3740e0f29d1b5ee40bc03b8615500b396dc",
+    "outer_validation_nnls.csv": "4e10064137ad27087678ef5df9eaafe8245a9421e115af7098be52dbba869f65",
+    "summary.json": "b93e6d596f2c0ac74627a6dc2bd1197449bd36802faf867e9b1cf70ee592c3fb",
+    "v2_zero_vs_selected_aggregate.csv": "6b6f15de6dbf030d81076ea19bb795aa98b69e6da37908674eda9f900cb8ef95",
+    "v2_zero_vs_selected_folds.csv": "d35e5f6f16b84ba7520d465dd81ebb4fb50783106cacc0bb187b6104049117e0"
+  },
+  "run_id": "lag-sensitivity-3c36c43bbb7244bb"
+}

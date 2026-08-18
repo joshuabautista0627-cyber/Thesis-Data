@@ -1,0 +1,40 @@
+{
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:40.702281Z",
+  "exports": {
+    "csv": "fig15_manual_plateau_observations.csv",
+    "json": "fig15_manual_plateau_observations.json",
+    "pdf": "fig15_manual_plateau_observations.pdf",
+    "png": "fig15_manual_plateau_observations.png",
+    "svg": "fig15_manual_plateau_observations.svg"
+  },
+  "filters": [
+    "manual only",
+    ">=3 sessions/bin",
+    "observation only; not a deployed or common range"
+  ],
+  "independent_session_count": "54 (six per ROI)",
+  "plotted_columns": [
+    "roi",
+    "supported_force_min_N",
+    "supported_force_max_N",
+    "supported_bins",
+    "peak_session_balanced_light",
+    "plateau_threshold_fraction_of_peak",
+    "minimum_plateau_force_span_fraction",
+    "plateau_onset_N",
+    "plateau_consecutive_bins",
+    "plateau_observation",
+    "claim_boundary"
+  ],
+  "plotted_data_hash": "cdfffdb3113a4ba1c8a663bd9fdc836dd9c0a5dbb1644a79da3f96a8946ee894",
+  "plotted_rows": 9,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "manual_plateau_observations",
+  "source_table_hash": "e8af9a84d5ffdd46935a16c217daa1a706702bff65dad33ef0ac3597581a76b4",
+  "title": "Manual supported range and plateau observations",
+  "uncertainty_method": "supported-bin maximum plus frozen sustained-plateau rule",
+  "units": "N"
+}

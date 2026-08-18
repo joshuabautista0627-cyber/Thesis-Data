@@ -1,0 +1,11 @@
+{
+  "accumulate_only_raw_contact_frames": true,
+  "force_output": "approximate_isotonic_frame_and_event_peak",
+  "force_peak_rule": "maximum in-support isotonic estimate across included raw-contact frames",
+  "include_acquisition_buffer": true,
+  "input": "filtered_normalized_signed_spatial_range",
+  "model_type": "threshold_normalized_peak",
+  "output": "peak_optical_signal",
+  "output_unit": "threshold_ratio",
+  "schema_version": "3.0.0"
+}

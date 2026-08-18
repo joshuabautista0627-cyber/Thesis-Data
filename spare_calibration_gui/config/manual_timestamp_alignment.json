@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "alignment_id": "manual-force-timestamp-alignment-v1",
+  "method": "per_session_linear_timestamp_interpolation",
+  "session_column": "session_id",
+  "optical_timestamp_column": "capture_monotonic_relative_s",
+  "reference_timestamp_column": "synchronized_monotonic_relative_s",
+  "reference_value_column": "reference_force_corrected_N",
+  "lag_convention": "positive_pairs_optical_t_with_reference_t_minus_lag",
+  "maximum_interpolation_gap_ms": 300.0,
+  "allow_cross_session_alignment": false,
+  "allow_extrapolation": false,
+  "duplicate_reference_timestamp_reducer": "median"
+}

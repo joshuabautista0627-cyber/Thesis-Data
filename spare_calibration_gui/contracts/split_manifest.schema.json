@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/live-sensor/split_manifest.schema.json",
+  "title": "Frozen grouped split row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "study_config_hash", "source_manifest_hash", "created_by_run_id", "split_version", "split_hash", "session_id", "scientific_role", "test_group", "collection_day", "outer_fold", "inner_fold_eligible", "no_contact_fold"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "study_config_hash": {"$ref": "#/$defs/hash"},
+    "source_manifest_hash": {"$ref": "#/$defs/hash"},
+    "created_by_run_id": {"type": "string", "minLength": 1},
+    "split_version": {"type": "string", "minLength": 1},
+    "split_hash": {"$ref": "#/$defs/hash"},
+    "session_id": {"type": "string", "minLength": 1},
+    "scientific_role": {"enum": ["model_primary", "no_contact", "characterization", "replay_only", "excluded"]},
+    "test_group": {"type": ["string", "null"]},
+    "collection_day": {"type": "string", "format": "date"},
+    "outer_fold": {"type": ["integer", "null"], "minimum": 1, "maximum": 6},
+    "inner_fold_eligible": {"type": "boolean"},
+    "no_contact_fold": {"type": ["integer", "null"], "minimum": 1}
+  },
+  "$defs": {"hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+}

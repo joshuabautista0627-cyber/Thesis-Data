@@ -1,0 +1,15 @@
+section,chart_id,family,type,question,takeaway,source_id
+Evidence strength,chart_metric_status,Comparison & ranking,horizontalBar,How many metrics sit at each evidence level?,Thirteen are established/qualified and three are not established.,src_metric_status
+ROI response,chart_sensitivity,Comparison & ranking,bar,Is low-force sensitivity consistent across ROI?,Sensitivity is highly heterogeneous and not uniformly positive.,src_sensitivity
+ROI response,chart_cross_talk,Composition,grouped bar,Does each pressed ROI dominate the optical response?,The largest off-target share can rival or exceed target share.,src_cross_talk
+Noise and timing,chart_noise_drift,Relationship,scatter,Do ROI with higher noise also drift more?,Drift varies more than noise and is not explained by noise alone.,src_no_contact
+Noise and timing,chart_lag,Comparison & ranking,bar,How does system-level lag vary by ROI?,Median lag spans negative and positive values with broad bounds.,src_lag
+Automatic cycles,chart_hysteresis,Comparison & ranking,grouped bar,How does absolute hysteresis vary by ROI and speed?,Hysteresis is condition-specific and speed strata should remain separate.,src_hysteresis
+Automatic cycles,chart_cycle_repeatability,Comparison & ranking,bar,How variable are repeated cycles within sessions?,Cycle CV remains non-trivial and is not independent replication.,src_cycle
+Experimental localization,chart_localization_models,Comparison & ranking,horizontalBar,Which event-localization candidate performs best?,Accumulated argmax has the highest macro F1.,src_event_benchmark
+Experimental localization,chart_v4_roi_recall,Comparison & ranking,bar,Is event recall broad across ROI?,All ROI exceed 90% in the post-hoc recovery evaluation.,src_hybrid
+Experimental localization,chart_localization_operating_modes,Accuracy and coverage trade-off,grouped bar,What is gained and lost when uncertain events are withheld?,Selective output reaches 100% macro F1 while retaining 82.93% of events.,src_hybrid
+Primary-literature comparison,chart_peer_alignment,Criteria-specific ranking,horizontalBar,Which representative systems disclose the complete evidence package for camera-only contact localization?,Our system is the only compared row with all five disclosed evidence items; this is not an overall performance rank.,src_peer_comparison
+Force models,chart_force_folds,Uncertainty & benchmark,grouped bar,Do selected force models beat fold constants?,Gains are marginal and inconsistent.,src_force_benchmark
+Force models,chart_global_r2,Uncertainty & benchmark,horizontalBar,Do current global models explain held-out variation?,The best R-squared is only 0.014.,src_global_models
+Frozen gates,chart_application_gate,Uncertainty & benchmark,bar with reference,Did any application fit reach the 90% recall gate?,No fit reached the frozen requirement.,src_application_gate

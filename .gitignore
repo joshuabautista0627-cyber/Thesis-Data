@@ -1,0 +1,9 @@
+# Locally installed third-party tooling (not project source or thesis data)
+Arduino IDE/
+arduino-cli.exe
+
+# Generated Python and plotting caches
+**/__pycache__/
+*.py[cod]
+**/.pytest_cache/
+**/.mplconfig/

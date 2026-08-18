@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/live-sensor/live_sensor_release_gates.schema.json",
+  "title": "Frozen live sensor release gates",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "status", "evaluation_populations", "primary", "force_guardrails", "localization_guardrails", "safety_guardrails", "performance", "usability"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "status": {"const": "frozen-before-outer-results"},
+    "evaluation_populations": {"type": "object", "minProperties": 5, "additionalProperties": {"type": "string", "minLength": 1}},
+    "primary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["end_to_end_force_mae_max_N", "forced_localization_macro_accuracy_min", "forced_localization_macro_f1_min", "no_contact_frame_false_positive_rate_max"],
+      "properties": {
+        "end_to_end_force_mae_max_N": {"const": 0.75},
+        "forced_localization_macro_accuracy_min": {"const": 0.80},
+        "forced_localization_macro_f1_min": {"const": 0.80},
+        "no_contact_frame_false_positive_rate_max": {"const": 0.05}
+      }
+    },
+    "force_guardrails": {"$ref": "#/$defs/numeric_object"},
+    "localization_guardrails": {"$ref": "#/$defs/numeric_object"},
+    "safety_guardrails": {"$ref": "#/$defs/numeric_object"},
+    "performance": {"$ref": "#/$defs/numeric_object"},
+    "usability": {
+      "type": "object",
+      "minProperties": 10,
+      "additionalProperties": {
+        "anyOf": [
+          {"type": "number"},
+          {"type": "integer"},
+          {"type": "array", "items": {"type": "integer"}, "minItems": 1, "uniqueItems": true}
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "numeric_object": {
+      "type": "object",
+      "minProperties": 2,
+      "additionalProperties": {"type": "number"}
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "3.0.0",
+  "spec_id": "manual-only-hybrid-force-event-v4",
+  "bundle_id": "live-sensor-experimental-hybrid-v4",
+  "sensor_mode": "hybrid_force_event",
+  "status": "posthoc_experimental",
+  "disclosure": "This v4 hybrid reuses already-inspected manual-only folds. It combines v3 event detection/localization with v2 monotonic frame-force recovery. The Newton output is approximate, force resolution remains unestablished, and no result is untouched confirmation evidence.",
+  "component_selection": {
+    "force": "v2 isotonic signed-range mapping retained after grouped isotonic, ridge, elastic-net, Extra Trees, and histogram-gradient benchmark; the best nested search improved MAE by only about 0.002 N and was unstable across folds",
+    "localization": "v3 accumulated positive active-fraction argmax retained after grouped logistic, shrinkage-LDA, and Extra Trees comparison",
+    "contact_and_event_state": "v3 threshold-normalized event state machine"
+  },
+  "operating_range_N": {
+    "minimum": 1.7,
+    "maximum": 3.0
+  },
+  "force_output": {
+    "active_event": "current approximate frame force when optical score is inside fitted support",
+    "completed_event": "maximum approximate in-support force over the event",
+    "out_of_support": "unavailable",
+    "validated_claim_allowed": false
+  },
+  "deployment_inputs": {
+    "camera_and_mechanoluminescent_skin_required": true,
+    "camera_roi_features": ["signed_delta_v_sum", "active_fraction"],
+    "load_cell": "forbidden",
+    "printer": "forbidden",
+    "offline_training_labels_are_not_runtime_inputs": true
+  },
+  "research_basis": {
+    "optical_mapping": "calibrated optical intensity can encode mechanical loading, but device-specific calibration is required",
+    "model_constraints": "monotonic response is preferred where physical response should not decrease with the optical score",
+    "runtime": "reviewed NumPy/JSON only; no executable pickle"
+  },
+  "release": {
+    "status": "experimental",
+    "known_gate_failure": "Force resolution is not established against the session-balanced constant baseline; existing folds are post-hoc; known-force hardware, soak, and usability validation are unavailable."
+  },
+  "seed": 1729
+}

@@ -1,0 +1,43 @@
+{
+  "code_hash": "d3e8aa60f6c95fc212fbc46277c26e752467af29718ab1975599fb5047cca68d",
+  "created_at": "2026-08-13T09:06:32.704921Z",
+  "exports": {
+    "csv": "fig03_spatial_sensitivity_uniformity.csv",
+    "json": "fig03_spatial_sensitivity_uniformity.json",
+    "pdf": "fig03_spatial_sensitivity_uniformity.pdf",
+    "png": "fig03_spatial_sensitivity_uniformity.png",
+    "svg": "fig03_spatial_sensitivity_uniformity.svg"
+  },
+  "filters": [
+    "0-1 N",
+    ">=3 sessions/bin"
+  ],
+  "independent_session_count": "54 (six per ROI)",
+  "plotted_columns": [
+    "roi",
+    "force_interval_N",
+    "supported_bins",
+    "minimum_independent_sessions_per_bin",
+    "low_force_sensitivity_light_per_N",
+    "low_force_intercept_light",
+    "low_force_sensitivity_light_per_pixel_per_N",
+    "low_force_intercept_light_per_pixel",
+    "nonlinearity_percent_supported_low_force_span",
+    "qualification",
+    "signed_noise_mad",
+    "median_abs_drift_light_per_min",
+    "low_force_sensitivity_light_per_N_relative_to_roi_median",
+    "low_force_sensitivity_light_per_pixel_per_N_relative_to_roi_median",
+    "signed_noise_mad_relative_to_roi_median"
+  ],
+  "plotted_data_hash": "dd58ab651bd5d40e265ab13b2e1d2a39714f1d80c26b25325f2846aa29218f4a",
+  "plotted_rows": 9,
+  "schema_version": "1.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "spatial_uniformity",
+  "source_table_hash": "41786b7fca1ed87a4ba7abe35a49fe767f7176a594ddf1d38748d76ceb920e3b",
+  "title": "Low-force sensitivity across ROI",
+  "uncertainty_method": "session-balanced low-force linear slope",
+  "units": "positive V-sum/N and positive V/pixel/N"
+}

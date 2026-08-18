@@ -1,0 +1,10 @@
+roi,low_force_sensitivity_light_per_N,qualification,signed_noise_mad_light,noise_equivalent_force_N,conservative_3x_noise_force_N,claim_boundary
+1,30.475272058446265,conditional-qualified-noise-limited-proxy,533.5,17.505996303391154,52.51798891017346,not true force resolution
+2,0.0,exploratory-insufficient,538.5,,,not true force resolution
+3,-115.46399275763684,exploratory-insufficient,443.5,,,not true force resolution
+4,310.256098734066,conditional-qualified-noise-limited-proxy,443.0,1.4278526733481383,4.283558020044415,not true force resolution
+5,0.0,exploratory-insufficient,454.0,,,not true force resolution
+6,0.0,exploratory-insufficient,386.0,,,not true force resolution
+7,0.0,exploratory-insufficient,378.5,,,not true force resolution
+8,57.29676872242514,conditional-qualified-noise-limited-proxy,382.5,6.675769131991119,20.02730739597336,not true force resolution
+9,151.97582712580996,conditional-qualified-noise-limited-proxy,352.0,2.3161578170494463,6.948473451148339,not true force resolution

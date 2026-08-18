@@ -1,0 +1,10 @@
+roi,initial_sensitivity_light_per_N,signed_noise_mad,noise_equivalent_force_N,conservative_3x_noise_force_N,qualification
+1,1.0675904070054748e-11,533.5,49972348617896.875,149917045853690.62,noise-limited-proxy-not-true-resolution
+2,8224.200000000006,538.5,0.0654774932516232,0.1964324797548696,noise-limited-proxy-not-true-resolution
+3,627.6000000000096,443.5,0.7066602931803588,2.1199808795410764,noise-limited-proxy-not-true-resolution
+4,5.945036936298376e-12,443.0,74515937368730.62,223547812106191.88,noise-limited-proxy-not-true-resolution
+5,,454.0,,,noise-limited-proxy-not-true-resolution
+6,5.017482243582429e-12,386.0,76931014652560.11,230793043957680.3,noise-limited-proxy-not-true-resolution
+7,38.60000000000574,378.5,9.805699481863826,29.417098445591478,noise-limited-proxy-not-true-resolution
+8,1.1545698129459199e-11,382.5,33129222305235.89,99387666915707.67,noise-limited-proxy-not-true-resolution
+9,1.3175748616832261e-11,352.0,26715749536258.875,80147248608776.62,noise-limited-proxy-not-true-resolution

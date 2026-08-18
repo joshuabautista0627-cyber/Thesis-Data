@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/live-sensor/manual_timestamp_alignment.schema.json",
+  "title": "Manual calibration timestamp-alignment contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "alignment_id",
+    "method",
+    "session_column",
+    "optical_timestamp_column",
+    "reference_timestamp_column",
+    "reference_value_column",
+    "lag_convention",
+    "maximum_interpolation_gap_ms",
+    "allow_cross_session_alignment",
+    "allow_extrapolation",
+    "duplicate_reference_timestamp_reducer"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "alignment_id": {"const": "manual-force-timestamp-alignment-v1"},
+    "method": {"const": "per_session_linear_timestamp_interpolation"},
+    "session_column": {"const": "session_id"},
+    "optical_timestamp_column": {"const": "capture_monotonic_relative_s"},
+    "reference_timestamp_column": {"const": "synchronized_monotonic_relative_s"},
+    "reference_value_column": {"const": "reference_force_corrected_N"},
+    "lag_convention": {"const": "positive_pairs_optical_t_with_reference_t_minus_lag"},
+    "maximum_interpolation_gap_ms": {"const": 300.0},
+    "allow_cross_session_alignment": {"const": false},
+    "allow_extrapolation": {"const": false},
+    "duplicate_reference_timestamp_reducer": {"const": "median"}
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "archive_hashes_after": {
+    "manual": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a"
+  },
+  "archive_hashes_before": {
+    "manual": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a"
+  },
+  "archive_rows": {
+    "manual": 29318
+  },
+  "created_at": "2026-08-13T08:53:38.414419Z",
+  "dataset_path": "sessions",
+  "dataset_policy": "manual_only",
+  "decoded_video_frames": 29318,
+  "feature_spec_hash": "38fa59a354306bf39c0b570f57e764f5638b19a3ecbdbd49b177b8df6ac56cf5",
+  "gate_checks": {
+    "all_expected_sessions_checkpointed": true,
+    "all_frame_differences_reason_coded": true,
+    "archive_hashes_unchanged": true,
+    "canonical_layout_only": true,
+    "manual_archive_only": true,
+    "no_global_fitted_values": true
+  },
+  "gate_pass": true,
+  "missing_video_frames": 0,
+  "notes": [
+    "session_video.mp4 was the only quantitative image source; overlay, processed, and motion-magnified videos were not read.",
+    "Saved 480x640 originals were not transformed a second time; a 640x480 input would be rotated 90 degrees clockwise and mirrored exactly once.",
+    "No fold-fitted floor, scale, threshold, imputation, Fdetect, Fmax, or model transform is stored in this immutable dataset."
+  ],
+  "run_id": "feature-store-fa2500440adab6ca",
+  "schema_version": "1.0.0",
+  "session_count": 83,
+  "source_audit": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\analysis_outputs\\live_sensor_manual_only\\source_inventory\\archive-audit-dd1ed9cb68dab34b",
+  "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+  "study_config_hash": "6f461b755c26b227c1454a3f35e6683b7b47185c7e533043f0c09e9db5ab1fa5",
+  "total_rows": 29318,
+  "unmatched_video_frames": 0
+}

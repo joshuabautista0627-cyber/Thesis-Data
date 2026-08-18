@@ -1,0 +1,38 @@
+{
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:37.299109Z",
+  "exports": {
+    "csv": "fig11_relaxation_recovery.csv",
+    "json": "fig11_relaxation_recovery.json",
+    "pdf": "fig11_relaxation_recovery.pdf",
+    "png": "fig11_relaxation_recovery.png",
+    "svg": "fig11_relaxation_recovery.svg"
+  },
+  "filters": [
+    "automatic only",
+    "not constant-force creep",
+    "holding and unloaded dwell shown separately",
+    "internal correction provenance retained"
+  ],
+  "independent_session_count": "162 sessions",
+  "plotted_columns": [
+    "roi",
+    "phase",
+    "phase_fraction_bin",
+    "independent_sessions",
+    "median_light_change",
+    "q25_light_change",
+    "q75_light_change",
+    "median_force_change_N"
+  ],
+  "plotted_data_hash": "490cb0f08111d7d64a6067579dc6e77e7389fcdee0cf331cfab54b5c059d3c2b",
+  "plotted_rows": 198,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "automatic_phase_trace",
+  "source_table_hash": "fbe260311b867f3365f062c16474e80ee39f39bf33f08b6d198173f4368dfd5d",
+  "title": "Creep-related fixed-displacement settling and unloaded recovery",
+  "uncertainty_method": "cycle traces averaged within session then median across sessions",
+  "units": "positive V-sum change and N"
+}

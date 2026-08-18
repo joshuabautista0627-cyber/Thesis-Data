@@ -1,0 +1,2 @@
+average_global_detection_region_N,device_wide_guarded_detection_region_N,frozen_empirical_fpr,required_recall,independent_no_contact_sessions,median_contact_total_light_0_75_to_1_25_N,global_signed_noise_mad,global_snr_linear,global_snr_dB_amplitude_convention,global_noise_equivalent_force_proxy_N,claim_boundary,data_origin
+,,0.01,0.95,11,347.5,1924.0,0.1806133056133056,-14.86500517551323,4.190687521301466,average-only detection cannot be promoted to device-wide detection unless worst-target recall also passes,empirical-manual

@@ -1,0 +1,158 @@
+{
+  "design": "Leave-one-complete-test-number-out validation across TEST2-TEST6; all nine ROI sessions from the held-out run are excluded from training.",
+  "candidate_results": {
+    "total_light_linear": {
+      "frames": 15894,
+      "mae_N": 1.9843238401633023,
+      "rmse_N": 2.5918636908511052,
+      "r2": 0.05674834667211215,
+      "bias_N": 0.0027732662415370325,
+      "target_delay_frames": 0
+    },
+    "global_multichannel_linear": {
+      "frames": 15894,
+      "mae_N": 1.7076012675060608,
+      "rmse_N": 2.2874160446703597,
+      "r2": 0.26532783502587287,
+      "bias_N": 0.0011508946920939058,
+      "target_delay_frames": 0
+    },
+    "global_nonlinear_basis": {
+      "frames": 15894,
+      "mae_N": 1.6759978342839625,
+      "rmse_N": 2.249308899401711,
+      "r2": 0.2896024373868288,
+      "bias_N": -0.007377496937109772,
+      "target_delay_frames": 0
+    },
+    "global_nonlinear_basis_1frame_delayed": {
+      "frames": 15849,
+      "mae_N": 1.6461689796280468,
+      "rmse_N": 2.129359380819332,
+      "r2": 0.36204261980264496,
+      "bias_N": -0.005545358639030575,
+      "target_delay_frames": 1
+    }
+  },
+  "selected_model": "global_nonlinear_basis_1frame_delayed",
+  "selected_model_fold_results": [
+    {
+      "held_out_test": 2,
+      "frames": 3396,
+      "mae_N": 1.8175946451133052,
+      "rmse_N": 2.33296683190166,
+      "r2": 0.34544654958693755,
+      "bias_N": -0.4256374232923546
+    },
+    {
+      "held_out_test": 3,
+      "frames": 3129,
+      "mae_N": 1.8076030309718856,
+      "rmse_N": 2.4368526648279984,
+      "r2": 0.3257333832391005,
+      "bias_N": -0.19088031683072368
+    },
+    {
+      "held_out_test": 4,
+      "frames": 3236,
+      "mae_N": 1.508866107488654,
+      "rmse_N": 1.8976794700509951,
+      "r2": 0.3828168786571682,
+      "bias_N": 0.38598118840713996
+    },
+    {
+      "held_out_test": 5,
+      "frames": 3016,
+      "mae_N": 1.5803034743491668,
+      "rmse_N": 1.9929859175294624,
+      "r2": 0.3367137589742575,
+      "bias_N": 0.23198985539850728
+    },
+    {
+      "held_out_test": 6,
+      "frames": 3072,
+      "mae_N": 1.5015315289514088,
+      "rmse_N": 1.9064033999235754,
+      "r2": 0.4038812910877274,
+      "bias_N": 0.0019935814540274857
+    }
+  ],
+  "selected_model_per_roi": [
+    {
+      "roi": 1,
+      "frames": 1891,
+      "mae_N": 2.34407615844295,
+      "rmse_N": 3.0976031249695954,
+      "r2": 0.17821662175087316,
+      "bias_N": -0.8862545153523816
+    },
+    {
+      "roi": 2,
+      "frames": 1669,
+      "mae_N": 1.9409033361258503,
+      "rmse_N": 2.506346544566598,
+      "r2": 0.13294748534754408,
+      "bias_N": -0.3411047173305263
+    },
+    {
+      "roi": 3,
+      "frames": 1634,
+      "mae_N": 1.6479095254196072,
+      "rmse_N": 2.1725842993267097,
+      "r2": 0.26268384223416585,
+      "bias_N": 0.10125523691401213
+    },
+    {
+      "roi": 4,
+      "frames": 1888,
+      "mae_N": 1.738771740636787,
+      "rmse_N": 2.0935955506184203,
+      "r2": 0.2658919513679503,
+      "bias_N": 0.4173782724383005
+    },
+    {
+      "roi": 5,
+      "frames": 1897,
+      "mae_N": 1.6532967074773048,
+      "rmse_N": 1.9653186958724416,
+      "r2": 0.22306207096536834,
+      "bias_N": 0.2985948903233606
+    },
+    {
+      "roi": 6,
+      "frames": 1985,
+      "mae_N": 1.4527426375965833,
+      "rmse_N": 1.8496644486578726,
+      "r2": 0.17355459655190753,
+      "bias_N": 0.17484369632222327
+    },
+    {
+      "roi": 7,
+      "frames": 1775,
+      "mae_N": 1.2503214771212323,
+      "rmse_N": 1.5552813945060662,
+      "r2": 0.204373997105311,
+      "bias_N": 0.2518606132810009
+    },
+    {
+      "roi": 8,
+      "frames": 1565,
+      "mae_N": 1.3945025995904414,
+      "rmse_N": 1.7584506289766735,
+      "r2": 0.21335055264511704,
+      "bias_N": -0.006958675376162868
+    },
+    {
+      "roi": 9,
+      "frames": 1545,
+      "mae_N": 1.308036300125869,
+      "rmse_N": 1.607879442401288,
+      "r2": 0.12418941579350273,
+      "bias_N": -0.09436897640654388
+    }
+  ],
+  "low_force_frames": 672,
+  "low_force_mae_N": 2.3907548781839614,
+  "low_force_false_contact_rate_at_0_05N": 1.0,
+  "excluded_data": "TEST1, TEST7, and NOCONTACT were excluded because their saturation/sharpness controls do not match TEST2-TEST6."
+}

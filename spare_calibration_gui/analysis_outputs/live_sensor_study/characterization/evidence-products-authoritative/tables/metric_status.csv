@@ -1,0 +1,15 @@
+metric,source,status,independent_evidence,claim_boundary
+Archive integrity and original-frame reconciliation,Both archives / immutable feature store,primary,"245 complete sessions; 179,176 reconciled frames",Source and pipeline evidence only
+Manual low-force sensitivity and nonlinearity,54 manual TEST1-TEST6 sessions,primary,Six TEST sessions per ROI; supported-bin rule >=3 sessions,Characterization only; no deployed force range
+Between-session repeatability and spatial uniformity,54 manual TEST1-TEST6 sessions,primary,Six independent sessions per ROI,Retains raw and area-normalized response
+Cross-talk,54 manual TEST1-TEST6 sessions,primary,Complete 9x9 target/measured ROI matrix,Single-ROI presses only
+"No-contact noise, SNR, and drift",11 dedicated manual no-contact sessions,primary,All nine ROIs observed in each session,Short-term recorded durations only
+Optical detection region,Manual press vs dedicated no-contact sessions,conditional-qualified,Frozen 1% empirical FPR / 95% recall rule; >=3 press sessions,Not an application threshold
+Automatic hysteresis and speed dependence,162 automatic sessions,conditional-qualified,2 sessions per exact ROI x speed x displacement condition,Condition-specific intervals descriptive; speeds not pooled
+Within-session cyclic repeatability,162 automatic sessions,conditional-qualified,Cycles summarized within session; 10- and 20-cycle sessions remain independent units,"Cycles are repeated observations, not replicates"
+Fixed-displacement relaxation and unloaded recovery,Automatic holding and inter-cycle dwell phases,conditional-qualified,Cycle estimates averaged within complete session,Not constant-force creep
+Approximate system lag,Automatic synchronized optical/reference traces,exploratory-insufficient,162 session-level lag estimates,System-level lag; grid-limited exploratory estimate
+Noise-equivalent force,Dedicated no-contact noise / manual low-force sensitivity,conditional-qualified,Per-ROI proxy from independent no-contact and press sessions,"Noise-limited stability proxy, not true resolution"
+Common supported force range / monotonicity,Preserved characterization-dade466f019e6d15,not-established,All nine ROI monotonic gate pass = False,Failed scientific finding; does not control application/model track
+True creep,No qualifying constant-force protocol,not-established,Required >=5 s constant-force holds were not collected,No creep number reported
+True force resolution,No qualifying randomized settled-step protocol,not-established,Continuous ramps cannot establish resolution,No resolution claim reported

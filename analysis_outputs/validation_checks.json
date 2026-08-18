@@ -1,0 +1,27 @@
+{
+  "unique_session_folders": 162,
+  "all_frame_counts_reconcile": true,
+  "all_loadcell_counts_reconcile": true,
+  "peak_winner_count": 22,
+  "integrated_winner_count": 18,
+  "camera_config_counts": {
+    "Config A: brighter": 99,
+    "Config B: darker": 63
+  },
+  "peak_ratio_new_to_old_by_roi_1_to_6": {
+    "1": 0.15342528822624182,
+    "2": 0.1056849995484512,
+    "3": 0.16729968056997127,
+    "4": 0.15008284283661194,
+    "5": 0.1897414039367544,
+    "6": 0.17055281773107597
+  },
+  "integrated_per_cycle_ratio_new_to_old_by_roi_1_to_6": {
+    "1": 0.14727280580866733,
+    "2": 0.10777240294799093,
+    "3": 0.20930254589215355,
+    "4": 0.14313498917872924,
+    "5": 0.15612639533332767,
+    "6": 0.16619011592774421
+  }
+}

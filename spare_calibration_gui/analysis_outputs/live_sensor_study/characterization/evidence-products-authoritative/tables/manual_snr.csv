@@ -1,0 +1,10 @@
+roi,force_region_N,independent_press_sessions,independent_no_contact_sessions,median_contact_positive_light,dedicated_no_contact_signed_light_mad,snr_linear,snr_dB_amplitude_convention,qualification
+1,0.75-1.25,6,11,0.0,562.0,0.0,,primary
+2,0.75-1.25,5,11,0.0,624.5,0.0,,primary
+3,0.75-1.25,5,11,216.0,464.0,0.46551724137931033,-6.6412845880789995,primary
+4,0.75-1.25,6,11,355.25,641.0,0.5542121684867395,-5.126478858386201,primary
+5,0.75-1.25,6,11,0.0,834.0,0.0,,primary
+6,0.75-1.25,6,11,0.0,500.0,0.0,,primary
+7,0.75-1.25,6,11,0.0,428.5,0.0,,primary
+8,0.75-1.25,6,11,538.0,332.0,1.6204819277108433,4.192883839247058,primary
+9,0.75-1.25,5,11,353.5,291.5,1.2126929674099485,1.6750171807577057,primary

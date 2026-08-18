@@ -1,0 +1,36 @@
+{
+  "code_hash": "88c3c950c4c0062ec6e02c9bd17661423e4779e998a3752077fcec7b71ec98ca",
+  "created_at": "2026-08-13T09:52:43.078464Z",
+  "exports": {
+    "csv": "fig16_manual_system_lag.csv",
+    "json": "fig16_manual_system_lag.json",
+    "pdf": "fig16_manual_system_lag.pdf",
+    "png": "fig16_manual_system_lag.png",
+    "svg": "fig16_manual_system_lag.svg"
+  },
+  "filters": [
+    "manual TEST1-TEST6 only",
+    "positive lag means optical follows reference",
+    "search -500 to 500 ms",
+    "not intrinsic material response time"
+  ],
+  "independent_session_count": "54 (six per ROI)",
+  "plotted_columns": [
+    "roi",
+    "lag_ms",
+    "independent_sessions",
+    "median_absolute_correlation",
+    "q25_absolute_correlation",
+    "q75_absolute_correlation"
+  ],
+  "plotted_data_hash": "23232a4dce23a872317184fd8112b7a35ad43fbd85daf355dc1b78b16c4d17b7",
+  "plotted_rows": 369,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "manual_system_lag_curve",
+  "source_table_hash": "d0a803cc37d81dc627bd54fab73b3ee1e01094b131e60ad8545d0aa0be743beb",
+  "title": "Manual-only system-lag curves",
+  "uncertainty_method": "session derivative cross-correlation; median and interquartile range across sessions",
+  "units": "ms and absolute correlation"
+}

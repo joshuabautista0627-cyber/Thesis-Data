@@ -1,0 +1,16 @@
+{
+  "manual_archive_hash_after": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+  "manual_archive_hash_before": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+  "run_id": "experimental-event-signal-5c2d53e9e210f8ff",
+  "schema_version": "2.0.0",
+  "source": {
+    "dataset_policy": "manual_only",
+    "feature_spec_hash": "38fa59a354306bf39c0b570f57e764f5638b19a3ecbdbd49b177b8df6ac56cf5",
+    "force_output": "unavailable",
+    "manual_archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+    "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1"
+  },
+  "spec_hash": "6af060681d347e710caf041c465a740ed3dad6a5227c653efc582aef94b288b0",
+  "status": "posthoc_experimental"
+}

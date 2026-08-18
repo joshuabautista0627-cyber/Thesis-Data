@@ -1,0 +1,50 @@
+{
+  "code_hash": "a8d00fcf568d7e45483f631b13c0121d3a9aafef954b12bbb2321e8cea7fec0e",
+  "created_at": "2026-08-14T07:22:45.201158Z",
+  "exports": {
+    "csv": "fig05_global_model_benchmark.csv",
+    "json": "fig05_global_model_benchmark.json",
+    "pdf": "fig05_global_model_benchmark.pdf",
+    "png": "fig05_global_model_benchmark.png",
+    "svg": "fig05_global_model_benchmark.svg"
+  },
+  "filters": [
+    "manual empirical data only",
+    "live implementation range 1.7-3.0 N",
+    "0-5 N comparator retained",
+    "all nine target ROI retained"
+  ],
+  "global_estimand": "equal-target global total-light response; no ROI excluded",
+  "independent_session_count": "54 sessions; six held-out TEST-group folds",
+  "plotted_columns": [
+    "model",
+    "held_out_test_groups",
+    "independent_sessions",
+    "target_roi",
+    "force_interval_N",
+    "evaluation_scope",
+    "prediction_rows",
+    "mae_N",
+    "rmse_N",
+    "r2",
+    "median_session_mae_N",
+    "q25_session_mae_N",
+    "q75_session_mae_N",
+    "worst_target_median_session_mae_N",
+    "within_0_5_N_fraction",
+    "validation_design",
+    "claim_boundary",
+    "model_family",
+    "metric_grain"
+  ],
+  "plotted_data_hash": "c705e0dc4d4137855e72e4bd57c60131cb9fba99bf8ec65f7a560ab47c30a967",
+  "plotted_rows": 15,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "9cefaf71cb15a28dde729f26cbc837bde9fa713a1ccea1f57f84b3edcf85557b",
+  "source_table": "global_model_range_comparison",
+  "source_table_hash": "d8f58de731344004f6bf0d487ff0deffc8fdb53f3c81a236487da1d16b7de324",
+  "title": "Global model benchmark within the live implementation range",
+  "uncertainty_method": "same outer held-out TEST groups; nested ridge alpha selection; exact live outer predictions retained separately",
+  "units": "R-squared and N"
+}

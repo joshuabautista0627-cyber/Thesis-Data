@@ -1,0 +1,80 @@
+{
+  "argv": [
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\scripts\\characterize_optical_sensor.py",
+    "--config",
+    "config\\live_sensor_study.json"
+  ],
+  "code_hash": "1f22c6f52999a8b8e9af85e81b19fadb5bb8dfd5a2caa4d2d31bd0b46e5df2e2",
+  "command": "characterize-optical-sensor",
+  "completed_at": "2026-08-13T08:00:57.781526Z",
+  "config_path": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\config\\live_sensor_study.json",
+  "created_at": "2026-08-13T08:00:57.781526Z",
+  "elapsed_s": 24.688288,
+  "environment": {
+    "machine": "AMD64",
+    "operating_system": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "jsonschema": "4.26.0",
+      "matplotlib": "3.11.1",
+      "numpy": "2.5.1",
+      "onnx": "1.22.0",
+      "opencv-python": "4.14.0.94",
+      "pandas": "3.0.5",
+      "pyarrow": "21.0.0",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.0",
+      "skl2onnx": "1.20.0",
+      "xgboost": "3.4.0"
+    },
+    "python_executable": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\.venv\\Scripts\\python.exe",
+    "python_implementation": "CPython",
+    "python_version": "3.12.13"
+  },
+  "exclusions": [],
+  "gate_pass": false,
+  "input_identity_hash": "afb67635697d3a80e3899fc52a1ce9933b04bf21f9f5222c70689749af847383",
+  "inputs": {
+    "feature_store": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\analysis_outputs\\live_sensor_study\\feature_store\\feature-store-c0ec762f1dc888a7",
+    "split_manifest": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\spare_calibration_gui\\analysis_outputs\\live_sensor_study\\splits\\splits-fc7de7cf0b88479e\\split_manifest.parquet"
+  },
+  "outputs": {
+    "approximate_lag.csv": "db679648209f780a6c376d73650c14e9866c427a432679ca36bfe948c14fadc1",
+    "approximate_lag.parquet": "fa44e9c445bd19e8f69fa42d14a9982082573627ff4b06b0fec3cf40bbf3c851",
+    "characterization_summary.json": "f14a89ed07cc867abd86c5bc6681f0fde9211d393c22a9dfb558d44ac6c5e0a2",
+    "cross_talk.csv": "d35db30d3548fad3e3dd6771b19a179a2b7bb824c7d4247966d0fe00ace3d896",
+    "cross_talk.parquet": "769c45cbbcd90d74832cf024f13f73b13b081187eb5d0da8b9526e749097efd8",
+    "events.jsonl": "c017081152dc413a4c7c5c966d42d23d32bedb8c1f3842fc54fef3cc5718b9b6",
+    "hysteresis.csv": "ac4ffe7fd9f84ca1c081dd92a5d8e9c1eab5f498bcf2a2075a4df091f8242d7b",
+    "hysteresis.parquet": "321d6b7578f201a3a368f98e364fed8758049035225ad4c45c4fa22e80c05fe7",
+    "local_sensitivity.csv": "a893bf8b0e5415b493ba02da6fc9634732dd0b40568610075f08f9816ecb963d",
+    "local_sensitivity.parquet": "61cdcd121655009c365946cccad3298f683aa54456220455b7a81f1c788f47d8",
+    "no_contact_drift.csv": "696f089036eb040f19a45b54518a38a4134e02e4c4b46c606bac4864eaa6261b",
+    "no_contact_drift.parquet": "eabd19995d844a329436267a847c11f94c771f75a43b1d22b20fa5674ff6e866",
+    "no_contact_session_noise.csv": "fe74cc270f8da3025753f572762da5bebb55105a892a9ad94ef7620a65646300",
+    "no_contact_session_noise.parquet": "b3f676080dead5bde29a04bf994373c9d9d02147b0b29ed831f697d7a55a03a9",
+    "no_contact_summary.csv": "977f5c656982d71727e4584cb94e51f9eade38a74393108a708d49f8ca422ca5",
+    "no_contact_summary.parquet": "193e3c807649d28049cac71a9eda2135416b62f1f4b36ee5c2be28c82fbdebd6",
+    "noise_equivalent_force_proxy.csv": "75444e9a32ca3d2bd738ea3c0f6014775ec44db61bd1696755b9465eb2e17b8a",
+    "noise_equivalent_force_proxy.parquet": "1a82ea90b655b40f38f5074dee5188626c1f37efde1d66f03e680f73863985eb",
+    "plateau_summary.csv": "24ea7c79ce45e7636ee6eb2ebe626ea9112949b49212f50a75a01e72899e6dd3",
+    "plateau_summary.parquet": "425589d6b3aa3663d51b59e10b047818c271c96421c4d2ad7260999cab14595f",
+    "range_decision.json": "51bfba54ff57ab5e1c9ef00cc6c16ac4059ac19d78512dd32400a317ec70c33e",
+    "relaxation_recovery.csv": "ff0ab493066c7638d8caf5288f465cc5097cc5201f8f633803c8b05ea2a48d96",
+    "relaxation_recovery.parquet": "dfb5981f0517bdc5965a9e85ee660e382f9f3ac6f49681edca947a88e3641e47",
+    "repeatability.csv": "214e3151be3202032d308367cff785473e06c1cc7c96a766e046253cf76e6c26",
+    "repeatability.parquet": "f19da0a0327a1b98b6f3d1620b49d05747f015c6da67c61311f633c79b62bab5",
+    "session_balanced_response.csv": "fa8250dd9d0ab7d2b68899b4402f5edd06c162033e7997652fc67cd0a3be3759",
+    "session_balanced_response.parquet": "3bbcf4682a5922ec67ceaa662561725b75bf06f22b3a413a3b895d8af0f2543e",
+    "session_binned_response.csv": "b399333cd13bf7c71c6b5e1e10e032b9a918f5a48b67c43cff2cd80d442d8658",
+    "session_binned_response.parquet": "222ea165e9ce6496b0e73a3aeac97d31b2b2a7bc2ce5f8156a10172141e37bc6"
+  },
+  "run_id": "characterization-dade466f019e6d15",
+  "schema_version": "1.0.0",
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "split_hash": "da49d3b82bbefebb6412ad1eb0b8c15da99a97d5c0ae15c12f5ebcd2ae81ca40",
+  "study_config_hash": "d5fb3939b1d12cfb1dc38e42e0cd5cb9461d3751959c36e94fd5221b100d3e56",
+  "warnings": [
+    "True force resolution is not established by continuous ramps.",
+    "Constant-force creep is not estimable from 0.5 s fixed-displacement holds."
+  ]
+}

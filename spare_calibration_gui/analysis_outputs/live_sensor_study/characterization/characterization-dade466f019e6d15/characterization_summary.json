@@ -1,0 +1,31 @@
+{
+  "automated_session_count": 162,
+  "created_at": "2026-08-13T08:00:57.202643Z",
+  "feature_store_report_hash": "e5b29e8223a8aaa4847601f1644c5fcd77c6ff106397fdc238da17c4a67eb807",
+  "frame_count": 179176,
+  "gate_checks": {
+    "all_nine_roi_data_monotonicity": false,
+    "all_nine_roi_no_contact_noise": true,
+    "all_nine_roi_plateau_decisions": false,
+    "automated_hysteresis_reported": true,
+    "complete_cross_talk_matrix": true,
+    "creep_not_claimed": true,
+    "relaxation_recovery_reported": true,
+    "true_resolution_not_claimed": true
+  },
+  "gate_pass": false,
+  "no_contact_session_count": 11,
+  "provisional_common_fmax_N": null,
+  "qualification": {
+    "approximate_lag": "exploratory; final lag must be selected inside training folds",
+    "creep": "not estimable from current protocol",
+    "loaded_hold": "short-term fixed-displacement relaxation only",
+    "true_force_resolution": "not established"
+  },
+  "run_id": "characterization-dade466f019e6d15",
+  "schema_version": "1.0.0",
+  "session_count": 245,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "split_hash": "da49d3b82bbefebb6412ad1eb0b8c15da99a97d5c0ae15c12f5ebcd2ae81ca40",
+  "study_config_hash": "d5fb3939b1d12cfb1dc38e42e0cd5cb9461d3751959c36e94fd5221b100d3e56"
+}

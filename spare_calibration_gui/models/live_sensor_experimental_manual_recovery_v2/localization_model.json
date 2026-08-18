@@ -1,0 +1,21 @@
+{
+  "claim": "tentative_roi",
+  "class_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "confidence_margin_threshold": 0.2777777777777778,
+  "input": "filtered_normalized_active_fraction",
+  "minimum_training_coverage": 0.8,
+  "model_type": "normalized_active_fraction_argmax_switch_debounce",
+  "schema_version": "1.0.0",
+  "selective_output_enabled": true,
+  "switch_frames": 2
+}

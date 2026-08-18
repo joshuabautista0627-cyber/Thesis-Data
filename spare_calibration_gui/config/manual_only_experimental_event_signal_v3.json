@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0.0",
+  "spec_id": "manual-only-event-signal-v3",
+  "bundle_id": "live-sensor-experimental-event-signal-v3",
+  "sensor_mode": "event_signal",
+  "status": "posthoc_experimental",
+  "disclosure": "This v3 analysis reuses the six already-inspected manual-only folds. It reports threshold-normalized optical event strength and discrete ROI only. It does not estimate force in Newtons and is not untouched confirmation evidence.",
+  "temporal_filter": {
+    "method": "causal_mean",
+    "window_frames": 9,
+    "minimum_periods": 1
+  },
+  "normalization": {
+    "center": "median_of_no_contact_session_medians",
+    "scale": "median_of_no_contact_session_q99_absolute_deviation",
+    "scale_floor": 1e-6
+  },
+  "contact": {
+    "score": "normalized_signed_delta_v_sum_spatial_range",
+    "training_fallback": "median_session_q95",
+    "unloaded_warmup_quantile": 0.99,
+    "warmup_fraction_for_replay": 0.5,
+    "minimum_warmup_frames": 120,
+    "acquire_frames": 2,
+    "clear_frames": 2,
+    "frame_fpr_target": 0.05,
+    "recall_target": 0.9
+  },
+  "event_signal": {
+    "model": "threshold_normalized_peak",
+    "unit": "threshold_ratio",
+    "accumulate_only_raw_contact_frames": true,
+    "include_acquisition_buffer": true,
+    "force_output": "unavailable"
+  },
+  "localization": {
+    "model": "accumulated_positive_active_fraction_argmax",
+    "class_count": 9,
+    "score_filter": "causal_mean_9_frames",
+    "accumulator": "sum_max_filtered_normalized_active_fraction_zero",
+    "confidence": "top_two_gap_divided_by_total_activity",
+    "selective_output": {
+      "enabled": true,
+      "minimum_training_coverage": 0.8,
+      "threshold_selection": "maximize_training_macro_f1_then_prefer_lower_threshold"
+    }
+  },
+  "evaluation": {
+    "operating_range_N_for_contact_recall_only": [1.7, 3.0],
+    "minimum_event_localization_macro_f1": 0.891,
+    "report_session_balanced_event_metrics": true,
+    "force_metrics_prohibited": true
+  },
+  "release": {
+    "status": "experimental",
+    "validated_claim_allowed": false,
+    "known_gate_failure": "No event-level 1.7-3.0 N calibration data exist. The output is a unitless threshold-normalized optical signal, not force. Existing folds are post-hoc and physical/usability validation is unavailable."
+  },
+  "seed": 1729
+}

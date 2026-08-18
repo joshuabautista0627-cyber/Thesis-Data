@@ -1,0 +1,41 @@
+{
+  "code_hash": "a8d00fcf568d7e45483f631b13c0121d3a9aafef954b12bbb2321e8cea7fec0e",
+  "created_at": "2026-08-14T07:22:39.024122Z",
+  "exports": {
+    "csv": "fig01_global_manual_response.csv",
+    "json": "fig01_global_manual_response.json",
+    "pdf": "fig01_global_manual_response.pdf",
+    "png": "fig01_global_manual_response.png",
+    "svg": "fig01_global_manual_response.svg"
+  },
+  "filters": [
+    "manual TEST1-TEST6 only",
+    "all nine target ROI required",
+    "force <=5 N"
+  ],
+  "global_estimand": "equal-target global total-light response; no ROI excluded",
+  "independent_session_count": "54 sessions; all nine targets",
+  "plotted_columns": [
+    "force_bin_N",
+    "contributing_target_roi",
+    "minimum_sessions_per_target",
+    "median_force_N",
+    "global_median_total_light",
+    "q25_target_total_light",
+    "q75_target_total_light",
+    "minimum_target_total_light",
+    "maximum_target_total_light",
+    "all_nine_targets",
+    "aggregation_order"
+  ],
+  "plotted_data_hash": "7b03d116dbaee8ff02d8de7e03c724889d86bddfd02ab751ca9d8864f5f1cba3",
+  "plotted_rows": 19,
+  "schema_version": "2.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "9cefaf71cb15a28dde729f26cbc837bde9fa713a1ccea1f57f84b3edcf85557b",
+  "source_table": "global_manual_force_response",
+  "source_table_hash": "bcdeaf77121ff9f7c7893cb453d0b77b0b7d9b2db8c43f83f252b02321e4a819",
+  "title": "Global manual total-light response",
+  "uncertainty_method": "session median -> target median -> equal-target median and IQR",
+  "units": "positive light sum"
+}

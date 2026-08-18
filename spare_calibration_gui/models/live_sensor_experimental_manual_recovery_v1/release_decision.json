@@ -1,0 +1,23 @@
+{
+  "blocking_reasons": [
+    "Candidate selection was post-hoc after inspecting the existing folds; no untouched confirmation data remain.",
+    "The authoritative frozen all-ROI common safe-range procedure failed.",
+    "Known-force physical, latency/soak, and representative-user validation were not performed."
+  ],
+  "model_eligible_under_authoritative_plan": false,
+  "numerical_recovery_checks": {
+    "absolute_bias_at_most_0_20N": true,
+    "conditional_mae_at_most_0_75N": true,
+    "force_rmse_at_most_1N": true,
+    "localization_macro_f1_at_least_0_80": true,
+    "max_no_contact_frame_fpr_at_most_0_05": true,
+    "min_contact_recall_at_least_0_90": true
+  },
+  "original_common_safe_range_gate_pass": false,
+  "physical_validation_complete": false,
+  "posthoc_outer_fold_reuse": true,
+  "schema_version": "1.0.0",
+  "status": "experimental",
+  "usability_validation_complete": false,
+  "validated_claim_allowed": false
+}

@@ -1,0 +1,53 @@
+{
+  "bundle_id": "live-sensor-experimental-manual-recovery-v1",
+  "created_at": "2026-08-13T10:05:21.459780Z",
+  "files": {
+    "force_model.json": {
+      "sha256": "6396bfd9c626ab690d7f3e0a925453582dc57788d0e5a20d3229a62902d09298",
+      "size_bytes": 1917
+    },
+    "localization_model.json": {
+      "sha256": "6fe8f2d84219e06e0888b2f883d86118584173d6abec8fa5fefb7e95a8fce2a3",
+      "size_bytes": 266
+    },
+    "metrics.json": {
+      "sha256": "fcfbaedf55552b4305fd0198ee84f0e4b15de64061351b189600ac7c0a53394c",
+      "size_bytes": 6235
+    },
+    "preprocessing.json": {
+      "sha256": "f511ff35ea833a65e5eb2af496a1d9e942db09e635b2ed5d2d0d18e715fbcf03",
+      "size_bytes": 1828
+    },
+    "release_decision.json": {
+      "sha256": "098aed9838a89305a88b27e029211bb4dad4589d9768a1db64b0ba79ba43d1dc",
+      "size_bytes": 959
+    },
+    "replay_demo.jsonl": {
+      "sha256": "18ab3da23fe264f8edf32d7aa98e50e405d5d7b267662e8d70ad9927145d10ed",
+      "size_bytes": 265996
+    }
+  },
+  "manual_only": true,
+  "operating_range_N": {
+    "maximum": 3.0,
+    "minimum": 1.7
+  },
+  "replay_demo": {
+    "calibration_session_id": "2026-08-08_165945_733163_1_R9_NOCONTACT",
+    "frame_count": 399,
+    "model_fit_role": false,
+    "replay_session_id": "2026-08-08_174903_311062_1_R6_TEST1_v2"
+  },
+  "runtime": "reviewed_numpy_json",
+  "schema_version": "1.0.0",
+  "source": {
+    "dataset_policy": "manual_only",
+    "feature_spec_hash": "38fa59a354306bf39c0b570f57e764f5638b19a3ecbdbd49b177b8df6ac56cf5",
+    "final_lag_ms": 240,
+    "manual_archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+    "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1"
+  },
+  "spec_hash": "e8b76e529cce62f988675a4ee8dbee0fc61f4a6fd098193b8211525e19da7a01",
+  "status": "experimental"
+}

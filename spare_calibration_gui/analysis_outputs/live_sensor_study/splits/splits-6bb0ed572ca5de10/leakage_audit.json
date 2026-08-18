@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "all_no_contact_sessions_assigned_whole": true,
+    "all_roi_classes_in_every_outer_training_set": true,
+    "nine_primary_sessions_per_outer_fold": true,
+    "non_model_roles_have_no_outer_fold": true,
+    "one_row_per_session": true,
+    "outer_train_holdout_disjoint": true,
+    "primary_session_count_54": true
+  },
+  "gate_pass": true,
+  "held_out_training_overlap": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": []
+  },
+  "missing_training_rois": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": []
+  },
+  "no_contact_fold_counts": {
+    "1.0": 2,
+    "2.0": 2,
+    "3.0": 2,
+    "4.0": 2,
+    "5.0": 2,
+    "6.0": 1
+  },
+  "no_contact_session_count": 11,
+  "outer_fold_counts": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 9
+  },
+  "primary_session_count": 54,
+  "schema_version": "1.0.0",
+  "session_count": 245,
+  "split_hash": "bef52e5b639d669fa9b9b8e4c7ef60692d4de535d7ec96a42ba1f0164b84aa90",
+  "split_version": "split-v1-test-group-held-out"
+}

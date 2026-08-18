@@ -1,0 +1,31 @@
+{
+  "code_hash": "d3e8aa60f6c95fc212fbc46277c26e752467af29718ab1975599fb5047cca68d",
+  "created_at": "2026-08-13T09:06:24.728046Z",
+  "exports": {
+    "csv": "fig01_automatic_condition_coverage.csv",
+    "json": "fig01_automatic_condition_coverage.json",
+    "pdf": "fig01_automatic_condition_coverage.pdf",
+    "png": "fig01_automatic_condition_coverage.png",
+    "svg": "fig01_automatic_condition_coverage.svg"
+  },
+  "filters": [],
+  "independent_session_count": "162",
+  "plotted_columns": [
+    "target_roi",
+    "speed_mm_min",
+    "displacement_mm_abs",
+    "independent_sessions",
+    "frames",
+    "collection_days"
+  ],
+  "plotted_data_hash": "f7ef9542267be1759ed88d045bccb52e649c77f7c59fbf0666022dea3967141d",
+  "plotted_rows": 81,
+  "schema_version": "1.0.0",
+  "seed": 20260813,
+  "source_manifest_hash": "29950d3cf3f84cfe97bd079057677d6b236d4fda33b0ed862b26ebc9b1237a43",
+  "source_table": "coverage_automatic_conditions",
+  "source_table_hash": "a63192331b7b80da8a17d10139be49051da7bd275756b18c26e8f269f32b715b",
+  "title": "Automatic condition coverage",
+  "uncertainty_method": "exact counts",
+  "units": "sessions"
+}

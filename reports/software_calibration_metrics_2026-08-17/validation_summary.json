@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-08-17T10:36:17Z",
+  "overall_assessment": "share-with-caveats",
+  "checks": {
+    "all_local_source_files_present": true,
+    "metric_inventory_has_18_rows": true,
+    "established_or_qualified_count_recomputes": true,
+    "force_candidate_mean_mae_recomputes": true,
+    "force_constant_mean_mae_recomputes": true,
+    "argmax_is_best_localization_candidate": true,
+    "global_quality_gate_pass": true,
+    "global_validation_gate_pass": true,
+    "representative_peer_count_is_7": true,
+    "peer_scores_recompute_from_disclosed_criteria": true,
+    "our_system_is_top_use_case_score": true,
+    "peer_rows_have_citations_and_source_urls": true,
+    "artifact_datasets_within_row_limit": true,
+    "artifact_snapshot_under_3mb": true
+  },
+  "spot_checks": {
+    "metric_status_rows": 18,
+    "established_or_qualified_metrics": 13,
+    "force_candidate_mean_mae_N": 0.32564287927661323,
+    "force_constant_mean_mae_N": 0.340964421500753,
+    "best_localization_candidate": "Accumulated argmax",
+    "best_localization_macro_f1": 0.93428,
+    "best_current_global_r2_model": "Session Zeroed Total Linear",
+    "best_current_global_r2": 0.01358,
+    "our_use_case_alignment_score": 5,
+    "our_use_case_rank": 1,
+    "representative_systems_compared": 7
+  },
+  "required_caveats": [
+    "The global positive sensitivity estimate has a wide hierarchical bootstrap interval; a positive point estimate is not a device-wide sensitivity guarantee.",
+    "Global optical detection is not established under either the average-only or worst-target guarded rule.",
+    "A global output sacrifices localization and cannot replace per-ROI heterogeneity or cross-talk evidence.",
+    "The best held-out calibration benchmark remains weak in absolute terms and must not be presented as deployment-ready.",
+    "Restricting evaluation to the experimental 1.7-3.0 N implementation range lowers absolute error but does not improve held-out R-squared; the narrower outcome variance makes R-squared harder to improve.",
+    "The 1.7-3.0 N interval is configured in a post-hoc experimental bundle and is not the authoritative common safe range, whose gate failed.",
+    "Automatic global curves are normalized hysteresis shapes only; normalization removes absolute amplitude.",
+    "No synthetic data were added and no empirical observations were modified.",
+    "The literature comparison is representative, not exhaustive.",
+    "The five-point score ranks evidence alignment to camera-only contact localization, not overall sensor quality.",
+    "Cross-paper metrics retain their native task definitions and are not normalized into a common benchmark."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "manual": {
+    "actual_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+    "archive_path": "C:\\Users\\DLSU\\Downloads\\THESIS DATA\\Data Collection\\Manual Calibration (2).zip",
+    "archive_role": "model_primary",
+    "archive_size_bytes": 1283430583,
+    "bad_member": null,
+    "crc_error": null,
+    "crc_ok": true,
+    "entry_count": 2727,
+    "expanded_bytes": 1518724267,
+    "expected_session_count": 83,
+    "expected_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+    "file_entry_count": 2551,
+    "hash_ok": true,
+    "session_count": 83,
+    "session_count_ok": true
+  }
+}

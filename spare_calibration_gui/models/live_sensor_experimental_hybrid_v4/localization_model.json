@@ -1,0 +1,23 @@
+{
+  "claim": "tentative_event_roi",
+  "class_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "confidence": "top_two_gap_divided_by_total_activity",
+  "confidence_margin_threshold": 0.3749586515419635,
+  "input": "sum_max_filtered_normalized_active_fraction_zero",
+  "minimum_training_coverage": 0.8,
+  "model_type": "accumulated_positive_active_fraction_argmax",
+  "schema_version": "3.0.0",
+  "selection": "retained after grouped comparison against logistic regression, shrinkage LDA, and Extra Trees",
+  "selective_output_enabled": true,
+  "switch_frames": 2
+}

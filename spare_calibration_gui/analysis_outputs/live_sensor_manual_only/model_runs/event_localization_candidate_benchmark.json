@@ -1,0 +1,188 @@
+{
+  "aggregate": {
+    "argmax": {
+      "accuracy": 0.9341168091168093,
+      "event_count": 102,
+      "macro_f1": 0.9342785558588881,
+      "minimum_fold_macro_f1": 0.8814814814814815,
+      "session_count": 54
+    },
+    "extra_trees": {
+      "accuracy": 0.9063152896486231,
+      "event_count": 102,
+      "macro_f1": 0.9114207911133396,
+      "minimum_fold_macro_f1": 0.811111111111111,
+      "session_count": 54
+    },
+    "logistic": {
+      "accuracy": 0.8429724596391265,
+      "event_count": 102,
+      "macro_f1": 0.8526618144271683,
+      "minimum_fold_macro_f1": 0.7812260536398468,
+      "session_count": 54
+    },
+    "shrinkage_lda": {
+      "accuracy": 0.885636277302944,
+      "event_count": 102,
+      "macro_f1": 0.892472193456062,
+      "minimum_fold_macro_f1": 0.7907647907647907,
+      "session_count": 54
+    }
+  },
+  "data_quality": {
+    "frame_labels_are_aggregated_before_event_classification": true,
+    "session_grouped": true,
+    "source_manifest_hash": "d5f12dff622e6a7dc8dab85ad2c48858b5422975b67138c91ede303e08c6574b",
+    "split_hash": "452064a320d05b6e8e8a6a2ba69f2ac6223aa4385db47dd5506eb9ec7ba14cc1"
+  },
+  "disclosure": "The six existing outer TEST groups were reused post-hoc. Every outer prediction excludes its complete TEST group, while logistic regularization is chosen only within the outer training partition.",
+  "folds": [
+    {
+      "models": {
+        "argmax": {
+          "accuracy": 0.9444444444444445,
+          "macro_f1": 0.9407407407407408
+        },
+        "extra_trees": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "logistic": {
+          "accuracy": 0.888888888888889,
+          "macro_f1": 0.8814814814814815
+        },
+        "shrinkage_lda": {
+          "accuracy": 0.9444444444444445,
+          "macro_f1": 0.9407407407407408
+        }
+      },
+      "outer_event_count": 13,
+      "outer_fold": 1,
+      "selected_logistic_C": 10.0,
+      "training_event_count": 54
+    },
+    {
+      "models": {
+        "argmax": {
+          "accuracy": 0.8888888888888891,
+          "macro_f1": 0.8814814814814815
+        },
+        "extra_trees": {
+          "accuracy": 0.8888888888888891,
+          "macro_f1": 0.8814814814814815
+        },
+        "logistic": {
+          "accuracy": 0.8888888888888891,
+          "macro_f1": 0.8814814814814815
+        },
+        "shrinkage_lda": {
+          "accuracy": 0.8888888888888891,
+          "macro_f1": 0.8814814814814815
+        }
+      },
+      "outer_event_count": 11,
+      "outer_fold": 2,
+      "selected_logistic_C": 10.0,
+      "training_event_count": 51
+    },
+    {
+      "models": {
+        "argmax": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "extra_trees": {
+          "accuracy": 0.9777777777777777,
+          "macro_f1": 0.9775533108866442
+        },
+        "logistic": {
+          "accuracy": 0.8555555555555555,
+          "macro_f1": 0.8451178451178452
+        },
+        "shrinkage_lda": {
+          "accuracy": 0.9277777777777777,
+          "macro_f1": 0.9290955375861036
+        }
+      },
+      "outer_event_count": 16,
+      "outer_fold": 3,
+      "selected_logistic_C": 100.0,
+      "training_event_count": 50
+    },
+    {
+      "models": {
+        "argmax": {
+          "accuracy": 0.9722222222222222,
+          "macro_f1": 0.9727223930122482
+        },
+        "extra_trees": {
+          "accuracy": 0.8148148148148148,
+          "macro_f1": 0.811111111111111
+        },
+        "logistic": {
+          "accuracy": 0.7962962962962963,
+          "macro_f1": 0.7934472934472935
+        },
+        "shrinkage_lda": {
+          "accuracy": 0.7962962962962963,
+          "macro_f1": 0.7907647907647907
+        }
+      },
+      "outer_event_count": 27,
+      "outer_fold": 4,
+      "selected_logistic_C": 10.0,
+      "training_event_count": 51
+    },
+    {
+      "models": {
+        "argmax": {
+          "accuracy": 0.9102564102564104,
+          "macro_f1": 0.9060414987284704
+        },
+        "extra_trees": {
+          "accuracy": 0.8675213675213677,
+          "macro_f1": 0.8626401028952411
+        },
+        "logistic": {
+          "accuracy": 0.7948717948717948,
+          "macro_f1": 0.7812260536398468
+        },
+        "shrinkage_lda": {
+          "accuracy": 0.8675213675213677,
+          "macro_f1": 0.8626401028952411
+        }
+      },
+      "outer_event_count": 23,
+      "outer_fold": 5,
+      "selected_logistic_C": 10.0,
+      "training_event_count": 54
+    },
+    {
+      "models": {
+        "argmax": {
+          "accuracy": 0.8888888888888887,
+          "macro_f1": 0.8814814814814815
+        },
+        "extra_trees": {
+          "accuracy": 0.8888888888888887,
+          "macro_f1": 0.8814814814814814
+        },
+        "logistic": {
+          "accuracy": 0.8333333333333331,
+          "macro_f1": 0.7925925925925926
+        },
+        "shrinkage_lda": {
+          "accuracy": 0.8888888888888887,
+          "macro_f1": 0.8814814814814814
+        }
+      },
+      "outer_event_count": 12,
+      "outer_fold": 6,
+      "selected_logistic_C": 100.0,
+      "training_event_count": 53
+    }
+  ],
+  "schema_version": "1.0.0",
+  "selected_family": "argmax",
+  "status": "posthoc_experimental_model_selection"
+}

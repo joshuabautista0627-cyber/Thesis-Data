@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "all_179176_frames_retained": true,
+    "all_245_framesource_sessions_retained": true,
+    "all_figure_companions_present": true,
+    "automatic_global_is_hysteresis_only": true,
+    "automatic_plotted_bins_require_all_nine_roi": true,
+    "global_detection_retains_worst_target_guardrail": true,
+    "global_model_has_six_outer_holdouts": true,
+    "global_model_retains_all_nine_targets": true,
+    "global_model_uses_live_implementation_range": true,
+    "global_response_requires_all_nine_targets": true,
+    "live_sensor_exact_outer_predictions_are_summarized": true,
+    "manual_general_metrics_only": true,
+    "no_synthetic_rows": true,
+    "parent_authoritative_quality_gate_pass": true,
+    "parent_authoritative_validation_gate_pass": true,
+    "six_figure_bundles": true,
+    "zero_to_five_comparator_is_retained": true
+  },
+  "code_hash": "a8d00fcf568d7e45483f631b13c0121d3a9aafef954b12bbb2321e8cea7fec0e",
+  "created_at": "2026-08-14T07:22:47.838348Z",
+  "gate_pass": true,
+  "global_estimand": "equal-target median of all-nine-ROI total light after session balancing",
+  "parent_evidence_run_id": "characterization-evidence-51ac12c06dd73607",
+  "schema_version": "1.0.0",
+  "scope_change": "post-plan global sensitivity analysis; per-ROI authoritative evidence remains controlling for localization and heterogeneity",
+  "source_manifest_hash": "9cefaf71cb15a28dde729f26cbc837bde9fa713a1ccea1f57f84b3edcf85557b"
+}

@@ -1,0 +1,7 @@
+figure,family,claim
+fig01_global_manual_response,line with interval,Global total-light response is reported with target heterogeneity.
+fig02_global_target_heterogeneity,bar with interval,Pooling does not erase target-to-target variation.
+fig03_global_detection_guardrail,two-series line,Average performance is not promoted when a target fails.
+fig04_global_system_lag,line with interval,Global lag remains a system-level exploratory estimate.
+fig05_global_model_benchmark,paired horizontal bars with benchmark,The implementation range lowers absolute error but does not improve held-out R-squared.
+fig06_global_normalized_hysteresis,faceted multi-series line,Global automatic evidence is restricted to normalized hysteresis shape.
