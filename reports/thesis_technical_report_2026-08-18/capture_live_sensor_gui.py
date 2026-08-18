@@ -8,7 +8,7 @@ import sys
 os.environ.setdefault("QT_QPA_PLATFORM", "windows")
 
 ROOT = Path(__file__).resolve().parents[2]
-PROJECT = ROOT / "spare_calibration_gui"
+PROJECT = ROOT / "calibration_gui"
 sys.path.insert(0, str(PROJECT))
 
 from PySide6.QtGui import QFont  # noqa: E402

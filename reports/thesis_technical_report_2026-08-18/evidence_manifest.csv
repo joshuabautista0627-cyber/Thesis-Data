@@ -1,39 +1,39 @@
 ﻿evidence_id,workspace_relative_path,use,status
-E01,spare_calibration_gui/README.md,"Current program purpose, installation, UI, operating workflow, exports, and use restrictions",current implementation documentation
-E02,spare_calibration_gui/LIVE_SENSOR_GUI_IMPLEMENTATION_PLAN.md,"Authoritative manual-only application-model plan, gates, splits, and deployment contract",authoritative plan
-E03,spare_calibration_gui/SENSOR_CHARACTERIZATION_MASTER_PLAN.md,Manual-first characterization plan and permitted automatic-archive role,authoritative plan
-E04,spare_calibration_gui/LIVE_SENSOR_DECISION_LOG.md,Dated model-governance and v1-v4 recovery decisions,decision record
-E05,spare_calibration_gui/LIVE_SENSOR_IMPLEMENTATION_STATUS.md,"Current implementation, metric, test, and release-gate status",status record
-E06,spare_calibration_gui/PHYSICAL_HARDWARE_VALIDATION_20260803.md,"Camera, load-cell, calibration, synchronization, and physical-session measurements",physical validation
-E07,spare_calibration_gui/ENDER3_REPEATED_PRESS_IMPLEMENTATION_REPORT_20260804.md,"Printer implementation, protocol tests, and remaining physical limitations",implementation validation
-E08,spare_calibration_gui/ENGINEERING_REVIEWS.md,"Architecture, acquisition, integrity, and GUI review findings",engineering review
-E09,spare_calibration_gui/config/default_config.json,"Runtime defaults for camera, processing, load cell, printer, recording, and display",configuration
-E10,spare_calibration_gui/config/live_sensor_release_gates.json,Frozen acceptance gates,configuration
-E11,spare_calibration_gui/config/manual_timestamp_alignment.json,Offline per-session timestamp-alignment contract,configuration
-E12,spare_calibration_gui/config/manual_only_experimental_hybrid_v4.json,v4 hybrid model disclosure and operating contract,configuration
-E13,spare_calibration_gui/processing/feature_extraction.py,HSV conversion and per-ROI optical feature formulas,source code
-E14,spare_calibration_gui/processing/baseline.py,"Baseline capture, provenance invalidation, and drift gate",source code
-E15,spare_calibration_gui/processing/loadcell_calibration.py,"Signed counts/g calibration, tare, verification, and unit conversion",source code
-E16,spare_calibration_gui/processing/synchronization.py,Host-monotonic frame/load-cell synchronization,source code
-E17,spare_calibration_gui/core/timestamp_alignment.py,Offline training-label timestamp interpolation,source code
-E18,spare_calibration_gui/core/experimental_live_sensor.py,"Hash-checked NumPy-only v4 runtime, state machine, event and withholding logic",source code
-E19,spare_calibration_gui/core/live_sensor_contracts.py,Fixed layout/orientation and fail-closed scientific-state contract,source code
-E20,spare_calibration_gui/data/schemas.py,Canonical CSV schemas and data-dictionary definitions,source code
-E21,spare_calibration_gui/services/session_recorder.py,"Incremental recording, partial artifacts, integrity validation, and finalization",source code
-E22,spare_calibration_gui/arduino/hx711_nano_stream/hx711_nano_stream.ino,Nano/HX711 firmware and ASCII serial protocol,firmware
-E23,spare_calibration_gui/analysis_outputs/live_sensor_study/feature_store/feature-store-c0ec762f1dc888a7/reconciliation_report.json,"245-session/179,176-frame immutable feature-store reconciliation",derived evidence
-E24,spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/quality_report.json,Characterization data-quality checks,validated evidence
-E25,spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/validation_report.json,Characterization methodology validation and required caveats,validated evidence
-E26,spare_calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables,Authoritative characterization tables,validated evidence
-E27,spare_calibration_gui/models/live_sensor_experimental_hybrid_v4/metrics.json,v4 grouped retrospective model metrics,post-hoc experimental evidence
-E28,spare_calibration_gui/models/live_sensor_experimental_hybrid_v4/release_decision.json,Explicit release blockers and prohibited validated claim,release decision
-E29,spare_calibration_gui/models/live_sensor_experimental_hybrid_v4/force_model.json,32-knot monotonic isotonic approximation,experimental model bundle
-E30,spare_calibration_gui/models/live_sensor_experimental_hybrid_v4/localization_model.json,Accumulated active-fraction argmax and selective confidence rule,experimental model bundle
+E01,calibration_gui/README.md,"Current program purpose, installation, UI, operating workflow, exports, and use restrictions",current implementation documentation
+E02,calibration_gui/LIVE_SENSOR_GUI_IMPLEMENTATION_PLAN.md,"Authoritative manual-only application-model plan, gates, splits, and deployment contract",authoritative plan
+E03,calibration_gui/SENSOR_CHARACTERIZATION_MASTER_PLAN.md,Manual-first characterization plan and permitted automatic-archive role,authoritative plan
+E04,calibration_gui/LIVE_SENSOR_DECISION_LOG.md,Dated model-governance and v1-v4 recovery decisions,decision record
+E05,calibration_gui/LIVE_SENSOR_IMPLEMENTATION_STATUS.md,"Current implementation, metric, test, and release-gate status",status record
+E06,calibration_gui/PHYSICAL_HARDWARE_VALIDATION_20260803.md,"Camera, load-cell, calibration, synchronization, and physical-session measurements",physical validation
+E07,calibration_gui/ENDER3_REPEATED_PRESS_IMPLEMENTATION_REPORT_20260804.md,"Printer implementation, protocol tests, and remaining physical limitations",implementation validation
+E08,calibration_gui/ENGINEERING_REVIEWS.md,"Architecture, acquisition, integrity, and GUI review findings",engineering review
+E09,calibration_gui/config/default_config.json,"Runtime defaults for camera, processing, load cell, printer, recording, and display",configuration
+E10,calibration_gui/config/live_sensor_release_gates.json,Frozen acceptance gates,configuration
+E11,calibration_gui/config/manual_timestamp_alignment.json,Offline per-session timestamp-alignment contract,configuration
+E12,calibration_gui/config/manual_only_experimental_hybrid_v4.json,v4 hybrid model disclosure and operating contract,configuration
+E13,calibration_gui/processing/feature_extraction.py,HSV conversion and per-ROI optical feature formulas,source code
+E14,calibration_gui/processing/baseline.py,"Baseline capture, provenance invalidation, and drift gate",source code
+E15,calibration_gui/processing/loadcell_calibration.py,"Signed counts/g calibration, tare, verification, and unit conversion",source code
+E16,calibration_gui/processing/synchronization.py,Host-monotonic frame/load-cell synchronization,source code
+E17,calibration_gui/core/timestamp_alignment.py,Offline training-label timestamp interpolation,source code
+E18,calibration_gui/core/experimental_live_sensor.py,"Hash-checked NumPy-only v4 runtime, state machine, event and withholding logic",source code
+E19,calibration_gui/core/live_sensor_contracts.py,Fixed layout/orientation and fail-closed scientific-state contract,source code
+E20,calibration_gui/data/schemas.py,Canonical CSV schemas and data-dictionary definitions,source code
+E21,calibration_gui/services/session_recorder.py,"Incremental recording, partial artifacts, integrity validation, and finalization",source code
+E22,calibration_gui/arduino/hx711_nano_stream/hx711_nano_stream.ino,Nano/HX711 firmware and ASCII serial protocol,firmware
+E23,calibration_gui/analysis_outputs/live_sensor_study/feature_store/feature-store-c0ec762f1dc888a7/reconciliation_report.json,"245-session/179,176-frame immutable feature-store reconciliation",derived evidence
+E24,calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/quality_report.json,Characterization data-quality checks,validated evidence
+E25,calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/validation_report.json,Characterization methodology validation and required caveats,validated evidence
+E26,calibration_gui/analysis_outputs/live_sensor_study/characterization/evidence-products-manual-first-authoritative/tables,Authoritative characterization tables,validated evidence
+E27,calibration_gui/models/live_sensor_experimental_hybrid_v4/metrics.json,v4 grouped retrospective model metrics,post-hoc experimental evidence
+E28,calibration_gui/models/live_sensor_experimental_hybrid_v4/release_decision.json,Explicit release blockers and prohibited validated claim,release decision
+E29,calibration_gui/models/live_sensor_experimental_hybrid_v4/force_model.json,32-knot monotonic isotonic approximation,experimental model bundle
+E30,calibration_gui/models/live_sensor_experimental_hybrid_v4/localization_model.json,Accumulated active-fraction argmax and selective confidence rule,experimental model bundle
 E31,analysis_outputs/linear_models/validation_metrics.json,Historical automatic-archive linear model metrics,superseded exploratory evidence
 E32,analysis_outputs/manual_linear_models/validation_metrics.json,Historical nine-session manual linear model metrics,superseded exploratory evidence
 E33,analysis_outputs/manual_global_models_clean/validation_metrics.json,Historical TEST2-TEST6 clean global-force model metrics,superseded diagnostic evidence
 E34,reports/software_calibration_metrics_2026-08-17/validation_summary.json,Previous metrics-report QA and share-with-caveats classification,report QA
-E35,spare_calibration_gui/tests,Current automated test suite,verification
-E36,spare_calibration_gui/gui/live_sensor_tab.py,"Live Sensor tab controls, state-colored presentation, replay, completed-event capture, and report export",current GUI source code
-E37,spare_calibration_gui/core/live_sensor_report.py,Atomic HTML/CSV/JSON completed-event post-processing report generation,current reporting source code
-E38,spare_calibration_gui/tests/test_experimental_live_sensor.py; spare_calibration_gui/tests/test_live_sensor_report.py; spare_calibration_gui/tests/test_live_sensor_contracts.py,"Dedicated bundle, engine, GUI, reporting, contract, replay, abstention, and multi-contact tests",35 current passing test cases
+E35,calibration_gui/tests,Current automated test suite,verification
+E36,calibration_gui/gui/live_sensor_tab.py,"Live Sensor tab controls, state-colored presentation, replay, completed-event capture, and report export",current GUI source code
+E37,calibration_gui/core/live_sensor_report.py,Atomic HTML/CSV/JSON completed-event post-processing report generation,current reporting source code
+E38,calibration_gui/tests/test_experimental_live_sensor.py; calibration_gui/tests/test_live_sensor_report.py; calibration_gui/tests/test_live_sensor_contracts.py,"Dedicated bundle, engine, GUI, reporting, contract, replay, abstention, and multi-contact tests",35 current passing test cases
