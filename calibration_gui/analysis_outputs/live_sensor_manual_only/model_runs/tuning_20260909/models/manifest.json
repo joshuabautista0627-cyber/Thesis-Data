@@ -1,0 +1,25 @@
+{
+  "status": "experimental_offline_only",
+  "models": [
+    "force",
+    "localization",
+    "contact",
+    "contact_fpr5"
+  ],
+  "files": {
+    "contact.json": "91077db5930027fe47845ba2ac28619ca6ac01a564b77b99ab61e143e64d4759",
+    "contact_con_022.joblib": "d6d81520c54eb0f41cb4e18124e90500e1af0842d3ef884da2c931e7fd1b77de",
+    "contact_fpr5.json": "fac71266ac2e24d72b7d80d242004c4a418a1b845ff353e9e6a7c42958fd1b0e",
+    "contact_fpr5_con_049.joblib": "fffbfd11da2003d1b21a610484f2dcd25867e78a18346c624e85af8250f791a5",
+    "force.json": "607570b6900c3ce7c1f75bcca6e6c7e5bd8003a47303ee50ec7adb2395b7c09b",
+    "force_for_050.joblib": "6de9bc275c4578553b2111f461ccfa9b5468e28e0fbd07b389fa754e6b49b52e",
+    "force_for_056.joblib": "338d605806bb042fbe47e53a1d0fd88b7bddc7f72cb7989a8d7b73aed9e853dc",
+    "force_for_059.joblib": "58044a24b1797c75daaf61cccc3e6e4cef2ebba3b92ea459ae8fab2f43846967",
+    "localization.json": "1b4a1b96360bd39c1788d319a071c1410de9d63db89edd5754369ca0b9851de2",
+    "localization_loc_036.joblib": "60afcde48ca3aa43c481619ff633b2e8571c477eed2d5404a282108e61fee95d",
+    "localization_loc_047.joblib": "5073d1f62a70590d860be6b8c5eb38eee5bc2aea6bb10ad29f4bb244ab92d3b9",
+    "localization_loc_062.joblib": "220440dbc5247e3828d0f3c7253bab73a840c19fb7dd5333bc5af230fe0c60dd"
+  },
+  "final_hyperparameter_selection": "All 15 leave-two-groups-out training CV splits; no all-data fit used for reported metrics",
+  "warning": "Load only these trusted locally produced research artifacts. Causal history requires ordered session streams."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "task": "force",
+    "metric": "mae_N",
+    "mean_fold_change": -0.1381059251839917,
+    "bootstrap95_low": -0.15725204488046096,
+    "bootstrap95_high": -0.11515363788882149,
+    "fold_changes": [
+      -0.08530323897993852,
+      -0.14210283630510678,
+      -0.1301508817461784,
+      -0.16621736542579152,
+      -0.16411347347914101,
+      -0.14074775516779398
+    ],
+    "interpretation": "Descriptive paired six-group interval; CV training sets overlap, and all data have been used in prior development."
+  },
+  {
+    "task": "localization",
+    "metric": "macro_f1",
+    "mean_fold_change": 0.09711411578926617,
+    "bootstrap95_low": 0.072080825111137,
+    "bootstrap95_high": 0.12468701261781544,
+    "fold_changes": [
+      0.062311721704335854,
+      0.0758430599149359,
+      0.15179608129528366,
+      0.10938003703937638,
+      0.12203458962974623,
+      0.06131920515191902
+    ],
+    "interpretation": "Descriptive paired six-group interval; CV training sets overlap, and all data have been used in prior development."
+  },
+  {
+    "task": "contact",
+    "metric": "balanced_accuracy",
+    "mean_fold_change": 0.06331094445927526,
+    "bootstrap95_low": 0.021465112758508615,
+    "bootstrap95_high": 0.1177699498787903,
+    "fold_changes": [
+      0.08421060395465885,
+      0.04709344598104881,
+      0.19549461553945235,
+      0.011339706291063179,
+      0.017290522998448132,
+      0.024436771990980266
+    ],
+    "interpretation": "Descriptive paired six-group interval; CV training sets overlap, and all data have been used in prior development."
+  }
+]

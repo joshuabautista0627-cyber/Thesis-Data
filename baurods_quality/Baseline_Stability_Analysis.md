@@ -1,0 +1,9 @@
+## 4. Baseline Stability
+
+Four unique baseline captures were reused across 83 recordings; counting all copied baseline rows as independent captures would exaggerate the evidence. Across taxels and captures, saved mean V ranges from **26.254 to 31.734**. The absolute first-to-last capture change is **11.02–11.96%** by taxel. This is a between-capture shift, not a continuously observed drift trajectory or a proven mechanism.
+
+The 11 dedicated no-contact recordings support 99 recording/ROI traces. Their uncorrected mean-V CVs are **0.312–0.725%**; absolute start-to-end changes are **0.002–0.520%**, comparing means over the first and final 10% of frames (ceiling-rounded windows). These show relatively small fluctuations over the observed short recordings; they do not establish stability throughout the entire experiment. Digital V is not calibrated radiance, so optical CVs are descriptive ratios on this processing scale, not metrological uncertainty.
+
+Positive-corrected no-contact response is nonzero: recording/ROI means span **0.502–0.915 delta V**, with CV **5.50–9.14%** and window drift up to **7.39%**. Positive clipping and the processing pipeline must be considered when interpreting low optical responses.
+
+The saved pre-recording drift statistic spans **0.041–0.621 V units**, below the configured acquisition threshold of **5 V units** in every recording. That is a software gate from the files, not a universal data-quality criterion. NPZ files retain per-pixel mean/median baseline images; their summaries' spatial standard deviations are not temporal standard deviations. The original baseline frame stacks are not supplied, so the baseline-capture temporal distribution cannot be reconstructed. Autofocus and automatic white balance are recorded as enabled in all 83 configurations; their causal contribution to baseline shifts is not established.

@@ -1,0 +1,3664 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "title": "Manual calibration model tuning: before and after",
+    "surface": "report",
+    "sources": [
+      {
+        "id": "force",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"force\"",
+          "tables_used": [
+            "main.force"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "force_overview",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"force_overview\"",
+          "tables_used": [
+            "main.force_overview"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "contact",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"contact\"",
+          "tables_used": [
+            "main.contact"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "contact_overview",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"contact_overview\"",
+          "tables_used": [
+            "main.contact_overview"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "localization",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"localization\"",
+          "tables_used": [
+            "main.localization"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "localization_overview",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"localization_overview\"",
+          "tables_used": [
+            "main.localization_overview"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "bins",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"bins\"",
+          "tables_used": [
+            "main.bins"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "roi",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"roi\"",
+          "tables_used": [
+            "main.roi"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "groups",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"groups\"",
+          "tables_used": [
+            "main.groups"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "parameters",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"parameters\"",
+          "tables_used": [
+            "main.parameters"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "overview",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"overview\"",
+          "tables_used": [
+            "main.overview"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "combined",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"combined\"",
+          "tables_used": [
+            "main.combined"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "method",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"method\"",
+          "tables_used": [
+            "main.method"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "audit",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"audit\"",
+          "tables_used": [
+            "main.audit"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      },
+      {
+        "id": "timing",
+        "label": "Audited manual calibration tuning results",
+        "path": "report_evidence.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT * FROM main.\"timing\"",
+          "tables_used": [
+            "main.timing"
+          ],
+          "description": "Executed retrieval from audited original and tuned manual-only prediction metrics. Source CSVs, fold predictions, protocols and model files are retained beside this evidence snapshot.",
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "Whole TEST groups held out",
+            "Same 0.05-3 N primary rows and dedicated no-contact rows as previous run"
+          ],
+          "metric_definitions": {
+            "mae_N": "Equal-session mean absolute force error in N",
+            "rmse_N": "Root equal-session mean squared error in N",
+            "accuracy": "Equal-session fraction correct",
+            "macro_f1": "Mean class F1 with equal-session sample weights",
+            "balanced_accuracy": "Mean contact/non-contact recall",
+            "fpr": "Equal-session fraction of dedicated no-contact frames classified positive"
+          }
+        }
+      }
+    ],
+    "charts": [
+      {
+        "id": "force_chart",
+        "title": "Force mean absolute error",
+        "type": "bar",
+        "dataset": "force_overview",
+        "sourceId": "force_overview",
+        "encodings": {
+          "x": {
+            "field": "pipeline",
+            "type": "nominal",
+            "label": "Pipeline"
+          },
+          "y": {
+            "field": "mae_N",
+            "type": "quantitative",
+            "label": "MAE (N)",
+            "format": "number"
+          }
+        },
+        "options": {
+          "showValues": true,
+          "grouping": "grouped"
+        },
+        "valueFormat": "number"
+      },
+      {
+        "id": "localization_chart",
+        "title": "Localization macro F1",
+        "type": "bar",
+        "dataset": "localization_overview",
+        "sourceId": "localization_overview",
+        "encodings": {
+          "x": {
+            "field": "pipeline",
+            "type": "nominal",
+            "label": "Pipeline"
+          },
+          "y": {
+            "field": "macro_f1",
+            "type": "quantitative",
+            "label": "Macro F1",
+            "format": "percent"
+          }
+        },
+        "options": {
+          "showValues": true,
+          "grouping": "grouped"
+        },
+        "valueFormat": "percent"
+      },
+      {
+        "id": "contact_chart",
+        "title": "Contact detection balanced accuracy",
+        "type": "bar",
+        "dataset": "contact_overview",
+        "sourceId": "contact_overview",
+        "encodings": {
+          "x": {
+            "field": "pipeline",
+            "type": "nominal",
+            "label": "Pipeline"
+          },
+          "y": {
+            "field": "balanced_accuracy",
+            "type": "quantitative",
+            "label": "Balanced accuracy",
+            "format": "percent"
+          }
+        },
+        "options": {
+          "showValues": true,
+          "grouping": "grouped"
+        },
+        "valueFormat": "percent"
+      },
+      {
+        "id": "groups_chart",
+        "title": "Localization accuracy by TEST group",
+        "type": "bar",
+        "dataset": "groups",
+        "sourceId": "groups",
+        "encodings": {
+          "x": {
+            "field": "test_group",
+            "type": "nominal",
+            "label": "TEST group"
+          },
+          "y": {
+            "field": "accuracy",
+            "type": "quantitative",
+            "label": "Accuracy",
+            "format": "percent"
+          },
+          "color": {
+            "field": "pipeline",
+            "type": "nominal",
+            "label": "Pipeline"
+          }
+        },
+        "options": {
+          "showValues": true,
+          "grouping": "grouped"
+        },
+        "valueFormat": "percent"
+      }
+    ],
+    "tables": [
+      {
+        "id": "force_table",
+        "title": "Force model comparison",
+        "dataset": "force",
+        "sourceId": "force",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model or selection procedure",
+            "format": "text"
+          },
+          {
+            "field": "mae_N",
+            "label": "MAE (N)",
+            "format": "number"
+          },
+          {
+            "field": "rmse_N",
+            "label": "RMSE (N)",
+            "format": "number"
+          },
+          {
+            "field": "bias_N",
+            "label": "Bias (N)",
+            "format": "number"
+          },
+          {
+            "field": "r2",
+            "label": "R\u00b2",
+            "format": "number"
+          }
+        ],
+        "defaultSort": {
+          "field": "mae_N",
+          "direction": "asc"
+        }
+      },
+      {
+        "id": "localization_table",
+        "title": "Localization model comparison",
+        "dataset": "localization",
+        "sourceId": "localization",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model or selection procedure",
+            "format": "text"
+          },
+          {
+            "field": "accuracy",
+            "label": "Accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "macro_f1",
+            "label": "Macro F1",
+            "format": "percent"
+          }
+        ],
+        "defaultSort": {
+          "field": "macro_f1",
+          "direction": "desc"
+        }
+      },
+      {
+        "id": "contact_table",
+        "title": "Contact detection model comparison",
+        "dataset": "contact",
+        "sourceId": "contact",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model or selection procedure",
+            "format": "text"
+          },
+          {
+            "field": "balanced_accuracy",
+            "label": "Balanced accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "recall",
+            "label": "Recall",
+            "format": "percent"
+          },
+          {
+            "field": "fpr",
+            "label": "False positives",
+            "format": "percent"
+          },
+          {
+            "field": "precision",
+            "label": "Precision",
+            "format": "percent"
+          },
+          {
+            "field": "macro_f1",
+            "label": "Macro F1",
+            "format": "percent"
+          }
+        ],
+        "defaultSort": {
+          "field": "balanced_accuracy",
+          "direction": "desc"
+        }
+      },
+      {
+        "id": "roi_table",
+        "title": "Tuned performance by ROI",
+        "dataset": "roi",
+        "sourceId": "roi",
+        "columns": [
+          {
+            "field": "roi",
+            "label": "ROI",
+            "format": "number"
+          },
+          {
+            "field": "mae_N",
+            "label": "Force MAE (N)",
+            "format": "number"
+          },
+          {
+            "field": "bias_N",
+            "label": "Force bias (N)",
+            "format": "number"
+          },
+          {
+            "field": "recall",
+            "label": "Localization recall",
+            "format": "percent"
+          },
+          {
+            "field": "frames",
+            "label": "Frames",
+            "format": "number"
+          }
+        ],
+        "defaultSort": {
+          "field": "roi",
+          "direction": "asc"
+        }
+      },
+      {
+        "id": "bins_table",
+        "title": "Tuned performance by force bin",
+        "dataset": "bins",
+        "sourceId": "bins",
+        "columns": [
+          {
+            "field": "force_bin",
+            "label": "Force bin",
+            "format": "text"
+          },
+          {
+            "field": "force_mae_N",
+            "label": "MAE (N)",
+            "format": "number"
+          },
+          {
+            "field": "contact_recall",
+            "label": "Contact recall",
+            "format": "percent"
+          },
+          {
+            "field": "localization_accuracy",
+            "label": "Localization accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "frames",
+            "label": "Frames",
+            "format": "number"
+          }
+        ],
+        "defaultSort": {
+          "field": "force_bin",
+          "direction": "asc"
+        }
+      },
+      {
+        "id": "parameters_table",
+        "title": "Saved model configurations",
+        "dataset": "parameters",
+        "sourceId": "parameters",
+        "columns": [
+          {
+            "field": "pipeline",
+            "label": "Pipeline",
+            "format": "text"
+          },
+          {
+            "field": "task",
+            "label": "Task",
+            "format": "text"
+          },
+          {
+            "field": "family",
+            "label": "Family",
+            "format": "text"
+          },
+          {
+            "field": "features",
+            "label": "Features",
+            "format": "text"
+          },
+          {
+            "field": "smoothing_s",
+            "label": "Smoothing (s)",
+            "format": "number"
+          },
+          {
+            "field": "configuration",
+            "label": "Hyperparameters",
+            "format": "text"
+          }
+        ],
+        "defaultSort": {
+          "field": "task",
+          "direction": "asc"
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# Manual calibration model tuning: before and after"
+      },
+      {
+        "id": "summary",
+        "type": "markdown",
+        "body": "## Technical summary\n\n**Force:** MAE 0.637 \u2192 **0.499 N**, RMSE 0.770 \u2192 **0.632 N**, and R\u00b2 -0.030 \u2192 **0.306**.\n\n**Nine-ROI localization:** accuracy 73.79% \u2192 **84.40%**, macro F1 74.00% \u2192 **84.75%**.\n\n**Contact detection:** balanced accuracy 91.86% \u2192 **98.50%**, recall 91.93% \u2192 **97.00%**, and false positives 8.20% \u2192 **0.00%**.\n\nThese compare the previous best fixed models with a new pipeline whose model, features and postprocessing are selected inside each training fold. All scores use the same held-out frames and targets. The source remains manual calibration only. These are retrospective development results, with no unused prospective test set.",
+        "sourceId": "overview"
+      },
+      {
+        "id": "evaluation",
+        "type": "markdown",
+        "body": "## Evaluation and interpretation\n\nThe benchmark retains **7,154 press frames from 54 press recordings** for force and localization, and adds **1,352 frames from 11 dedicated no-contact recordings** for detection. The manual archive's 18 replay-only recordings are excluded. Whole TEST groups and assigned no-contact recordings are held out across six outer folds. All preprocessing is fitted within training groups, and the previous fold-local timestamp lags and the **0.05\u20133 N** interval remain unchanged. Metrics give sessions equal weight.\n\nThe causal pipeline can use earlier optical frames, including earlier portions of the same held-out recording. It never uses future frames, force labels, target ROI, recording duration, or TEST/session identity as a model feature. ROI is stationary within each recording, so temporal improvements do not establish accuracy during rapid movement between ROIs. The **Current frame** comparison uses neither temporal input features nor output smoothing.",
+        "sourceId": "method"
+      },
+      {
+        "id": "force_section",
+        "type": "markdown",
+        "body": "## Force estimation\n\nThe tuned selection changes force MAE by -0.138 N and bias from -0.289 to 0.078 N. Current-frame-only tuning obtains 0.539 N MAE. Lower MAE and RMSE are better; bias closer to zero and larger R\u00b2 are better. The table includes each independently tuned model family and the previous nested selector.",
+        "sourceId": "force"
+      },
+      {
+        "id": "force_chart_block",
+        "type": "chart",
+        "chartId": "force_chart",
+        "layout": "full"
+      },
+      {
+        "id": "force_table_block",
+        "type": "table",
+        "tableId": "force_table",
+        "layout": "full"
+      },
+      {
+        "id": "localization_section",
+        "type": "markdown",
+        "body": "## Localization\n\nThe tuned selector reaches 84.40% accuracy and 84.75% macro F1 across all nine ROIs. Current-frame tuning reaches 82.84% accuracy and 82.68% macro F1. These are ROI classification metrics; calibrated continuous spatial ground truth is unavailable, so no millimetre error is reported.",
+        "sourceId": "localization"
+      },
+      {
+        "id": "localization_chart_block",
+        "type": "chart",
+        "chartId": "localization_chart",
+        "layout": "full"
+      },
+      {
+        "id": "localization_table_block",
+        "type": "table",
+        "tableId": "localization_table",
+        "layout": "full"
+      },
+      {
+        "id": "contact_section",
+        "type": "markdown",
+        "body": "## Contact detection and false alarms\n\nThe main pipeline chooses its threshold by inner-validation balanced accuracy. Its held-out recall is 97.00%, FPR is 0.00%, precision is 100.00%, and macro F1 is 95.81%. A separate policy chooses a threshold with inner FPR \u22645%; its **actual held-out** recall is 99.57% and FPR is 8.76%. The constraint applies during training and does not guarantee a 5% FPR on new recordings.\n\nPrecision depends on the archive's contact/no-contact mix. These frame metrics do not measure deployed onset delay or sustained false-contact episodes after an application debounce layer.",
+        "sourceId": "contact"
+      },
+      {
+        "id": "contact_chart_block",
+        "type": "chart",
+        "chartId": "contact_chart",
+        "layout": "full"
+      },
+      {
+        "id": "contact_table_block",
+        "type": "table",
+        "tableId": "contact_table",
+        "layout": "full"
+      },
+      {
+        "id": "groups_section",
+        "type": "markdown",
+        "body": "## Performance across recording groups\n\nThe previous experiment's weakest localization group was TEST1, whose raw brightness distribution differed from the other groups. The grouped comparison retains TEST1 and every other group. Differences here describe performance across acquisition groups; the experiment does not establish which acquisition condition caused the original gap.",
+        "sourceId": "groups"
+      },
+      {
+        "id": "groups_chart_block",
+        "type": "chart",
+        "chartId": "groups_chart",
+        "layout": "full"
+      },
+      {
+        "id": "roi_section",
+        "type": "markdown",
+        "body": "## ROI and force-bin diagnostics\n\nThe following diagnostics describe the tuned causal selector. Every ROI has six press recordings. Force bins with no eligible samples in a recording do not include that recording in the bin's average. Bins are diagnostic and do not redefine a validated operating range.",
+        "sourceId": "roi"
+      },
+      {
+        "id": "roi_table_block",
+        "type": "table",
+        "tableId": "roi_table",
+        "layout": "full"
+      },
+      {
+        "id": "bins_table_block",
+        "type": "table",
+        "tableId": "bins_table",
+        "layout": "full"
+      },
+      {
+        "id": "combined",
+        "type": "markdown",
+        "body": "## Combined predictions\n\nWhen a missed contact produces zero force, combined force MAE changes from 0.716 to **0.522 N** and RMSE from 0.913 to **0.684 N**. Correct contact and correct ROI occur together on **83.61%** of positive frames, compared with 70.50% previously. Sessions retain equal weight. This is an offline combination of research models.",
+        "sourceId": "combined"
+      },
+      {
+        "id": "search",
+        "type": "markdown",
+        "body": "## Search design\n\nThe frozen grid contains **178 configurations**: 62 force, 64 localization and 52 contact candidates. Fifteen unique four-group training subsets support all six nested evaluations, for **2,670 inner model fits**, followed by the selected outer fits and final refits. Trees, boosting, support-vector models, logistic regression and neural networks were tested where applicable. Tree depth/leaf size, regularization, kernel settings, and feature packs vary.\n\nFeature packs range from nine positive-light channels to signed light, active fractions, normalized spatial patterns, pixel medians/variation, and local light centroids. The causal variant adds exponential histories with 0.3 s and 1.0 s time constants. Output smoothing uses 0, 0.3 or 1.0 s. Force candidates compare equal-session training with the former session/bin weighting, and train-only residual offsets. Ensembles average the three best tuned families when that improves inner validation.\n\nThresholds, corrections, features and models are selected entirely inside the outer training groups. The procedure follows [nested cross-validation](https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html) and [training-only threshold tuning](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TunedThresholdClassifierCV.html). Final artifacts are refitted on all eligible manual training data after a complete leave-two-groups-out training search. Their training fit is not presented as held-out accuracy.",
+        "sourceId": "method"
+      },
+      {
+        "id": "parameters_table_block",
+        "type": "table",
+        "tableId": "parameters_table",
+        "layout": "full"
+      },
+      {
+        "id": "validation",
+        "type": "markdown",
+        "body": "## Verification and limits\n\nIndependent calculations matched **114 metrics**. The audit verified identical held-out frame IDs and reference targets, manual feature-partition hashes, complete-session splits, saved model checksums, and a refit that reproduced TEST1 predictions for all three primary tasks. Reloaded inference passed force/target-label invariance, causal-prefix, future-frame perturbation and session-reset checks. Twenty pipeline and existing firewall/preprocessing tests passed.\n\nThis development reused manual recordings already examined in previous experiments, so nested evaluation controls this search's fitting leakage but does not create a new prospective test set. Six groups provide limited uncertainty information; paired group-bootstrap results are saved in `paired_uncertainty.json` and depend on overlapping CV training sets. The original scientific operating-range and live application gates have not been revalidated. No live GUI bundle was replaced.",
+        "sourceId": "audit"
+      },
+      {
+        "id": "next",
+        "type": "markdown",
+        "body": "## Recommended use\n\nUse the saved models as the next manual-only research candidates. Review the current-frame results when response latency matters, and use the causal variant only with its documented history/reset behavior. Preserve this model version for prospective manual recordings that include low-force contacts, sustained no-contact periods, changed lighting, and movement between ROIs. Those recordings are needed to establish live accuracy, false alarms, response delay and operating range."
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "status": "ready",
+    "datasets": {
+      "force": [
+        {
+          "task": "force",
+          "model": "Previous Extra Trees",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.6371614508931965,
+          "rmse_N": 0.7704833168465368,
+          "bias_N": -0.2893643984075951,
+          "r2": -0.0302843607375862,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 0.6371614508931965,
+          "fold_min_primary": 0.620672304602392,
+          "fold_max_primary": 0.6536360346266891,
+          "fold_bootstrap95_low": 0.6287946323125162,
+          "fold_bootstrap95_high": 0.6451630745133172,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Previous nested selector",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.6371614508931965,
+          "rmse_N": 0.7704833168465368,
+          "bias_N": -0.2893643984075951,
+          "r2": -0.0302843607375862,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 0.6371614508931965,
+          "fold_min_primary": 0.620672304602392,
+          "fold_max_primary": 0.6536360346266891,
+          "fold_bootstrap95_low": 0.6287946323125162,
+          "fold_bootstrap95_high": 0.6451630745133172,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Tuned Extra Trees",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.5046469800216574,
+          "rmse_N": 0.6359094607647461,
+          "bias_N": 0.0818621046019083,
+          "r2": 0.2981873352807812,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Tuned HistGB",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.5029556456189689,
+          "rmse_N": 0.6373805634351538,
+          "bias_N": 0.0738502151969986,
+          "r2": 0.2949364552035916,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Tuned MLP",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.5431389069674788,
+          "rmse_N": 0.6884390846861512,
+          "bias_N": 0.120700457456551,
+          "r2": 0.1774512142123713,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Tuned RBF SVR",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.5134790857302298,
+          "rmse_N": 0.639661125056961,
+          "bias_N": 0.0661921813729517,
+          "r2": 0.2898819631860335,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Tuned Random Forest",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.5220543304614296,
+          "rmse_N": 0.6605905460108479,
+          "bias_N": 0.1007244672889535,
+          "r2": 0.2426522550019704,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Tuned XGBoost",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.5034756825493221,
+          "rmse_N": 0.6403574033714765,
+          "bias_N": 0.0923867990369781,
+          "r2": 0.2883351788903135,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Tuned ensemble",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.4971811632845607,
+          "rmse_N": 0.6299466857213563,
+          "bias_N": 0.0826997062786284,
+          "r2": 0.3112870973724727,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Tuned frame-only",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.5393410198909584,
+          "rmse_N": 0.6827488098996863,
+          "bias_N": 0.1117617882419423,
+          "r2": 0.190992529132543,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Tuned selected",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.4990555257092046,
+          "rmse_N": 0.6323312950239666,
+          "bias_N": 0.0783585310478793,
+          "r2": 0.3060631009740059,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        }
+      ],
+      "force_overview": [
+        {
+          "pipeline": "Previous best",
+          "mae_N": 0.6371614508931965,
+          "rmse_N": 0.7704833168465368,
+          "bias_N": -0.2893643984075951,
+          "r2": -0.0302843607375862
+        },
+        {
+          "pipeline": "Tuned",
+          "mae_N": 0.4990555257092046,
+          "rmse_N": 0.6323312950239666,
+          "bias_N": 0.0783585310478793,
+          "r2": 0.3060631009740059
+        },
+        {
+          "pipeline": "Current frame",
+          "mae_N": 0.5393410198909584,
+          "rmse_N": 0.6827488098996863,
+          "bias_N": 0.1117617882419423,
+          "r2": 0.190992529132543
+        }
+      ],
+      "contact": [
+        {
+          "task": "contact",
+          "model": "Previous Random Forest",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "balanced_accuracy",
+          "fold_mean_primary": 0.9217072663280304,
+          "fold_min_primary": 0.7972590076489534,
+          "fold_max_primary": 0.9801631981706844,
+          "fold_bootstrap95_low": 0.862006365014898,
+          "fold_bootstrap95_high": 0.9733168290638528,
+          "accuracy": 0.9190510767504274,
+          "balanced_accuracy": 0.9186416919908716,
+          "macro_f1": 0.871494905916204,
+          "recall": 0.9192605294181052,
+          "precision": 0.9821583660825058,
+          "fpr": 0.0819771454363658,
+          "roc_auc": 0.9572223883211652
+        },
+        {
+          "task": "contact",
+          "model": "Previous nested selector",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "balanced_accuracy",
+          "fold_mean_primary": 0.8987976987964457,
+          "fold_min_primary": 0.731613057893191,
+          "fold_max_primary": 0.9792325487458624,
+          "fold_bootstrap95_low": 0.8148661154027564,
+          "fold_bootstrap95_high": 0.968510740357118,
+          "accuracy": 0.8795174461255181,
+          "balanced_accuracy": 0.8954443627270277,
+          "macro_f1": 0.8220452611764808,
+          "recall": 0.8713687911200961,
+          "precision": 0.9815332586592428,
+          "fpr": 0.0804800656660412,
+          "roc_auc": null
+        },
+        {
+          "task": "contact",
+          "model": "Tuned Extra Trees",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.976513281435562,
+          "balanced_accuracy": 0.9604146643320096,
+          "macro_f1": 0.9584168905775696,
+          "recall": 0.9847497832094724,
+          "precision": 0.9869500733761338,
+          "fpr": 0.0639204545454535,
+          "roc_auc": null
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.9816225841835547,
+          "balanced_accuracy": 0.9540466451245064,
+          "macro_f1": 0.9664222337603754,
+          "recall": 0.995731204167254,
+          "precision": 0.9823870752555808,
+          "fpr": 0.0876379139182413,
+          "roc_auc": null
+        },
+        {
+          "task": "contact",
+          "model": "Tuned HistGB",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.9712080960475225,
+          "balanced_accuracy": 0.96118058810941,
+          "macro_f1": 0.9500295363586264,
+          "recall": 0.9763384489460916,
+          "precision": 0.9888635736412004,
+          "fpr": 0.0539772727272719,
+          "roc_auc": null
+        },
+        {
+          "task": "contact",
+          "model": "Tuned Logistic regression",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.9741415825016412,
+          "balanced_accuracy": 0.9844370635426544,
+          "macro_f1": 0.9566069049980568,
+          "recall": 0.9688741270853088,
+          "precision": 1.0,
+          "fpr": 0.0,
+          "roc_auc": null
+        },
+        {
+          "task": "contact",
+          "model": "Tuned RBF SVC",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.9924162247519092,
+          "balanced_accuracy": 0.9954356908229084,
+          "macro_f1": 0.9867496034837684,
+          "recall": 0.9908713816458166,
+          "precision": 1.0,
+          "fpr": 0.0,
+          "roc_auc": null
+        },
+        {
+          "task": "contact",
+          "model": "Tuned Random Forest",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.9876376139424092,
+          "balanced_accuracy": 0.9916547929030493,
+          "macro_f1": 0.978595906059896,
+          "recall": 0.9855823130788258,
+          "precision": 0.9995304850860182,
+          "fpr": 0.0022727272727273,
+          "roc_auc": null
+        },
+        {
+          "task": "contact",
+          "model": "Tuned XGBoost",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.9902622927022686,
+          "balanced_accuracy": 0.9941393428300692,
+          "macro_f1": 0.983069443634216,
+          "recall": 0.988278685660138,
+          "precision": 1.0,
+          "fpr": 0.0,
+          "roc_auc": null
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.9624629940772323,
+          "balanced_accuracy": 0.970890549787336,
+          "macro_f1": 0.9378193590643648,
+          "recall": 0.958151221388342,
+          "precision": 0.9965317697042192,
+          "fpr": 0.0163701218136699,
+          "roc_auc": null
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.9751071810004466,
+          "balanced_accuracy": 0.9850182107873058,
+          "macro_f1": 0.9581409806243192,
+          "recall": 0.9700364215746116,
+          "precision": 1.0,
+          "fpr": 0.0,
+          "roc_auc": null
+        }
+      ],
+      "contact_overview": [
+        {
+          "pipeline": "Previous best",
+          "accuracy": 0.9190510767504274,
+          "macro_f1": 0.871494905916204,
+          "balanced_accuracy": 0.9186416919908716,
+          "recall": 0.9192605294181052,
+          "fpr": 0.0819771454363658,
+          "precision": 0.9821583660825058
+        },
+        {
+          "pipeline": "Tuned",
+          "accuracy": 0.9751071810004466,
+          "macro_f1": 0.9581409806243192,
+          "balanced_accuracy": 0.9850182107873058,
+          "recall": 0.9700364215746116,
+          "fpr": 0.0,
+          "precision": 1.0
+        },
+        {
+          "pipeline": "Current frame",
+          "accuracy": 0.9624629940772323,
+          "macro_f1": 0.9378193590643648,
+          "balanced_accuracy": 0.970890549787336,
+          "recall": 0.958151221388342,
+          "fpr": 0.0163701218136699,
+          "precision": 0.9965317697042192
+        }
+      ],
+      "localization": [
+        {
+          "task": "localization",
+          "model": "Previous Logistic regression",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "macro_f1",
+          "fold_mean_primary": 0.7368417315929623,
+          "fold_min_primary": 0.3235284498421249,
+          "fold_max_primary": 0.8566933067786365,
+          "fold_bootstrap95_low": 0.5662264856185805,
+          "fold_bootstrap95_high": 0.8316777308556276,
+          "accuracy": 0.7378874835571279,
+          "balanced_accuracy": 0.7378874835571282,
+          "macro_f1": 0.7399780767251838,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Previous nested selector",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "macro_f1",
+          "fold_mean_primary": 0.6868206435324061,
+          "fold_min_primary": 0.117744312507565,
+          "fold_max_primary": 0.8566933067786365,
+          "fold_bootstrap95_low": 0.4490189363218226,
+          "fold_bootstrap95_high": 0.8229148868002469,
+          "accuracy": 0.7029189887623876,
+          "balanced_accuracy": 0.7029189887623882,
+          "macro_f1": 0.7014436557785012,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Tuned Extra Trees",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.8195751489822559,
+          "balanced_accuracy": 0.8195751489822558,
+          "macro_f1": 0.8335395088171523,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Tuned HistGB",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.8174656318469683,
+          "balanced_accuracy": 0.8174656318469682,
+          "macro_f1": 0.8294020375617266,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Tuned Logistic regression",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.8488180870453357,
+          "balanced_accuracy": 0.8488180870453355,
+          "macro_f1": 0.850026012939066,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Tuned MLP",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.8164576869987447,
+          "balanced_accuracy": 0.8164576869987445,
+          "macro_f1": 0.824551290325643,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Tuned RBF SVC",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.7780005837238629,
+          "balanced_accuracy": 0.7780005837238627,
+          "macro_f1": 0.7871211466671425,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Tuned ensemble",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.8471135578913047,
+          "balanced_accuracy": 0.8471135578913045,
+          "macro_f1": 0.8511643920274217,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Tuned frame-only",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.8283772333559868,
+          "balanced_accuracy": 0.8283772333559867,
+          "macro_f1": 0.8268020806187092,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Tuned selected",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": null,
+          "fold_mean_primary": null,
+          "fold_min_primary": null,
+          "fold_max_primary": null,
+          "fold_bootstrap95_low": null,
+          "fold_bootstrap95_high": null,
+          "accuracy": 0.8440437042211074,
+          "balanced_accuracy": 0.8440437042211073,
+          "macro_f1": 0.8475379322592578,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        }
+      ],
+      "localization_overview": [
+        {
+          "pipeline": "Previous best",
+          "accuracy": 0.7378874835571279,
+          "macro_f1": 0.7399780767251838,
+          "balanced_accuracy": 0.7378874835571282
+        },
+        {
+          "pipeline": "Tuned",
+          "accuracy": 0.8440437042211074,
+          "macro_f1": 0.8475379322592578,
+          "balanced_accuracy": 0.8440437042211073
+        },
+        {
+          "pipeline": "Current frame",
+          "accuracy": 0.8283772333559868,
+          "macro_f1": 0.8268020806187092,
+          "balanced_accuracy": 0.8283772333559867
+        }
+      ],
+      "bins": [
+        {
+          "force_bin": "0.05-0.5 N",
+          "frames": 263,
+          "sessions": 52,
+          "force_mae_N": 1.240613059189916,
+          "contact_recall": 0.85405161078238,
+          "localization_accuracy": 0.5731420822766976
+        },
+        {
+          "force_bin": "0.5-1 N",
+          "frames": 672,
+          "sessions": 51,
+          "force_mae_N": 0.9331791843475792,
+          "contact_recall": 0.9128377504848092,
+          "localization_accuracy": 0.7110064678900581
+        },
+        {
+          "force_bin": "1-1.5 N",
+          "frames": 1102,
+          "sessions": 52,
+          "force_mae_N": 0.6942692923488077,
+          "contact_recall": 0.9436961852278908,
+          "localization_accuracy": 0.8058283192390058
+        },
+        {
+          "force_bin": "1.5-2 N",
+          "frames": 1490,
+          "sessions": 53,
+          "force_mae_N": 0.4066126856533543,
+          "contact_recall": 0.9717389417565552,
+          "localization_accuracy": 0.8306075894449062
+        },
+        {
+          "force_bin": "2-2.5 N",
+          "frames": 1749,
+          "sessions": 52,
+          "force_mae_N": 0.281090175343515,
+          "contact_recall": 0.9832366002098444,
+          "localization_accuracy": 0.8964097457985404
+        },
+        {
+          "force_bin": "2.5-3 N",
+          "frames": 1878,
+          "sessions": 54,
+          "force_mae_N": 0.5329222441899321,
+          "contact_recall": 0.986241609667948,
+          "localization_accuracy": 0.8978797119402081
+        }
+      ],
+      "roi": [
+        {
+          "roi": 1,
+          "mae_N": 0.6063704446336091,
+          "rmse_N": 0.7703796092635514,
+          "bias_N": 0.0168450017691559,
+          "frames": 696,
+          "recall": 0.8236047231385207
+        },
+        {
+          "roi": 2,
+          "mae_N": 0.4339007183217416,
+          "rmse_N": 0.5759684065545047,
+          "bias_N": 0.0821555407208952,
+          "frames": 493,
+          "recall": 0.5600268659481827
+        },
+        {
+          "roi": 3,
+          "mae_N": 0.4752634892967172,
+          "rmse_N": 0.628187616800076,
+          "bias_N": 0.1070307371585408,
+          "frames": 266,
+          "recall": 0.9299328568334416
+        },
+        {
+          "roi": 4,
+          "mae_N": 0.5769060914152364,
+          "rmse_N": 0.7011316614114392,
+          "bias_N": 0.0738070499402081,
+          "frames": 1092,
+          "recall": 0.9343118913571408
+        },
+        {
+          "roi": 5,
+          "mae_N": 0.52580752018109,
+          "rmse_N": 0.6304434529349998,
+          "bias_N": 0.1333769303353789,
+          "frames": 1463,
+          "recall": 0.8436816614062345
+        },
+        {
+          "roi": 6,
+          "mae_N": 0.5024277523432273,
+          "rmse_N": 0.6171386581692407,
+          "bias_N": -0.0077192715111144,
+          "frames": 921,
+          "recall": 0.897739651416122
+        },
+        {
+          "roi": 7,
+          "mae_N": 0.4846079013919906,
+          "rmse_N": 0.6053774225278429,
+          "bias_N": 0.0985851087980854,
+          "frames": 1024,
+          "recall": 0.8198906652863857
+        },
+        {
+          "roi": 8,
+          "mae_N": 0.4760185547668291,
+          "rmse_N": 0.5890054612122831,
+          "bias_N": 0.058724706615723,
+          "frames": 703,
+          "recall": 0.7904729964601452
+        },
+        {
+          "roi": 9,
+          "mae_N": 0.4101972590324012,
+          "rmse_N": 0.5435327367765197,
+          "bias_N": 0.1424209756040409,
+          "frames": 496,
+          "recall": 0.9967320261437908
+        }
+      ],
+      "groups": [
+        {
+          "test_group": "TEST1",
+          "pipeline": "Previous",
+          "accuracy": 0.3257692321124999
+        },
+        {
+          "test_group": "TEST2",
+          "pipeline": "Previous",
+          "accuracy": 0.7972118824012906
+        },
+        {
+          "test_group": "TEST3",
+          "pipeline": "Previous",
+          "accuracy": 0.8061939130873204
+        },
+        {
+          "test_group": "TEST4",
+          "pipeline": "Previous",
+          "accuracy": 0.8110742906176325
+        },
+        {
+          "test_group": "TEST5",
+          "pipeline": "Previous",
+          "accuracy": 0.8580081852231459
+        },
+        {
+          "test_group": "TEST6",
+          "pipeline": "Previous",
+          "accuracy": 0.8290673979008776
+        },
+        {
+          "test_group": "TEST1",
+          "pipeline": "Tuned",
+          "accuracy": 0.427061483731728
+        },
+        {
+          "test_group": "TEST2",
+          "pipeline": "Tuned",
+          "accuracy": 0.8742740630649207
+        },
+        {
+          "test_group": "TEST3",
+          "pipeline": "Tuned",
+          "accuracy": 0.9585988085988084
+        },
+        {
+          "test_group": "TEST4",
+          "pipeline": "Tuned",
+          "accuracy": 0.9189501688873792
+        },
+        {
+          "test_group": "TEST5",
+          "pipeline": "Tuned",
+          "accuracy": 0.9786672169748312
+        },
+        {
+          "test_group": "TEST6",
+          "pipeline": "Tuned",
+          "accuracy": 0.9067104840689748
+        },
+        {
+          "test_group": "TEST1",
+          "pipeline": "Current frame",
+          "accuracy": 0.6776610353465491
+        },
+        {
+          "test_group": "TEST2",
+          "pipeline": "Current frame",
+          "accuracy": 0.8179506422347765
+        },
+        {
+          "test_group": "TEST3",
+          "pipeline": "Current frame",
+          "accuracy": 0.850192390780046
+        },
+        {
+          "test_group": "TEST4",
+          "pipeline": "Current frame",
+          "accuracy": 0.8870885537948998
+        },
+        {
+          "test_group": "TEST5",
+          "pipeline": "Current frame",
+          "accuracy": 0.8823957972718594
+        },
+        {
+          "test_group": "TEST6",
+          "pipeline": "Current frame",
+          "accuracy": 0.8549749807077887
+        }
+      ],
+      "parameters": [
+        {
+          "pipeline": "Causal tuning",
+          "task": "force",
+          "family": "HistGB",
+          "features": "temporal",
+          "smoothing_s": 0.3,
+          "configuration": "{\"max_leaf_nodes\": 31, \"loss\": \"squared_error\", \"l2_regularization\": 10}",
+          "offset_N": 0.10292978395171193,
+          "threshold": null
+        },
+        {
+          "pipeline": "Causal tuning",
+          "task": "force",
+          "family": "Extra Trees",
+          "features": "temporal",
+          "smoothing_s": 0.0,
+          "configuration": "{\"min_samples_leaf\": 3, \"max_features\": 0.75}",
+          "offset_N": 0.12944881296122535,
+          "threshold": null
+        },
+        {
+          "pipeline": "Causal tuning",
+          "task": "force",
+          "family": "XGBoost",
+          "features": "temporal",
+          "smoothing_s": 0.3,
+          "configuration": "{\"max_depth\": 5, \"reg_lambda\": 20}",
+          "offset_N": 0.10841652905616302,
+          "threshold": null
+        },
+        {
+          "pipeline": "Causal tuning",
+          "task": "localization",
+          "family": "HistGB",
+          "features": "invariant",
+          "smoothing_s": 1.0,
+          "configuration": "{\"max_leaf_nodes\": 15, \"l2_regularization\": 10}",
+          "offset_N": null,
+          "threshold": null
+        },
+        {
+          "pipeline": "Causal tuning",
+          "task": "localization",
+          "family": "Extra Trees",
+          "features": "invariant",
+          "smoothing_s": 1.0,
+          "configuration": "{\"min_samples_leaf\": 10, \"max_features\": 0.75}",
+          "offset_N": null,
+          "threshold": null
+        },
+        {
+          "pipeline": "Causal tuning",
+          "task": "localization",
+          "family": "Logistic regression",
+          "features": "invariant",
+          "smoothing_s": 1.0,
+          "configuration": "{\"C\": 0.03}",
+          "offset_N": null,
+          "threshold": null
+        },
+        {
+          "pipeline": "Causal tuning",
+          "task": "contact",
+          "family": "RBF SVC",
+          "features": "shape",
+          "smoothing_s": 1.0,
+          "configuration": "{\"C\": 1, \"gamma_multiplier\": 1.0}",
+          "offset_N": null,
+          "threshold": 0.32685983180999756
+        },
+        {
+          "pipeline": "Causal tuning",
+          "task": "contact_fpr5",
+          "family": "RBF SVC",
+          "features": "temporal",
+          "smoothing_s": 0.0,
+          "configuration": "{\"C\": 10, \"gamma_multiplier\": 1.0}",
+          "offset_N": null,
+          "threshold": 0.39387717843055725
+        },
+        {
+          "pipeline": "Current-frame tuning",
+          "task": "force",
+          "family": "Extra Trees",
+          "features": "spatial",
+          "smoothing_s": 0.0,
+          "configuration": "{\"min_samples_leaf\": 15, \"max_features\": 0.75}",
+          "offset_N": 0.1093784639789858,
+          "threshold": null
+        },
+        {
+          "pipeline": "Current-frame tuning",
+          "task": "localization",
+          "family": "HistGB",
+          "features": "invariant",
+          "smoothing_s": 0.0,
+          "configuration": "{\"max_leaf_nodes\": 15, \"l2_regularization\": 10}",
+          "offset_N": null,
+          "threshold": null
+        },
+        {
+          "pipeline": "Current-frame tuning",
+          "task": "contact",
+          "family": "RBF SVC",
+          "features": "spatial",
+          "smoothing_s": 0.0,
+          "configuration": "{\"C\": 1, \"gamma_multiplier\": 1.0}",
+          "offset_N": null,
+          "threshold": 0.4802697002887726
+        }
+      ],
+      "overview": [
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "accuracy",
+          "before": 0.9190510767504276,
+          "after": 0.9816225841835552,
+          "change": 0.0625715074331275,
+          "improvement": 0.0625715074331275
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "balanced_accuracy",
+          "before": 0.9186416919908704,
+          "after": 0.954046645124506,
+          "change": 0.0354049531336353,
+          "improvement": 0.0354049531336353
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "macro_f1",
+          "before": 0.8714949059162027,
+          "after": 0.966422233760375,
+          "change": 0.0949273278441722,
+          "improvement": 0.0949273278441722
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "recall",
+          "before": 0.9192605294181077,
+          "after": 0.9957312041672542,
+          "change": 0.0764706747491467,
+          "improvement": 0.0764706747491467
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "fpr",
+          "before": 0.0819771454363663,
+          "after": 0.0876379139182425,
+          "change": 0.0056607684818761,
+          "improvement": -0.0056607684818761
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "precision",
+          "before": 0.9821583660825046,
+          "after": 0.982387075255581,
+          "change": 0.0002287091730763,
+          "improvement": 0.0002287091730763
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "accuracy",
+          "before": 0.8795174461255163,
+          "after": 0.9816225841835552,
+          "change": 0.1021051380580387,
+          "improvement": 0.1021051380580387
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "balanced_accuracy",
+          "before": 0.8954443627270259,
+          "after": 0.954046645124506,
+          "change": 0.05860228239748,
+          "improvement": 0.05860228239748
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "macro_f1",
+          "before": 0.8220452611764777,
+          "after": 0.966422233760375,
+          "change": 0.1443769725838972,
+          "improvement": 0.1443769725838972
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "recall",
+          "before": 0.8713687911200929,
+          "after": 0.9957312041672542,
+          "change": 0.1243624130471613,
+          "improvement": 0.1243624130471613
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "fpr",
+          "before": 0.0804800656660412,
+          "after": 0.0876379139182425,
+          "change": 0.0071578482522012,
+          "improvement": -0.0071578482522012
+        },
+        {
+          "task": "contact",
+          "model": "Tuned FPR <=5%",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "precision",
+          "before": 0.9815332586592418,
+          "after": 0.982387075255581,
+          "change": 0.0008538165963392,
+          "improvement": 0.0008538165963392
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "accuracy",
+          "before": 0.9190510767504276,
+          "after": 0.962462994077232,
+          "change": 0.0434119173268046,
+          "improvement": 0.0434119173268046
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "balanced_accuracy",
+          "before": 0.9186416919908704,
+          "after": 0.970890549787336,
+          "change": 0.0522488577964653,
+          "improvement": 0.0522488577964653
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "macro_f1",
+          "before": 0.8714949059162027,
+          "after": 0.9378193590643642,
+          "change": 0.0663244531481614,
+          "improvement": 0.0663244531481614
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "recall",
+          "before": 0.9192605294181077,
+          "after": 0.958151221388342,
+          "change": 0.0388906919702345,
+          "improvement": 0.0388906919702345
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "fpr",
+          "before": 0.0819771454363663,
+          "after": 0.0163701218136702,
+          "change": -0.0656070236226961,
+          "improvement": 0.0656070236226961
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "precision",
+          "before": 0.9821583660825046,
+          "after": 0.9965317697042192,
+          "change": 0.0143734036217145,
+          "improvement": 0.0143734036217145
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "accuracy",
+          "before": 0.8795174461255163,
+          "after": 0.962462994077232,
+          "change": 0.0829455479517158,
+          "improvement": 0.0829455479517158
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "balanced_accuracy",
+          "before": 0.8954443627270259,
+          "after": 0.970890549787336,
+          "change": 0.07544618706031,
+          "improvement": 0.07544618706031
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "macro_f1",
+          "before": 0.8220452611764777,
+          "after": 0.9378193590643642,
+          "change": 0.1157740978878865,
+          "improvement": 0.1157740978878865
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "recall",
+          "before": 0.8713687911200929,
+          "after": 0.958151221388342,
+          "change": 0.0867824302682491,
+          "improvement": 0.0867824302682491
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "fpr",
+          "before": 0.0804800656660412,
+          "after": 0.0163701218136702,
+          "change": -0.064109943852371,
+          "improvement": 0.064109943852371
+        },
+        {
+          "task": "contact",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "precision",
+          "before": 0.9815332586592418,
+          "after": 0.9965317697042192,
+          "change": 0.0149985110449774,
+          "improvement": 0.0149985110449774
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "accuracy",
+          "before": 0.9190510767504276,
+          "after": 0.9751071810004468,
+          "change": 0.0560561042500191,
+          "improvement": 0.0560561042500191
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "balanced_accuracy",
+          "before": 0.9186416919908704,
+          "after": 0.9850182107873058,
+          "change": 0.0663765187964352,
+          "improvement": 0.0663765187964352
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "macro_f1",
+          "before": 0.8714949059162027,
+          "after": 0.9581409806243188,
+          "change": 0.0866460747081161,
+          "improvement": 0.0866460747081161
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "recall",
+          "before": 0.9192605294181077,
+          "after": 0.9700364215746116,
+          "change": 0.050775892156504,
+          "improvement": 0.050775892156504
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "fpr",
+          "before": 0.0819771454363663,
+          "after": 0.0,
+          "change": -0.0819771454363663,
+          "improvement": 0.0819771454363663
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Random Forest",
+          "metric": "precision",
+          "before": 0.9821583660825046,
+          "after": 1.0,
+          "change": 0.0178416339174953,
+          "improvement": 0.0178416339174953
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "accuracy",
+          "before": 0.8795174461255163,
+          "after": 0.9751071810004468,
+          "change": 0.0955897348749303,
+          "improvement": 0.0955897348749303
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "balanced_accuracy",
+          "before": 0.8954443627270259,
+          "after": 0.9850182107873058,
+          "change": 0.0895738480602799,
+          "improvement": 0.0895738480602799
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "macro_f1",
+          "before": 0.8220452611764777,
+          "after": 0.9581409806243188,
+          "change": 0.1360957194478411,
+          "improvement": 0.1360957194478411
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "recall",
+          "before": 0.8713687911200929,
+          "after": 0.9700364215746116,
+          "change": 0.0986676304545186,
+          "improvement": 0.0986676304545186
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "fpr",
+          "before": 0.0804800656660412,
+          "after": 0.0,
+          "change": -0.0804800656660412,
+          "improvement": 0.0804800656660412
+        },
+        {
+          "task": "contact",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "precision",
+          "before": 0.9815332586592418,
+          "after": 1.0,
+          "change": 0.0184667413407582,
+          "improvement": 0.0184667413407582
+        },
+        {
+          "task": "force",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Extra Trees",
+          "metric": "mae_N",
+          "before": 0.6371614508931964,
+          "after": 0.5393410198909585,
+          "change": -0.0978204310022379,
+          "improvement": 0.0978204310022379
+        },
+        {
+          "task": "force",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Extra Trees",
+          "metric": "rmse_N",
+          "before": 0.7704833168465369,
+          "after": 0.6827488098996864,
+          "change": -0.0877345069468504,
+          "improvement": 0.0877345069468504
+        },
+        {
+          "task": "force",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Extra Trees",
+          "metric": "bias_N",
+          "before": -0.2893643984075951,
+          "after": 0.1117617882419423,
+          "change": 0.4011261866495375,
+          "improvement": 0.1776026101656527
+        },
+        {
+          "task": "force",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Extra Trees",
+          "metric": "r2",
+          "before": -0.0302843607375862,
+          "after": 0.190992529132543,
+          "change": 0.2212768898701292,
+          "improvement": 0.2212768898701292
+        },
+        {
+          "task": "force",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "mae_N",
+          "before": 0.6371614508931964,
+          "after": 0.5393410198909585,
+          "change": -0.0978204310022379,
+          "improvement": 0.0978204310022379
+        },
+        {
+          "task": "force",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "rmse_N",
+          "before": 0.7704833168465369,
+          "after": 0.6827488098996864,
+          "change": -0.0877345069468504,
+          "improvement": 0.0877345069468504
+        },
+        {
+          "task": "force",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "bias_N",
+          "before": -0.2893643984075951,
+          "after": 0.1117617882419423,
+          "change": 0.4011261866495375,
+          "improvement": 0.1776026101656527
+        },
+        {
+          "task": "force",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "r2",
+          "before": -0.0302843607375862,
+          "after": 0.190992529132543,
+          "change": 0.2212768898701292,
+          "improvement": 0.2212768898701292
+        },
+        {
+          "task": "force",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Extra Trees",
+          "metric": "mae_N",
+          "before": 0.6371614508931964,
+          "after": 0.4990555257092045,
+          "change": -0.1381059251839919,
+          "improvement": 0.1381059251839919
+        },
+        {
+          "task": "force",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Extra Trees",
+          "metric": "rmse_N",
+          "before": 0.7704833168465369,
+          "after": 0.6323312950239667,
+          "change": -0.1381520218225702,
+          "improvement": 0.1381520218225702
+        },
+        {
+          "task": "force",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Extra Trees",
+          "metric": "bias_N",
+          "before": -0.2893643984075951,
+          "after": 0.0783585310478793,
+          "change": 0.3677229294554744,
+          "improvement": 0.2110058673597158
+        },
+        {
+          "task": "force",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Extra Trees",
+          "metric": "r2",
+          "before": -0.0302843607375862,
+          "after": 0.3060631009740058,
+          "change": 0.336347461711592,
+          "improvement": 0.336347461711592
+        },
+        {
+          "task": "force",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "mae_N",
+          "before": 0.6371614508931964,
+          "after": 0.4990555257092045,
+          "change": -0.1381059251839919,
+          "improvement": 0.1381059251839919
+        },
+        {
+          "task": "force",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "rmse_N",
+          "before": 0.7704833168465369,
+          "after": 0.6323312950239667,
+          "change": -0.1381520218225702,
+          "improvement": 0.1381520218225702
+        },
+        {
+          "task": "force",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "bias_N",
+          "before": -0.2893643984075951,
+          "after": 0.0783585310478793,
+          "change": 0.3677229294554744,
+          "improvement": 0.2110058673597158
+        },
+        {
+          "task": "force",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "r2",
+          "before": -0.0302843607375862,
+          "after": 0.3060631009740058,
+          "change": 0.336347461711592,
+          "improvement": 0.336347461711592
+        },
+        {
+          "task": "localization",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Logistic regression",
+          "metric": "accuracy",
+          "before": 0.737887483557128,
+          "after": 0.8283772333559861,
+          "change": 0.0904897497988581,
+          "improvement": 0.0904897497988581
+        },
+        {
+          "task": "localization",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Logistic regression",
+          "metric": "balanced_accuracy",
+          "before": 0.7378874835571279,
+          "after": 0.8283772333559862,
+          "change": 0.0904897497988583,
+          "improvement": 0.0904897497988583
+        },
+        {
+          "task": "localization",
+          "model": "Tuned frame-only",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Logistic regression",
+          "metric": "macro_f1",
+          "before": 0.7399780767251825,
+          "after": 0.8268020806187084,
+          "change": 0.0868240038935259,
+          "improvement": 0.0868240038935259
+        },
+        {
+          "task": "localization",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "accuracy",
+          "before": 0.7029189887623876,
+          "after": 0.8283772333559861,
+          "change": 0.1254582445935985,
+          "improvement": 0.1254582445935985
+        },
+        {
+          "task": "localization",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "balanced_accuracy",
+          "before": 0.7029189887623876,
+          "after": 0.8283772333559862,
+          "change": 0.1254582445935986,
+          "improvement": 0.1254582445935986
+        },
+        {
+          "task": "localization",
+          "model": "Tuned frame-only",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "macro_f1",
+          "before": 0.7014436557784988,
+          "after": 0.8268020806187084,
+          "change": 0.1253584248402096,
+          "improvement": 0.1253584248402096
+        },
+        {
+          "task": "localization",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Logistic regression",
+          "metric": "accuracy",
+          "before": 0.737887483557128,
+          "after": 0.8440437042211069,
+          "change": 0.1061562206639789,
+          "improvement": 0.1061562206639789
+        },
+        {
+          "task": "localization",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Logistic regression",
+          "metric": "balanced_accuracy",
+          "before": 0.7378874835571279,
+          "after": 0.8440437042211069,
+          "change": 0.106156220663979,
+          "improvement": 0.106156220663979
+        },
+        {
+          "task": "localization",
+          "model": "Tuned selected",
+          "baseline": "Previous best fixed model",
+          "baseline_model": "Logistic regression",
+          "metric": "macro_f1",
+          "before": 0.7399780767251825,
+          "after": 0.8475379322592572,
+          "change": 0.1075598555340747,
+          "improvement": 0.1075598555340747
+        },
+        {
+          "task": "localization",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "accuracy",
+          "before": 0.7029189887623876,
+          "after": 0.8440437042211069,
+          "change": 0.1411247154587193,
+          "improvement": 0.1411247154587193
+        },
+        {
+          "task": "localization",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "balanced_accuracy",
+          "before": 0.7029189887623876,
+          "after": 0.8440437042211069,
+          "change": 0.1411247154587193,
+          "improvement": 0.1411247154587193
+        },
+        {
+          "task": "localization",
+          "model": "Tuned selected",
+          "baseline": "Previous nested selector",
+          "baseline_model": "Nested selected",
+          "metric": "macro_f1",
+          "before": 0.7014436557784988,
+          "after": 0.8475379322592572,
+          "change": 0.1460942764807584,
+          "improvement": 0.1460942764807584
+        }
+      ],
+      "combined": [
+        {
+          "version": "Previous",
+          "mae_N": 0.7159454329653951,
+          "rmse_N": 0.9127684259573889,
+          "bias_N": -0.41758184203378546,
+          "r2": -0.44594524064885266,
+          "joint_contact_and_roi_accuracy": 0.7049545329400466,
+          "contact_recall": 0.9192605294181073,
+          "primary_frames": 7154.0,
+          "primary_sessions": 54.0,
+          "frames": null,
+          "sessions": null
+        },
+        {
+          "version": "Tuned",
+          "mae_N": 0.5224754698889653,
+          "rmse_N": 0.6842307494697262,
+          "bias_N": 0.02580663790327508,
+          "r2": 0.1874767373749423,
+          "joint_contact_and_roi_accuracy": 0.836110369328783,
+          "contact_recall": 0.9700364215746115,
+          "primary_frames": null,
+          "primary_sessions": null,
+          "frames": 7154.0,
+          "sessions": 54.0
+        }
+      ],
+      "method": [
+        {
+          "item": "created_at",
+          "detail": "\"2026-09-09T06:10:15.415324+00:00\""
+        },
+        {
+          "item": "dataset_policy",
+          "detail": "\"manual_only\""
+        },
+        {
+          "item": "seed",
+          "detail": "1741"
+        },
+        {
+          "item": "base_run",
+          "detail": "\"C:\\\\Users\\\\DLSU\\\\OneDrive\\\\Documents\\\\SOFTWARE CALIBRATION\\\\calibration_gui\\\\analysis_outputs\\\\live_sensor_manual_only\\\\model_runs\\\\retraining_20260909\""
+        },
+        {
+          "item": "interval_N",
+          "detail": "[0.05, 3]"
+        },
+        {
+          "item": "evaluation",
+          "detail": "\"Same held-out frames, targets, equal-session weighting and fold-local lags as original run\""
+        },
+        {
+          "item": "tuning",
+          "detail": "\"Every outer training set uses all five whole-group inner folds. Training-only feature floors and weighted scaling.\""
+        },
+        {
+          "item": "final_selection",
+          "detail": "\"All 15 leave-two-groups-out splits on the complete training pool\""
+        },
+        {
+          "item": "source_code_sha256",
+          "detail": "\"2b7beaacdf59560488b9a80556c9a55009069f50d5e20b840ace063073ec023d\""
+        },
+        {
+          "item": "lag_source_sha256",
+          "detail": "\"d06b6b7d63c61636bdf646d9c6c85a9920310148b3a161d7739c815641bf98fb\""
+        },
+        {
+          "item": "inference_features",
+          "detail": "\"Optical values only; no force, ROI target, TEST/session identity, absolute time, or recording duration in estimator input\""
+        },
+        {
+          "item": "history",
+          "detail": "{\"feature_tau_s\": [0.3, 1.0], \"output_tau_s\": [0.0, 0.3, 1.0], \"causal\": true, \"reset_gap_s\": 0.3}"
+        },
+        {
+          "item": "force_postprocessing",
+          "detail": "\"Nonnegative output, inner-OOF residual offset none/mean/median; choose by inner MAE\""
+        },
+        {
+          "item": "classification_selection",
+          "detail": "\"Localization macro F1; contact balanced accuracy plus separate FPR<=5% policy, all inner-OOF\""
+        },
+        {
+          "item": "ensembles",
+          "detail": "\"Equal average of three best independently tuned families for force/localization; include if inner primary score improves\""
+        },
+        {
+          "item": "interpretation",
+          "detail": "\"Retrospective development on previously examined manual data; no untouched prospective test set. Temporal results describe causal streams at stationary per-session ROIs.\""
+        },
+        {
+          "item": "deployment",
+          "detail": "\"Offline research artifacts; live GUI bundle unchanged\""
+        },
+        {
+          "item": "Candidate for_000",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"positive\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 1.0}, \"weights\": \"bins\", \"id\": \"for_000\"}"
+        },
+        {
+          "item": "Candidate for_001",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"positive\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 1.0}, \"weights\": \"session\", \"id\": \"for_001\"}"
+        },
+        {
+          "item": "Candidate for_002",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 3, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_002\"}"
+        },
+        {
+          "item": "Candidate for_003",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 15, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_003\"}"
+        },
+        {
+          "item": "Candidate for_004",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 30, \"max_features\": 1.0}, \"weights\": \"session\", \"id\": \"for_004\"}"
+        },
+        {
+          "item": "Candidate for_005",
+          "detail": "{\"task\": \"force\", \"family\": \"Random Forest\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 5, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_005\"}"
+        },
+        {
+          "item": "Candidate for_006",
+          "detail": "{\"task\": \"force\", \"family\": \"Random Forest\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 20, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_006\"}"
+        },
+        {
+          "item": "Candidate for_007",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"optical\", \"params\": {\"max_leaf_nodes\": 15, \"loss\": \"squared_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_007\"}"
+        },
+        {
+          "item": "Candidate for_008",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"optical\", \"params\": {\"max_leaf_nodes\": 31, \"loss\": \"squared_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_008\"}"
+        },
+        {
+          "item": "Candidate for_009",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"optical\", \"params\": {\"max_leaf_nodes\": 15, \"loss\": \"absolute_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_009\"}"
+        },
+        {
+          "item": "Candidate for_010",
+          "detail": "{\"task\": \"force\", \"family\": \"XGBoost\", \"features\": \"optical\", \"params\": {\"max_depth\": 3, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"for_010\"}"
+        },
+        {
+          "item": "Candidate for_011",
+          "detail": "{\"task\": \"force\", \"family\": \"XGBoost\", \"features\": \"optical\", \"params\": {\"max_depth\": 5, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"for_011\"}"
+        },
+        {
+          "item": "Candidate for_012",
+          "detail": "{\"task\": \"force\", \"family\": \"RBF SVR\", \"features\": \"optical\", \"params\": {\"C\": 2, \"epsilon\": 0.05, \"gamma\": \"scale\"}, \"weights\": \"session\", \"id\": \"for_012\"}"
+        },
+        {
+          "item": "Candidate for_013",
+          "detail": "{\"task\": \"force\", \"family\": \"RBF SVR\", \"features\": \"optical\", \"params\": {\"C\": 20, \"epsilon\": 0.05, \"gamma\": \"scale\"}, \"weights\": \"session\", \"id\": \"for_013\"}"
+        },
+        {
+          "item": "Candidate for_014",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 3, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_014\"}"
+        },
+        {
+          "item": "Candidate for_015",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 15, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_015\"}"
+        },
+        {
+          "item": "Candidate for_016",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 30, \"max_features\": 1.0}, \"weights\": \"session\", \"id\": \"for_016\"}"
+        },
+        {
+          "item": "Candidate for_017",
+          "detail": "{\"task\": \"force\", \"family\": \"Random Forest\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 5, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_017\"}"
+        },
+        {
+          "item": "Candidate for_018",
+          "detail": "{\"task\": \"force\", \"family\": \"Random Forest\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 20, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_018\"}"
+        },
+        {
+          "item": "Candidate for_019",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"shape\", \"params\": {\"max_leaf_nodes\": 15, \"loss\": \"squared_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_019\"}"
+        },
+        {
+          "item": "Candidate for_020",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"shape\", \"params\": {\"max_leaf_nodes\": 31, \"loss\": \"squared_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_020\"}"
+        },
+        {
+          "item": "Candidate for_021",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"shape\", \"params\": {\"max_leaf_nodes\": 15, \"loss\": \"absolute_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_021\"}"
+        },
+        {
+          "item": "Candidate for_022",
+          "detail": "{\"task\": \"force\", \"family\": \"XGBoost\", \"features\": \"shape\", \"params\": {\"max_depth\": 3, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"for_022\"}"
+        },
+        {
+          "item": "Candidate for_023",
+          "detail": "{\"task\": \"force\", \"family\": \"XGBoost\", \"features\": \"shape\", \"params\": {\"max_depth\": 5, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"for_023\"}"
+        },
+        {
+          "item": "Candidate for_024",
+          "detail": "{\"task\": \"force\", \"family\": \"RBF SVR\", \"features\": \"shape\", \"params\": {\"C\": 2, \"epsilon\": 0.05, \"gamma\": \"scale\"}, \"weights\": \"session\", \"id\": \"for_024\"}"
+        },
+        {
+          "item": "Candidate for_025",
+          "detail": "{\"task\": \"force\", \"family\": \"RBF SVR\", \"features\": \"shape\", \"params\": {\"C\": 20, \"epsilon\": 0.05, \"gamma\": \"scale\"}, \"weights\": \"session\", \"id\": \"for_025\"}"
+        },
+        {
+          "item": "Candidate for_026",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 3, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_026\"}"
+        },
+        {
+          "item": "Candidate for_027",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 15, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_027\"}"
+        },
+        {
+          "item": "Candidate for_028",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 30, \"max_features\": 1.0}, \"weights\": \"session\", \"id\": \"for_028\"}"
+        },
+        {
+          "item": "Candidate for_029",
+          "detail": "{\"task\": \"force\", \"family\": \"Random Forest\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 5, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_029\"}"
+        },
+        {
+          "item": "Candidate for_030",
+          "detail": "{\"task\": \"force\", \"family\": \"Random Forest\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 20, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_030\"}"
+        },
+        {
+          "item": "Candidate for_031",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"spatial\", \"params\": {\"max_leaf_nodes\": 15, \"loss\": \"squared_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_031\"}"
+        },
+        {
+          "item": "Candidate for_032",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"spatial\", \"params\": {\"max_leaf_nodes\": 31, \"loss\": \"squared_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_032\"}"
+        },
+        {
+          "item": "Candidate for_033",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"spatial\", \"params\": {\"max_leaf_nodes\": 15, \"loss\": \"absolute_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_033\"}"
+        },
+        {
+          "item": "Candidate for_034",
+          "detail": "{\"task\": \"force\", \"family\": \"XGBoost\", \"features\": \"spatial\", \"params\": {\"max_depth\": 3, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"for_034\"}"
+        },
+        {
+          "item": "Candidate for_035",
+          "detail": "{\"task\": \"force\", \"family\": \"XGBoost\", \"features\": \"spatial\", \"params\": {\"max_depth\": 5, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"for_035\"}"
+        },
+        {
+          "item": "Candidate for_036",
+          "detail": "{\"task\": \"force\", \"family\": \"RBF SVR\", \"features\": \"spatial\", \"params\": {\"C\": 2, \"epsilon\": 0.05, \"gamma\": \"scale\"}, \"weights\": \"session\", \"id\": \"for_036\"}"
+        },
+        {
+          "item": "Candidate for_037",
+          "detail": "{\"task\": \"force\", \"family\": \"RBF SVR\", \"features\": \"spatial\", \"params\": {\"C\": 20, \"epsilon\": 0.05, \"gamma\": \"scale\"}, \"weights\": \"session\", \"id\": \"for_037\"}"
+        },
+        {
+          "item": "Candidate for_038",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"invariant\", \"params\": {\"min_samples_leaf\": 3, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_038\"}"
+        },
+        {
+          "item": "Candidate for_039",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"invariant\", \"params\": {\"min_samples_leaf\": 15, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_039\"}"
+        },
+        {
+          "item": "Candidate for_040",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"invariant\", \"params\": {\"min_samples_leaf\": 30, \"max_features\": 1.0}, \"weights\": \"session\", \"id\": \"for_040\"}"
+        },
+        {
+          "item": "Candidate for_041",
+          "detail": "{\"task\": \"force\", \"family\": \"Random Forest\", \"features\": \"invariant\", \"params\": {\"min_samples_leaf\": 5, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_041\"}"
+        },
+        {
+          "item": "Candidate for_042",
+          "detail": "{\"task\": \"force\", \"family\": \"Random Forest\", \"features\": \"invariant\", \"params\": {\"min_samples_leaf\": 20, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_042\"}"
+        },
+        {
+          "item": "Candidate for_043",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"invariant\", \"params\": {\"max_leaf_nodes\": 15, \"loss\": \"squared_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_043\"}"
+        },
+        {
+          "item": "Candidate for_044",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"invariant\", \"params\": {\"max_leaf_nodes\": 31, \"loss\": \"squared_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_044\"}"
+        },
+        {
+          "item": "Candidate for_045",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"invariant\", \"params\": {\"max_leaf_nodes\": 15, \"loss\": \"absolute_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_045\"}"
+        },
+        {
+          "item": "Candidate for_046",
+          "detail": "{\"task\": \"force\", \"family\": \"XGBoost\", \"features\": \"invariant\", \"params\": {\"max_depth\": 3, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"for_046\"}"
+        },
+        {
+          "item": "Candidate for_047",
+          "detail": "{\"task\": \"force\", \"family\": \"XGBoost\", \"features\": \"invariant\", \"params\": {\"max_depth\": 5, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"for_047\"}"
+        },
+        {
+          "item": "Candidate for_048",
+          "detail": "{\"task\": \"force\", \"family\": \"RBF SVR\", \"features\": \"invariant\", \"params\": {\"C\": 2, \"epsilon\": 0.05, \"gamma\": \"scale\"}, \"weights\": \"session\", \"id\": \"for_048\"}"
+        },
+        {
+          "item": "Candidate for_049",
+          "detail": "{\"task\": \"force\", \"family\": \"RBF SVR\", \"features\": \"invariant\", \"params\": {\"C\": 20, \"epsilon\": 0.05, \"gamma\": \"scale\"}, \"weights\": \"session\", \"id\": \"for_049\"}"
+        },
+        {
+          "item": "Candidate for_050",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 3, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_050\"}"
+        },
+        {
+          "item": "Candidate for_051",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 15, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_051\"}"
+        },
+        {
+          "item": "Candidate for_052",
+          "detail": "{\"task\": \"force\", \"family\": \"Extra Trees\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 30, \"max_features\": 1.0}, \"weights\": \"session\", \"id\": \"for_052\"}"
+        },
+        {
+          "item": "Candidate for_053",
+          "detail": "{\"task\": \"force\", \"family\": \"Random Forest\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 5, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_053\"}"
+        },
+        {
+          "item": "Candidate for_054",
+          "detail": "{\"task\": \"force\", \"family\": \"Random Forest\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 20, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"for_054\"}"
+        },
+        {
+          "item": "Candidate for_055",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"temporal\", \"params\": {\"max_leaf_nodes\": 15, \"loss\": \"squared_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_055\"}"
+        },
+        {
+          "item": "Candidate for_056",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"temporal\", \"params\": {\"max_leaf_nodes\": 31, \"loss\": \"squared_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_056\"}"
+        },
+        {
+          "item": "Candidate for_057",
+          "detail": "{\"task\": \"force\", \"family\": \"HistGB\", \"features\": \"temporal\", \"params\": {\"max_leaf_nodes\": 15, \"loss\": \"absolute_error\", \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"for_057\"}"
+        },
+        {
+          "item": "Candidate for_058",
+          "detail": "{\"task\": \"force\", \"family\": \"XGBoost\", \"features\": \"temporal\", \"params\": {\"max_depth\": 3, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"for_058\"}"
+        },
+        {
+          "item": "Candidate for_059",
+          "detail": "{\"task\": \"force\", \"family\": \"XGBoost\", \"features\": \"temporal\", \"params\": {\"max_depth\": 5, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"for_059\"}"
+        },
+        {
+          "item": "Candidate for_060",
+          "detail": "{\"task\": \"force\", \"family\": \"MLP\", \"features\": \"optical\", \"params\": {\"hidden_layer_sizes\": [64, 32], \"alpha\": 1.0}, \"weights\": \"session\", \"id\": \"for_060\"}"
+        },
+        {
+          "item": "Candidate for_061",
+          "detail": "{\"task\": \"force\", \"family\": \"MLP\", \"features\": \"spatial\", \"params\": {\"hidden_layer_sizes\": [64, 32], \"alpha\": 1.0}, \"weights\": \"session\", \"id\": \"for_061\"}"
+        },
+        {
+          "item": "Candidate loc_000",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"optical\", \"params\": {\"C\": 0.03}, \"weights\": \"session\", \"id\": \"loc_000\"}"
+        },
+        {
+          "item": "Candidate loc_001",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"optical\", \"params\": {\"C\": 0.3}, \"weights\": \"session\", \"id\": \"loc_001\"}"
+        },
+        {
+          "item": "Candidate loc_002",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"optical\", \"params\": {\"C\": 3}, \"weights\": \"session\", \"id\": \"loc_002\"}"
+        },
+        {
+          "item": "Candidate loc_003",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"optical\", \"params\": {\"C\": 30}, \"weights\": \"session\", \"id\": \"loc_003\"}"
+        },
+        {
+          "item": "Candidate loc_004",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"optical\", \"params\": {\"C\": 1, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_004\"}"
+        },
+        {
+          "item": "Candidate loc_005",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"optical\", \"params\": {\"C\": 1, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_005\"}"
+        },
+        {
+          "item": "Candidate loc_006",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"optical\", \"params\": {\"C\": 10, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_006\"}"
+        },
+        {
+          "item": "Candidate loc_007",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"optical\", \"params\": {\"C\": 10, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_007\"}"
+        },
+        {
+          "item": "Candidate loc_008",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"optical\", \"params\": {\"C\": 100, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_008\"}"
+        },
+        {
+          "item": "Candidate loc_009",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"optical\", \"params\": {\"C\": 100, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_009\"}"
+        },
+        {
+          "item": "Candidate loc_010",
+          "detail": "{\"task\": \"localization\", \"family\": \"Extra Trees\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 2, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"loc_010\"}"
+        },
+        {
+          "item": "Candidate loc_011",
+          "detail": "{\"task\": \"localization\", \"family\": \"Extra Trees\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"loc_011\"}"
+        },
+        {
+          "item": "Candidate loc_012",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"shape\", \"params\": {\"C\": 0.03}, \"weights\": \"session\", \"id\": \"loc_012\"}"
+        },
+        {
+          "item": "Candidate loc_013",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"shape\", \"params\": {\"C\": 0.3}, \"weights\": \"session\", \"id\": \"loc_013\"}"
+        },
+        {
+          "item": "Candidate loc_014",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"shape\", \"params\": {\"C\": 3}, \"weights\": \"session\", \"id\": \"loc_014\"}"
+        },
+        {
+          "item": "Candidate loc_015",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"shape\", \"params\": {\"C\": 30}, \"weights\": \"session\", \"id\": \"loc_015\"}"
+        },
+        {
+          "item": "Candidate loc_016",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"shape\", \"params\": {\"C\": 1, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_016\"}"
+        },
+        {
+          "item": "Candidate loc_017",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"shape\", \"params\": {\"C\": 1, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_017\"}"
+        },
+        {
+          "item": "Candidate loc_018",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"shape\", \"params\": {\"C\": 10, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_018\"}"
+        },
+        {
+          "item": "Candidate loc_019",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"shape\", \"params\": {\"C\": 10, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_019\"}"
+        },
+        {
+          "item": "Candidate loc_020",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"shape\", \"params\": {\"C\": 100, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_020\"}"
+        },
+        {
+          "item": "Candidate loc_021",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"shape\", \"params\": {\"C\": 100, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_021\"}"
+        },
+        {
+          "item": "Candidate loc_022",
+          "detail": "{\"task\": \"localization\", \"family\": \"Extra Trees\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 2, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"loc_022\"}"
+        },
+        {
+          "item": "Candidate loc_023",
+          "detail": "{\"task\": \"localization\", \"family\": \"Extra Trees\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"loc_023\"}"
+        },
+        {
+          "item": "Candidate loc_024",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"spatial\", \"params\": {\"C\": 0.03}, \"weights\": \"session\", \"id\": \"loc_024\"}"
+        },
+        {
+          "item": "Candidate loc_025",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"spatial\", \"params\": {\"C\": 0.3}, \"weights\": \"session\", \"id\": \"loc_025\"}"
+        },
+        {
+          "item": "Candidate loc_026",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"spatial\", \"params\": {\"C\": 3}, \"weights\": \"session\", \"id\": \"loc_026\"}"
+        },
+        {
+          "item": "Candidate loc_027",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"spatial\", \"params\": {\"C\": 30}, \"weights\": \"session\", \"id\": \"loc_027\"}"
+        },
+        {
+          "item": "Candidate loc_028",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"spatial\", \"params\": {\"C\": 1, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_028\"}"
+        },
+        {
+          "item": "Candidate loc_029",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"spatial\", \"params\": {\"C\": 1, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_029\"}"
+        },
+        {
+          "item": "Candidate loc_030",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"spatial\", \"params\": {\"C\": 10, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_030\"}"
+        },
+        {
+          "item": "Candidate loc_031",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"spatial\", \"params\": {\"C\": 10, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_031\"}"
+        },
+        {
+          "item": "Candidate loc_032",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"spatial\", \"params\": {\"C\": 100, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_032\"}"
+        },
+        {
+          "item": "Candidate loc_033",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"spatial\", \"params\": {\"C\": 100, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_033\"}"
+        },
+        {
+          "item": "Candidate loc_034",
+          "detail": "{\"task\": \"localization\", \"family\": \"Extra Trees\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 2, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"loc_034\"}"
+        },
+        {
+          "item": "Candidate loc_035",
+          "detail": "{\"task\": \"localization\", \"family\": \"Extra Trees\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"loc_035\"}"
+        },
+        {
+          "item": "Candidate loc_036",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"invariant\", \"params\": {\"C\": 0.03}, \"weights\": \"session\", \"id\": \"loc_036\"}"
+        },
+        {
+          "item": "Candidate loc_037",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"invariant\", \"params\": {\"C\": 0.3}, \"weights\": \"session\", \"id\": \"loc_037\"}"
+        },
+        {
+          "item": "Candidate loc_038",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"invariant\", \"params\": {\"C\": 3}, \"weights\": \"session\", \"id\": \"loc_038\"}"
+        },
+        {
+          "item": "Candidate loc_039",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"invariant\", \"params\": {\"C\": 30}, \"weights\": \"session\", \"id\": \"loc_039\"}"
+        },
+        {
+          "item": "Candidate loc_040",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"invariant\", \"params\": {\"C\": 1, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_040\"}"
+        },
+        {
+          "item": "Candidate loc_041",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"invariant\", \"params\": {\"C\": 1, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_041\"}"
+        },
+        {
+          "item": "Candidate loc_042",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"invariant\", \"params\": {\"C\": 10, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_042\"}"
+        },
+        {
+          "item": "Candidate loc_043",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"invariant\", \"params\": {\"C\": 10, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_043\"}"
+        },
+        {
+          "item": "Candidate loc_044",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"invariant\", \"params\": {\"C\": 100, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_044\"}"
+        },
+        {
+          "item": "Candidate loc_045",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"invariant\", \"params\": {\"C\": 100, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_045\"}"
+        },
+        {
+          "item": "Candidate loc_046",
+          "detail": "{\"task\": \"localization\", \"family\": \"Extra Trees\", \"features\": \"invariant\", \"params\": {\"min_samples_leaf\": 2, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"loc_046\"}"
+        },
+        {
+          "item": "Candidate loc_047",
+          "detail": "{\"task\": \"localization\", \"family\": \"Extra Trees\", \"features\": \"invariant\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"loc_047\"}"
+        },
+        {
+          "item": "Candidate loc_048",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"temporal\", \"params\": {\"C\": 0.03}, \"weights\": \"session\", \"id\": \"loc_048\"}"
+        },
+        {
+          "item": "Candidate loc_049",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"temporal\", \"params\": {\"C\": 0.3}, \"weights\": \"session\", \"id\": \"loc_049\"}"
+        },
+        {
+          "item": "Candidate loc_050",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"temporal\", \"params\": {\"C\": 3}, \"weights\": \"session\", \"id\": \"loc_050\"}"
+        },
+        {
+          "item": "Candidate loc_051",
+          "detail": "{\"task\": \"localization\", \"family\": \"Logistic regression\", \"features\": \"temporal\", \"params\": {\"C\": 30}, \"weights\": \"session\", \"id\": \"loc_051\"}"
+        },
+        {
+          "item": "Candidate loc_052",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"temporal\", \"params\": {\"C\": 1, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_052\"}"
+        },
+        {
+          "item": "Candidate loc_053",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"temporal\", \"params\": {\"C\": 1, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_053\"}"
+        },
+        {
+          "item": "Candidate loc_054",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"temporal\", \"params\": {\"C\": 10, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_054\"}"
+        },
+        {
+          "item": "Candidate loc_055",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"temporal\", \"params\": {\"C\": 10, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_055\"}"
+        },
+        {
+          "item": "Candidate loc_056",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"temporal\", \"params\": {\"C\": 100, \"gamma_multiplier\": 0.1}, \"weights\": \"session\", \"id\": \"loc_056\"}"
+        },
+        {
+          "item": "Candidate loc_057",
+          "detail": "{\"task\": \"localization\", \"family\": \"RBF SVC\", \"features\": \"temporal\", \"params\": {\"C\": 100, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"loc_057\"}"
+        },
+        {
+          "item": "Candidate loc_058",
+          "detail": "{\"task\": \"localization\", \"family\": \"Extra Trees\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 2, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"loc_058\"}"
+        },
+        {
+          "item": "Candidate loc_059",
+          "detail": "{\"task\": \"localization\", \"family\": \"Extra Trees\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"loc_059\"}"
+        },
+        {
+          "item": "Candidate loc_060",
+          "detail": "{\"task\": \"localization\", \"family\": \"HistGB\", \"features\": \"spatial\", \"params\": {\"max_leaf_nodes\": 15, \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"loc_060\"}"
+        },
+        {
+          "item": "Candidate loc_061",
+          "detail": "{\"task\": \"localization\", \"family\": \"MLP\", \"features\": \"spatial\", \"params\": {\"hidden_layer_sizes\": [64, 32], \"alpha\": 1.0}, \"weights\": \"session\", \"id\": \"loc_061\"}"
+        },
+        {
+          "item": "Candidate loc_062",
+          "detail": "{\"task\": \"localization\", \"family\": \"HistGB\", \"features\": \"invariant\", \"params\": {\"max_leaf_nodes\": 15, \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"loc_062\"}"
+        },
+        {
+          "item": "Candidate loc_063",
+          "detail": "{\"task\": \"localization\", \"family\": \"MLP\", \"features\": \"invariant\", \"params\": {\"hidden_layer_sizes\": [64, 32], \"alpha\": 1.0}, \"weights\": \"session\", \"id\": \"loc_063\"}"
+        },
+        {
+          "item": "Candidate con_000",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 2, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_000\"}"
+        },
+        {
+          "item": "Candidate con_001",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_001\"}"
+        },
+        {
+          "item": "Candidate con_002",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 30, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_002\"}"
+        },
+        {
+          "item": "Candidate con_003",
+          "detail": "{\"task\": \"contact\", \"family\": \"Extra Trees\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 3, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_003\"}"
+        },
+        {
+          "item": "Candidate con_004",
+          "detail": "{\"task\": \"contact\", \"family\": \"Extra Trees\", \"features\": \"optical\", \"params\": {\"min_samples_leaf\": 15, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_004\"}"
+        },
+        {
+          "item": "Candidate con_005",
+          "detail": "{\"task\": \"contact\", \"family\": \"HistGB\", \"features\": \"optical\", \"params\": {\"max_leaf_nodes\": 7, \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"con_005\"}"
+        },
+        {
+          "item": "Candidate con_006",
+          "detail": "{\"task\": \"contact\", \"family\": \"HistGB\", \"features\": \"optical\", \"params\": {\"max_leaf_nodes\": 15, \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"con_006\"}"
+        },
+        {
+          "item": "Candidate con_007",
+          "detail": "{\"task\": \"contact\", \"family\": \"Logistic regression\", \"features\": \"optical\", \"params\": {\"C\": 0.1}, \"weights\": \"session\", \"id\": \"con_007\"}"
+        },
+        {
+          "item": "Candidate con_008",
+          "detail": "{\"task\": \"contact\", \"family\": \"Logistic regression\", \"features\": \"optical\", \"params\": {\"C\": 10}, \"weights\": \"session\", \"id\": \"con_008\"}"
+        },
+        {
+          "item": "Candidate con_009",
+          "detail": "{\"task\": \"contact\", \"family\": \"RBF SVC\", \"features\": \"optical\", \"params\": {\"C\": 1, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"con_009\"}"
+        },
+        {
+          "item": "Candidate con_010",
+          "detail": "{\"task\": \"contact\", \"family\": \"RBF SVC\", \"features\": \"optical\", \"params\": {\"C\": 10, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"con_010\"}"
+        },
+        {
+          "item": "Candidate con_011",
+          "detail": "{\"task\": \"contact\", \"family\": \"XGBoost\", \"features\": \"optical\", \"params\": {\"max_depth\": 2, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"con_011\"}"
+        },
+        {
+          "item": "Candidate con_012",
+          "detail": "{\"task\": \"contact\", \"family\": \"XGBoost\", \"features\": \"optical\", \"params\": {\"max_depth\": 4, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"con_012\"}"
+        },
+        {
+          "item": "Candidate con_013",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 2, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_013\"}"
+        },
+        {
+          "item": "Candidate con_014",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_014\"}"
+        },
+        {
+          "item": "Candidate con_015",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 30, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_015\"}"
+        },
+        {
+          "item": "Candidate con_016",
+          "detail": "{\"task\": \"contact\", \"family\": \"Extra Trees\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 3, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_016\"}"
+        },
+        {
+          "item": "Candidate con_017",
+          "detail": "{\"task\": \"contact\", \"family\": \"Extra Trees\", \"features\": \"shape\", \"params\": {\"min_samples_leaf\": 15, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_017\"}"
+        },
+        {
+          "item": "Candidate con_018",
+          "detail": "{\"task\": \"contact\", \"family\": \"HistGB\", \"features\": \"shape\", \"params\": {\"max_leaf_nodes\": 7, \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"con_018\"}"
+        },
+        {
+          "item": "Candidate con_019",
+          "detail": "{\"task\": \"contact\", \"family\": \"HistGB\", \"features\": \"shape\", \"params\": {\"max_leaf_nodes\": 15, \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"con_019\"}"
+        },
+        {
+          "item": "Candidate con_020",
+          "detail": "{\"task\": \"contact\", \"family\": \"Logistic regression\", \"features\": \"shape\", \"params\": {\"C\": 0.1}, \"weights\": \"session\", \"id\": \"con_020\"}"
+        },
+        {
+          "item": "Candidate con_021",
+          "detail": "{\"task\": \"contact\", \"family\": \"Logistic regression\", \"features\": \"shape\", \"params\": {\"C\": 10}, \"weights\": \"session\", \"id\": \"con_021\"}"
+        },
+        {
+          "item": "Candidate con_022",
+          "detail": "{\"task\": \"contact\", \"family\": \"RBF SVC\", \"features\": \"shape\", \"params\": {\"C\": 1, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"con_022\"}"
+        },
+        {
+          "item": "Candidate con_023",
+          "detail": "{\"task\": \"contact\", \"family\": \"RBF SVC\", \"features\": \"shape\", \"params\": {\"C\": 10, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"con_023\"}"
+        },
+        {
+          "item": "Candidate con_024",
+          "detail": "{\"task\": \"contact\", \"family\": \"XGBoost\", \"features\": \"shape\", \"params\": {\"max_depth\": 2, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"con_024\"}"
+        },
+        {
+          "item": "Candidate con_025",
+          "detail": "{\"task\": \"contact\", \"family\": \"XGBoost\", \"features\": \"shape\", \"params\": {\"max_depth\": 4, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"con_025\"}"
+        },
+        {
+          "item": "Candidate con_026",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 2, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_026\"}"
+        },
+        {
+          "item": "Candidate con_027",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_027\"}"
+        },
+        {
+          "item": "Candidate con_028",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 30, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_028\"}"
+        },
+        {
+          "item": "Candidate con_029",
+          "detail": "{\"task\": \"contact\", \"family\": \"Extra Trees\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 3, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_029\"}"
+        },
+        {
+          "item": "Candidate con_030",
+          "detail": "{\"task\": \"contact\", \"family\": \"Extra Trees\", \"features\": \"spatial\", \"params\": {\"min_samples_leaf\": 15, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_030\"}"
+        },
+        {
+          "item": "Candidate con_031",
+          "detail": "{\"task\": \"contact\", \"family\": \"HistGB\", \"features\": \"spatial\", \"params\": {\"max_leaf_nodes\": 7, \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"con_031\"}"
+        },
+        {
+          "item": "Candidate con_032",
+          "detail": "{\"task\": \"contact\", \"family\": \"HistGB\", \"features\": \"spatial\", \"params\": {\"max_leaf_nodes\": 15, \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"con_032\"}"
+        },
+        {
+          "item": "Candidate con_033",
+          "detail": "{\"task\": \"contact\", \"family\": \"Logistic regression\", \"features\": \"spatial\", \"params\": {\"C\": 0.1}, \"weights\": \"session\", \"id\": \"con_033\"}"
+        },
+        {
+          "item": "Candidate con_034",
+          "detail": "{\"task\": \"contact\", \"family\": \"Logistic regression\", \"features\": \"spatial\", \"params\": {\"C\": 10}, \"weights\": \"session\", \"id\": \"con_034\"}"
+        },
+        {
+          "item": "Candidate con_035",
+          "detail": "{\"task\": \"contact\", \"family\": \"RBF SVC\", \"features\": \"spatial\", \"params\": {\"C\": 1, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"con_035\"}"
+        },
+        {
+          "item": "Candidate con_036",
+          "detail": "{\"task\": \"contact\", \"family\": \"RBF SVC\", \"features\": \"spatial\", \"params\": {\"C\": 10, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"con_036\"}"
+        },
+        {
+          "item": "Candidate con_037",
+          "detail": "{\"task\": \"contact\", \"family\": \"XGBoost\", \"features\": \"spatial\", \"params\": {\"max_depth\": 2, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"con_037\"}"
+        },
+        {
+          "item": "Candidate con_038",
+          "detail": "{\"task\": \"contact\", \"family\": \"XGBoost\", \"features\": \"spatial\", \"params\": {\"max_depth\": 4, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"con_038\"}"
+        },
+        {
+          "item": "Candidate con_039",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 2, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_039\"}"
+        },
+        {
+          "item": "Candidate con_040",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 10, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_040\"}"
+        },
+        {
+          "item": "Candidate con_041",
+          "detail": "{\"task\": \"contact\", \"family\": \"Random Forest\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 30, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_041\"}"
+        },
+        {
+          "item": "Candidate con_042",
+          "detail": "{\"task\": \"contact\", \"family\": \"Extra Trees\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 3, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_042\"}"
+        },
+        {
+          "item": "Candidate con_043",
+          "detail": "{\"task\": \"contact\", \"family\": \"Extra Trees\", \"features\": \"temporal\", \"params\": {\"min_samples_leaf\": 15, \"max_features\": 0.75}, \"weights\": \"session\", \"id\": \"con_043\"}"
+        },
+        {
+          "item": "Candidate con_044",
+          "detail": "{\"task\": \"contact\", \"family\": \"HistGB\", \"features\": \"temporal\", \"params\": {\"max_leaf_nodes\": 7, \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"con_044\"}"
+        },
+        {
+          "item": "Candidate con_045",
+          "detail": "{\"task\": \"contact\", \"family\": \"HistGB\", \"features\": \"temporal\", \"params\": {\"max_leaf_nodes\": 15, \"l2_regularization\": 10}, \"weights\": \"session\", \"id\": \"con_045\"}"
+        },
+        {
+          "item": "Candidate con_046",
+          "detail": "{\"task\": \"contact\", \"family\": \"Logistic regression\", \"features\": \"temporal\", \"params\": {\"C\": 0.1}, \"weights\": \"session\", \"id\": \"con_046\"}"
+        },
+        {
+          "item": "Candidate con_047",
+          "detail": "{\"task\": \"contact\", \"family\": \"Logistic regression\", \"features\": \"temporal\", \"params\": {\"C\": 10}, \"weights\": \"session\", \"id\": \"con_047\"}"
+        },
+        {
+          "item": "Candidate con_048",
+          "detail": "{\"task\": \"contact\", \"family\": \"RBF SVC\", \"features\": \"temporal\", \"params\": {\"C\": 1, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"con_048\"}"
+        },
+        {
+          "item": "Candidate con_049",
+          "detail": "{\"task\": \"contact\", \"family\": \"RBF SVC\", \"features\": \"temporal\", \"params\": {\"C\": 10, \"gamma_multiplier\": 1.0}, \"weights\": \"session\", \"id\": \"con_049\"}"
+        },
+        {
+          "item": "Candidate con_050",
+          "detail": "{\"task\": \"contact\", \"family\": \"XGBoost\", \"features\": \"temporal\", \"params\": {\"max_depth\": 2, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"con_050\"}"
+        },
+        {
+          "item": "Candidate con_051",
+          "detail": "{\"task\": \"contact\", \"family\": \"XGBoost\", \"features\": \"temporal\", \"params\": {\"max_depth\": 4, \"reg_lambda\": 20}, \"weights\": \"session\", \"id\": \"con_051\"}"
+        }
+      ],
+      "audit": [
+        {
+          "check": "status",
+          "result": "\"passed\""
+        },
+        {
+          "check": "completed_at",
+          "result": "\"2026-09-09T06:57:33.789261+00:00\""
+        },
+        {
+          "check": "metric_checks",
+          "result": "114"
+        },
+        {
+          "check": "max_metric_difference",
+          "result": "1.2490009027033011e-15"
+        },
+        {
+          "check": "same_held_out_frames_and_truth_as_before",
+          "result": "true"
+        },
+        {
+          "check": "manual_source_hashes_verified",
+          "result": "true"
+        },
+        {
+          "check": "whole_sessions_held_out",
+          "result": "true"
+        },
+        {
+          "check": "verified_inner_split_boundaries",
+          "result": "30"
+        },
+        {
+          "check": "source_and_lag_hashes_unchanged",
+          "result": "true"
+        },
+        {
+          "check": "outer_fold1_refit_reproduced_tasks",
+          "result": "[\"force\", \"localization\", \"contact\"]"
+        },
+        {
+          "check": "final_models_checksum_verified",
+          "result": "true"
+        },
+        {
+          "check": "reference_and_target_invariance",
+          "result": "true"
+        },
+        {
+          "check": "labels_not_required_for_inference",
+          "result": "true"
+        },
+        {
+          "check": "causal_prefix_and_future_invariance",
+          "result": "true"
+        },
+        {
+          "check": "session_reset_inference_parity",
+          "result": "true"
+        },
+        {
+          "check": "current_frame_batch_single_parity",
+          "result": "true"
+        },
+        {
+          "check": "streaming_sequence_parity",
+          "result": "true"
+        },
+        {
+          "check": "saved_scaler_parameters_finite",
+          "result": "true"
+        },
+        {
+          "check": "caveats",
+          "result": "[\"Retrospective manual-only development; no unused prospective test recordings remain\", \"0.05-3 N remains an exploratory evaluation interval\", \"Temporal smoothing is causal but may delay responses, and ROI is stationary within each recording\", \"No live GUI bundle was replaced; continuous-location millimetre error and deployed onset delay are unavailable\", \"Contact AUC is omitted for adaptive families/thresholds with uncalibrated cross-fold score scales\"]"
+        }
+      ],
+      "timing": [
+        {
+          "frames_per_batch": 96,
+          "median_batch_ms": 63.95550002343953,
+          "amortized_ms_per_frame": 0.6662031252441617,
+          "repeats": 5,
+          "streaming_p50_ms": 41.10020003281534,
+          "streaming_p95_ms": 44.46308995829895,
+          "meaning": "Offline optical-feature inference timing, including causal state. No camera/pixel-extraction/onset-delay claim.",
+          "includes": "Three primary tasks plus alternate contact policy; excludes video decoding and pixel feature extraction"
+        }
+      ]
+    }
+  }
+}

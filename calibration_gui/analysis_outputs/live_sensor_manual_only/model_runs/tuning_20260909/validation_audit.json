@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "completed_at": "2026-09-09T06:57:33.789261+00:00",
+  "metric_checks": 114,
+  "max_metric_difference": 1.2490009027033011e-15,
+  "same_held_out_frames_and_truth_as_before": true,
+  "manual_source_hashes_verified": true,
+  "whole_sessions_held_out": true,
+  "verified_inner_split_boundaries": 30,
+  "source_and_lag_hashes_unchanged": true,
+  "outer_fold1_refit_reproduced_tasks": [
+    "force",
+    "localization",
+    "contact"
+  ],
+  "final_models_checksum_verified": true,
+  "reference_and_target_invariance": true,
+  "labels_not_required_for_inference": true,
+  "causal_prefix_and_future_invariance": true,
+  "session_reset_inference_parity": true,
+  "current_frame_batch_single_parity": true,
+  "streaming_sequence_parity": true,
+  "saved_scaler_parameters_finite": true,
+  "caveats": [
+    "Retrospective manual-only development; no unused prospective test recordings remain",
+    "0.05-3 N remains an exploratory evaluation interval",
+    "Temporal smoothing is causal but may delay responses, and ROI is stationary within each recording",
+    "No live GUI bundle was replaced; continuous-location millimetre error and deployed onset delay are unavailable",
+    "Contact AUC is omitted for adaptive families/thresholds with uncalibrated cross-fold score scales"
+  ]
+}

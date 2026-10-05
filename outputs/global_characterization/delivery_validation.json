@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "sheets": 17,
+  "cells_compared": 212817,
+  "mismatches": 0,
+  "source_event_check": "PASS",
+  "verified_events": 5357,
+  "figure_visual_review": "Original nine figures and spatial diagnostics reviewed; updated gate labels and additional model comparison visually checked",
+  "model_metrics_recomputed": 36,
+  "model_maximum_absolute_difference": 2.3314683517128287e-15
+}

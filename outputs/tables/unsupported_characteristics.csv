@@ -1,0 +1,6 @@
+characteristic,status,reason
+Statistical force detection threshold,Not quantitatively assessed,No validated replicated low-force staircase; segmentation excludes excursions <0.5 N
+Response time,Not quantitatively assessed,Sparse samples and narrow-band magnification prevent intrinsic latency inference
+Recovery time,Not quantitatively assessed,Repeated presses generally retain residual load and have no stable release baseline
+Hysteresis,Not quantitatively assessed,No controlled comparable quasi-static loading/unloading protocol
+Operating limit / saturation,Not quantitatively assessed,Tested force maximum is not a failure or saturation limit

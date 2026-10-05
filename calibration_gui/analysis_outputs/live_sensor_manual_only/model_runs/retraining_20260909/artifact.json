@@ -1,0 +1,1571 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "title": "Manual calibration model comparison",
+    "surface": "report",
+    "sources": [
+      {
+        "id": "comparison",
+        "label": "Audited held-out model metrics",
+        "path": "model_comparison.csv",
+        "query": {
+          "description": "Session-balanced metrics computed from outer_predictions.parquet by retrain_manual_models.py, independently checked by audit_manual_retraining.py.",
+          "tables_used": [
+            "model_comparison.csv",
+            "outer_predictions.parquet"
+          ],
+          "filters": [
+            "Manual Calibration (2).zip only",
+            "six complete held-out TEST groups",
+            "aligned primary force 0.05-3 N; dedicated no-contact sessions for detection"
+          ],
+          "metric_definitions": {
+            "mae_N": "Mean per-session absolute force error, N",
+            "rmse_N": "Square root of mean per-session squared force error, N",
+            "r2": "1 - weighted squared error / weighted total target variance",
+            "accuracy": "Mean per-session fraction of correct predictions",
+            "macro_f1": "Macro average of class F1 computed with equal-session sample weights",
+            "balanced_accuracy": "Mean of class recalls computed with equal-session weights",
+            "fpr": "Mean fraction of positive predictions in each dedicated no-contact session"
+          },
+          "engine": "python",
+          "language": "python",
+          "sql": "import pandas as pd\nfrom scripts.retrain_manual_models import metrics\npredictions = pd.read_parquet('outer_predictions.parquet')\nresults = [dict(task=task, model=model, **metrics(rows, task)) for (task, model), rows in predictions.groupby(['task', 'model'])]\npd.DataFrame(results)"
+        }
+      },
+      {
+        "id": "folds",
+        "label": "Held-out TEST group metrics",
+        "path": "fold_metrics.csv",
+        "query": {
+          "engine": "python",
+          "language": "python",
+          "sql": "import pandas as pd\nrows = pd.read_csv('fold_metrics.csv')\nrows.to_dict('records')"
+        }
+      },
+      {
+        "id": "roi",
+        "label": "ROI-specific held-out metrics",
+        "path": "roi_metrics.csv",
+        "query": {
+          "engine": "python",
+          "language": "python",
+          "sql": "import pandas as pd\nrows = pd.read_csv('roi_metrics.csv')\nrows.to_dict('records')"
+        }
+      },
+      {
+        "id": "bins",
+        "label": "Force-bin diagnostic metrics",
+        "path": "force_bin_metrics.csv",
+        "query": {
+          "engine": "python",
+          "language": "python",
+          "sql": "import pandas as pd\nrows = pd.read_csv('force_bin_metrics.csv')\nrows.to_dict('records')"
+        }
+      },
+      {
+        "id": "coverage",
+        "label": "Evaluation coverage and exclusions",
+        "path": "evaluation_coverage.csv",
+        "query": {
+          "engine": "python",
+          "language": "python",
+          "sql": "import pandas as pd\nrows = pd.read_csv('evaluation_coverage.csv')\nrows.to_dict('records')"
+        }
+      },
+      {
+        "id": "method",
+        "label": "Frozen experiment protocol and source provenance",
+        "path": "protocol.json",
+        "query": {
+          "engine": "python",
+          "language": "python",
+          "sql": "import json\nfrom pathlib import Path\njson.loads(Path('protocol.json').read_text())"
+        }
+      },
+      {
+        "id": "audit",
+        "label": "Independent metric and inference audit",
+        "path": "validation_audit.json",
+        "query": {
+          "engine": "python",
+          "language": "python",
+          "sql": "import json\nfrom pathlib import Path\njson.loads(Path('validation_audit.json').read_text())"
+        }
+      },
+      {
+        "id": "combined",
+        "label": "Contact-gated combination metrics",
+        "path": "end_to_end_metrics.json",
+        "query": {
+          "engine": "python",
+          "language": "python",
+          "sql": "import json\nfrom pathlib import Path\njson.loads(Path('end_to_end_metrics.json').read_text())"
+        }
+      },
+      {
+        "id": "timing",
+        "label": "Offline inference timing",
+        "path": "inference_timing.json",
+        "query": {
+          "engine": "python",
+          "language": "python",
+          "sql": "import json\nfrom pathlib import Path\njson.loads(Path('inference_timing.json').read_text())"
+        }
+      }
+    ],
+    "charts": [
+      {
+        "id": "force_mae",
+        "title": "Force estimation error",
+        "type": "bar",
+        "dataset": "force",
+        "sourceId": "comparison",
+        "encodings": {
+          "x": {
+            "field": "model",
+            "type": "nominal",
+            "label": "Model"
+          },
+          "y": {
+            "field": "mae_N",
+            "type": "quantitative",
+            "label": "MAE (N)",
+            "format": "number"
+          }
+        },
+        "options": {
+          "orientation": "horizontal",
+          "showValues": true
+        },
+        "valueFormat": "number",
+        "source": {
+          "label": "Audited manual-only research metrics",
+          "path": "report_evidence.sqlite",
+          "query": {
+            "engine": "sqlite",
+            "language": "sql",
+            "sql": "SELECT * FROM main.\"force\"",
+            "tables_used": [
+              "main.force"
+            ],
+            "description": "Executed retrieval from a local evidence snapshot of audited Python model metrics; calculations and raw predictions are preserved in the source run."
+          }
+        }
+      },
+      {
+        "id": "location_f1",
+        "title": "Localization macro F1",
+        "type": "bar",
+        "dataset": "localization",
+        "sourceId": "comparison",
+        "encodings": {
+          "x": {
+            "field": "model",
+            "type": "nominal",
+            "label": "Model"
+          },
+          "y": {
+            "field": "macro_f1",
+            "type": "quantitative",
+            "label": "Macro F1",
+            "format": "percent"
+          }
+        },
+        "options": {
+          "orientation": "horizontal",
+          "showValues": true
+        },
+        "valueFormat": "percent",
+        "source": {
+          "label": "Audited manual-only research metrics",
+          "path": "report_evidence.sqlite",
+          "query": {
+            "engine": "sqlite",
+            "language": "sql",
+            "sql": "SELECT * FROM main.\"localization\"",
+            "tables_used": [
+              "main.localization"
+            ],
+            "description": "Executed retrieval from a local evidence snapshot of audited Python model metrics; calculations and raw predictions are preserved in the source run."
+          }
+        }
+      },
+      {
+        "id": "contact_bacc",
+        "title": "Contact detection balanced accuracy",
+        "type": "bar",
+        "dataset": "contact",
+        "sourceId": "comparison",
+        "encodings": {
+          "x": {
+            "field": "model",
+            "type": "nominal",
+            "label": "Model"
+          },
+          "y": {
+            "field": "balanced_accuracy",
+            "type": "quantitative",
+            "label": "Balanced accuracy",
+            "format": "percent"
+          }
+        },
+        "options": {
+          "orientation": "horizontal",
+          "showValues": true
+        },
+        "valueFormat": "percent",
+        "source": {
+          "label": "Audited manual-only research metrics",
+          "path": "report_evidence.sqlite",
+          "query": {
+            "engine": "sqlite",
+            "language": "sql",
+            "sql": "SELECT * FROM main.\"contact\"",
+            "tables_used": [
+              "main.contact"
+            ],
+            "description": "Executed retrieval from a local evidence snapshot of audited Python model metrics; calculations and raw predictions are preserved in the source run."
+          }
+        }
+      },
+      {
+        "id": "group_accuracy",
+        "title": "Localization accuracy by held-out group",
+        "type": "bar",
+        "dataset": "localization_folds",
+        "sourceId": "folds",
+        "encodings": {
+          "x": {
+            "field": "test_group",
+            "type": "nominal",
+            "label": "TEST group"
+          },
+          "y": {
+            "field": "accuracy",
+            "type": "quantitative",
+            "label": "Accuracy",
+            "format": "percent"
+          }
+        },
+        "options": {
+          "orientation": "horizontal",
+          "showValues": true
+        },
+        "valueFormat": "percent",
+        "source": {
+          "label": "Audited manual-only research metrics",
+          "path": "report_evidence.sqlite",
+          "query": {
+            "engine": "sqlite",
+            "language": "sql",
+            "sql": "SELECT * FROM main.\"localization_folds\"",
+            "tables_used": [
+              "main.localization_folds"
+            ],
+            "description": "Executed retrieval from a local evidence snapshot of audited Python model metrics; calculations and raw predictions are preserved in the source run."
+          }
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "force_table",
+        "title": "Force model metrics",
+        "dataset": "force",
+        "sourceId": "comparison",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model",
+            "format": "text"
+          },
+          {
+            "field": "mae_N",
+            "label": "MAE (N)",
+            "format": "number"
+          },
+          {
+            "field": "rmse_N",
+            "label": "RMSE (N)",
+            "format": "number"
+          },
+          {
+            "field": "bias_N",
+            "label": "Bias (N)",
+            "format": "number"
+          },
+          {
+            "field": "r2",
+            "label": "R\u00b2",
+            "format": "number"
+          }
+        ],
+        "defaultSort": {
+          "field": "mae_N",
+          "direction": "asc"
+        },
+        "source": {
+          "label": "Audited manual-only research metrics",
+          "path": "report_evidence.sqlite",
+          "query": {
+            "engine": "sqlite",
+            "language": "sql",
+            "sql": "SELECT * FROM main.\"force\"",
+            "tables_used": [
+              "main.force"
+            ],
+            "description": "Executed retrieval from a local evidence snapshot of audited Python model metrics; calculations and raw predictions are preserved in the source run."
+          }
+        }
+      },
+      {
+        "id": "location_table",
+        "title": "Localization model metrics",
+        "dataset": "localization",
+        "sourceId": "comparison",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model",
+            "format": "text"
+          },
+          {
+            "field": "accuracy",
+            "label": "Accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "macro_f1",
+            "label": "Macro F1",
+            "format": "percent"
+          }
+        ],
+        "defaultSort": {
+          "field": "macro_f1",
+          "direction": "desc"
+        },
+        "source": {
+          "label": "Audited manual-only research metrics",
+          "path": "report_evidence.sqlite",
+          "query": {
+            "engine": "sqlite",
+            "language": "sql",
+            "sql": "SELECT * FROM main.\"localization\"",
+            "tables_used": [
+              "main.localization"
+            ],
+            "description": "Executed retrieval from a local evidence snapshot of audited Python model metrics; calculations and raw predictions are preserved in the source run."
+          }
+        }
+      },
+      {
+        "id": "contact_table",
+        "title": "Contact detection metrics",
+        "dataset": "contact",
+        "sourceId": "comparison",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model",
+            "format": "text"
+          },
+          {
+            "field": "balanced_accuracy",
+            "label": "Balanced accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "recall",
+            "label": "Recall",
+            "format": "percent"
+          },
+          {
+            "field": "fpr",
+            "label": "False-positive rate",
+            "format": "percent"
+          },
+          {
+            "field": "macro_f1",
+            "label": "Macro F1",
+            "format": "percent"
+          }
+        ],
+        "defaultSort": {
+          "field": "balanced_accuracy",
+          "direction": "desc"
+        },
+        "source": {
+          "label": "Audited manual-only research metrics",
+          "path": "report_evidence.sqlite",
+          "query": {
+            "engine": "sqlite",
+            "language": "sql",
+            "sql": "SELECT * FROM main.\"contact\"",
+            "tables_used": [
+              "main.contact"
+            ],
+            "description": "Executed retrieval from a local evidence snapshot of audited Python model metrics; calculations and raw predictions are preserved in the source run."
+          }
+        }
+      },
+      {
+        "id": "roi_table",
+        "title": "Saved model performance by ROI",
+        "dataset": "roi",
+        "sourceId": "roi",
+        "columns": [
+          {
+            "field": "roi",
+            "label": "ROI",
+            "format": "number"
+          },
+          {
+            "field": "mae_N",
+            "label": "Force MAE (N)",
+            "format": "number"
+          },
+          {
+            "field": "bias_N",
+            "label": "Force bias (N)",
+            "format": "number"
+          },
+          {
+            "field": "recall",
+            "label": "Localization recall",
+            "format": "percent"
+          },
+          {
+            "field": "frames",
+            "label": "Frames",
+            "format": "number"
+          }
+        ],
+        "defaultSort": {
+          "field": "roi",
+          "direction": "asc"
+        },
+        "source": {
+          "label": "Audited manual-only research metrics",
+          "path": "report_evidence.sqlite",
+          "query": {
+            "engine": "sqlite",
+            "language": "sql",
+            "sql": "SELECT * FROM main.\"roi\"",
+            "tables_used": [
+              "main.roi"
+            ],
+            "description": "Executed retrieval from a local evidence snapshot of audited Python model metrics; calculations and raw predictions are preserved in the source run."
+          }
+        }
+      },
+      {
+        "id": "bin_table",
+        "title": "Performance by reference-force bin",
+        "dataset": "force_bins",
+        "sourceId": "bins",
+        "columns": [
+          {
+            "field": "force_bin",
+            "label": "Force bin",
+            "format": "text"
+          },
+          {
+            "field": "force_mae_N",
+            "label": "MAE (N)",
+            "format": "number"
+          },
+          {
+            "field": "contact_recall",
+            "label": "Detection recall",
+            "format": "percent"
+          },
+          {
+            "field": "localization_accuracy",
+            "label": "Localization accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "frames",
+            "label": "Frames",
+            "format": "number"
+          },
+          {
+            "field": "sessions",
+            "label": "Sessions",
+            "format": "number"
+          }
+        ],
+        "defaultSort": {
+          "field": "force_bin",
+          "direction": "asc"
+        },
+        "source": {
+          "label": "Audited manual-only research metrics",
+          "path": "report_evidence.sqlite",
+          "query": {
+            "engine": "sqlite",
+            "language": "sql",
+            "sql": "SELECT * FROM main.\"force_bins\"",
+            "tables_used": [
+              "main.force_bins"
+            ],
+            "description": "Executed retrieval from a local evidence snapshot of audited Python model metrics; calculations and raw predictions are preserved in the source run."
+          }
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# Manual calibration model comparison"
+      },
+      {
+        "id": "summary",
+        "type": "markdown",
+        "body": "## Technical summary\n\n**Extra Trees is the strongest force estimator tested:** MAE 0.637 N and RMSE 0.770 N. It reduces MAE by 15.4% versus the fitted median baseline, but R\u00b2 is -0.030 and bias is -0.289 N.\n\n**Logistic regression narrowly leads nine-ROI localization by macro F1:** 74.00%, with 73.79% accuracy. RBF SVC is effectively tied and has slightly higher accuracy; this benchmark does not establish a clear separation between them.\n\n**Random Forest leads contact detection by balanced accuracy:** 91.86%, with 91.93% recall and 8.20% no-contact false-positive rate. No tested classifier meets both 90% recall and 5% false positives at its fixed default threshold.\n\nThese are retrospective research candidates. The existing manual-only safe-range and application validation failures remain unresolved.",
+        "sourceId": "comparison"
+      },
+      {
+        "id": "definitions",
+        "type": "markdown",
+        "body": "## What these scores measure\n\nOnly the immutable feature store derived from **Manual Calibration (2).zip** supplied model data: 54 primary press sessions and 11 dedicated no-contact recordings. The 18 replay-only recordings were excluded from training, selection, and performance metrics. All 83 manual partitions passed their recorded checksum checks.\n\nThe primary benchmark covers **0.05\u20133.0 N**, a fixed exploratory interval, not an established detection limit or safe operating range. Each eligible frame receives an optical-only prediction. Force MAE, RMSE, bias, and R\u00b2 give every press session equal total weight. Localization accuracy and macro F1 use equal-session weights across nine ROI classes. Contact balanced accuracy averages positive-class and no-contact recall; FPR is averaged equally across the 11 dedicated no-contact sessions. Precision reflects this archived session mixture, not a prospective real-world prevalence.\n\nLocalization is evaluated on reference-positive press frames regardless of detector output. It measures ROI classification, not millimetre error. Contact detection uses default classifier thresholds without temporal debounce.",
+        "sourceId": "method"
+      },
+      {
+        "id": "force_section",
+        "type": "markdown",
+        "body": "## Extra Trees lowers force error, but tracking remains weak\n\nThe chart ranks nine fixed force configurations by held-out MAE; lower is better. Extra Trees leads in every outer group's inner selection. The negative pooled R\u00b2 means its squared error exceeds that of the weighted mean of the evaluated targets; that mean is an explanatory reference, not a separately trained deployable predictor. Its negative bias shows systematic underestimation.\n\nThe best explicitly monotonic candidate is histogram gradient boosting, with 0.708 N MAE. Extra Trees is unconstrained and has not passed a monotonicity or optical-support audit. The linear models perform poorly over this interval, so a simple proportional light-to-force mapping is not supported by this comparison.",
+        "sourceId": "comparison"
+      },
+      {
+        "id": "force_mae_block",
+        "type": "chart",
+        "chartId": "force_mae",
+        "layout": "full"
+      },
+      {
+        "id": "force_table_block",
+        "type": "table",
+        "tableId": "force_table",
+        "layout": "full"
+      },
+      {
+        "id": "location_section",
+        "type": "markdown",
+        "body": "## Localization has a near tie at the top\n\nLogistic regression and RBF SVC differ by less than 0.1 percentage point in both pooled accuracy and macro F1. Logistic regression is the saved winner because macro F1 was the predeclared selection metric. All six families remain below the application's 80% accuracy and macro-F1 targets. The ranking below uses macro F1; higher is better.",
+        "sourceId": "comparison"
+      },
+      {
+        "id": "location_f1_block",
+        "type": "chart",
+        "chartId": "location_f1",
+        "layout": "full"
+      },
+      {
+        "id": "location_table_block",
+        "type": "table",
+        "tableId": "location_table",
+        "layout": "full"
+      },
+      {
+        "id": "detection_section",
+        "type": "markdown",
+        "body": "## Contact detection trades recall for false alarms\n\nRandom Forest detects 91.93% of the positive press frames but falsely signals contact on 8.20% of dedicated no-contact frames, averaged by session. RBF SVC meets the 5% false-positive target at 4.83%, but its recall is only 86.78%. The chart ranks balanced accuracy; use the table to judge the recall/false-alarm tradeoff. These are individual-frame decisions, so they do not establish live event timing or false-contact episode performance after debounce.",
+        "sourceId": "comparison"
+      },
+      {
+        "id": "contact_bacc_block",
+        "type": "chart",
+        "chartId": "contact_bacc",
+        "layout": "full"
+      },
+      {
+        "id": "contact_table_block",
+        "type": "table",
+        "tableId": "contact_table",
+        "layout": "full"
+      },
+      {
+        "id": "group_section",
+        "type": "markdown",
+        "body": "## TEST1 exposes a major localization generalization gap\n\nFor logistic regression, TEST1 accuracy is 32.58%, compared with 79.72\u201385.80% for TEST2\u2013TEST6. These are independent held-out groups containing nine complete press sessions each; frame counts differ, but sessions receive equal weight. This gap is observed across model families and should be investigated in acquisition conditions and repeatability before relying on the pooled score. The current experiment does not establish its cause.",
+        "sourceId": "folds"
+      },
+      {
+        "id": "group_accuracy_block",
+        "type": "chart",
+        "chartId": "group_accuracy",
+        "layout": "full"
+      },
+      {
+        "id": "roi_section",
+        "type": "markdown",
+        "body": "## Several ROIs remain below the recall target\n\nThe table pairs the saved Extra Trees force model with logistic regression localization. ROIs 1, 2, 7, and 8 have localization recall below 70%; ROI 9 is strongest. Force MAE ranges from 0.557 N for ROI 5 to 0.784 N for ROI 1, while force bias remains negative in every ROI. Each ROI has six independent press sessions.",
+        "sourceId": "roi"
+      },
+      {
+        "id": "roi_table_block",
+        "type": "table",
+        "tableId": "roi_table",
+        "layout": "full"
+      },
+      {
+        "id": "bins_section",
+        "type": "markdown",
+        "body": "## Weak low-force performance limits the pooled result\n\nBelow 0.5 N, the saved models have 1.107 N force MAE, 80.63% detection recall, and 30.37% localization accuracy. Force error is lowest in the 1.5\u20132.0 N bin and rises again near 3 N. These diagnostic bins were inspected after model fitting and must not be used to relabel a narrower interval as validated. Sessions with no eligible samples in a bin do not contribute to that bin's score.",
+        "sourceId": "bins"
+      },
+      {
+        "id": "bin_table_block",
+        "type": "table",
+        "tableId": "bin_table",
+        "layout": "full"
+      },
+      {
+        "id": "selection",
+        "type": "markdown",
+        "body": "## Selecting the model inside training gives a stricter comparison\n\nThe nested selector chooses a family using only the five outer-training groups, with another grouped validation loop and refitted preprocessing. Its outer results are **0.637 N force MAE**, **70.14% localization macro F1**, and **89.54% contact balanced accuracy**. Extra Trees was selected for force in all six groups; localization and contact choices varied.\n\nThe lower classification scores show why the best pooled family scores should be treated as retrospective rankings. Only six TEST groups exist, and all were examined in earlier project experiments. The saved 95% group-bootstrap bounds describe variability of the mean of six fold scores; they are coarse, depend on overlapping training sets, and are not a prospective performance guarantee. Full fold values are retained for review.",
+        "sourceId": "comparison"
+      },
+      {
+        "id": "combined",
+        "type": "markdown",
+        "body": "## Missed contacts worsen the combined output\n\nCombining the three saved winners and replacing a missed press with 0 N raises force MAE to **0.716 N** and RMSE to **0.913 N** on reference-positive frames. Correct contact detection and correct ROI occur together on **70.50%** of these frames, weighted equally by session. This evaluates an offline combination of the retrospective winners, without live support guards or debounce; it is not application acceptance testing.",
+        "sourceId": "combined"
+      },
+      {
+        "id": "coverage_section",
+        "type": "markdown",
+        "body": "## Evaluation retains 7,154 press frames\n\nOf 24,453 primary press frames, 7,154 are eligible after fold-specific timestamp alignment and the fixed force interval. Exclusions comprise 142 unpaired frames, 723 below 0.05 N, and 16,434 above 3.0 N. Detection also includes all 1,352 dedicated no-contact frames, for 8,506 evaluated frames in 65 sessions. Frames outside the interval are not claimed as evaluated force/contact capability.\n\nThe relatively small number of low-force samples and roughly three minutes of dedicated no-contact recordings limit what can be concluded about weak contacts and sustained false alarms.",
+        "sourceId": "coverage"
+      },
+      {
+        "id": "methods",
+        "type": "markdown",
+        "body": "## Model and validation specification\n\nThe candidate list, seeds, hyperparameters, metric rules, and interval were written before opening this run's outer predictions. Nine force configurations cover a median baseline, total-light linear regression, NNLS, positive Ridge, isotonic regression, monotonic histogram and XGBoost boosting, Extra Trees, and RBF SVR. Six classifier families cover logistic regression, RBF SVC, Random Forest, Extra Trees, histogram boosting, and XGBoost. These are fixed configurations, not exhaustive hyperparameter searches.\n\nEach outer fold holds out one TEST number across all nine ROIs plus its assigned complete no-contact recordings. Inner folds follow the same group boundary. Preprocessing learns no-contact floors and scaling only from the current training subset. Lag is selected by grouped NNLS MAE over 0\u2013500 ms in 100 ms steps, preferring the smallest lag within 0.5% of the best. Positive lag pairs optical time t with reference time t minus lag; interpolation is session-local, without extrapolation, and gaps over 300 ms are excluded. Outer lags are 300, 300, 200, 300, 300, and 300 ms.\n\nForce inputs are nine area-normalized positive-light signals after floor subtraction, with scaling that preserves nonnegativity. The total-light baselines sum these scaled channels. Classifiers additionally receive nine signed-light-per-pixel features and nine active fractions. Neither reference force, target ROI, TEST number, nor session identity is an inference feature. There is no frame smoothing. Force training balances sessions and 0.25 N bins; localization balances sessions; contact fitting balances classes and sessions.\n\nThere were 462 fitted estimators across 22 unique training subsets. Family selection is evaluated with nested grouped validation; this follows the rationale in [scikit-learn's nested cross-validation documentation](https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html). The winning configurations were finally refitted using all eligible manual training sessions; their all-data fit is not reported as held-out performance.",
+        "sourceId": "method"
+      },
+      {
+        "id": "validation",
+        "type": "markdown",
+        "body": "## Independent checks passed\n\nThe source-partition hashes, whole-session assignments, identical evaluation rows across candidates, nested selection outputs, and saved-model checksums passed. Independent recalculation matched 103 metrics to floating-point precision. Reloaded models matched single-frame and batch predictions, and changing the reference-force column did not change inference. Fifteen existing dataset-firewall and timestamp/preprocessing tests passed.\n\nThe mixed-family nested contact ROC-AUC is deliberately omitted because SVC decision scores and forest probabilities have incompatible scales. No millimetre localization error or live onset-delay metric is claimed without the required ground truth and deployed event pipeline.",
+        "sourceId": "audit"
+      },
+      {
+        "id": "latency",
+        "type": "markdown",
+        "body": "## Runtime remains an offline measurement\n\nThe research helper produced all three predictions in a median **71.7 ms** and p95 **73.1 ms** over 60 single-frame calls on this machine. This includes tabular preprocessing and estimators, but excludes camera acquisition, pixel feature extraction, and GUI display. It is not an optimized deployment benchmark.",
+        "sourceId": "timing"
+      },
+      {
+        "id": "next",
+        "type": "markdown",
+        "body": "## Recommended next steps\n\nRetain Extra Trees as the force research baseline, and keep logistic regression and RBF SVC as near-tied localization candidates. Random Forest is the detection candidate when recall is prioritized; SVC is the alternative when fewer false positives are required. None is currently a validated live model.\n\nCollect new prospectively held-out manual recordings with balanced low-force coverage, sustained no-contact periods, and documented camera/lighting/baseline conditions. Investigate why TEST1 differs and why ROIs 1 and 2 remain weak. Use the new recordings to test a frozen model, then assess contact thresholds, monotonicity, optical support, debounce, and live latency before application integration. The open questions are whether the TEST1 gap persists under matched acquisition conditions and whether low-force separation improves with stronger manual calibration coverage."
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "status": "ready",
+    "datasets": {
+      "force": [
+        {
+          "task": "force",
+          "model": "Extra Trees",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.6371614508931965,
+          "rmse_N": 0.7704833168465368,
+          "bias_N": -0.2893643984075951,
+          "r2": -0.0302843607375862,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 0.6371614508931965,
+          "fold_min_primary": 0.620672304602392,
+          "fold_max_primary": 0.6536360346266891,
+          "fold_bootstrap95_low": 0.6287946323125162,
+          "fold_bootstrap95_high": 0.6451630745133172,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "RBF SVR",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.7015472284440698,
+          "rmse_N": 0.8616569586517115,
+          "bias_N": -0.3290554495038065,
+          "r2": -0.2885445189866105,
+          "negative_prediction_rate": 0.0004490443259731,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 0.7015472284440699,
+          "fold_min_primary": 0.6383751065353488,
+          "fold_max_primary": 0.7964873631351428,
+          "fold_bootstrap95_low": 0.6674590942065073,
+          "fold_bootstrap95_high": 0.7448484678297662,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Monotonic HistGB",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.7083636113504249,
+          "rmse_N": 0.8448778243427916,
+          "bias_N": -0.3268019925987017,
+          "r2": -0.2388492182001551,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 0.7083636113504249,
+          "fold_min_primary": 0.6735671414366458,
+          "fold_max_primary": 0.742132007460497,
+          "fold_bootstrap95_low": 0.691165448073127,
+          "fold_bootstrap95_high": 0.7254664177373823,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Monotonic XGBoost",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.7158501466391269,
+          "rmse_N": 0.8456897595500753,
+          "bias_N": -0.3399798554022679,
+          "r2": -0.2412314528631738,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 0.7158501466391268,
+          "fold_min_primary": 0.6820886662165659,
+          "fold_max_primary": 0.761980077570071,
+          "fold_bootstrap95_low": 0.6943843498456405,
+          "fold_bootstrap95_high": 0.7395082479998254,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Isotonic",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.7232753093570037,
+          "rmse_N": 0.8486592489301683,
+          "bias_N": -0.3801120386756639,
+          "r2": -0.2499634840443465,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 0.7232753093570037,
+          "fold_min_primary": 0.5685031238433296,
+          "fold_max_primary": 0.8054548562105946,
+          "fold_bootstrap95_low": 0.6571051962950306,
+          "fold_bootstrap95_high": 0.7744287354785474,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Median baseline",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.7535896642998714,
+          "rmse_N": 0.8633161979564995,
+          "bias_N": -0.4111287050679285,
+          "r2": -0.2935118373628695,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 0.7535896642998714,
+          "fold_min_primary": 0.6900574363288753,
+          "fold_max_primary": 0.8197096477704295,
+          "fold_bootstrap95_low": 0.7212009640322912,
+          "fold_bootstrap95_high": 0.7879015064688516,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Positive Ridge",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 1.5292269861276209,
+          "rmse_N": 1.901667888326349,
+          "bias_N": -0.907467812919186,
+          "r2": -5.276246246421069,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 1.5292269861276209,
+          "fold_min_primary": 1.3306836974836342,
+          "fold_max_primary": 1.978415868644632,
+          "fold_bootstrap95_low": 1.3908629942671356,
+          "fold_bootstrap95_high": 1.7246844942348696,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "NNLS",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 1.5295264290023425,
+          "rmse_N": 1.9026784569486368,
+          "bias_N": -0.9063413690885848,
+          "r2": -5.28291856057369,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 1.5295264290023427,
+          "fold_min_primary": 1.3304825799528708,
+          "fold_max_primary": 1.981892958510335,
+          "fold_bootstrap95_low": 1.3905249975234264,
+          "fold_bootstrap95_high": 1.7262234968716843,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "force",
+          "model": "Total light linear",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 1.5614326306893578,
+          "rmse_N": 1.877636489954633,
+          "bias_N": -0.9492112948968934,
+          "r2": -5.118622537602872,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 1.5614326306893576,
+          "fold_min_primary": 1.3452798698453907,
+          "fold_max_primary": 1.937285309152368,
+          "fold_bootstrap95_low": 1.4277010717747258,
+          "fold_bootstrap95_high": 1.7346277180695373,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        }
+      ],
+      "contact": [
+        {
+          "task": "contact",
+          "model": "Random Forest",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "balanced_accuracy",
+          "fold_mean_primary": 0.9217072663280304,
+          "fold_min_primary": 0.7972590076489534,
+          "fold_max_primary": 0.9801631981706844,
+          "fold_bootstrap95_low": 0.862006365014898,
+          "fold_bootstrap95_high": 0.9733168290638528,
+          "accuracy": 0.9190510767504274,
+          "balanced_accuracy": 0.9186416919908716,
+          "macro_f1": 0.871494905916204,
+          "recall": 0.9192605294181052,
+          "precision": 0.9821583660825058,
+          "fpr": 0.0819771454363658,
+          "roc_auc": 0.9572223883211652
+        },
+        {
+          "task": "contact",
+          "model": "RBF SVC",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "balanced_accuracy",
+          "fold_mean_primary": 0.9117417552759128,
+          "fold_min_primary": 0.731613057893191,
+          "fold_max_primary": 0.9870106011217512,
+          "fold_bootstrap95_low": 0.8287632381381798,
+          "fold_bootstrap95_high": 0.976810143301635,
+          "accuracy": 0.8819613010738238,
+          "balanced_accuracy": 0.9097294446698524,
+          "macro_f1": 0.8280754175850826,
+          "recall": 0.8677543438851589,
+          "precision": 0.9887898254278288,
+          "fpr": 0.0482954545454545,
+          "roc_auc": 0.9374050801705608
+        },
+        {
+          "task": "contact",
+          "model": "Logistic regression",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "balanced_accuracy",
+          "fold_mean_primary": 0.9056240445383382,
+          "fold_min_primary": 0.8759136118016643,
+          "fold_max_primary": 0.9330318397727602,
+          "fold_bootstrap95_low": 0.8897723960503114,
+          "fold_bootstrap95_high": 0.9212158011172548,
+          "accuracy": 0.8827899071909128,
+          "balanced_accuracy": 0.9044026495101916,
+          "macro_f1": 0.8276490514995585,
+          "recall": 0.8717322250740668,
+          "precision": 0.985508520550068,
+          "fpr": 0.0629269260536905,
+          "roc_auc": 0.9499676826383436
+        },
+        {
+          "task": "contact",
+          "model": "HistGB",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "balanced_accuracy",
+          "fold_mean_primary": 0.9063005835376456,
+          "fold_min_primary": 0.7753829511531641,
+          "fold_max_primary": 0.978213198672859,
+          "fold_bootstrap95_low": 0.8387593051100848,
+          "fold_bootstrap95_high": 0.9675986333986476,
+          "accuracy": 0.8902965564541815,
+          "balanced_accuracy": 0.9030659372741654,
+          "macro_f1": 0.8352277842468643,
+          "recall": 0.8837633848718643,
+          "precision": 0.982420823935083,
+          "fpr": 0.0776315103235343,
+          "roc_auc": 0.9419947059038664
+        },
+        {
+          "task": "contact",
+          "model": "XGBoost",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "balanced_accuracy",
+          "fold_mean_primary": 0.9034918209534972,
+          "fold_min_primary": 0.7707092582951669,
+          "fold_max_primary": 0.9759744783386032,
+          "fold_bootstrap95_low": 0.8350809839935133,
+          "fold_bootstrap95_high": 0.96524740010983,
+          "accuracy": 0.8851726528614006,
+          "balanced_accuracy": 0.9002893255281582,
+          "macro_f1": 0.8291223631736371,
+          "recall": 0.8774385412644553,
+          "precision": 0.9824692322221704,
+          "fpr": 0.0768598902081396,
+          "roc_auc": 0.9361394562964672
+        },
+        {
+          "task": "contact",
+          "model": "Extra Trees",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "balanced_accuracy",
+          "fold_mean_primary": 0.9003172154481479,
+          "fold_min_primary": 0.6982950821675626,
+          "fold_max_primary": 0.979958935500708,
+          "fold_bootstrap95_low": 0.8065548629597915,
+          "fold_bootstrap95_high": 0.9765772717729088,
+          "accuracy": 0.8777870513927503,
+          "balanced_accuracy": 0.8976542776404492,
+          "macro_f1": 0.8208358748983753,
+          "recall": 0.8676224240102096,
+          "precision": 0.983305318347392,
+          "fpr": 0.0723138687293099,
+          "roc_auc": 0.95524303831764
+        }
+      ],
+      "localization": [
+        {
+          "task": "localization",
+          "model": "Logistic regression",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "macro_f1",
+          "fold_mean_primary": 0.7368417315929623,
+          "fold_min_primary": 0.3235284498421249,
+          "fold_max_primary": 0.8566933067786365,
+          "fold_bootstrap95_low": 0.5662264856185805,
+          "fold_bootstrap95_high": 0.8316777308556276,
+          "accuracy": 0.7378874835571279,
+          "balanced_accuracy": 0.7378874835571282,
+          "macro_f1": 0.7399780767251838,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "RBF SVC",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "macro_f1",
+          "fold_mean_primary": 0.7269683791601569,
+          "fold_min_primary": 0.117744312507565,
+          "fold_max_primary": 0.8911668780773427,
+          "fold_bootstrap95_low": 0.4747384790972562,
+          "fold_bootstrap95_high": 0.8678700099147151,
+          "accuracy": 0.7387346381805682,
+          "balanced_accuracy": 0.7387346381805687,
+          "macro_f1": 0.7391502023495266,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "HistGB",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "macro_f1",
+          "fold_mean_primary": 0.6942858758077185,
+          "fold_min_primary": 0.0261587129782293,
+          "fold_max_primary": 0.8790845290106785,
+          "fold_bootstrap95_low": 0.415886425222741,
+          "fold_bootstrap95_high": 0.8564667315169237,
+          "accuracy": 0.7131309113079891,
+          "balanced_accuracy": 0.7131309113079898,
+          "macro_f1": 0.7232872058042854,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Extra Trees",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "macro_f1",
+          "fold_mean_primary": 0.6922452676834311,
+          "fold_min_primary": 0.0790696450160669,
+          "fold_max_primary": 0.8726470711973747,
+          "fold_bootstrap95_low": 0.4364920050214392,
+          "fold_bootstrap95_high": 0.8462275176662133,
+          "accuracy": 0.7103842659469822,
+          "balanced_accuracy": 0.7103842659469828,
+          "macro_f1": 0.7170117848568376,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Random Forest",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "macro_f1",
+          "fold_mean_primary": 0.6851337081801429,
+          "fold_min_primary": 0.0252382497412469,
+          "fold_max_primary": 0.8748533811113351,
+          "fold_bootstrap95_low": 0.4118058872355291,
+          "fold_bootstrap95_high": 0.8484247474969772,
+          "accuracy": 0.7065550404078954,
+          "balanced_accuracy": 0.7065550404078961,
+          "macro_f1": 0.714933795728686,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "XGBoost",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "macro_f1",
+          "fold_mean_primary": 0.6851677866084075,
+          "fold_min_primary": 0.0224712551196825,
+          "fold_max_primary": 0.8622569842972134,
+          "fold_bootstrap95_low": 0.4123353470992567,
+          "fold_bootstrap95_high": 0.8367985038488718,
+          "accuracy": 0.7037080656345228,
+          "balanced_accuracy": 0.7037080656345235,
+          "macro_f1": 0.7138164381175004,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        }
+      ],
+      "nested": [
+        {
+          "task": "force",
+          "model": "Nested selected",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": 0.6371614508931965,
+          "rmse_N": 0.7704833168465368,
+          "bias_N": -0.2893643984075951,
+          "r2": -0.0302843607375862,
+          "negative_prediction_rate": 0.0,
+          "primary_metric": "mae_N",
+          "fold_mean_primary": 0.6371614508931965,
+          "fold_min_primary": 0.620672304602392,
+          "fold_max_primary": 0.6536360346266891,
+          "fold_bootstrap95_low": 0.6287946323125162,
+          "fold_bootstrap95_high": 0.6451630745133172,
+          "accuracy": null,
+          "balanced_accuracy": null,
+          "macro_f1": null,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "localization",
+          "model": "Nested selected",
+          "frames": 7154,
+          "sessions": 54,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "macro_f1",
+          "fold_mean_primary": 0.6868206435324061,
+          "fold_min_primary": 0.117744312507565,
+          "fold_max_primary": 0.8566933067786365,
+          "fold_bootstrap95_low": 0.4490189363218226,
+          "fold_bootstrap95_high": 0.8229148868002469,
+          "accuracy": 0.7029189887623876,
+          "balanced_accuracy": 0.7029189887623882,
+          "macro_f1": 0.7014436557785012,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null
+        },
+        {
+          "task": "contact",
+          "model": "Nested selected",
+          "frames": 8506,
+          "sessions": 65,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "primary_metric": "balanced_accuracy",
+          "fold_mean_primary": 0.8987976987964457,
+          "fold_min_primary": 0.731613057893191,
+          "fold_max_primary": 0.9792325487458624,
+          "fold_bootstrap95_low": 0.8148661154027564,
+          "fold_bootstrap95_high": 0.968510740357118,
+          "accuracy": 0.8795174461255181,
+          "balanced_accuracy": 0.8954443627270277,
+          "macro_f1": 0.8220452611764808,
+          "recall": 0.8713687911200961,
+          "precision": 0.9815332586592428,
+          "fpr": 0.0804800656660412,
+          "roc_auc": null
+        }
+      ],
+      "roi": [
+        {
+          "roi": 1,
+          "frames": 696,
+          "sessions": 6,
+          "mae_N": 0.7841121609907632,
+          "rmse_N": 0.9319875361448768,
+          "bias_N": -0.2746874176934487,
+          "recall": 0.6166901472723321
+        },
+        {
+          "roi": 2,
+          "frames": 493,
+          "sessions": 6,
+          "mae_N": 0.643194801806035,
+          "rmse_N": 0.8079210651636136,
+          "bias_N": -0.2907022390408441,
+          "recall": 0.6202146530930152
+        },
+        {
+          "roi": 3,
+          "frames": 266,
+          "sessions": 6,
+          "mae_N": 0.5853060935907339,
+          "rmse_N": 0.6726389123473548,
+          "bias_N": -0.2328414045731493,
+          "recall": 0.7961361883628242
+        },
+        {
+          "roi": 4,
+          "frames": 1092,
+          "sessions": 6,
+          "mae_N": 0.6469642843095178,
+          "rmse_N": 0.7768450911792819,
+          "bias_N": -0.2672022854970678,
+          "recall": 0.8061858325592113
+        },
+        {
+          "roi": 5,
+          "frames": 1463,
+          "sessions": 6,
+          "mae_N": 0.5568395984230621,
+          "rmse_N": 0.697380845887736,
+          "bias_N": -0.1727763240204484,
+          "recall": 0.7127933045570474
+        },
+        {
+          "roi": 6,
+          "frames": 921,
+          "sessions": 6,
+          "mae_N": 0.6476771095098786,
+          "rmse_N": 0.7774425040526063,
+          "bias_N": -0.4315949971502604,
+          "recall": 0.7687595005518532
+        },
+        {
+          "roi": 7,
+          "frames": 1024,
+          "sessions": 6,
+          "mae_N": 0.6564582286013961,
+          "rmse_N": 0.7860150035457913,
+          "bias_N": -0.4050777426065281,
+          "recall": 0.6871140313204437
+        },
+        {
+          "roi": 8,
+          "frames": 703,
+          "sessions": 6,
+          "mae_N": 0.5968910044487307,
+          "rmse_N": 0.7315824298609133,
+          "bias_N": -0.2589560818981847,
+          "recall": 0.6967143835224764
+        },
+        {
+          "roi": 9,
+          "frames": 496,
+          "sessions": 6,
+          "mae_N": 0.6170097763586506,
+          "rmse_N": 0.7223177471811929,
+          "bias_N": -0.2704410931884243,
+          "recall": 0.9363793107749468
+        }
+      ],
+      "localization_folds": [
+        {
+          "task": "localization",
+          "model": "Logistic regression",
+          "outer_fold": 1,
+          "frames": 2365,
+          "sessions": 9,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "accuracy": 0.3257692321124999,
+          "balanced_accuracy": 0.3257692321124998,
+          "macro_f1": 0.3235284498421249,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null,
+          "test_group": "TEST1"
+        },
+        {
+          "task": "localization",
+          "model": "Logistic regression",
+          "outer_fold": 2,
+          "frames": 1025,
+          "sessions": 9,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "accuracy": 0.7972118824012906,
+          "balanced_accuracy": 0.7972118824012904,
+          "macro_f1": 0.799157052989365,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null,
+          "test_group": "TEST2"
+        },
+        {
+          "task": "localization",
+          "model": "Logistic regression",
+          "outer_fold": 3,
+          "frames": 686,
+          "sessions": 9,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "accuracy": 0.8061939130873204,
+          "balanced_accuracy": 0.8061939130873205,
+          "macro_f1": 0.8067663296191595,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null,
+          "test_group": "TEST3"
+        },
+        {
+          "task": "localization",
+          "model": "Logistic regression",
+          "outer_fold": 4,
+          "frames": 1117,
+          "sessions": 9,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "accuracy": 0.8110742906176325,
+          "balanced_accuracy": 0.8110742906176325,
+          "macro_f1": 0.80644579212211,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null,
+          "test_group": "TEST4"
+        },
+        {
+          "task": "localization",
+          "model": "Logistic regression",
+          "outer_fold": 5,
+          "frames": 1016,
+          "sessions": 9,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "accuracy": 0.8580081852231459,
+          "balanced_accuracy": 0.858008185223146,
+          "macro_f1": 0.8566933067786365,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null,
+          "test_group": "TEST5"
+        },
+        {
+          "task": "localization",
+          "model": "Logistic regression",
+          "outer_fold": 6,
+          "frames": 945,
+          "sessions": 9,
+          "mae_N": null,
+          "rmse_N": null,
+          "bias_N": null,
+          "r2": null,
+          "negative_prediction_rate": null,
+          "accuracy": 0.8290673979008776,
+          "balanced_accuracy": 0.8290673979008777,
+          "macro_f1": 0.8284594582063781,
+          "recall": null,
+          "precision": null,
+          "fpr": null,
+          "roc_auc": null,
+          "test_group": "TEST6"
+        }
+      ],
+      "force_bins": [
+        {
+          "force_bin": "0.05-0.5 N",
+          "frames": 263,
+          "sessions": 52,
+          "force_mae_N": 1.106611465247392,
+          "contact_recall": 0.8063116370808677,
+          "localization_accuracy": 0.303656546445008
+        },
+        {
+          "force_bin": "0.5-1 N",
+          "frames": 672,
+          "sessions": 51,
+          "force_mae_N": 0.7054533363070703,
+          "contact_recall": 0.8529782906472917,
+          "localization_accuracy": 0.5472702909866086
+        },
+        {
+          "force_bin": "1-1.5 N",
+          "frames": 1102,
+          "sessions": 52,
+          "force_mae_N": 0.4206710493093286,
+          "contact_recall": 0.8921460170896052,
+          "localization_accuracy": 0.7073972495700502
+        },
+        {
+          "force_bin": "1.5-2 N",
+          "frames": 1490,
+          "sessions": 53,
+          "force_mae_N": 0.3590719325630208,
+          "contact_recall": 0.9118508764005916,
+          "localization_accuracy": 0.7351175925221318
+        },
+        {
+          "force_bin": "2-2.5 N",
+          "frames": 1749,
+          "sessions": 52,
+          "force_mae_N": 0.4997785742243153,
+          "contact_recall": 0.9285183632022902,
+          "localization_accuracy": 0.7881578054592905
+        },
+        {
+          "force_bin": "2.5-3 N",
+          "frames": 1878,
+          "sessions": 54,
+          "force_mae_N": 0.9163470719869106,
+          "contact_recall": 0.9350017983346112,
+          "localization_accuracy": 0.8131454247340281
+        }
+      ],
+      "coverage": [
+        {
+          "outer_fold": 1,
+          "lag_ms": 300,
+          "primary_frames": 8559,
+          "unpaired_frames": 24,
+          "below_005_N": 115,
+          "above_3_N": 6055,
+          "evaluated_frames": 2365
+        },
+        {
+          "outer_fold": 2,
+          "lag_ms": 300,
+          "primary_frames": 3405,
+          "unpaired_frames": 26,
+          "below_005_N": 96,
+          "above_3_N": 2258,
+          "evaluated_frames": 1025
+        },
+        {
+          "outer_fold": 3,
+          "lag_ms": 200,
+          "primary_frames": 3138,
+          "unpaired_frames": 18,
+          "below_005_N": 103,
+          "above_3_N": 2331,
+          "evaluated_frames": 686
+        },
+        {
+          "outer_fold": 4,
+          "lag_ms": 300,
+          "primary_frames": 3245,
+          "unpaired_frames": 25,
+          "below_005_N": 156,
+          "above_3_N": 1947,
+          "evaluated_frames": 1117
+        },
+        {
+          "outer_fold": 5,
+          "lag_ms": 300,
+          "primary_frames": 3025,
+          "unpaired_frames": 24,
+          "below_005_N": 122,
+          "above_3_N": 1863,
+          "evaluated_frames": 1016
+        },
+        {
+          "outer_fold": 6,
+          "lag_ms": 300,
+          "primary_frames": 3081,
+          "unpaired_frames": 25,
+          "below_005_N": 131,
+          "above_3_N": 1980,
+          "evaluated_frames": 945
+        }
+      ]
+    }
+  }
+}

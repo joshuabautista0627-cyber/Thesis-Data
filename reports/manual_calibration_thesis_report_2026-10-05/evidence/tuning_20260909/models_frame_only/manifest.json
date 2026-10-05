@@ -1,0 +1,18 @@
+{
+  "status": "experimental_offline_only",
+  "models": [
+    "force",
+    "localization",
+    "contact"
+  ],
+  "files": {
+    "contact.json": "4b9613d4f57996f2d87ee241c6613872ce93e4dc34859355c1bd685e4b8d5530",
+    "contact_con_035.joblib": "b4454ee066d9a2090bf332acc1a512b74250357ce850fc4e2fa6e4b69f4aeb64",
+    "force.json": "1f8f3b55875c8a64f0d7d60bb7a669c6e39773c8d07dad43fe503885ad81b306",
+    "force_for_027.joblib": "67a51b00bab55fdbd876acaa2b701a3bf01170cbc234f8c6286d311fa5a6194e",
+    "localization.json": "5e272f2bc2ed6b3f9bf637316179bb20168fc081ec64eff918266c1862ece183",
+    "localization_loc_062.joblib": "220440dbc5247e3828d0f3c7253bab73a840c19fb7dd5333bc5af230fe0c60dd"
+  },
+  "history": "No input/output history used by selected models",
+  "warning": "Trusted local research artifacts only"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "page_count": 8,
+  "chart_count": 4,
+  "table_count": 5,
+  "checks": {
+    "eight_pages": true,
+    "searchable_text_on_every_page": true,
+    "required_metrics_and_sources_present": true,
+    "no_ui_controls": true,
+    "no_internal_renderer_metadata": true,
+    "all_page_previews_exist": true
+  },
+  "visual_review": {
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "result": "All final page previews reviewed: readable tables and native vector charts; no clipping, overlapping numeric values, or unintended UI controls."
+  },
+  "source_resolution": "Static export from the saved canonical report artifact, not the live MCP sandbox shell.",
+  "conversion": "Packaged portable report renderer with native SVG extraction, then installed Chrome PDF API using the same static HTML.",
+  "print_repairs": [
+    "A4 margins, page numbers, table wrapping and paragraph break control",
+    "Flattened interactive value annotations using print styles",
+    "Expanded abbreviated total-light chart label",
+    "Corrected inferred pathlib labels to source filenames"
+  ],
+  "sha256": {
+    "artifact.json": "3cd5687544bbc7799370ba5771fe9fcdc03d2ad874807029f9ca532c748f636e",
+    "report.html": "c8c2b0e2b2c6356965639735d50702750974bf5b2bc0c1c88d33bf2e59bc0586",
+    "report.print.html": "ba9d14ed6a4352ad8640a9967da2bd9ed65a8ed213f2eeae775940dc3e3bea3f",
+    "Manual_Calibration_Model_Comparison.pdf": "55065e7b36fdea594771de7b95c58bf20664891ef10cb5d705ef757701e71e7c"
+  }
+}

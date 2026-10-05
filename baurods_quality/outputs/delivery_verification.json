@@ -1,0 +1,26 @@
+{
+  "assessment_date": "2026-10-05",
+  "original_archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+  "original_archive_included": false,
+  "primary_checks_passed": 21,
+  "independently_verified_summary_cells": 360,
+  "maximum_absolute_summary_difference": 7.105427357601002e-15,
+  "csv_tables": 35,
+  "publication_figures": 15,
+  "figure_formats": [
+    "320 dpi PNG",
+    "SVG"
+  ],
+  "visual_review": {
+    "all_15_static_figures_reviewed": true,
+    "interactive_charts_rendered_and_reviewed": 6,
+    "semantic_report_tables_verified": 4,
+    "desktop_and_430px_layout_checked": true,
+    "mobile_horizontal_page_overflow": false,
+    "source_inspector_and_reviewed_values_verified": true,
+    "legend_toggle_and_restore_verified": true,
+    "notes": "Browser charts show actual recording points. Full boxplots and mean-SD plots are in outputs/figures. An optional batch chart-image export timed out; the standalone HTML export and all static figures were produced successfully."
+  },
+  "execution_scope": "Numerical scripts were executed; the companion notebook is unexecuted and calls those scripts. The supplemental workspace audit requires the original workspace files described in README.md.",
+  "limitations": "A single source session and variable manual force do not establish independent-session or fixed-force per-press repeatability. Timestamp agreement does not measure intrinsic sensor latency."
+}

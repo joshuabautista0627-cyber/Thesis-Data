@@ -1,0 +1,7 @@
+fold,train_recordings,heldout_recordings,recording_overlap,frame_key_overlap,train_taxels,heldout_taxels,baseline_ids_shared,experimental_session_labels_shared
+1,45,9,0,0,9,9,0,1
+2,45,9,0,0,9,9,2,1
+3,45,9,0,0,9,9,2,1
+4,45,9,0,0,9,9,2,1
+5,45,9,0,0,9,9,2,1
+6,45,9,0,0,9,9,2,1

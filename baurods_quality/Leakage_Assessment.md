@@ -1,0 +1,9 @@
+## 11. Dataset Leakage / Evaluation Integrity
+
+Two evaluation designs coexist in the workspace and should not be conflated.
+
+**Later manual-only split manifest.** All **83 / 83 directory identities** map one-to-one to the supplied archive. The manifest assigns 54 model-primary recordings (TEST1–TEST6; 24,453 frames), 11 no-contact recordings (1,352 frames) and 18 replay-only recordings (3,513 frames). Recomputing all six outer folds finds **zero recording overlap and zero recording/frame-key overlap** between training and holdout, with all nine taxels on both sides. Each outer fold holds out nine recordings and trains on 45. Source experimental session S3 remains shared in all folds; two baseline IDs are shared in folds 2–6. This is within-session grouped evaluation, not an independent-day validation. The split audit does not certify every fitted transform or later model-tuning decision.
+
+**Legacy linear-model results.** The existing out-of-fold file contains **8,559 rows from nine recordings**, all matching directory identities in the supplied archive. **All nine recordings occur in multiple folds.** The corresponding script partitions each recording into five contiguous blocks. Training and testing therefore share the same physical acquisition sequences; unannotated presses may cross boundaries. This establishes within-recording dependence risk, although exact same-press overlap cannot be counted without press IDs. The script points to an older archive path, so complete source equivalence is not established by matching names alone.
+
+Use the whole-recording or whole-TEST-group folds for within-session evaluation, and collect separate sessions/days for generalization claims. Fit any thresholds, scalers and feature selection on training data only. Existing reported model evaluations were not altered or replaced; the new performance appendix audits only predictions saved in the supplied ZIP.

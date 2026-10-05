@@ -1,0 +1,16 @@
+{
+  "scripts/tune_manual_models.py": "2b7beaacdf59560488b9a80556c9a55009069f50d5e20b840ace063073ec023d",
+  "scripts/predict_tuned_manual.py": "5344b65776808e9f6f0cdddc9f601f6601c0cd422c519dddd46cf17153a01f12",
+  "scripts/audit_tuned_manual.py": "cd0b9b951e0e56eea21df8f7b4a9b3e640ae99c0aa0234ff2aab1d5129dab425",
+  "scripts/evaluate_manual_frame_only.py": "46ceab8c7fd9d3e621fd300f21a31c6b65c7191a025fc24ebea102be96b10692",
+  "scripts/report_tuned_manual.py": "12ad42308ba5a67895fb2e0a150b17e0e5c207393b268c2d33e1038b0773e9c4",
+  "scripts/finish_manual_tuning.py": "e1fd27241db8dab3c85b0a1bd5c478e73d48a1c1a5e3565a41bc5dd55ee19991",
+  "scripts/retrain_manual_models.py": "f831a09ed1e1d995208c52b98e3bab7c617cb53c3641e78de11f65550273fafc",
+  "scripts/audit_manual_retraining.py": "40d9b67ec539c11bfd6eb956eda1802b7431c738239c732f0cbcc6f10ee31e56",
+  "scripts/predict_retrained_manual.py": "9ba88dd7864e45fa22f234798818399f8650622f0f5cbcae5a1e1221dc0d6996",
+  "scripts/fit_manual_only_preprocessing.py": "3e5043390e49ae0884e567dc197ee3574b158f300566f51adc5a3692edb77535",
+  "scripts/live_sensor_common.py": "78bf715e5f461bccc619eb2a757e6cacde14d9f029174f16c01ac280860621e3",
+  "core/timestamp_alignment.py": "d707e7e807c808210e641a2487fcc8deec408f5329a7edd4e3652bbe6193c470",
+  "tests/test_tuned_manual_features.py": "fbf6644d938a7f99a8bbc6ca30d3e0b24980295c5a031722b5f68732d1fef441",
+  "config/live_sensor_manual_only.json": "6c9117e03f15ea830a20c317563338309d65bbdb284e236f6e46a6deffb7c264"
+}

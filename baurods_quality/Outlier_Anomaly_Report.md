@@ -1,0 +1,7 @@
+## 9. Outlier and Anomaly Assessment
+
+Within each taxel, 1.5 × IQR fences were applied separately to recording mean/peak force and mean/peak optical response. This produces **23 variable-level statistical flags**; a recording can appear more than once. Every flagged value is retained. Such a flag does not demonstrate corruption, particularly under variable manual loading and unequal recording duration.
+
+There are **eight trial-label conflicts**: R2_NOCONTACT through R9_NOCONTACT carry the fixed interaction label `Press`, although their names indicate no contact and every force-derived frame is non-contact. The three R1_NOCONTACT_v2 recordings use `none`. The report uses the trial names to distinguish dedicated no-contact recordings, verifies their force states, and preserves all original labels.
+
+No corrupted core row was confirmed. Confirmed problems concern label semantics and insufficient physical-press identifiers. The row/trial-level anomaly log records variable, value, bounds/reason, retention decision and justification. Feature-range checks found no negative or >255 mean positive delta V, and all target labels are in 1–9. Negative tared force is reported separately without automatic exclusion.

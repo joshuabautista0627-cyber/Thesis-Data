@@ -1,0 +1,288 @@
+1 / 8
+Data Analytics report
+Manual calibration model comparison
+Technical summary
+Extra Trees is the strongest force estimator tested: MAE 0.637 N and RMSE 0.770 N. It reduces MAE by 15.4%
+versus the fitted median baseline, but R² is -0.030 and bias is -0.289 N.
+Logistic regression narrowly leads nine-ROI localization by macro F1: 74.00%, with 73.79% accuracy. RBF SVC
+is effectively tied and has slightly higher accuracy; this benchmark does not establish a clear separation between
+them.
+Random Forest leads contact detection by balanced accuracy: 91.86%, with 91.93% recall and 8.20% no-
+contact false-positive rate. No tested classifier meets both 90% recall and 5% false positives at its fixed default
+threshold.
+These are retrospective research candidates. The existing manual-only safe-range and application validation
+failures remain unresolved.
+Source: Audited held-out model metrics
+Tables: model_comparison.csv, outer_predictions.parquet
+What these scores measure
+Only the immutable feature store derived from Manual Calibration (2).zip supplied model data: 54 primary press
+sessions and 11 dedicated no-contact recordings. The 18 replay-only recordings were excluded from training,
+selection, and performance metrics. All 83 manual partitions passed their recorded checksum checks.
+The primary benchmark covers 0.05–3.0 N, a fixed exploratory interval, not an established detection limit or safe
+operating range. Each eligible frame receives an optical-only prediction. Force MAE, RMSE, bias, and R² give every
+press session equal total weight. Localization accuracy and macro F1 use equal-session weights across nine ROI
+classes. Contact balanced accuracy averages positive-class and no-contact recall; FPR is averaged equally across
+the 11 dedicated no-contact sessions. Precision reflects this archived session mixture, not a prospective real-world
+prevalence.
+Localization is evaluated on reference-positive press frames regardless of detector output. It measures ROI
+classification, not millimetre error. Contact detection uses default classifier thresholds without temporal debounce.
+Source: Frozen experiment protocol and source provenance
+File: protocol.json
+Extra Trees lowers force error, but tracking remains weak
+The chart ranks nine fixed force configurations by held-out MAE; lower is better. Extra Trees leads in every outer
+group's inner selection. The negative pooled R² means its squared error exceeds that of the weighted mean of the
+evaluated targets; that mean is an explanatory reference, not a separately trained deployable predictor. Its
+negative bias shows systematic underestimation.
+The best explicitly monotonic candidate is histogram gradient boosting, with 0.708 N MAE. Extra Trees is
+unconstrained and has not passed a monotonicity or optical-support audit. The linear models perform poorly over
+this interval, so a simple proportional light-to-force mapping is not supported by this comparison.
+Source: Audited held-out model metrics
+Tables: model_comparison.csv, outer_predictions.parquet
+
+2 / 8
+Force model metrics
+Source: Audited manual-only research metrics
+Table: main.force
+Extra Trees 0.64 0.77 -0.29 -0.03
+RBF SVR 0.7 0.86 -0.33 -0.29
+Monotonic HistGB 0.71 0.84 -0.33 -0.24
+Monotonic XGBoost 0.72 0.85 -0.34 -0.24
+Isotonic 0.72 0.85 -0.38 -0.25
+Median baseline 0.75 0.86 -0.41 -0.29
+Positive Ridge 1.53 1.9 -0.91 -5.28
+NNLS 1.53 1.9 -0.91 -5.28
+Total light linear 1.56 1.88 -0.95 -5.12
+Localization has a near tie at the top
+Logistic regression and RBF SVC differ by less than 0.1 percentage point in both pooled accuracy and macro F1.
+Logistic regression is the saved winner because macro F1 was the predeclared selection metric. All six families
+remain below the application's 80% accuracy and macro-F1 targets. The ranking below uses macro F1; higher is
+better.
+Source: Audited held-out model metrics
+Tables: model_comparison.csv, outer_predictions.parquet
+Force estimation error
+Source: Audited manual-only research metrics
+Table: main.force
+Extra 
+Trees
+RBF SVR Monotonic 
+HistGB
+Monotonic 
+XGBoost
+Isotonic Median 
+baseline
+Positive 
+Ridge
+NNLS Total light 
+linear
+Model
+0
+0.4
+0.8
+1.2
+1.6
+MAE (N)
+Model MAE (N) RMSE (N) Bias (N) R²
+
+3 / 8
+Localization model metrics
+Source: Audited manual-only research metrics
+Table: main.localization
+Logistic regression 73.8% 74%
+RBF SVC 73.9% 73.9%
+HistGB 71.3% 72.3%
+Extra Trees 71% 71.7%
+Random Forest 70.7% 71.5%
+XGBoost 70.4% 71.4%
+Contact detection trades recall for false alarms
+Random Forest detects 91.93% of the positive press frames but falsely signals contact on 8.20% of dedicated no-
+contact frames, averaged by session. RBF SVC meets the 5% false-positive target at 4.83%, but its recall is only
+86.78%. The chart ranks balanced accuracy; use the table to judge the recall/false-alarm tradeoff. These are
+individual-frame decisions, so they do not establish live event timing or false-contact episode performance after
+debounce.
+Source: Audited held-out model metrics
+Tables: model_comparison.csv, outer_predictions.parquet
+Localization macro F1
+Source: Audited manual-only research metrics
+Table: main.localization
+Logistic 
+regression
+RBF SVC HistGB Extra Trees Random Forest XGBoost
+Model
+0%
+20%
+40%
+60%
+80%
+Macro F1
+74% 73.9% 72.3% 71.7% 71.5% 71.4%
+Model Accuracy Macro F1
+
+4 / 8
+Contact detection metrics
+Source: Audited manual-only research metrics
+Table: main.contact
+Random Forest 91.9% 91.9% 8.2% 87.1%
+RBF SVC 91% 86.8% 4.8% 82.8%
+Logistic regression 90.4% 87.2% 6.3% 82.8%
+HistGB 90.3% 88.4% 7.8% 83.5%
+XGBoost 90% 87.7% 7.7% 82.9%
+Extra Trees 89.8% 86.8% 7.2% 82.1%
+TEST1 exposes a major localization generalization gap
+For logistic regression, TEST1 accuracy is 32.58%, compared with 79.72–85.80% for TEST2–TEST6. These are
+independent held-out groups containing nine complete press sessions each; frame counts differ, but sessions
+receive equal weight. This gap is observed across model families and should be investigated in acquisition
+conditions and repeatability before relying on the pooled score. The current experiment does not establish its
+cause.
+Source: Held-out TEST group metrics
+File: fold_metrics.csv
+Contact detection balanced accuracy
+Source: Audited manual-only research metrics
+Table: main.contact
+Random Forest RBF SVC Logistic 
+regression
+HistGB XGBoost Extra Trees
+Model
+0%
+25%
+50%
+75%
+100%
+Balanced accuracy
+91.9% 91% 90.4% 90.3% 90% 89.8%
+Model Balanced accuracy Recall False-positive rate Macro F1
+
+5 / 8
+Several ROIs remain below the recall target
+The table pairs the saved Extra Trees force model with logistic regression localization. ROIs 1, 2, 7, and 8 have
+localization recall below 70%; ROI 9 is strongest. Force MAE ranges from 0.557 N for ROI 5 to 0.784 N for ROI 1,
+while force bias remains negative in every ROI. Each ROI has six independent press sessions.
+Source: ROI-specific held-out metrics
+File: roi_metrics.csv
+Saved model performance by ROI
+Source: Audited manual-only research metrics
+Table: main.roi
+1 0.78 -0.27 61.7% 696
+2 0.64 -0.29 62% 493
+3 0.59 -0.23 79.6% 266
+4 0.65 -0.27 80.6% 1,092
+5 0.56 -0.17 71.3% 1,463
+6 0.65 -0.43 76.9% 921
+7 0.66 -0.41 68.7% 1,024
+8 0.6 -0.26 69.7% 703
+9 0.62 -0.27 93.6% 496
+Localization accuracy by held-out group
+Source: Audited manual-only research metrics
+Table: main.localization_folds
+TEST1 TEST2 TEST3 TEST4 TEST5 TEST6
+TEST group
+0%
+25%
+50%
+75%
+100%
+Accuracy
+32.6%
+79.7% 80.6% 81.1% 85.8% 82.9%
+ROI Force MAE (N) Force bias (N) Localization recall Frames
+
+6 / 8
+Weak low-force performance limits the pooled result
+Below 0.5 N, the saved models have 1.107 N force MAE, 80.63% detection recall, and 30.37% localization accuracy.
+Force error is lowest in the 1.5–2.0 N bin and rises again near 3 N. These diagnostic bins were inspected after
+model fitting and must not be used to relabel a narrower interval as validated. Sessions with no eligible samples in
+a bin do not contribute to that bin's score.
+Source: Force-bin diagnostic metrics
+File: force_bin_metrics.csv
+Performance by reference-force bin
+Source: Audited manual-only research metrics
+Table: main.force_bins
+0.05-0.5 N 1.11 80.6% 30.4% 263 52
+0.5-1 N 0.71 85.3% 54.7% 672 51
+1-1.5 N 0.42 89.2% 70.7% 1,102 52
+1.5-2 N 0.36 91.2% 73.5% 1,490 53
+2-2.5 N 0.5 92.9% 78.8% 1,749 52
+2.5-3 N 0.92 93.5% 81.3% 1,878 54
+Selecting the model inside training gives a stricter comparison
+The nested selector chooses a family using only the five outer-training groups, with another grouped validation
+loop and refitted preprocessing. Its outer results are 0.637 N force MAE, 70.14% localization macro F1, and
+89.54% contact balanced accuracy. Extra Trees was selected for force in all six groups; localization and contact
+choices varied.
+The lower classification scores show why the best pooled family scores should be treated as retrospective
+rankings. Only six TEST groups exist, and all were examined in earlier project experiments. The saved 95% group-
+bootstrap bounds describe variability of the mean of six fold scores; they are coarse, depend on overlapping
+training sets, and are not a prospective performance guarantee. Full fold values are retained for review.
+Source: Audited held-out model metrics
+Tables: model_comparison.csv, outer_predictions.parquet
+Missed contacts worsen the combined output
+Combining the three saved winners and replacing a missed press with 0 N raises force MAE to 0.716 N and RMSE
+to 0.913 N on reference-positive frames. Correct contact detection and correct ROI occur together on 70.50% of
+these frames, weighted equally by session. This evaluates an offline combination of the retrospective winners,
+without live support guards or debounce; it is not application acceptance testing.
+Source: Contact-gated combination metrics
+File: end_to_end_metrics.json
+Force bin MAE (N) Detection recall Localization
+accuracy
+Frames Sessions
+
+7 / 8
+Evaluation retains 7,154 press frames
+Of 24,453 primary press frames, 7,154 are eligible after fold-specific timestamp alignment and the fixed force
+interval. Exclusions comprise 142 unpaired frames, 723 below 0.05 N, and 16,434 above 3.0 N. Detection also
+includes all 1,352 dedicated no-contact frames, for 8,506 evaluated frames in 65 sessions. Frames outside the
+interval are not claimed as evaluated force/contact capability.
+The relatively small number of low-force samples and roughly three minutes of dedicated no-contact recordings
+limit what can be concluded about weak contacts and sustained false alarms.
+Source: Evaluation coverage and exclusions
+File: evaluation_coverage.csv
+Model and validation specification
+The candidate list, seeds, hyperparameters, metric rules, and interval were written before opening this run's outer
+predictions. Nine force configurations cover a median baseline, total-light linear regression, NNLS, positive Ridge,
+isotonic regression, monotonic histogram and XGBoost boosting, Extra Trees, and RBF SVR. Six classifier families
+cover logistic regression, RBF SVC, Random Forest, Extra Trees, histogram boosting, and XGBoost. These are fixed
+configurations, not exhaustive hyperparameter searches.
+Each outer fold holds out one TEST number across all nine ROIs plus its assigned complete no-contact recordings.
+Inner folds follow the same group boundary. Preprocessing learns no-contact floors and scaling only from the
+current training subset. Lag is selected by grouped NNLS MAE over 0–500 ms in 100 ms steps, preferring the
+smallest lag within 0.5% of the best. Positive lag pairs optical time t with reference time t minus lag; interpolation
+is session-local, without extrapolation, and gaps over 300 ms are excluded. Outer lags are 300, 300, 200, 300, 300,
+and 300 ms.
+Force inputs are nine area-normalized positive-light signals after floor subtraction, with scaling that preserves
+nonnegativity. The total-light baselines sum these scaled channels. Classifiers additionally receive nine signed-
+light-per-pixel features and nine active fractions. Neither reference force, target ROI, TEST number, nor session
+identity is an inference feature. There is no frame smoothing. Force training balances sessions and 0.25 N bins;
+localization balances sessions; contact fitting balances classes and sessions.
+There were 462 fitted estimators across 22 unique training subsets. Family selection is evaluated with nested
+grouped validation; this follows the rationale in scikit-learn's nested cross-validation documentation. The winning
+configurations were finally refitted using all eligible manual training sessions; their all-data fit is not reported as
+held-out performance.
+Source: Frozen experiment protocol and source provenance
+File: protocol.json
+Independent checks passed
+The source-partition hashes, whole-session assignments, identical evaluation rows across candidates, nested
+selection outputs, and saved-model checksums passed. Independent recalculation matched 103 metrics to
+floating-point precision. Reloaded models matched single-frame and batch predictions, and changing the
+reference-force column did not change inference. Fifteen existing dataset-firewall and timestamp/preprocessing
+tests passed.
+The mixed-family nested contact ROC-AUC is deliberately omitted because SVC decision scores and forest
+probabilities have incompatible scales. No millimetre localization error or live onset-delay metric is claimed
+without the required ground truth and deployed event pipeline.
+Source: Independent metric and inference audit
+File: validation_audit.json
+
+8 / 8
+Runtime remains an offline measurement
+The research helper produced all three predictions in a median 71.7 ms and p95 73.1 ms over 60 single-frame
+calls on this machine. This includes tabular preprocessing and estimators, but excludes camera acquisition, pixel
+feature extraction, and GUI display. It is not an optimized deployment benchmark.
+Source: Offline inference timing
+File: inference_timing.json
+Recommended next steps
+Retain Extra Trees as the force research baseline, and keep logistic regression and RBF SVC as near-tied localization
+candidates. Random Forest is the detection candidate when recall is prioritized; SVC is the alternative when fewer
+false positives are required. None is currently a validated live model.
+Collect new prospectively held-out manual recordings with balanced low-force coverage, sustained no-contact
+periods, and documented camera/lighting/baseline conditions. Investigate why TEST1 differs and why ROIs 1 and
+2 remain weak. Use the new recordings to test a frozen model, then assess contact thresholds, monotonicity,
+optical support, debounce, and live latency before application integration. The open questions are whether the
+TEST1 gap persists under matched acquisition conditions and whether low-force separation improves with
+stronger manual calibration coverage.

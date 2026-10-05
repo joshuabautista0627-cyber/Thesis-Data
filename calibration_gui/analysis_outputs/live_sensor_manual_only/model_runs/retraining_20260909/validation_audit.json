@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "metric_spot_checks": 103,
+  "maximum_metric_difference": 6.439293542825908e-15,
+  "whole_session_outer_splits": true,
+  "identical_candidate_evaluation_rows": true,
+  "no_replay_rows": true,
+  "nested_selection_predictions_match": true,
+  "model_hashes_valid": true,
+  "reference_force_not_used_by_inference": true,
+  "reload_single_batch_parity": true,
+  "training_source_code_unchanged": true,
+  "source_partition_hashes_verified": true,
+  "corrected_metrics": {
+    "nested_contact_pooled_roc_auc": "omitted: selected estimators use incompatible score scales"
+  },
+  "assessment": "share with caveats: retrospective, exploratory force interval, six dependent CV folds; no prospective live validation",
+  "omitted_metrics": {
+    "localization_mm_error": "nine ROI labels; no calibrated continuous spatial ground truth",
+    "live_contact_onset_delay": "this benchmark scores individual frames; no deployed event/debounce pipeline",
+    "validated_safe_range": "prior manual-only scientific range gate remains failed"
+  }
+}

@@ -1,0 +1,2 @@
+TN,FP,FN,TP,n_positive,n_negative,accuracy,sensitivity,specificity,precision,f1,roc_auc,threshold_V,specificity_wilson_ci95
+11,0,5325,32,5357,11,0.00801043219076,0.00597349262647,1,1,0.0118760437929,0.938839581177,5,"[np.float64(0.7411670330319684), np.float64(1.0)]"

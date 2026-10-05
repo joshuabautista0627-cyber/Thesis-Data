@@ -1,0 +1,2 @@
+n_events,n_recordings,accuracy,macro_precision,macro_recall,macro_f1,abstentions,coverage,conditional_accuracy_detected,ungated_accuracy,ungated_macro_precision,ungated_macro_recall,ungated_macro_f1
+5357,72,0.00597349262647,0.444444444444,0.00576904734156,0.0113470275515,5325,0.00597349262647,1,0.943065148404,0.952208259396,0.944469295967,0.944372836591

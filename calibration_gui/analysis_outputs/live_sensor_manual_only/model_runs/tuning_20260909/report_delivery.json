@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "metric_audit_checks": 114,
+  "models_checksum_verified": 18,
+  "canonical_manifest_and_snapshot_match_portable_html": true,
+  "training_source_hashes_unchanged": true,
+  "source_files_preserved": 14,
+  "model_library_versions_unchanged": true,
+  "current_model_library_versions": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.0",
+    "scipy": "1.18.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "pyarrow": "21.0.0",
+    "pytest": "9.1.1"
+  },
+  "visual_review": "Four charts and comparison/ROI/bin tables reviewed; full model-parameter table uses horizontal scrolling.",
+  "html_sha256": "8369233210bef18a8eb29ea7f13df3a3248dca6df6feae3eaada3d1d69c0335f",
+  "artifact_sha256": "41391cf286bdb850faa8697e34713677dc4c02af216e720ba610702e7cd3cedf",
+  "renderer": "Self-contained verified export produced with the original packaged Data Analytics renderer.",
+  "renderer_runtime_note": "The plugin updated after export and removed its legacy builder. The existing portable HTML contains its runtime and exactly matches the canonical artifact; model training and inference do not depend on that plugin."
+}

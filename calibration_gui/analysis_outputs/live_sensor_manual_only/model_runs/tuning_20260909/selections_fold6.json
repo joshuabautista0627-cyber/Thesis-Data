@@ -1,0 +1,401 @@
+{
+  "force": {
+    "Tuned selected": {
+      "id": "ensemble",
+      "family": "Ensemble",
+      "members": [
+        {
+          "id": "for_059",
+          "family": "XGBoost",
+          "tau": 0.3,
+          "h": 1,
+          "offset": 0.11652466294880082,
+          "correction": "median",
+          "mae_N": 0.5020451595677798,
+          "rmse_N": 0.6353590227662512,
+          "bias_N": 0.08964287726254293,
+          "r2": 0.2873645365266402
+        },
+        {
+          "id": "for_056",
+          "family": "HistGB",
+          "tau": 0.3,
+          "h": 1,
+          "offset": 0.10905367485922174,
+          "correction": "median",
+          "mae_N": 0.5027861414142809,
+          "rmse_N": 0.6348465257786926,
+          "bias_N": 0.07895789894090662,
+          "r2": 0.28851373317235895
+        },
+        {
+          "id": "for_050",
+          "family": "Extra Trees",
+          "tau": 0.0,
+          "h": 0,
+          "offset": 0.16707105034631944,
+          "correction": "median",
+          "mae_N": 0.5090067782087332,
+          "rmse_N": 0.6412379419732026,
+          "bias_N": 0.08053679674179014,
+          "r2": 0.2741156211393445
+        }
+      ],
+      "mae_N": 0.499358500931817,
+      "rmse_N": 0.6301249526642764,
+      "bias_N": 0.08304585342704995,
+      "r2": 0.2990575166759254
+    },
+    "Tuned Extra Trees": {
+      "id": "for_050",
+      "family": "Extra Trees",
+      "tau": 0.0,
+      "h": 0,
+      "offset": 0.16707105034631944,
+      "correction": "median",
+      "mae_N": 0.5090067782087332,
+      "rmse_N": 0.6412379419732026,
+      "bias_N": 0.08053679674179014,
+      "r2": 0.2741156211393445
+    },
+    "Tuned HistGB": {
+      "id": "for_056",
+      "family": "HistGB",
+      "tau": 0.3,
+      "h": 1,
+      "offset": 0.10905367485922174,
+      "correction": "median",
+      "mae_N": 0.5027861414142809,
+      "rmse_N": 0.6348465257786926,
+      "bias_N": 0.07895789894090662,
+      "r2": 0.28851373317235895
+    },
+    "Tuned MLP": {
+      "id": "for_060",
+      "family": "MLP",
+      "tau": 0.3,
+      "h": 1,
+      "offset": 0.1481497969730165,
+      "correction": "median",
+      "mae_N": 0.534033805454685,
+      "rmse_N": 0.6848705927575054,
+      "bias_N": 0.11824306396302663,
+      "r2": 0.17197001366942055
+    },
+    "Tuned RBF SVR": {
+      "id": "for_024",
+      "family": "RBF SVR",
+      "tau": 0.3,
+      "h": 1,
+      "offset": 0.12904588011943705,
+      "correction": "median",
+      "mae_N": 0.5097654883523342,
+      "rmse_N": 0.6439032259577676,
+      "bias_N": 0.09202399889792022,
+      "r2": 0.2680688524888576
+    },
+    "Tuned Random Forest": {
+      "id": "for_053",
+      "family": "Random Forest",
+      "tau": 0.3,
+      "h": 1,
+      "offset": 0.16791184295190367,
+      "correction": "median",
+      "mae_N": 0.5195187251365336,
+      "rmse_N": 0.6591006882305,
+      "bias_N": 0.10947276597240244,
+      "r2": 0.23311091338563228
+    },
+    "Tuned XGBoost": {
+      "id": "for_059",
+      "family": "XGBoost",
+      "tau": 0.3,
+      "h": 1,
+      "offset": 0.11652466294880082,
+      "correction": "median",
+      "mae_N": 0.5020451595677798,
+      "rmse_N": 0.6353590227662512,
+      "bias_N": 0.08964287726254293,
+      "r2": 0.2873645365266402
+    },
+    "Tuned ensemble": {
+      "id": "ensemble",
+      "family": "Ensemble",
+      "members": [
+        {
+          "id": "for_059",
+          "family": "XGBoost",
+          "tau": 0.3,
+          "h": 1,
+          "offset": 0.11652466294880082,
+          "correction": "median",
+          "mae_N": 0.5020451595677798,
+          "rmse_N": 0.6353590227662512,
+          "bias_N": 0.08964287726254293,
+          "r2": 0.2873645365266402
+        },
+        {
+          "id": "for_056",
+          "family": "HistGB",
+          "tau": 0.3,
+          "h": 1,
+          "offset": 0.10905367485922174,
+          "correction": "median",
+          "mae_N": 0.5027861414142809,
+          "rmse_N": 0.6348465257786926,
+          "bias_N": 0.07895789894090662,
+          "r2": 0.28851373317235895
+        },
+        {
+          "id": "for_050",
+          "family": "Extra Trees",
+          "tau": 0.0,
+          "h": 0,
+          "offset": 0.16707105034631944,
+          "correction": "median",
+          "mae_N": 0.5090067782087332,
+          "rmse_N": 0.6412379419732026,
+          "bias_N": 0.08053679674179014,
+          "r2": 0.2741156211393445
+        }
+      ],
+      "mae_N": 0.499358500931817,
+      "rmse_N": 0.6301249526642764,
+      "bias_N": 0.08304585342704995,
+      "r2": 0.2990575166759254
+    }
+  },
+  "localization": {
+    "Tuned selected": {
+      "id": "ensemble",
+      "family": "Ensemble",
+      "members": [
+        {
+          "id": "loc_062",
+          "family": "HistGB",
+          "tau": 1.0,
+          "h": 2,
+          "accuracy": 0.925467682540654,
+          "balanced_accuracy": 0.925467682540654,
+          "macro_f1": 0.9254350385811434
+        },
+        {
+          "id": "loc_047",
+          "family": "Extra Trees",
+          "tau": 1.0,
+          "h": 2,
+          "accuracy": 0.9184406124697319,
+          "balanced_accuracy": 0.9184406124697316,
+          "macro_f1": 0.9193586257444717
+        },
+        {
+          "id": "loc_036",
+          "family": "Logistic regression",
+          "tau": 1.0,
+          "h": 2,
+          "accuracy": 0.9020396756158546,
+          "balanced_accuracy": 0.9020396756158546,
+          "macro_f1": 0.9014284384940585
+        }
+      ],
+      "accuracy": 0.9412171561590046,
+      "balanced_accuracy": 0.9412171561590044,
+      "macro_f1": 0.941020134532238
+    },
+    "Tuned Extra Trees": {
+      "id": "loc_047",
+      "family": "Extra Trees",
+      "tau": 1.0,
+      "h": 2,
+      "accuracy": 0.9184406124697319,
+      "balanced_accuracy": 0.9184406124697316,
+      "macro_f1": 0.9193586257444717
+    },
+    "Tuned HistGB": {
+      "id": "loc_062",
+      "family": "HistGB",
+      "tau": 1.0,
+      "h": 2,
+      "accuracy": 0.925467682540654,
+      "balanced_accuracy": 0.925467682540654,
+      "macro_f1": 0.9254350385811434
+    },
+    "Tuned Logistic regression": {
+      "id": "loc_036",
+      "family": "Logistic regression",
+      "tau": 1.0,
+      "h": 2,
+      "accuracy": 0.9020396756158546,
+      "balanced_accuracy": 0.9020396756158546,
+      "macro_f1": 0.9014284384940585
+    },
+    "Tuned MLP": {
+      "id": "loc_063",
+      "family": "MLP",
+      "tau": 1.0,
+      "h": 2,
+      "accuracy": 0.8903938912900728,
+      "balanced_accuracy": 0.890393891290073,
+      "macro_f1": 0.8909484846246595
+    },
+    "Tuned RBF SVC": {
+      "id": "loc_042",
+      "family": "RBF SVC",
+      "tau": 1.0,
+      "h": 2,
+      "accuracy": 0.7870159411360892,
+      "balanced_accuracy": 0.7870159411360892,
+      "macro_f1": 0.8136188217784526
+    },
+    "Tuned ensemble": {
+      "id": "ensemble",
+      "family": "Ensemble",
+      "members": [
+        {
+          "id": "loc_062",
+          "family": "HistGB",
+          "tau": 1.0,
+          "h": 2,
+          "accuracy": 0.925467682540654,
+          "balanced_accuracy": 0.925467682540654,
+          "macro_f1": 0.9254350385811434
+        },
+        {
+          "id": "loc_047",
+          "family": "Extra Trees",
+          "tau": 1.0,
+          "h": 2,
+          "accuracy": 0.9184406124697319,
+          "balanced_accuracy": 0.9184406124697316,
+          "macro_f1": 0.9193586257444717
+        },
+        {
+          "id": "loc_036",
+          "family": "Logistic regression",
+          "tau": 1.0,
+          "h": 2,
+          "accuracy": 0.9020396756158546,
+          "balanced_accuracy": 0.9020396756158546,
+          "macro_f1": 0.9014284384940585
+        }
+      ],
+      "accuracy": 0.9412171561590046,
+      "balanced_accuracy": 0.9412171561590044,
+      "macro_f1": 0.941020134532238
+    }
+  },
+  "contact": {
+    "Tuned selected": {
+      "id": "con_022",
+      "family": "RBF SVC",
+      "tau": 1.0,
+      "h": 2,
+      "threshold": 0.3111855387687683,
+      "threshold_policy": "balanced",
+      "accuracy": 0.9928115253068247,
+      "balanced_accuracy": 0.9956070432430595,
+      "macro_f1": 0.9881012825475051,
+      "recall": 0.991214086486119,
+      "fpr": 0.0,
+      "precision": 1.0
+    },
+    "Tuned Extra Trees": {
+      "id": "con_029",
+      "family": "Extra Trees",
+      "tau": 1.0,
+      "h": 2,
+      "threshold": 0.5650869607925415,
+      "threshold_policy": "balanced",
+      "accuracy": 0.9621315529900204,
+      "balanced_accuracy": 0.9732123379383457,
+      "macro_f1": 0.9406181908220894,
+      "recall": 0.9557996758766913,
+      "fpr": 0.009374999999999911,
+      "precision": 0.9978250649470737
+    },
+    "Tuned HistGB": {
+      "id": "con_018",
+      "family": "HistGB",
+      "tau": 1.0,
+      "h": 2,
+      "threshold": 0.3773910701274872,
+      "threshold_policy": "balanced",
+      "accuracy": 0.9857901991462227,
+      "balanced_accuracy": 0.9913162328115805,
+      "macro_f1": 0.9768163967659682,
+      "recall": 0.982632465623161,
+      "fpr": 0.0,
+      "precision": 1.0
+    },
+    "Tuned Logistic regression": {
+      "id": "con_021",
+      "family": "Logistic regression",
+      "tau": 1.0,
+      "h": 2,
+      "threshold": 0.22690066695213318,
+      "threshold_policy": "balanced",
+      "accuracy": 0.9921192849594119,
+      "balanced_accuracy": 0.9951840074751961,
+      "macro_f1": 0.9869742231832741,
+      "recall": 0.9903680149503923,
+      "fpr": 0.0,
+      "precision": 1.0
+    },
+    "Tuned RBF SVC": {
+      "id": "con_022",
+      "family": "RBF SVC",
+      "tau": 1.0,
+      "h": 2,
+      "threshold": 0.3111855387687683,
+      "threshold_policy": "balanced",
+      "accuracy": 0.9928115253068247,
+      "balanced_accuracy": 0.9956070432430595,
+      "macro_f1": 0.9881012825475051,
+      "recall": 0.991214086486119,
+      "fpr": 0.0,
+      "precision": 1.0
+    },
+    "Tuned Random Forest": {
+      "id": "con_028",
+      "family": "Random Forest",
+      "tau": 1.0,
+      "h": 2,
+      "threshold": 0.3296501040458679,
+      "threshold_policy": "balanced",
+      "accuracy": 0.9906069542331912,
+      "balanced_accuracy": 0.9926394349943576,
+      "macro_f1": 0.9844744500719339,
+      "recall": 0.9894455366553818,
+      "fpr": 0.004166666666666652,
+      "precision": 0.9990650720856671
+    },
+    "Tuned XGBoost": {
+      "id": "con_024",
+      "family": "XGBoost",
+      "tau": 1.0,
+      "h": 2,
+      "threshold": 0.3612394332885742,
+      "threshold_policy": "balanced",
+      "accuracy": 0.9890209502959977,
+      "balanced_accuracy": 0.993290580736443,
+      "macro_f1": 0.9819688688631019,
+      "recall": 0.9865811614728861,
+      "fpr": 0.0,
+      "precision": 1.0
+    },
+    "Tuned FPR <=5%": {
+      "id": "con_049",
+      "family": "RBF SVC",
+      "tau": 0.3,
+      "h": 1,
+      "threshold": 0.3302903175354004,
+      "threshold_policy": "fpr5",
+      "accuracy": 0.9882532278454433,
+      "balanced_accuracy": 0.9752910830295212,
+      "macro_f1": 0.9800600578701766,
+      "recall": 0.9956601677402566,
+      "fpr": 0.04507800168121434,
+      "precision": 0.990039218643629
+    }
+  }
+}

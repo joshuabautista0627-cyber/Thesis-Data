@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-09-09T06:18:16.213944+00:00",
+  "purpose": "Separate improvements from current optical features and tuning from history-dependent gains",
+  "selection": "Same inner grouped trials; exclude temporal feature pack, require output tau=0; minimum MAE / maximum ROI macro F1 / maximum contact balanced accuracy",
+  "ensembles": false,
+  "outer_evaluation": "Same six held-out groups and frame set as original and main tuning run",
+  "source_code_sha256": "46ceab8c7fd9d3e621fd300f21a31c6b65c7191a025fc24ebea102be96b10692"
+}

@@ -1,0 +1,11 @@
+model,parameter,estimate,ci95_low,ci95_high
+constant,intercept,1.85432621014,,
+linear,intercept,0.908550490436,0.735169431809,1.09365867262
+linear,force_term,0.121059840898,0.0888528229882,0.149005061358
+quadratic,intercept,0.736661785535,,
+quadratic,force_term,0.165210669381,,
+quadratic,force_squared_term,-0.00244576861986,,
+logarithmic,intercept,0.0943033121809,,
+logarithmic,force_term,0.891334110923,,
+power,a,0.659548661437,,
+power,exponent,0.5122211971,,

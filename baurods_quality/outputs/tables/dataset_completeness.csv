@@ -1,0 +1,7 @@
+Check,Observed valid,Expected from recorded counters,Completeness (%)
+Camera/master records,29318,29318,100.0
+Feature rows,29318,29318,100.0
+Decoded primary video frames,29318,29318,100.0
+Raw load-cell samples,42568,42568,100.0
+Core-complete synchronized rows,29318,29318,100.0
+Valid synchronized rows,29318,29318,100.0

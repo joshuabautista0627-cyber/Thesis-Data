@@ -1,0 +1,21 @@
+{
+  "source_split_manifest": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\splits\\splits-da608c2b8581adff\\split_manifest.csv",
+  "split_manifest_sha256": "a960d8116728afab037fbd63cdf4140213844d7ddd08a073ecb2ba7e06235643",
+  "matched_recordings": 83,
+  "manifest_rows": 83,
+  "legacy_oof": {
+    "path": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\analysis_outputs\\manual_linear_models\\out_of_fold_predictions.csv.gz",
+    "sha256": "aeae016a594cb16586c7f429c9da186c094dac9e217a7b922194f6106576a234",
+    "rows": 8559,
+    "recordings": 9,
+    "recordings_in_multiple_folds": 9,
+    "recordings_matching_supplied_archive": 9
+  },
+  "negative_force_frames": 2154,
+  "invalid_raw_loadcell_rows": 0,
+  "independently_recomputed_summary_cells": 360,
+  "maximum_absolute_statistic_error": 7.105427357601002e-15,
+  "independent_spearman_rho": 0.5201620683002123,
+  "all_grouped_summary_cells_agree": true,
+  "note": "Manifest session_id means recording-directory identity; source session_id is S3. Shared baseline/session context is a generalization limitation, not proof of label leakage."
+}

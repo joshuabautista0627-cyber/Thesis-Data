@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "all_event_amplitudes_recomputed": true,
+  "n_events_checked": 5357,
+  "max_force_error_N": 0.0,
+  "max_optical_error_V": 0.0,
+  "no_camera_samples_shared_between_retained_events": true,
+  "all_nine_locations": true,
+  "recording_clusters": 72,
+  "independent_linear_r2": 0.2229196079089414,
+  "localization_correct_count": 32,
+  "source_archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+  "visual_QA": "PNG figures inspected separately by the analyst",
+  "independence_limit": "One physical skin and one labelled acquisition session; repeated presses cluster in 72 recordings"
+}

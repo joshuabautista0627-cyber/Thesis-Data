@@ -1,0 +1,254 @@
+[
+  {
+    "outer_fold": 1,
+    "task": "force",
+    "chosen": "Extra Trees",
+    "inner_scores": {
+      "Median baseline": 0.7576500375806399,
+      "Total light linear": 1.331073084202455,
+      "NNLS": 1.2843960403591326,
+      "Positive Ridge": 1.2846192417706035,
+      "Isotonic": 0.7105078796435824,
+      "Monotonic HistGB": 0.6881158423337351,
+      "Monotonic XGBoost": 0.6982896087117783,
+      "Extra Trees": 0.6360429568118631,
+      "RBF SVR": 0.696318709787235
+    }
+  },
+  {
+    "outer_fold": 1,
+    "task": "contact",
+    "chosen": "RBF SVC",
+    "inner_scores": {
+      "Logistic regression": -0.9095373406008003,
+      "RBF SVC": -0.9482332006662326,
+      "Random Forest": -0.9328643775267109,
+      "Extra Trees": -0.938522811855287,
+      "HistGB": -0.934826251208301,
+      "XGBoost": -0.9310001625773359
+    }
+  },
+  {
+    "outer_fold": 1,
+    "task": "localization",
+    "chosen": "RBF SVC",
+    "inner_scores": {
+      "Logistic regression": -0.8348608096444449,
+      "RBF SVC": -0.8441339517945637,
+      "Random Forest": -0.8151099266741656,
+      "Extra Trees": -0.8234050043602567,
+      "HistGB": -0.8184815270545837,
+      "XGBoost": -0.8238662327715798
+    }
+  },
+  {
+    "outer_fold": 2,
+    "task": "force",
+    "chosen": "Extra Trees",
+    "inner_scores": {
+      "Median baseline": 0.765595435936585,
+      "Total light linear": 1.6246188691602947,
+      "NNLS": 1.5933365459894346,
+      "Positive Ridge": 1.593548980737017,
+      "Isotonic": 0.7359336279609185,
+      "Monotonic HistGB": 0.7477959174096496,
+      "Monotonic XGBoost": 0.7548227982250936,
+      "Extra Trees": 0.6288503870510804,
+      "RBF SVR": 0.6955305048895806
+    }
+  },
+  {
+    "outer_fold": 2,
+    "task": "contact",
+    "chosen": "Random Forest",
+    "inner_scores": {
+      "Logistic regression": -0.8994340544780522,
+      "RBF SVC": -0.9128320601011702,
+      "Random Forest": -0.9144017920967323,
+      "Extra Trees": -0.8968659592409635,
+      "HistGB": -0.8816092378497171,
+      "XGBoost": -0.8754539145502302
+    }
+  },
+  {
+    "outer_fold": 2,
+    "task": "localization",
+    "chosen": "RBF SVC",
+    "inner_scores": {
+      "Logistic regression": -0.6687114548015463,
+      "RBF SVC": -0.6850951343152316,
+      "Random Forest": -0.6634689124752583,
+      "Extra Trees": -0.6722680465131258,
+      "HistGB": -0.6692291031259215,
+      "XGBoost": -0.6733458404813812
+    }
+  },
+  {
+    "outer_fold": 3,
+    "task": "force",
+    "chosen": "Extra Trees",
+    "inner_scores": {
+      "Median baseline": 0.7460728485279796,
+      "Total light linear": 1.5947681333972332,
+      "NNLS": 1.5611475326117679,
+      "Positive Ridge": 1.5607731380154026,
+      "Isotonic": 0.7217491786951702,
+      "Monotonic HistGB": 0.7171541431422896,
+      "Monotonic XGBoost": 0.716984827955699,
+      "Extra Trees": 0.6409920723514939,
+      "RBF SVR": 0.6882277911350229
+    }
+  },
+  {
+    "outer_fold": 3,
+    "task": "contact",
+    "chosen": "Random Forest",
+    "inner_scores": {
+      "Logistic regression": -0.8908164436682391,
+      "RBF SVC": -0.9193716746228936,
+      "Random Forest": -0.9283588713087139,
+      "Extra Trees": -0.9184873081800482,
+      "HistGB": -0.8998844592188934,
+      "XGBoost": -0.8932416943659256
+    }
+  },
+  {
+    "outer_fold": 3,
+    "task": "localization",
+    "chosen": "Logistic regression",
+    "inner_scores": {
+      "Logistic regression": -0.6837806029798791,
+      "RBF SVC": -0.6483233649270237,
+      "Random Forest": -0.6415228996223654,
+      "Extra Trees": -0.6571386861491931,
+      "HistGB": -0.6558225245255662,
+      "XGBoost": -0.6479233327049628
+    }
+  },
+  {
+    "outer_fold": 4,
+    "task": "force",
+    "chosen": "Extra Trees",
+    "inner_scores": {
+      "Median baseline": 0.7438657287593636,
+      "Total light linear": 1.580192402787349,
+      "NNLS": 1.5760485741791739,
+      "Positive Ridge": 1.5753823745678108,
+      "Isotonic": 0.721929551964052,
+      "Monotonic HistGB": 0.7077857532415259,
+      "Monotonic XGBoost": 0.7116986691170748,
+      "Extra Trees": 0.6408420625651688,
+      "RBF SVR": 0.7163444140997725
+    }
+  },
+  {
+    "outer_fold": 4,
+    "task": "contact",
+    "chosen": "RBF SVC",
+    "inner_scores": {
+      "Logistic regression": -0.8899912158744543,
+      "RBF SVC": -0.9007865221050886,
+      "Random Forest": -0.8998226205379014,
+      "Extra Trees": -0.8778262973187779,
+      "HistGB": -0.8906777536101276,
+      "XGBoost": -0.8675313906253304
+    }
+  },
+  {
+    "outer_fold": 4,
+    "task": "localization",
+    "chosen": "Logistic regression",
+    "inner_scores": {
+      "Logistic regression": -0.7345325650357619,
+      "RBF SVC": -0.707554880738565,
+      "Random Forest": -0.6811833966884843,
+      "Extra Trees": -0.6996344504133446,
+      "HistGB": -0.7026452259281513,
+      "XGBoost": -0.6979466109565068
+    }
+  },
+  {
+    "outer_fold": 5,
+    "task": "force",
+    "chosen": "Extra Trees",
+    "inner_scores": {
+      "Median baseline": 0.7580705297933621,
+      "Total light linear": 1.6066669339927733,
+      "NNLS": 1.5844303669718682,
+      "Positive Ridge": 1.583914548308159,
+      "Isotonic": 0.7301081982088244,
+      "Monotonic HistGB": 0.7160779985139198,
+      "Monotonic XGBoost": 0.7159693403045165,
+      "Extra Trees": 0.6448465150636987,
+      "RBF SVR": 0.7064060998912739
+    }
+  },
+  {
+    "outer_fold": 5,
+    "task": "contact",
+    "chosen": "Random Forest",
+    "inner_scores": {
+      "Logistic regression": -0.8721086917365084,
+      "RBF SVC": -0.8893655991831985,
+      "Random Forest": -0.8988027226434068,
+      "Extra Trees": -0.8784757985961869,
+      "HistGB": -0.8811259710837931,
+      "XGBoost": -0.8806345029052952
+    }
+  },
+  {
+    "outer_fold": 5,
+    "task": "localization",
+    "chosen": "Logistic regression",
+    "inner_scores": {
+      "Logistic regression": -0.6859099790322447,
+      "RBF SVC": -0.6854951556633415,
+      "Random Forest": -0.6568188327333127,
+      "Extra Trees": -0.6673756992150383,
+      "HistGB": -0.669533220493014,
+      "XGBoost": -0.667014959591772
+    }
+  },
+  {
+    "outer_fold": 6,
+    "task": "force",
+    "chosen": "Extra Trees",
+    "inner_scores": {
+      "Median baseline": 0.7515665619053792,
+      "Total light linear": 1.7178703662119525,
+      "NNLS": 1.612197896957141,
+      "Positive Ridge": 1.6116394128465497,
+      "Isotonic": 0.7292819542739768,
+      "Monotonic HistGB": 0.7252842587437337,
+      "Monotonic XGBoost": 0.7220720601374633,
+      "Extra Trees": 0.6489594958373266,
+      "RBF SVR": 0.7421574009094674
+    }
+  },
+  {
+    "outer_fold": 6,
+    "task": "contact",
+    "chosen": "RBF SVC",
+    "inner_scores": {
+      "Logistic regression": -0.8999471460163648,
+      "RBF SVC": -0.9036693489388627,
+      "Random Forest": -0.8941527330305977,
+      "Extra Trees": -0.8673068658248373,
+      "HistGB": -0.8975582818739216,
+      "XGBoost": -0.892941318275311
+    }
+  },
+  {
+    "outer_fold": 6,
+    "task": "localization",
+    "chosen": "HistGB",
+    "inner_scores": {
+      "Logistic regression": -0.7079338627666238,
+      "RBF SVC": -0.7174879818969027,
+      "Random Forest": -0.7014612577809404,
+      "Extra Trees": -0.7094833518404271,
+      "HistGB": -0.7211980634930616,
+      "XGBoost": -0.6990738511820234
+    }
+  }
+]

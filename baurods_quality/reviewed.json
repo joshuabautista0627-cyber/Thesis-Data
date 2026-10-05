@@ -1,0 +1,94 @@
+{
+  "surface": "report",
+  "title": "BAURods data quality assessment",
+  "buildStatus": "creating",
+  "generatedAt": "2026-10-05T15:00:00Z",
+  "status": "reviewed",
+  "filters": [],
+  "report": {
+    "title": "Complete records, limited evidence of repeatability",
+    "subtitle": "BAURods \u00b7 Manual calibration \u00b7 8 August 2026",
+    "asOf": "2026-08-08"
+  },
+  "queries": {
+    "coverage": {
+      "rows": [
+        {
+          "target_roi_ground_truth": 1,
+          "recordings": 8,
+          "frames": 3576,
+          "taxel": "T1"
+        },
+        {
+          "target_roi_ground_truth": 2,
+          "recordings": 8,
+          "frames": 3217,
+          "taxel": "T2"
+        },
+        {
+          "target_roi_ground_truth": 3,
+          "recordings": 8,
+          "frames": 2949,
+          "taxel": "T3"
+        },
+        {
+          "target_roi_ground_truth": 4,
+          "recordings": 8,
+          "frames": 3240,
+          "taxel": "T4"
+        },
+        {
+          "target_roi_ground_truth": 5,
+          "recordings": 8,
+          "frames": 3324,
+          "taxel": "T5"
+        },
+        {
+          "target_roi_ground_truth": 6,
+          "recordings": 8,
+          "frames": 3223,
+          "taxel": "T6"
+        },
+        {
+          "target_roi_ground_truth": 7,
+          "recordings": 8,
+          "frames": 2995,
+          "taxel": "T7"
+        },
+        {
+          "target_roi_ground_truth": 8,
+          "recordings": 8,
+          "frames": 2763,
+          "taxel": "T8"
+        },
+        {
+          "target_roi_ground_truth": 9,
+          "recordings": 8,
+          "frames": 2679,
+          "taxel": "T9"
+        }
+      ],
+      "source": {
+        "label": "Manual Calibration (2).zip \u00b7 recording inventory",
+        "files": [
+          "Manual Calibration (2).zip / master_synchronized.csv"
+        ],
+        "filters": [
+          "72 filename-indicated press recordings; no-contact trials separate"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Frames",
+            "definition": "Recorded camera observations, not independent physical presses.",
+            "componentIds": [
+              "coverage-chart"
+            ]
+          }
+        ],
+        "caveats": [
+          "All source session_id values are S3."
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "source_checks": "passed",
+  "tables": 25,
+  "text_words": 7286,
+  "evidence_files": 36,
+  "source_audit_status": "passed",
+  "visual_review": "pending"
+}

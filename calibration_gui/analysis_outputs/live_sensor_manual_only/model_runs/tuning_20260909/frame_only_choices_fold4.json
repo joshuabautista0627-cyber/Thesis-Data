@@ -1,0 +1,37 @@
+{
+  "force": {
+    "id": "for_015",
+    "family": "Extra Trees",
+    "tau": 0.0,
+    "h": 0,
+    "offset": 0.1135849507840246,
+    "correction": "median",
+    "mae_N": 0.5374840390904879,
+    "rmse_N": 0.6803781739192042,
+    "bias_N": 0.1075954420897452,
+    "r2": 0.1837330082893644
+  },
+  "localization": {
+    "id": "loc_062",
+    "family": "HistGB",
+    "tau": 0.0,
+    "h": 0,
+    "accuracy": 0.8206134001812173,
+    "balanced_accuracy": 0.8206134001812173,
+    "macro_f1": 0.8197522969471176
+  },
+  "contact": {
+    "id": "con_036",
+    "family": "RBF SVC",
+    "tau": 0.0,
+    "h": 0,
+    "threshold": 0.5997424125671387,
+    "threshold_policy": "balanced",
+    "accuracy": 0.9729137001934016,
+    "balanced_accuracy": 0.9834009978938189,
+    "macro_f1": 0.9541350742753656,
+    "recall": 0.9676700513431932,
+    "fpr": 0.0008680555555555,
+    "precision": 0.999820620707821
+  }
+}

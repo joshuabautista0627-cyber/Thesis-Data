@@ -1,0 +1,2001 @@
+{
+  "created_at": "2026-09-09T06:10:15.415324+00:00",
+  "dataset_policy": "manual_only",
+  "seed": 1741,
+  "base_run": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909",
+  "interval_N": [
+    0.05,
+    3
+  ],
+  "evaluation": "Same held-out frames, targets, equal-session weighting and fold-local lags as original run",
+  "tuning": "Every outer training set uses all five whole-group inner folds. Training-only feature floors and weighted scaling.",
+  "final_selection": "All 15 leave-two-groups-out splits on the complete training pool",
+  "source_code_sha256": "2b7beaacdf59560488b9a80556c9a55009069f50d5e20b840ace063073ec023d",
+  "candidates": [
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "positive",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 1.0
+      },
+      "weights": "bins",
+      "id": "for_000"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "positive",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 1.0
+      },
+      "weights": "session",
+      "id": "for_001"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 3,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_002"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 15,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_003"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 30,
+        "max_features": 1.0
+      },
+      "weights": "session",
+      "id": "for_004"
+    },
+    {
+      "task": "force",
+      "family": "Random Forest",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 5,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_005"
+    },
+    {
+      "task": "force",
+      "family": "Random Forest",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 20,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_006"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "optical",
+      "params": {
+        "max_leaf_nodes": 15,
+        "loss": "squared_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_007"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "optical",
+      "params": {
+        "max_leaf_nodes": 31,
+        "loss": "squared_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_008"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "optical",
+      "params": {
+        "max_leaf_nodes": 15,
+        "loss": "absolute_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_009"
+    },
+    {
+      "task": "force",
+      "family": "XGBoost",
+      "features": "optical",
+      "params": {
+        "max_depth": 3,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "for_010"
+    },
+    {
+      "task": "force",
+      "family": "XGBoost",
+      "features": "optical",
+      "params": {
+        "max_depth": 5,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "for_011"
+    },
+    {
+      "task": "force",
+      "family": "RBF SVR",
+      "features": "optical",
+      "params": {
+        "C": 2,
+        "epsilon": 0.05,
+        "gamma": "scale"
+      },
+      "weights": "session",
+      "id": "for_012"
+    },
+    {
+      "task": "force",
+      "family": "RBF SVR",
+      "features": "optical",
+      "params": {
+        "C": 20,
+        "epsilon": 0.05,
+        "gamma": "scale"
+      },
+      "weights": "session",
+      "id": "for_013"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 3,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_014"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 15,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_015"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 30,
+        "max_features": 1.0
+      },
+      "weights": "session",
+      "id": "for_016"
+    },
+    {
+      "task": "force",
+      "family": "Random Forest",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 5,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_017"
+    },
+    {
+      "task": "force",
+      "family": "Random Forest",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 20,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_018"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "shape",
+      "params": {
+        "max_leaf_nodes": 15,
+        "loss": "squared_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_019"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "shape",
+      "params": {
+        "max_leaf_nodes": 31,
+        "loss": "squared_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_020"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "shape",
+      "params": {
+        "max_leaf_nodes": 15,
+        "loss": "absolute_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_021"
+    },
+    {
+      "task": "force",
+      "family": "XGBoost",
+      "features": "shape",
+      "params": {
+        "max_depth": 3,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "for_022"
+    },
+    {
+      "task": "force",
+      "family": "XGBoost",
+      "features": "shape",
+      "params": {
+        "max_depth": 5,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "for_023"
+    },
+    {
+      "task": "force",
+      "family": "RBF SVR",
+      "features": "shape",
+      "params": {
+        "C": 2,
+        "epsilon": 0.05,
+        "gamma": "scale"
+      },
+      "weights": "session",
+      "id": "for_024"
+    },
+    {
+      "task": "force",
+      "family": "RBF SVR",
+      "features": "shape",
+      "params": {
+        "C": 20,
+        "epsilon": 0.05,
+        "gamma": "scale"
+      },
+      "weights": "session",
+      "id": "for_025"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 3,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_026"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 15,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_027"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 30,
+        "max_features": 1.0
+      },
+      "weights": "session",
+      "id": "for_028"
+    },
+    {
+      "task": "force",
+      "family": "Random Forest",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 5,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_029"
+    },
+    {
+      "task": "force",
+      "family": "Random Forest",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 20,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_030"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "spatial",
+      "params": {
+        "max_leaf_nodes": 15,
+        "loss": "squared_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_031"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "spatial",
+      "params": {
+        "max_leaf_nodes": 31,
+        "loss": "squared_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_032"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "spatial",
+      "params": {
+        "max_leaf_nodes": 15,
+        "loss": "absolute_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_033"
+    },
+    {
+      "task": "force",
+      "family": "XGBoost",
+      "features": "spatial",
+      "params": {
+        "max_depth": 3,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "for_034"
+    },
+    {
+      "task": "force",
+      "family": "XGBoost",
+      "features": "spatial",
+      "params": {
+        "max_depth": 5,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "for_035"
+    },
+    {
+      "task": "force",
+      "family": "RBF SVR",
+      "features": "spatial",
+      "params": {
+        "C": 2,
+        "epsilon": 0.05,
+        "gamma": "scale"
+      },
+      "weights": "session",
+      "id": "for_036"
+    },
+    {
+      "task": "force",
+      "family": "RBF SVR",
+      "features": "spatial",
+      "params": {
+        "C": 20,
+        "epsilon": 0.05,
+        "gamma": "scale"
+      },
+      "weights": "session",
+      "id": "for_037"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "invariant",
+      "params": {
+        "min_samples_leaf": 3,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_038"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "invariant",
+      "params": {
+        "min_samples_leaf": 15,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_039"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "invariant",
+      "params": {
+        "min_samples_leaf": 30,
+        "max_features": 1.0
+      },
+      "weights": "session",
+      "id": "for_040"
+    },
+    {
+      "task": "force",
+      "family": "Random Forest",
+      "features": "invariant",
+      "params": {
+        "min_samples_leaf": 5,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_041"
+    },
+    {
+      "task": "force",
+      "family": "Random Forest",
+      "features": "invariant",
+      "params": {
+        "min_samples_leaf": 20,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_042"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "invariant",
+      "params": {
+        "max_leaf_nodes": 15,
+        "loss": "squared_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_043"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "invariant",
+      "params": {
+        "max_leaf_nodes": 31,
+        "loss": "squared_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_044"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "invariant",
+      "params": {
+        "max_leaf_nodes": 15,
+        "loss": "absolute_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_045"
+    },
+    {
+      "task": "force",
+      "family": "XGBoost",
+      "features": "invariant",
+      "params": {
+        "max_depth": 3,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "for_046"
+    },
+    {
+      "task": "force",
+      "family": "XGBoost",
+      "features": "invariant",
+      "params": {
+        "max_depth": 5,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "for_047"
+    },
+    {
+      "task": "force",
+      "family": "RBF SVR",
+      "features": "invariant",
+      "params": {
+        "C": 2,
+        "epsilon": 0.05,
+        "gamma": "scale"
+      },
+      "weights": "session",
+      "id": "for_048"
+    },
+    {
+      "task": "force",
+      "family": "RBF SVR",
+      "features": "invariant",
+      "params": {
+        "C": 20,
+        "epsilon": 0.05,
+        "gamma": "scale"
+      },
+      "weights": "session",
+      "id": "for_049"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 3,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_050"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 15,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_051"
+    },
+    {
+      "task": "force",
+      "family": "Extra Trees",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 30,
+        "max_features": 1.0
+      },
+      "weights": "session",
+      "id": "for_052"
+    },
+    {
+      "task": "force",
+      "family": "Random Forest",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 5,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_053"
+    },
+    {
+      "task": "force",
+      "family": "Random Forest",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 20,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "for_054"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "temporal",
+      "params": {
+        "max_leaf_nodes": 15,
+        "loss": "squared_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_055"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "temporal",
+      "params": {
+        "max_leaf_nodes": 31,
+        "loss": "squared_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_056"
+    },
+    {
+      "task": "force",
+      "family": "HistGB",
+      "features": "temporal",
+      "params": {
+        "max_leaf_nodes": 15,
+        "loss": "absolute_error",
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "for_057"
+    },
+    {
+      "task": "force",
+      "family": "XGBoost",
+      "features": "temporal",
+      "params": {
+        "max_depth": 3,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "for_058"
+    },
+    {
+      "task": "force",
+      "family": "XGBoost",
+      "features": "temporal",
+      "params": {
+        "max_depth": 5,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "for_059"
+    },
+    {
+      "task": "force",
+      "family": "MLP",
+      "features": "optical",
+      "params": {
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 1.0
+      },
+      "weights": "session",
+      "id": "for_060"
+    },
+    {
+      "task": "force",
+      "family": "MLP",
+      "features": "spatial",
+      "params": {
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 1.0
+      },
+      "weights": "session",
+      "id": "for_061"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "optical",
+      "params": {
+        "C": 0.03
+      },
+      "weights": "session",
+      "id": "loc_000"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "optical",
+      "params": {
+        "C": 0.3
+      },
+      "weights": "session",
+      "id": "loc_001"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "optical",
+      "params": {
+        "C": 3
+      },
+      "weights": "session",
+      "id": "loc_002"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "optical",
+      "params": {
+        "C": 30
+      },
+      "weights": "session",
+      "id": "loc_003"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "optical",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_004"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "optical",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_005"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "optical",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_006"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "optical",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_007"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "optical",
+      "params": {
+        "C": 100,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_008"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "optical",
+      "params": {
+        "C": 100,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_009"
+    },
+    {
+      "task": "localization",
+      "family": "Extra Trees",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 2,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "loc_010"
+    },
+    {
+      "task": "localization",
+      "family": "Extra Trees",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "loc_011"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "shape",
+      "params": {
+        "C": 0.03
+      },
+      "weights": "session",
+      "id": "loc_012"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "shape",
+      "params": {
+        "C": 0.3
+      },
+      "weights": "session",
+      "id": "loc_013"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "shape",
+      "params": {
+        "C": 3
+      },
+      "weights": "session",
+      "id": "loc_014"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "shape",
+      "params": {
+        "C": 30
+      },
+      "weights": "session",
+      "id": "loc_015"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "shape",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_016"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "shape",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_017"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "shape",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_018"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "shape",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_019"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "shape",
+      "params": {
+        "C": 100,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_020"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "shape",
+      "params": {
+        "C": 100,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_021"
+    },
+    {
+      "task": "localization",
+      "family": "Extra Trees",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 2,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "loc_022"
+    },
+    {
+      "task": "localization",
+      "family": "Extra Trees",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "loc_023"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "spatial",
+      "params": {
+        "C": 0.03
+      },
+      "weights": "session",
+      "id": "loc_024"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "spatial",
+      "params": {
+        "C": 0.3
+      },
+      "weights": "session",
+      "id": "loc_025"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "spatial",
+      "params": {
+        "C": 3
+      },
+      "weights": "session",
+      "id": "loc_026"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "spatial",
+      "params": {
+        "C": 30
+      },
+      "weights": "session",
+      "id": "loc_027"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "spatial",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_028"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "spatial",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_029"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "spatial",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_030"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "spatial",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_031"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "spatial",
+      "params": {
+        "C": 100,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_032"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "spatial",
+      "params": {
+        "C": 100,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_033"
+    },
+    {
+      "task": "localization",
+      "family": "Extra Trees",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 2,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "loc_034"
+    },
+    {
+      "task": "localization",
+      "family": "Extra Trees",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "loc_035"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "invariant",
+      "params": {
+        "C": 0.03
+      },
+      "weights": "session",
+      "id": "loc_036"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "invariant",
+      "params": {
+        "C": 0.3
+      },
+      "weights": "session",
+      "id": "loc_037"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "invariant",
+      "params": {
+        "C": 3
+      },
+      "weights": "session",
+      "id": "loc_038"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "invariant",
+      "params": {
+        "C": 30
+      },
+      "weights": "session",
+      "id": "loc_039"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "invariant",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_040"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "invariant",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_041"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "invariant",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_042"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "invariant",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_043"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "invariant",
+      "params": {
+        "C": 100,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_044"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "invariant",
+      "params": {
+        "C": 100,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_045"
+    },
+    {
+      "task": "localization",
+      "family": "Extra Trees",
+      "features": "invariant",
+      "params": {
+        "min_samples_leaf": 2,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "loc_046"
+    },
+    {
+      "task": "localization",
+      "family": "Extra Trees",
+      "features": "invariant",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "loc_047"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "temporal",
+      "params": {
+        "C": 0.03
+      },
+      "weights": "session",
+      "id": "loc_048"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "temporal",
+      "params": {
+        "C": 0.3
+      },
+      "weights": "session",
+      "id": "loc_049"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "temporal",
+      "params": {
+        "C": 3
+      },
+      "weights": "session",
+      "id": "loc_050"
+    },
+    {
+      "task": "localization",
+      "family": "Logistic regression",
+      "features": "temporal",
+      "params": {
+        "C": 30
+      },
+      "weights": "session",
+      "id": "loc_051"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "temporal",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_052"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "temporal",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_053"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "temporal",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_054"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "temporal",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_055"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "temporal",
+      "params": {
+        "C": 100,
+        "gamma_multiplier": 0.1
+      },
+      "weights": "session",
+      "id": "loc_056"
+    },
+    {
+      "task": "localization",
+      "family": "RBF SVC",
+      "features": "temporal",
+      "params": {
+        "C": 100,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "loc_057"
+    },
+    {
+      "task": "localization",
+      "family": "Extra Trees",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 2,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "loc_058"
+    },
+    {
+      "task": "localization",
+      "family": "Extra Trees",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "loc_059"
+    },
+    {
+      "task": "localization",
+      "family": "HistGB",
+      "features": "spatial",
+      "params": {
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "loc_060"
+    },
+    {
+      "task": "localization",
+      "family": "MLP",
+      "features": "spatial",
+      "params": {
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 1.0
+      },
+      "weights": "session",
+      "id": "loc_061"
+    },
+    {
+      "task": "localization",
+      "family": "HistGB",
+      "features": "invariant",
+      "params": {
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "loc_062"
+    },
+    {
+      "task": "localization",
+      "family": "MLP",
+      "features": "invariant",
+      "params": {
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 1.0
+      },
+      "weights": "session",
+      "id": "loc_063"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 2,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_000"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_001"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 30,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_002"
+    },
+    {
+      "task": "contact",
+      "family": "Extra Trees",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 3,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_003"
+    },
+    {
+      "task": "contact",
+      "family": "Extra Trees",
+      "features": "optical",
+      "params": {
+        "min_samples_leaf": 15,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_004"
+    },
+    {
+      "task": "contact",
+      "family": "HistGB",
+      "features": "optical",
+      "params": {
+        "max_leaf_nodes": 7,
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "con_005"
+    },
+    {
+      "task": "contact",
+      "family": "HistGB",
+      "features": "optical",
+      "params": {
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "con_006"
+    },
+    {
+      "task": "contact",
+      "family": "Logistic regression",
+      "features": "optical",
+      "params": {
+        "C": 0.1
+      },
+      "weights": "session",
+      "id": "con_007"
+    },
+    {
+      "task": "contact",
+      "family": "Logistic regression",
+      "features": "optical",
+      "params": {
+        "C": 10
+      },
+      "weights": "session",
+      "id": "con_008"
+    },
+    {
+      "task": "contact",
+      "family": "RBF SVC",
+      "features": "optical",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "con_009"
+    },
+    {
+      "task": "contact",
+      "family": "RBF SVC",
+      "features": "optical",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "con_010"
+    },
+    {
+      "task": "contact",
+      "family": "XGBoost",
+      "features": "optical",
+      "params": {
+        "max_depth": 2,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "con_011"
+    },
+    {
+      "task": "contact",
+      "family": "XGBoost",
+      "features": "optical",
+      "params": {
+        "max_depth": 4,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "con_012"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 2,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_013"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_014"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 30,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_015"
+    },
+    {
+      "task": "contact",
+      "family": "Extra Trees",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 3,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_016"
+    },
+    {
+      "task": "contact",
+      "family": "Extra Trees",
+      "features": "shape",
+      "params": {
+        "min_samples_leaf": 15,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_017"
+    },
+    {
+      "task": "contact",
+      "family": "HistGB",
+      "features": "shape",
+      "params": {
+        "max_leaf_nodes": 7,
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "con_018"
+    },
+    {
+      "task": "contact",
+      "family": "HistGB",
+      "features": "shape",
+      "params": {
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "con_019"
+    },
+    {
+      "task": "contact",
+      "family": "Logistic regression",
+      "features": "shape",
+      "params": {
+        "C": 0.1
+      },
+      "weights": "session",
+      "id": "con_020"
+    },
+    {
+      "task": "contact",
+      "family": "Logistic regression",
+      "features": "shape",
+      "params": {
+        "C": 10
+      },
+      "weights": "session",
+      "id": "con_021"
+    },
+    {
+      "task": "contact",
+      "family": "RBF SVC",
+      "features": "shape",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "con_022"
+    },
+    {
+      "task": "contact",
+      "family": "RBF SVC",
+      "features": "shape",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "con_023"
+    },
+    {
+      "task": "contact",
+      "family": "XGBoost",
+      "features": "shape",
+      "params": {
+        "max_depth": 2,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "con_024"
+    },
+    {
+      "task": "contact",
+      "family": "XGBoost",
+      "features": "shape",
+      "params": {
+        "max_depth": 4,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "con_025"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 2,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_026"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_027"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 30,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_028"
+    },
+    {
+      "task": "contact",
+      "family": "Extra Trees",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 3,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_029"
+    },
+    {
+      "task": "contact",
+      "family": "Extra Trees",
+      "features": "spatial",
+      "params": {
+        "min_samples_leaf": 15,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_030"
+    },
+    {
+      "task": "contact",
+      "family": "HistGB",
+      "features": "spatial",
+      "params": {
+        "max_leaf_nodes": 7,
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "con_031"
+    },
+    {
+      "task": "contact",
+      "family": "HistGB",
+      "features": "spatial",
+      "params": {
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "con_032"
+    },
+    {
+      "task": "contact",
+      "family": "Logistic regression",
+      "features": "spatial",
+      "params": {
+        "C": 0.1
+      },
+      "weights": "session",
+      "id": "con_033"
+    },
+    {
+      "task": "contact",
+      "family": "Logistic regression",
+      "features": "spatial",
+      "params": {
+        "C": 10
+      },
+      "weights": "session",
+      "id": "con_034"
+    },
+    {
+      "task": "contact",
+      "family": "RBF SVC",
+      "features": "spatial",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "con_035"
+    },
+    {
+      "task": "contact",
+      "family": "RBF SVC",
+      "features": "spatial",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "con_036"
+    },
+    {
+      "task": "contact",
+      "family": "XGBoost",
+      "features": "spatial",
+      "params": {
+        "max_depth": 2,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "con_037"
+    },
+    {
+      "task": "contact",
+      "family": "XGBoost",
+      "features": "spatial",
+      "params": {
+        "max_depth": 4,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "con_038"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 2,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_039"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 10,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_040"
+    },
+    {
+      "task": "contact",
+      "family": "Random Forest",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 30,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_041"
+    },
+    {
+      "task": "contact",
+      "family": "Extra Trees",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 3,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_042"
+    },
+    {
+      "task": "contact",
+      "family": "Extra Trees",
+      "features": "temporal",
+      "params": {
+        "min_samples_leaf": 15,
+        "max_features": 0.75
+      },
+      "weights": "session",
+      "id": "con_043"
+    },
+    {
+      "task": "contact",
+      "family": "HistGB",
+      "features": "temporal",
+      "params": {
+        "max_leaf_nodes": 7,
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "con_044"
+    },
+    {
+      "task": "contact",
+      "family": "HistGB",
+      "features": "temporal",
+      "params": {
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10
+      },
+      "weights": "session",
+      "id": "con_045"
+    },
+    {
+      "task": "contact",
+      "family": "Logistic regression",
+      "features": "temporal",
+      "params": {
+        "C": 0.1
+      },
+      "weights": "session",
+      "id": "con_046"
+    },
+    {
+      "task": "contact",
+      "family": "Logistic regression",
+      "features": "temporal",
+      "params": {
+        "C": 10
+      },
+      "weights": "session",
+      "id": "con_047"
+    },
+    {
+      "task": "contact",
+      "family": "RBF SVC",
+      "features": "temporal",
+      "params": {
+        "C": 1,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "con_048"
+    },
+    {
+      "task": "contact",
+      "family": "RBF SVC",
+      "features": "temporal",
+      "params": {
+        "C": 10,
+        "gamma_multiplier": 1.0
+      },
+      "weights": "session",
+      "id": "con_049"
+    },
+    {
+      "task": "contact",
+      "family": "XGBoost",
+      "features": "temporal",
+      "params": {
+        "max_depth": 2,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "con_050"
+    },
+    {
+      "task": "contact",
+      "family": "XGBoost",
+      "features": "temporal",
+      "params": {
+        "max_depth": 4,
+        "reg_lambda": 20
+      },
+      "weights": "session",
+      "id": "con_051"
+    }
+  ],
+  "lag_source_sha256": "d06b6b7d63c61636bdf646d9c6c85a9920310148b3a161d7739c815641bf98fb",
+  "inference_features": "Optical values only; no force, ROI target, TEST/session identity, absolute time, or recording duration in estimator input",
+  "history": {
+    "feature_tau_s": [
+      0.3,
+      1.0
+    ],
+    "output_tau_s": [
+      0.0,
+      0.3,
+      1.0
+    ],
+    "causal": true,
+    "reset_gap_s": 0.3
+  },
+  "force_postprocessing": "Nonnegative output, inner-OOF residual offset none/mean/median; choose by inner MAE",
+  "classification_selection": "Localization macro F1; contact balanced accuracy plus separate FPR<=5% policy, all inner-OOF",
+  "ensembles": "Equal average of three best independently tuned families for force/localization; include if inner primary score improves",
+  "interpretation": "Retrospective development on previously examined manual data; no untouched prospective test set. Temporal results describe causal streams at stationary per-session ROIs.",
+  "deployment": "Offline research artifacts; live GUI bundle unchanged"
+}

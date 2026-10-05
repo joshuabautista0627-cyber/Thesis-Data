@@ -1,0 +1,23 @@
+{
+  "zip_crc_all_valid": true,
+  "all_structured_files_parse": true,
+  "master_counts_equal_accepted": true,
+  "feature_counts_equal_master": true,
+  "loadcell_counts_equal_ingress": true,
+  "video_declared_equal_master": true,
+  "primary_videos_decoded_equal_master": true,
+  "feature_master_common_fields_agree": true,
+  "zero_exact_duplicate_feature_rows": true,
+  "unique_recording_frame_keys": true,
+  "core_complete": true,
+  "core_source_flags_valid": true,
+  "strict_frame_clock_order": true,
+  "strict_loadcell_clock_order": true,
+  "force_from_mass_consistent": true,
+  "contact_from_saved_threshold_consistent": true,
+  "valid_target_range": true,
+  "optical_delta_range_0_255": true,
+  "class_totals_reconcile": true,
+  "confusion_totals_reconcile": true,
+  "archive_unchanged": true
+}

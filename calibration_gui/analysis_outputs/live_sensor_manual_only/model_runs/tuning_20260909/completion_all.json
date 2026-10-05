@@ -1,0 +1,6 @@
+{
+  "status": "complete",
+  "source": "finish_manual_tuning coordinator",
+  "outer_folds": 6,
+  "audit": "passed"
+}

@@ -1,0 +1,95 @@
+{
+  "archive": "C:\\Users\\DLSU\\Downloads\\THESIS DATA\\Data Collection\\Manual Calibration (2).zip",
+  "archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+  "source_frames": 29318,
+  "raw_force_samples": 42568,
+  "recordings": 83,
+  "press_recordings": 72,
+  "no_contact_recordings": 11,
+  "sessions": [
+    "S3"
+  ],
+  "label_conflicts": 8,
+  "events": 5357,
+  "excluded_candidates": 2000,
+  "selected_model": "linear",
+  "selected_parameters": [
+    0.9085504904359221,
+    0.12105984089820879
+  ],
+  "parameter_ci95": [
+    [
+      0.7351694318092981,
+      0.08885282298824242
+    ],
+    [
+      1.0936586726218385,
+      0.14900506135755492
+    ]
+  ],
+  "baseline": {
+    "mean_V": 0.8979709687889493,
+    "noise_sd_V": 0.04371844544428899,
+    "between_recording_sd_V": 0.03315785981924272,
+    "baseline_cv_percent": 4.868581163960119,
+    "recordings": 11,
+    "frames": 1352,
+    "mean_ci95": [
+      0.8794369584332178,
+      0.9168958837648169
+    ],
+    "exploratory_3sd_cutoff_V": 1.0291263051218162
+  },
+  "localization": {
+    "n_events": 5357,
+    "n_recordings": 72,
+    "accuracy": 0.005973492626470039,
+    "macro_precision": 0.4444444444444444,
+    "macro_recall": 0.005769047341557877,
+    "macro_f1": 0.011347027551488456,
+    "abstentions": 5325,
+    "coverage": 0.005973492626470039,
+    "conditional_accuracy_detected": 1.0,
+    "ungated_accuracy": 0.9430651484039574,
+    "ungated_macro_precision": 0.9522082593961676,
+    "ungated_macro_recall": 0.9444692959671477,
+    "ungated_macro_f1": 0.9443728365913397,
+    "accuracy_ci95": [
+      0.0019485702825809063,
+      0.010888008408499943
+    ],
+    "macro_f1_ci95": [
+      0.0036722063710700075,
+      0.018526021081361522
+    ],
+    "detection_recall_ci95": [
+      0.0019485702825809063,
+      0.010888008408499943
+    ]
+  },
+  "detection": {
+    "TN": 11,
+    "FP": 0,
+    "FN": 5325,
+    "TP": 32,
+    "n_positive": 5357,
+    "n_negative": 11,
+    "accuracy": 0.00801043219076006,
+    "sensitivity": 0.005973492626470039,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.011876043792911486,
+    "roc_auc": 0.9388395811767101,
+    "threshold_V": 5.0,
+    "specificity_wilson_ci95": [
+      0.7411670330319684,
+      1.0
+    ]
+  },
+  "cluster_bootstraps": 2000,
+  "force_raw_tested_min": -0.2867005669019841,
+  "force_raw_tested_max": 23.30037597715135,
+  "median_frame_dt_s": 0.13007964999999988,
+  "median_raw_dt_s": 0.09188014999999794,
+  "random_seed": 20261005
+}

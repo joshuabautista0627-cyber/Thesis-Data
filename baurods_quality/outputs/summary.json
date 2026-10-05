@@ -1,0 +1,124 @@
+{
+  "archive": "C:\\Users\\DLSU\\Downloads\\THESIS DATA\\Data Collection\\Manual Calibration (2).zip",
+  "archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+  "archive_files": 2551,
+  "file_types": {
+    ".json": 913,
+    ".csv": 736,
+    ".png": 404,
+    ".mp4": 332,
+    ".log": 83,
+    ".npz": 83
+  },
+  "frames": 29318,
+  "raw_loadcell_samples": 42568,
+  "recordings": 83,
+  "press_recordings": 72,
+  "no_contact_recordings": 11,
+  "no_contact_recording_frames": 1352,
+  "session_labels": [
+    "S3"
+  ],
+  "trial_ids": 83,
+  "baseline_ids": 4,
+  "contact_frames": 26786,
+  "no_contact_frames": 2532,
+  "contact_runs": 81,
+  "records_multiple_contact_runs": 5,
+  "contact_at_start": 5,
+  "contact_at_end": 30,
+  "core_complete_frames": 29318,
+  "literal_complete_frames": 0,
+  "mean_force_recording_range": [
+    2.1492457108934007,
+    7.459302269729148
+  ],
+  "optical_cv_range": [
+    9.452927956632806,
+    28.65539359592534
+  ],
+  "force_cv_range": [
+    9.404856909689586,
+    36.23039403690014
+  ],
+  "timing": [
+    {
+      "variable": "synchronization_offset_ms",
+      "n": 29318,
+      "mean": 1.2980172794870044,
+      "sd": 26.798602666306703,
+      "median": -0.3226,
+      "q1": -20.292,
+      "q3": 23.330875,
+      "iqr": 43.622875,
+      "minimum": -80.2681,
+      "maximum": 83.4298,
+      "cv_percent": NaN
+    },
+    {
+      "variable": "nearest_sample_gap_ms",
+      "n": 29318,
+      "mean": 23.164956108875092,
+      "sd": 13.53574954617205,
+      "median": 22.0594,
+      "q1": 12.227875000000001,
+      "q3": 35.01885,
+      "iqr": 22.790975,
+      "minimum": 0.1094,
+      "maximum": 83.4298,
+      "cv_percent": 58.432010328679866
+    }
+  ],
+  "all_mean_spearman": 0.5201620683002123,
+  "performance": {
+    "n": 26786,
+    "covered": 34,
+    "correct": 34,
+    "coverage_percent": 0.1269319793922198,
+    "accuracy_all_percent": 0.1269319793922198,
+    "accuracy_covered_percent": 100.0,
+    "macro_f1": 0.0024393312043253664,
+    "detection_proxy": {
+      "n": 29318,
+      "tp": 34,
+      "fn": 26752,
+      "fp": 0,
+      "tn": 2532
+    }
+  },
+  "statistical_flags": 23,
+  "label_conflicts": 8,
+  "effective_fps_range": [
+    7.489052845270152,
+    7.504995616943579
+  ],
+  "force_reconstruction_error_max": 1.4548362514688051e-12,
+  "offset_reconstruction_error_max": 0.0,
+  "date_min": "2026-08-08T06:21:30.393809+00:00",
+  "date_max": "2026-08-08T09:52:02.553096+00:00",
+  "checks": {
+    "zip_crc_all_valid": true,
+    "all_structured_files_parse": true,
+    "master_counts_equal_accepted": true,
+    "feature_counts_equal_master": true,
+    "loadcell_counts_equal_ingress": true,
+    "video_declared_equal_master": true,
+    "primary_videos_decoded_equal_master": true,
+    "feature_master_common_fields_agree": true,
+    "zero_exact_duplicate_feature_rows": true,
+    "unique_recording_frame_keys": true,
+    "core_complete": true,
+    "core_source_flags_valid": true,
+    "strict_frame_clock_order": true,
+    "strict_loadcell_clock_order": true,
+    "force_from_mass_consistent": true,
+    "contact_from_saved_threshold_consistent": true,
+    "valid_target_range": true,
+    "optical_delta_range_0_255": true,
+    "class_totals_reconcile": true,
+    "confusion_totals_reconcile": true,
+    "archive_unchanged": true
+  },
+  "generated_at": "2026-10-05T15:03:05.147135+00:00",
+  "python": "3.12.14"
+}

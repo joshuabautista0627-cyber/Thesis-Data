@@ -1,0 +1,18 @@
+Setting,Recorded value,Recordings,Source field
+Simulation mode flag,False,83,simulation_mode
+Quantitative image source,Motion-magnified frame,83,quantitative_analysis_source
+Magnified pixels used for measurements,True,83,magnified_pixels_used_for_exported_measurements
+Requested camera rate in frames per second,30.0,83,camera.requested_fps
+Camera stream width in pixels before rotation,640,83,camera_actual.actual_width
+Camera stream height in pixels before rotation,480,83,camera_actual.actual_height
+Printer motion enabled for recording,False,83,printer_motion.enabled_for_session
+Magnification mode,Color magnification,83,motion_magnification.mode
+Configured amplification,30.0,83,motion_magnification.amplification
+Configured lower cutoff in Hz,1.1,83,motion_magnification.lower_cutoff_hz
+Configured upper cutoff in Hz,1.2,83,motion_magnification.upper_cutoff_hz
+Configured baseline duration in seconds,3.0,83,processing.baseline_duration_s
+Configured minimum baseline frames,20,83,processing.minimum_baseline_frames
+Localization threshold in mean delta V,5.0,83,processing.localization_min_mean_delta_v
+Force contact threshold in N,0.05,83,contact_threshold_N
+Maximum matching gap in ms,200.0,83,max_sync_gap_ms
+Recorded serial device identity,HX711_NANO,83,serial_identity.device_name

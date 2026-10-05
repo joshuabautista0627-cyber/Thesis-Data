@@ -1,0 +1,182 @@
+[
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\protocol.json",
+    "copy": "evidence\\retraining_20260909\\protocol.json",
+    "sha256": "31924ffc9ba96124719f2fe4f4e057492716827a0ef4bbbde995f501b5b9f28a"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\model_comparison.csv",
+    "copy": "evidence\\retraining_20260909\\model_comparison.csv",
+    "sha256": "a10bebd3dffc945f54f4f616b4f2c2fed7ed03ebb1f3e65b78389e1929fc3878"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\fold_metrics.csv",
+    "copy": "evidence\\retraining_20260909\\fold_metrics.csv",
+    "sha256": "3d7fe72b0e3ef14d080cd36c2f3e1a177e2dd70b09bec1b068c61234abad59c6"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\roi_metrics.csv",
+    "copy": "evidence\\retraining_20260909\\roi_metrics.csv",
+    "sha256": "041b728a872a3b9fc2f20dc1eefa1fc448cb21d5c7bb7beb88588ca32775bdd4"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\force_bin_metrics.csv",
+    "copy": "evidence\\retraining_20260909\\force_bin_metrics.csv",
+    "sha256": "7cbdbd71d53c22f49744cd2d4cb485924a6c758004f3414964958e330596cf9f"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\end_to_end_metrics.json",
+    "copy": "evidence\\retraining_20260909\\end_to_end_metrics.json",
+    "sha256": "454165b9b8745f92bd402b11c20b1e87835b13a5cb0bc50916251c9e4b4c7ab3"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\validation_audit.json",
+    "copy": "evidence\\retraining_20260909\\validation_audit.json",
+    "sha256": "16936ec35caf4e66ca007d6f2a33d2bc767e17ed10dff71ef3f778ee49449d36"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\provenance.json",
+    "copy": "evidence\\retraining_20260909\\provenance.json",
+    "sha256": "f0fa7fdc78bdaae23dd9b1fc2bd47c21530b20f0c5389c8c7b7392429319f3af"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\evaluation_coverage.csv",
+    "copy": "evidence\\retraining_20260909\\evaluation_coverage.csv",
+    "sha256": "4bcb15af2a4d53ed328312e8dfb185ebc2079267b915667c3d153e4c5bcdbf8d"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\estimator_parameters.json",
+    "copy": "evidence\\retraining_20260909\\estimator_parameters.json",
+    "sha256": "df26dd967959929a56b3b98100c1dc007e2f09e45d269902434ea497b3cf5c75"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\lag_selection.json",
+    "copy": "evidence\\retraining_20260909\\lag_selection.json",
+    "sha256": "d06b6b7d63c61636bdf646d9c6c85a9920310148b3a161d7739c815641bf98fb"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\protocol.json",
+    "copy": "evidence\\tuning_20260909\\protocol.json",
+    "sha256": "81ecf501fb217d40f33dc352da1fe123f6a888c4f0a2effad6398375488a523e"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\model_comparison.csv",
+    "copy": "evidence\\tuning_20260909\\model_comparison.csv",
+    "sha256": "4bfdceeee44a4747e258ede624ebd531654c935b317cbf5a751b54595a89418b"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\fold_metrics.csv",
+    "copy": "evidence\\tuning_20260909\\fold_metrics.csv",
+    "sha256": "3fbc7d9d7ced01aefcb2638d1cba9f6d2fd5a306020759ce36a86d09a7933fed"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\roi_metrics.csv",
+    "copy": "evidence\\tuning_20260909\\roi_metrics.csv",
+    "sha256": "df31d07ffb84379ad026790779e0eddc621a9e933052f5d5dc83965ad4a66e04"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\force_bin_metrics.csv",
+    "copy": "evidence\\tuning_20260909\\force_bin_metrics.csv",
+    "sha256": "b6de5fc45efdde34d6ea81ff87cae99fa01b61fecad49546e0442f74580d4fd1"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\end_to_end_metrics.json",
+    "copy": "evidence\\tuning_20260909\\end_to_end_metrics.json",
+    "sha256": "54b4705b2b1c1ad45c47523e9dcc83f28fc3e78ac438e45f9acda538fcb65043"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\validation_audit.json",
+    "copy": "evidence\\tuning_20260909\\validation_audit.json",
+    "sha256": "e1400aa5a1b91b788751c6ff217e88647594e1a829c80aafa383080fd03db3a5"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\provenance.json",
+    "copy": "evidence\\tuning_20260909\\provenance.json",
+    "sha256": "f0fa7fdc78bdaae23dd9b1fc2bd47c21530b20f0c5389c8c7b7392429319f3af"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\before_after.csv",
+    "copy": "evidence\\tuning_20260909\\before_after.csv",
+    "sha256": "be03d92eb3842d0589fcd57b72ac20b4c8c1b667d9e73cdf39daa1512d3cc0bb"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\paired_uncertainty.json",
+    "copy": "evidence\\tuning_20260909\\paired_uncertainty.json",
+    "sha256": "bdc44b2065f1b660c48bf5771a61639ce0fae167de02d8d0a9ef2b9164f6213e"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\frame_only_protocol.json",
+    "copy": "evidence\\tuning_20260909\\frame_only_protocol.json",
+    "sha256": "99f090b6c230a503da39ffd9bc06db9c3fdbe276c3cbf33242c6e57545b82354"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\inference_timing.json",
+    "copy": "evidence\\tuning_20260909\\inference_timing.json",
+    "sha256": "5de2b3fd743678edb665916ce290188fce8a1cb8587e06a781f5c78a6f97f1c0"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\environment.json",
+    "copy": "evidence\\tuning_20260909\\environment.json",
+    "sha256": "d7d59e21db04e9536948e9d8c1f41cbc5f843d65dfc11d8fccbcb29dc7aeecd9"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\final_selections.json",
+    "copy": "evidence\\tuning_20260909\\final_selections.json",
+    "sha256": "6324437ad6ad20d6a7f76d5d82dd549a5a9b12d59e761e59c688330882c6da14"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\report_delivery.json",
+    "copy": "evidence\\tuning_20260909\\report_delivery.json",
+    "sha256": "428d99fa6a60c0e7513cc90f86fbc32a1ad591929b27152fb25e12b101123279"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\source_snapshot_manifest.json",
+    "copy": "evidence\\tuning_20260909\\source_snapshot_manifest.json",
+    "sha256": "9685f770f11560d87e60e9a40d028d6154c1f95ed759d1371358f7e960207aa1"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\models\\contact.json",
+    "copy": "evidence\\tuning_20260909\\models\\contact.json",
+    "sha256": "91077db5930027fe47845ba2ac28619ca6ac01a564b77b99ab61e143e64d4759"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\models\\contact_fpr5.json",
+    "copy": "evidence\\tuning_20260909\\models\\contact_fpr5.json",
+    "sha256": "fac71266ac2e24d72b7d80d242004c4a418a1b845ff353e9e6a7c42958fd1b0e"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\models\\force.json",
+    "copy": "evidence\\tuning_20260909\\models\\force.json",
+    "sha256": "607570b6900c3ce7c1f75bcca6e6c7e5bd8003a47303ee50ec7adb2395b7c09b"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\models\\localization.json",
+    "copy": "evidence\\tuning_20260909\\models\\localization.json",
+    "sha256": "1b4a1b96360bd39c1788d319a071c1410de9d63db89edd5754369ca0b9851de2"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\models\\manifest.json",
+    "copy": "evidence\\tuning_20260909\\models\\manifest.json",
+    "sha256": "9bd0a028f474c3491acc515659f9ab59524edc8adba6c86d41f8afe862372e20"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\models_frame_only\\contact.json",
+    "copy": "evidence\\tuning_20260909\\models_frame_only\\contact.json",
+    "sha256": "4b9613d4f57996f2d87ee241c6613872ce93e4dc34859355c1bd685e4b8d5530"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\models_frame_only\\force.json",
+    "copy": "evidence\\tuning_20260909\\models_frame_only\\force.json",
+    "sha256": "1f8f3b55875c8a64f0d7d60bb7a669c6e39773c8d07dad43fe503885ad81b306"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\models_frame_only\\localization.json",
+    "copy": "evidence\\tuning_20260909\\models_frame_only\\localization.json",
+    "sha256": "5e272f2bc2ed6b3f9bf637316179bb20168fc081ec64eff918266c1862ece183"
+  },
+  {
+    "source": "calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\models_frame_only\\manifest.json",
+    "copy": "evidence\\tuning_20260909\\models_frame_only\\manifest.json",
+    "sha256": "db284448ebb2ffd5d3aff31dbab625edfabdc9edd8fb4270a405e3d2542d9707"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "renderer": "Installed Chrome via Playwright PDF API",
+  "primaryCliResult": "Chrome CLI exited without producing a PDF; used the same Chrome engine through its supported PDF API.",
+  "source": "report.print.html",
+  "chartCount": 4,
+  "repairs": [
+    "Print stylesheet for paper sizing and table wrapping",
+    "Corrected falsely inferred pathlib table labels to actual source files"
+  ],
+  "pdf": "Manual_Calibration_Model_Comparison.pdf"
+}

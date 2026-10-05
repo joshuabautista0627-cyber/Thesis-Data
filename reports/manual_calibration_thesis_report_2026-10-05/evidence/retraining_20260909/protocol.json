@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-09-09T05:27:04.779140+00:00",
+  "seed": 1729,
+  "status": "retrospective_exploratory_not_prospective_validation",
+  "dataset_policy": "manual_only",
+  "outer_folds": "leave one complete TEST group and assigned no-contact sessions out; six folds",
+  "inner_selection": "all five remaining groups; preprocessing and lag refitted without inner validation groups",
+  "lag_grid_ms": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+  ],
+  "lag_rule": "inner grouped NNLS MAE; smallest lag within 0.5%",
+  "force_interval_N": [
+    0.05,
+    3.0
+  ],
+  "range_status": "exploratory nominal interval; no validated common Fdetect/Fmax",
+  "force_prediction_clipping": false,
+  "feature_smoothing": "none; individual camera frame",
+  "model_names": {
+    "force": [
+      "Median baseline",
+      "Total light linear",
+      "NNLS",
+      "Positive Ridge",
+      "Isotonic",
+      "Monotonic HistGB",
+      "Monotonic XGBoost",
+      "Extra Trees",
+      "RBF SVR"
+    ],
+    "contact": [
+      "Logistic regression",
+      "RBF SVC",
+      "Random Forest",
+      "Extra Trees",
+      "HistGB",
+      "XGBoost"
+    ],
+    "localization": [
+      "Logistic regression",
+      "RBF SVC",
+      "Random Forest",
+      "Extra Trees",
+      "HistGB",
+      "XGBoost"
+    ]
+  },
+  "hyperparameters": "fixed before new outer predictions; exact settings in source and estimator_parameters.json",
+  "selection_metrics": {
+    "force": "session-balanced MAE",
+    "contact": "session-balanced balanced accuracy",
+    "localization": "session-balanced macro F1"
+  },
+  "model_fitting_weights": "force: equal sessions and 0.25 N bins; localization: equal sessions; contact: equal class and session weights",
+  "evaluation_weights": "equal sessions; frames within each session sum to equal weight",
+  "contact_labels": "dedicated no-contact=0, aligned primary press force 0.05-3 N=1; other press frames excluded",
+  "contact_threshold": "native classifier threshold 0.5 probability or 0 SVC decision; no threshold tuning or debounce",
+  "deployment": "research artifacts only; no live bundle changed",
+  "source_code_sha256": "f831a09ed1e1d995208c52b98e3bab7c617cb53c3641e78de11f65550273fafc",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.0",
+    "xgboost": "3.4.0"
+  }
+}

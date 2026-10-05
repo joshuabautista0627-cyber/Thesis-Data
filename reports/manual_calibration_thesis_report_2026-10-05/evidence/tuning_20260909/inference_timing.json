@@ -1,0 +1,10 @@
+{
+  "frames_per_batch": 96,
+  "median_batch_ms": 63.95550002343953,
+  "amortized_ms_per_frame": 0.6662031252441617,
+  "repeats": 5,
+  "streaming_p50_ms": 41.10020003281534,
+  "streaming_p95_ms": 44.46308995829895,
+  "meaning": "Offline optical-feature inference timing, including causal state. No camera/pixel-extraction/onset-delay claim.",
+  "includes": "Three primary tasks plus alternate contact policy; excludes video decoding and pixel feature extraction"
+}

@@ -1,0 +1,106 @@
+{
+  "fixed": {
+    "force": {
+      "mae_N": 0.6371614508931964,
+      "rmse_N": 0.7704833168465369,
+      "bias_N": -0.28936439840759515,
+      "r2": -0.030284360737586447,
+      "frames": 7154,
+      "recordings": 54,
+      "groups": 6
+    },
+    "localization": {
+      "accuracy": 0.7378874835571279,
+      "balanced_accuracy": 0.7378874835571277,
+      "macro_f1": 0.7399780767251821,
+      "frames": 7154,
+      "recordings": 54,
+      "groups": 6
+    },
+    "contact": {
+      "accuracy": 0.9190510767504274,
+      "balanced_accuracy": 0.9186416919908709,
+      "macro_f1": 0.8714949059162038,
+      "recall": 0.9192605294181075,
+      "specificity": 0.9180228545636342,
+      "fpr": 0.0819771454363658,
+      "precision": 0.9821583660825044,
+      "positive_f1": 0.949669135732154,
+      "frames": 8506,
+      "recordings": 65,
+      "groups": 6
+    },
+    "combined": {
+      "mae_N": 0.7159454329653953,
+      "rmse_N": 0.9127684259573889,
+      "bias_N": -0.41758184203378557,
+      "r2": -0.44594524064885266,
+      "joint_contact_and_roi_accuracy": 0.7049545329400468
+    }
+  },
+  "tuned": {
+    "force": {
+      "mae_N": 0.4990555257092047,
+      "rmse_N": 0.6323312950239666,
+      "bias_N": 0.07835853104787935,
+      "r2": 0.3060631009740058,
+      "frames": 7154,
+      "recordings": 54,
+      "groups": 6
+    },
+    "localization": {
+      "accuracy": 0.8440437042211072,
+      "balanced_accuracy": 0.8440437042211072,
+      "macro_f1": 0.8475379322592576,
+      "frames": 7154,
+      "recordings": 54,
+      "groups": 6
+    },
+    "contact": {
+      "accuracy": 0.9751071810004464,
+      "balanced_accuracy": 0.9850182107873058,
+      "macro_f1": 0.9581409806243188,
+      "recall": 0.9700364215746115,
+      "specificity": 1.0,
+      "fpr": 0.0,
+      "precision": 1.0,
+      "positive_f1": 0.9847903429107979,
+      "frames": 8506,
+      "recordings": 65,
+      "groups": 6
+    },
+    "combined": {
+      "mae_N": 0.5224754698889653,
+      "rmse_N": 0.6842307494697261,
+      "bias_N": 0.02580663790327508,
+      "r2": 0.1874767373749423,
+      "joint_contact_and_roi_accuracy": 0.836110369328783
+    }
+  },
+  "timing": {
+    "frames_per_batch": 96,
+    "median_batch_ms": 63.95550002343953,
+    "amortized_ms_per_frame": 0.6662031252441617,
+    "repeats": 5,
+    "streaming_p50_ms": 41.10020003281534,
+    "streaming_p95_ms": 44.46308995829895,
+    "meaning": "Offline optical-feature inference timing, including causal state. No camera/pixel-extraction/onset-delay claim.",
+    "includes": "Three primary tasks plus alternate contact policy; excludes video decoding and pixel feature extraction"
+  },
+  "scope": {
+    "observation": "frame",
+    "weighting": "equal recording weights",
+    "outer_groups": 6,
+    "press_force_interval_N": [
+      0.05,
+      3
+    ],
+    "primary_press_recordings": 54,
+    "excluded_replay_recordings": 18,
+    "eligible_press_frames": 7154,
+    "dedicated_no_contact_recordings": 11,
+    "no_contact_frames": 1352,
+    "image_source": "original session_video.mp4",
+    "status": "retrospective offline research evaluation; not deployed"
+  }
+}

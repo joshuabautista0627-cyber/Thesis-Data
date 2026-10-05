@@ -1,0 +1,12 @@
+{
+  "scope": "Completed manual-calibration data quality assessment only",
+  "source_archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+  "report_words": 10769,
+  "configuration_files_reread": 83,
+  "source_table_count": 35,
+  "figure_pairs": 15,
+  "figures_exist": true,
+  "counts_reconcile": true,
+  "reviewed_findings_preserved": true,
+  "report_sha256": "4dad3ca3880a813d014c3da2681e465e6188adcb80924e0a42e47fe0c67a5b9b"
+}

@@ -7,3 +7,12 @@ arduino-cli.exe
 *.py[cod]
 **/.pytest_cache/
 **/.mplconfig/
+**/.matplotlib/
+
+# Local artifact-authoring dependencies and inspection scratch
+.codex-slide-*/
+**/node_modules/
+**/.data-app-offline/
+**/chrome_print_profile/
+*.inspect.ndjson
+/tmp/

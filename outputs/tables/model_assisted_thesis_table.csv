@@ -1,0 +1,12 @@
+Model-assisted characteristic,Previous fixed model,Tuned nested selector
+Contact balanced accuracy,91.86%,98.50%
+Contact accuracy,91.91%,97.51%
+Contact recall,91.93%,97.00%
+Contact specificity,91.80%,100.00%
+Contact macro F1,0.871,0.958
+Nine-region localization accuracy,73.79%,84.40%
+Localization macro F1,0.740,0.848
+Joint correct contact and region,70.50%,83.61%
+Force MAE,0.637 N,0.499 N
+Force RMSE,0.770 N,0.632 N
+Force R²,-0.030,0.306

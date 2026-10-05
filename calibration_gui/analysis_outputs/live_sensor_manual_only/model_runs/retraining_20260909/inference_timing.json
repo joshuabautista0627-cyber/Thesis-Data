@@ -1,0 +1,7 @@
+{
+  "optical_features_to_three_predictions_p50_ms": 71.72674994217232,
+  "optical_features_to_three_predictions_p95_ms": 73.09322494547814,
+  "iterations": 60,
+  "excludes": "camera acquisition, pixel feature extraction, GUI display",
+  "includes": "DataFrame slicing, feature normalization and all three estimators"
+}

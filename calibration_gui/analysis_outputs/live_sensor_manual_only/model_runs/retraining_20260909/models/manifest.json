@@ -1,0 +1,17 @@
+{
+  "status": "experimental_offline_only",
+  "winners": {
+    "force": "Extra Trees",
+    "contact": "Random Forest",
+    "localization": "Logistic regression"
+  },
+  "files": {
+    "contact.joblib": "a686ef05b5f59c0def17f8e861d3320aa941dc0109f0726fe29155b0264833eb",
+    "force.joblib": "d41f9a64215759da3c1ba852de4461004e92ec969f3515ad209d8758debcdecd",
+    "localization.joblib": "dd35f3ee3a27cd15461e9833d518a2b3dc6a3b9205e2c6c5e49bf05e2972b99d"
+  },
+  "warning": "joblib files are trusted local research artifacts, never application bundles; load only files produced by this run",
+  "feature_spec_hash": "38fa59a354306bf39c0b570f57e764f5638b19a3ecbdbd49b177b8df6ac56cf5",
+  "training_sessions": 65,
+  "held_out_performance_source": "outer_predictions.parquet; all-data refit not scored as validation"
+}

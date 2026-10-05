@@ -1,0 +1,11 @@
+{
+  "validation": "passed",
+  "render_tool": "success",
+  "title": "Manual calibration model comparison",
+  "chart_count": 4,
+  "table_count": 5,
+  "dataset_count": 8,
+  "visual_qa": "Canonical report and data validated; render tool succeeded. No rendered screenshot or DOM inspection surface was returned, so visual layout was not independently inspected.",
+  "metrics": "103 independent recalculations matched; 15 existing firewall/preprocessing tests passed",
+  "report_files": "artifact.json, report_evidence.sqlite, report_notes.json"
+}

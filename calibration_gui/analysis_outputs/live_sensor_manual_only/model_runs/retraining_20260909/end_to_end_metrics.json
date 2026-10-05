@@ -1,0 +1,10 @@
+{
+  "mae_N": 0.7159454329653951,
+  "rmse_N": 0.9127684259573889,
+  "bias_N": -0.41758184203378546,
+  "r2": -0.44594524064885266,
+  "joint_contact_and_roi_accuracy": 0.7049545329400466,
+  "contact_recall": 0.9192605294181073,
+  "primary_frames": 7154,
+  "primary_sessions": 54
+}

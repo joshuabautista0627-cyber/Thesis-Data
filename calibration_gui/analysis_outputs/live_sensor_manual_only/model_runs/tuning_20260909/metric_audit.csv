@@ -1,0 +1,115 @@
+task,model,metric,difference
+contact,Tuned Extra Trees,accuracy,0.0
+contact,Tuned Extra Trees,balanced_accuracy,5.551115123125783e-16
+contact,Tuned Extra Trees,macro_f1,4.440892098500626e-16
+contact,Tuned Extra Trees,recall,2.220446049250313e-16
+contact,Tuned Extra Trees,fpr,1.0269562977782698e-15
+contact,Tuned Extra Trees,precision,2.220446049250313e-16
+contact,Tuned FPR <=5%,accuracy,3.3306690738754696e-16
+contact,Tuned FPR <=5%,balanced_accuracy,5.551115123125783e-16
+contact,Tuned FPR <=5%,macro_f1,4.440892098500626e-16
+contact,Tuned FPR <=5%,recall,2.220446049250313e-16
+contact,Tuned FPR <=5%,fpr,1.2490009027033011e-15
+contact,Tuned FPR <=5%,precision,2.220446049250313e-16
+contact,Tuned HistGB,accuracy,1.1102230246251565e-16
+contact,Tuned HistGB,balanced_accuracy,5.551115123125783e-16
+contact,Tuned HistGB,macro_f1,4.440892098500626e-16
+contact,Tuned HistGB,recall,0.0
+contact,Tuned HistGB,fpr,8.187894806610529e-16
+contact,Tuned HistGB,precision,2.220446049250313e-16
+contact,Tuned Logistic regression,accuracy,0.0
+contact,Tuned Logistic regression,balanced_accuracy,1.1102230246251565e-16
+contact,Tuned Logistic regression,macro_f1,4.440892098500626e-16
+contact,Tuned Logistic regression,recall,0.0
+contact,Tuned Logistic regression,fpr,0.0
+contact,Tuned Logistic regression,precision,0.0
+contact,Tuned RBF SVC,accuracy,0.0
+contact,Tuned RBF SVC,balanced_accuracy,1.1102230246251565e-16
+contact,Tuned RBF SVC,macro_f1,0.0
+contact,Tuned RBF SVC,recall,1.1102230246251565e-16
+contact,Tuned RBF SVC,fpr,0.0
+contact,Tuned RBF SVC,precision,0.0
+contact,Tuned Random Forest,accuracy,2.220446049250313e-16
+contact,Tuned Random Forest,balanced_accuracy,0.0
+contact,Tuned Random Forest,macro_f1,3.3306690738754696e-16
+contact,Tuned Random Forest,recall,1.1102230246251565e-16
+contact,Tuned Random Forest,fpr,2.7321894746634712e-17
+contact,Tuned Random Forest,precision,0.0
+contact,Tuned XGBoost,accuracy,1.1102230246251565e-16
+contact,Tuned XGBoost,balanced_accuracy,1.1102230246251565e-16
+contact,Tuned XGBoost,macro_f1,2.220446049250313e-16
+contact,Tuned XGBoost,recall,2.220446049250313e-16
+contact,Tuned XGBoost,fpr,0.0
+contact,Tuned XGBoost,precision,0.0
+contact,Tuned frame-only,accuracy,2.220446049250313e-16
+contact,Tuned frame-only,balanced_accuracy,1.1102230246251565e-16
+contact,Tuned frame-only,macro_f1,5.551115123125783e-16
+contact,Tuned frame-only,recall,1.1102230246251565e-16
+contact,Tuned frame-only,fpr,2.983724378680108e-16
+contact,Tuned frame-only,precision,0.0
+contact,Tuned selected,accuracy,1.1102230246251565e-16
+contact,Tuned selected,balanced_accuracy,0.0
+contact,Tuned selected,macro_f1,3.3306690738754696e-16
+contact,Tuned selected,recall,0.0
+contact,Tuned selected,fpr,0.0
+contact,Tuned selected,precision,0.0
+force,Tuned Extra Trees,mae_N,1.1102230246251565e-16
+force,Tuned Extra Trees,rmse_N,1.1102230246251565e-16
+force,Tuned Extra Trees,bias_N,9.71445146547012e-17
+force,Tuned Extra Trees,r2,5.551115123125783e-17
+force,Tuned HistGB,mae_N,1.1102230246251565e-16
+force,Tuned HistGB,rmse_N,1.1102230246251565e-16
+force,Tuned HistGB,bias_N,2.7755575615628914e-17
+force,Tuned HistGB,r2,1.1102230246251565e-16
+force,Tuned MLP,mae_N,1.1102230246251565e-16
+force,Tuned MLP,rmse_N,0.0
+force,Tuned MLP,bias_N,4.163336342344337e-17
+force,Tuned MLP,r2,1.1102230246251565e-16
+force,Tuned RBF SVR,mae_N,2.220446049250313e-16
+force,Tuned RBF SVR,rmse_N,0.0
+force,Tuned RBF SVR,bias_N,8.326672684688674e-17
+force,Tuned RBF SVR,r2,2.7755575615628914e-16
+force,Tuned Random Forest,mae_N,1.1102230246251565e-16
+force,Tuned Random Forest,rmse_N,0.0
+force,Tuned Random Forest,bias_N,5.551115123125783e-17
+force,Tuned Random Forest,r2,0.0
+force,Tuned XGBoost,mae_N,1.1102230246251565e-16
+force,Tuned XGBoost,rmse_N,1.1102230246251565e-16
+force,Tuned XGBoost,bias_N,4.163336342344337e-17
+force,Tuned XGBoost,r2,5.551115123125783e-17
+force,Tuned ensemble,mae_N,5.551115123125783e-17
+force,Tuned ensemble,rmse_N,0.0
+force,Tuned ensemble,bias_N,0.0
+force,Tuned ensemble,r2,5.551115123125783e-17
+force,Tuned frame-only,mae_N,1.1102230246251565e-16
+force,Tuned frame-only,rmse_N,1.1102230246251565e-16
+force,Tuned frame-only,bias_N,6.938893903907228e-17
+force,Tuned frame-only,r2,5.551115123125783e-17
+force,Tuned selected,mae_N,5.551115123125783e-17
+force,Tuned selected,rmse_N,1.1102230246251565e-16
+force,Tuned selected,bias_N,4.163336342344337e-17
+force,Tuned selected,r2,1.1102230246251565e-16
+localization,Tuned Extra Trees,accuracy,5.551115123125783e-16
+localization,Tuned Extra Trees,balanced_accuracy,5.551115123125783e-16
+localization,Tuned Extra Trees,macro_f1,5.551115123125783e-16
+localization,Tuned HistGB,accuracy,4.440892098500626e-16
+localization,Tuned HistGB,balanced_accuracy,6.661338147750939e-16
+localization,Tuned HistGB,macro_f1,4.440892098500626e-16
+localization,Tuned Logistic regression,accuracy,5.551115123125783e-16
+localization,Tuned Logistic regression,balanced_accuracy,3.3306690738754696e-16
+localization,Tuned Logistic regression,macro_f1,4.440892098500626e-16
+localization,Tuned MLP,accuracy,5.551115123125783e-16
+localization,Tuned MLP,balanced_accuracy,4.440892098500626e-16
+localization,Tuned MLP,macro_f1,3.3306690738754696e-16
+localization,Tuned RBF SVC,accuracy,1.1102230246251565e-15
+localization,Tuned RBF SVC,balanced_accuracy,6.661338147750939e-16
+localization,Tuned RBF SVC,macro_f1,1.1102230246251565e-15
+localization,Tuned ensemble,accuracy,6.661338147750939e-16
+localization,Tuned ensemble,balanced_accuracy,2.220446049250313e-16
+localization,Tuned ensemble,macro_f1,4.440892098500626e-16
+localization,Tuned frame-only,accuracy,6.661338147750939e-16
+localization,Tuned frame-only,balanced_accuracy,4.440892098500626e-16
+localization,Tuned frame-only,macro_f1,7.771561172376096e-16
+localization,Tuned selected,accuracy,5.551115123125783e-16
+localization,Tuned selected,balanced_accuracy,4.440892098500626e-16
+localization,Tuned selected,macro_f1,5.551115123125783e-16

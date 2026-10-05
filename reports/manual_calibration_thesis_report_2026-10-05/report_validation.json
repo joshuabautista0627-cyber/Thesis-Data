@@ -1,0 +1,3111 @@
+{
+  "status": "passed",
+  "checks": 774,
+  "pages": 22,
+  "tables": 25,
+  "visual_review": "All 22 PDF pages inspected; no clipping, overlap or broken tables.",
+  "docx_render_status": "Not delivered; canonical Word renderer unavailable because LibreOffice is absent. PDF independently typeset and reviewed.",
+  "files": {
+    "Manual_Calibration_Models_Technical_Report.pdf": "10e74c002810fe063a351009147b012fb659194f079228fe4d9c84327fc0ec84",
+    "Manual_Calibration_Models_Technical_Report.txt": "29720f548ca9fec0a1523da485e902d0f8da144480d3d3733ce6e8a09828cc8d",
+    "ChatGPT_Writing_Prompt.txt": "fe1adca2d44c6590bc5ce2a234c32fef2cb48f409b895718afd3d5bd9d764168"
+  },
+  "details": [
+    {
+      "check": "22 PDF pages",
+      "passed": true
+    },
+    {
+      "check": "25 tables",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 7 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 7 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 7 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 8 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 8 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 1 row 8 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 2 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 3 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 4 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 0 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 1 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 2 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 3 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 4 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 5 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 5 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 6 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 6 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 7 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 7 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 7 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 7 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 7 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 8 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 8 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 8 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 8 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 8 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 9 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 9 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 9 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 9 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 5 row 9 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 0 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 1 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 2 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 3 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 4 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 5 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 5 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 6 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 6 row 6 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 7 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 7 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 7 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 8 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 8 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 9 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 9 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 10 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 10 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 11 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 11 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 12 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 8 row 12 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 0 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 1 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 2 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 3 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 9 row 4 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 10 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 0 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 0 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 1 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 1 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 2 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 2 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 3 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 3 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 4 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 11 row 4 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 5 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 6 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 7 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 7 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 7 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 7 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 8 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 8 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 8 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 12 row 8 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 7 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 7 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 13 row 7 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 0 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 1 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 2 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 3 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 4 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 5 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 5 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 6 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 6 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 7 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 7 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 7 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 7 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 7 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 8 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 8 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 8 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 8 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 8 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 9 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 9 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 9 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 9 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 14 row 9 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 5 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 15 row 6 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 0 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 0 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 1 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 1 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 2 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 2 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 3 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 3 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 4 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 4 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 5 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 5 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 5 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 6 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 6 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 6 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 7 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 7 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 7 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 7 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 7 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 7 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 8 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 8 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 8 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 8 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 8 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 8 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 9 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 9 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 9 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 9 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 9 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 16 row 9 cell 5 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 0 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 1 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 2 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 3 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 4 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 5 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 5 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 6 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 17 row 6 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 0 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 1 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 2 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 3 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 4 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 5 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 5 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 6 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 18 row 6 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 19 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 20 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 0 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 0 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 1 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 1 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 2 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 2 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 3 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 3 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 4 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 4 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 5 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 5 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 6 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 6 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 6 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 7 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 7 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 7 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 7 cell 3 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 21 row 7 cell 4 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 0 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 1 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 2 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 3 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 4 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 22 row 5 cell 2 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 23 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 23 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 23 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 23 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 23 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 23 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 23 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 23 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 23 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 23 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 7 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 7 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 8 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 8 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 9 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 9 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 10 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 10 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 11 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 24 row 11 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 0 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 0 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 1 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 1 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 2 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 2 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 3 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 3 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 4 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 4 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 5 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 5 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 6 cell 0 text",
+      "passed": true
+    },
+    {
+      "check": "PDF table 25 row 6 cell 1 text",
+      "passed": true
+    },
+    {
+      "check": "retraining_20260909 equal-ROI mean matches pooled equal-session MAE",
+      "passed": true
+    },
+    {
+      "check": "retraining_20260909 ROI 1 correct model value",
+      "passed": true
+    },
+    {
+      "check": "retraining_20260909 ROI 2 correct model value",
+      "passed": true
+    },
+    {
+      "check": "retraining_20260909 ROI 3 correct model value",
+      "passed": true
+    },
+    {
+      "check": "retraining_20260909 ROI 4 correct model value",
+      "passed": true
+    },
+    {
+      "check": "retraining_20260909 ROI 5 correct model value",
+      "passed": true
+    },
+    {
+      "check": "retraining_20260909 ROI 6 correct model value",
+      "passed": true
+    },
+    {
+      "check": "retraining_20260909 ROI 7 correct model value",
+      "passed": true
+    },
+    {
+      "check": "retraining_20260909 ROI 8 correct model value",
+      "passed": true
+    },
+    {
+      "check": "retraining_20260909 ROI 9 correct model value",
+      "passed": true
+    },
+    {
+      "check": "tuning_20260909 equal-ROI mean matches pooled equal-session MAE",
+      "passed": true
+    },
+    {
+      "check": "tuning_20260909 ROI 1 correct model value",
+      "passed": true
+    },
+    {
+      "check": "tuning_20260909 ROI 2 correct model value",
+      "passed": true
+    },
+    {
+      "check": "tuning_20260909 ROI 3 correct model value",
+      "passed": true
+    },
+    {
+      "check": "tuning_20260909 ROI 4 correct model value",
+      "passed": true
+    },
+    {
+      "check": "tuning_20260909 ROI 5 correct model value",
+      "passed": true
+    },
+    {
+      "check": "tuning_20260909 ROI 6 correct model value",
+      "passed": true
+    },
+    {
+      "check": "tuning_20260909 ROI 7 correct model value",
+      "passed": true
+    },
+    {
+      "check": "tuning_20260909 ROI 8 correct model value",
+      "passed": true
+    },
+    {
+      "check": "tuning_20260909 ROI 9 correct model value",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\protocol.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\model_comparison.csv",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\fold_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\roi_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\force_bin_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\end_to_end_metrics.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\validation_audit.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\evaluation_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\estimator_parameters.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\retraining_20260909\\lag_selection.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\protocol.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\model_comparison.csv",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\fold_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\roi_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\force_bin_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\end_to_end_metrics.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\validation_audit.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\before_after.csv",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\paired_uncertainty.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\frame_only_protocol.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\inference_timing.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\environment.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\final_selections.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\report_delivery.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\source_snapshot_manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\models\\contact.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\models\\contact_fpr5.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\models\\force.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\models\\localization.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\models\\manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\models_frame_only\\contact.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\models_frame_only\\force.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\models_frame_only\\localization.json",
+      "passed": true
+    },
+    {
+      "check": "Evidence hash evidence\\tuning_20260909\\models_frame_only\\manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Page 1 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 1 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 2 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 2 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 3 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 3 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 4 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 4 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 5 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 5 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 6 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 6 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 7 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 7 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 8 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 8 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 9 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 9 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 10 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 10 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 11 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 11 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 12 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 12 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 13 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 13 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 14 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 14 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 15 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 15 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 16 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 16 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 17 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 17 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 18 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 18 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 19 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 19 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 20 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 20 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 21 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 21 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "Page 22 text within bounds",
+      "passed": true
+    },
+    {
+      "check": "Page 22 has substantive content",
+      "passed": true
+    },
+    {
+      "check": "No missing glyph replacement",
+      "passed": true
+    }
+  ]
+}

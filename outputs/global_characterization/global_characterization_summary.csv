@@ -1,0 +1,38 @@
+Sensor characteristic,Global BAURods result,Interpretation / scope
+Model-assisted contact balanced accuracy,98.50%,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Model-assisted contact accuracy,97.51%,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Model-assisted contact recall,97.00%,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Model-assisted contact specificity,100.00%,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Model-assisted contact macro f1,0.958,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Model-assisted nine-region localization accuracy,84.40%,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Model-assisted localization macro f1,0.848,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Model-assisted joint correct contact and region,83.61%,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Model-assisted force mae,0.499 N,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Model-assisted force rmse,0.632 N,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Model-assisted force r²,0.306,Retrospective nested outer frames; equal recording weights; eligible presses 0.05–3 N; not press-event or deployed accuracy
+Valid segmented physical presses,"5,357 events, clustered in 72 press recordings",Force-only segmentation; not all statistically independent
+Sensing area,All nine locations of one 3 × 3 BAURods skin,Taxel is a secondary grouping variable
+Acquisition scope,83 recordings; one session S3 on 8 August 2026,"Four baseline/settings blocks, not four independent days"
+Tested peak-force range,1.1512–23.3004 N,Retained presses; not maximum sensor capacity
+All raw reference-force range,-0.2867–23.3004 N,Negative unloaded offsets included
+Optical-response range,0.7071–8.5698 V digital units,Peak maximum ROI mean positive delta-V from magnified images
+Global force–response relationship,S = 0.90855 + 0.12106 F,Descriptive pooled association; no intrinsic calibration established
+Global slope / apparent sensitivity,0.12106 V digital units/N; 95% CI 0.08885 to 0.14901,Processing- and protocol-dependent; not intrinsic material sensitivity
+Model fit,R² = 0.2229; RMSE = 0.7045 V,"In-sample, press-level"
+Validation,Recording-held-out R² = 0.1934; RMSE = 0.7178 V,Model selection used this CV; no final untouched test set
+Repeatability proxy,Residual SD = 0.7046 V; IQR = 0.8394 V,Conditional dispersion under manual loading; not controlled metrological repeatability
+Baseline variability,Global mean = 0.8980 V; RMS temporal SD = 0.0437 V,11 recording-equal no-contact controls
+Statistical force detection threshold,Not quantitatively assessed,No validated replicated low-force staircase; segmentation excludes excursions <0.5 N
+Lowest observed detected press peak,1.8699 N,"One observed peak, not a reliable threshold"
+Configured optical decision criterion,5 V digital units,Already present in acquisition software; not 5 N
+SNR proxy,Median = 18.406; IQR = 23.600,(Peak response − global no-contact mean) / RMS temporal SD
+Response time,Not quantitatively assessed,Sparse samples and narrow-band magnification prevent intrinsic latency inference
+Recovery time,Not quantitatively assessed,Repeated presses generally retain residual load and have no stable release baseline
+Hysteresis,Not quantitatively assessed,No controlled comparable quasi-static loading/unloading protocol
+Operating limit / saturation,Not quantitatively assessed,Tested force maximum is not a failure or saturation limit
+Archived-gate contact accuracy,0.801% (43/5368),Unequal positive/negative units; report recall and specificity alongside
+Archived-gate contact recall,0.597% (32/5357),Existing 5-V rule
+Archived-gate specificity,100.00% (11/11),11 one-second no-contact controls
+Archived-gate localization accuracy,0.597%,All valid press events; below-threshold outputs count as failures
+Archived-gate localization macro F1,0.01135,Nine target classes; no-detection column retained
+Known-contact location discrimination,94.307% accuracy; macro F1 = 0.94437,"Offline ungated argmax diagnostic, not archived end-to-end performance"

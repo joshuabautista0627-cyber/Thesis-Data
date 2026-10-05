@@ -1,0 +1,230 @@
+Manual calibration model tuning: before and after
+Technical summary
+
+Force: MAE 0.637 → 0.499 N, RMSE 0.770 → 0.632 N, and R² -0.030 → 0.306.
+
+Nine-ROI localization: accuracy 73.79% → 84.40%, macro F1 74.00% → 84.75%.
+
+Contact detection: balanced accuracy 91.86% → 98.50%, recall 91.93% → 97.00%, and false positives 8.20% → 0.00%.
+
+These compare the previous best fixed models with a new pipeline whose model, features and postprocessing are selected inside each training fold. All scores use the same held-out frames and targets. The source remains manual calibration only. These are retrospective development results, with no unused prospective test set.
+
+Evaluation and interpretation
+
+The benchmark retains 7,154 press frames from 54 press recordings for force and localization, and adds 1,352 frames from 11 dedicated no-contact recordings for detection. The manual archive's 18 replay-only recordings are excluded. Whole TEST groups and assigned no-contact recordings are held out across six outer folds. All preprocessing is fitted within training groups, and the previous fold-local timestamp lags and the 0.05–3 N interval remain unchanged. Metrics give sessions equal weight.
+
+The causal pipeline can use earlier optical frames, including earlier portions of the same held-out recording. It never uses future frames, force labels, target ROI, recording duration, or TEST/session identity as a model feature. ROI is stationary within each recording, so temporal improvements do not establish accuracy during rapid movement between ROIs. The Current frame comparison uses neither temporal input features nor output smoothing.
+
+Force estimation
+
+The tuned selection changes force MAE by -0.138 N and bias from -0.289 to 0.078 N. Current-frame-only tuning obtains 0.539 N MAE. Lower MAE and RMSE are better; bias closer to zero and larger R² are better. The table includes each independently tuned model family and the previous nested selector.
+
+Force mean absolute error
+Previous best
+Tuned
+Current frame
+Pipeline
+0
+0.2
+0.4
+0.6
+0.8
+MAE (N)
+0.64
+0.5
+0.54
+Force mean absolute error data
+Pipeline	MAE (N)
+Previous best	0.64
+Tuned	0.5
+Current frame	0.54
+Force model comparison
+Force model comparison
+Model or selection procedure	MAE (N)	RMSE (N)	Bias (N)	R²
+Tuned ensemble	0.5	0.63	0.08	0.31
+Tuned selected	0.5	0.63	0.08	0.31
+Tuned HistGB	0.5	0.64	0.07	0.29
+Tuned XGBoost	0.5	0.64	0.09	0.29
+Tuned Extra Trees	0.5	0.64	0.08	0.3
+Tuned RBF SVR	0.51	0.64	0.07	0.29
+Tuned Random Forest	0.52	0.66	0.1	0.24
+Tuned frame-only	0.54	0.68	0.11	0.19
+Tuned MLP	0.54	0.69	0.12	0.18
+Previous Extra Trees	0.64	0.77	-0.29	-0.03
+Previous nested selector	0.64	0.77	-0.29	-0.03
+Localization
+
+The tuned selector reaches 84.40% accuracy and 84.75% macro F1 across all nine ROIs. Current-frame tuning reaches 82.84% accuracy and 82.68% macro F1. These are ROI classification metrics; calibrated continuous spatial ground truth is unavailable, so no millimetre error is reported.
+
+Localization macro F1
+Previous best
+Tuned
+Current frame
+Pipeline
+0%
+25%
+50%
+75%
+100%
+Macro F1
+74%
+84.8%
+82.7%
+Localization macro F1 data
+Pipeline	Macro F1
+Previous best	74%
+Tuned	84.8%
+Current frame	82.7%
+Localization model comparison
+Localization model comparison
+Model or selection procedure	Accuracy	Macro F1
+Tuned ensemble	84.7%	85.1%
+Tuned Logistic regression	84.9%	85%
+Tuned selected	84.4%	84.8%
+Tuned Extra Trees	82%	83.4%
+Tuned HistGB	81.7%	82.9%
+Tuned frame-only	82.8%	82.7%
+Tuned MLP	81.6%	82.5%
+Tuned RBF SVC	77.8%	78.7%
+Previous Logistic regression	73.8%	74%
+Previous nested selector	70.3%	70.1%
+Contact detection and false alarms
+
+The main pipeline chooses its threshold by inner-validation balanced accuracy. Its held-out recall is 97.00%, FPR is 0.00%, precision is 100.00%, and macro F1 is 95.81%. A separate policy chooses a threshold with inner FPR ≤5%; its actual held-out recall is 99.57% and FPR is 8.76%. The constraint applies during training and does not guarantee a 5% FPR on new recordings.
+
+Precision depends on the archive's contact/no-contact mix. These frame metrics do not measure deployed onset delay or sustained false-contact episodes after an application debounce layer.
+
+Contact detection balanced accuracy
+Previous best
+Tuned
+Current frame
+Pipeline
+0%
+25%
+50%
+75%
+100%
+Balanced accuracy
+91.9%
+98.5%
+97.1%
+Contact detection balanced accuracy data
+Pipeline	Balanced accuracy
+Previous best	91.9%
+Tuned	98.5%
+Current frame	97.1%
+Contact detection model comparison
+Contact detection model comparison
+Model or selection procedure	Balanced accuracy	Recall	False positives	Precision	Macro F1
+Tuned RBF SVC	99.5%	99.1%	0%	100%	98.7%
+Tuned XGBoost	99.4%	98.8%	0%	100%	98.3%
+Tuned Random Forest	99.2%	98.6%	0.2%	100%	97.9%
+Tuned selected	98.5%	97%	0%	100%	95.8%
+Tuned Logistic regression	98.4%	96.9%	0%	100%	95.7%
+Tuned frame-only	97.1%	95.8%	1.6%	99.7%	93.8%
+Tuned HistGB	96.1%	97.6%	5.4%	98.9%	95%
+Tuned Extra Trees	96%	98.5%	6.4%	98.7%	95.8%
+Tuned FPR <=5%	95.4%	99.6%	8.8%	98.2%	96.6%
+Previous Random Forest	91.9%	91.9%	8.2%	98.2%	87.1%
+Previous nested selector	89.5%	87.1%	8%	98.2%	82.2%
+Performance across recording groups
+
+The previous experiment's weakest localization group was TEST1, whose raw brightness distribution differed from the other groups. The grouped comparison retains TEST1 and every other group. Differences here describe performance across acquisition groups; the experiment does not establish which acquisition condition caused the original gap.
+
+Localization accuracy by TEST group
+TEST1
+TEST2
+TEST3
+TEST4
+TEST5
+TEST6
+TEST group
+0%
+25%
+50%
+75%
+100%
+Accuracy
+Previous
+Tuned
+Current frame
+Localization accuracy by TEST group data
+TEST group	Accuracy	Pipeline
+TEST1	32.6%	Previous
+TEST2	79.7%	Previous
+TEST3	80.6%	Previous
+TEST4	81.1%	Previous
+TEST5	85.8%	Previous
+TEST6	82.9%	Previous
+TEST1	42.7%	Tuned
+TEST2	87.4%	Tuned
+TEST3	95.9%	Tuned
+TEST4	91.9%	Tuned
+TEST5	97.9%	Tuned
+TEST6	90.7%	Tuned
+TEST1	67.8%	Current frame
+TEST2	81.8%	Current frame
+TEST3	85%	Current frame
+TEST4	88.7%	Current frame
+TEST5	88.2%	Current frame
+TEST6	85.5%	Current frame
+ROI and force-bin diagnostics
+
+The following diagnostics describe the tuned causal selector. Every ROI has six press recordings. Force bins with no eligible samples in a recording do not include that recording in the bin's average. Bins are diagnostic and do not redefine a validated operating range.
+
+Tuned performance by ROI
+Tuned performance by ROI
+ROI	Force MAE (N)	Force bias (N)	Localization recall	Frames
+1	0.61	0.02	82.4%	696
+2	0.43	0.08	56%	493
+3	0.48	0.11	93%	266
+4	0.58	0.07	93.4%	1,092
+5	0.53	0.13	84.4%	1,463
+6	0.5	-0.01	89.8%	921
+7	0.48	0.1	82%	1,024
+8	0.48	0.06	79%	703
+9	0.41	0.14	99.7%	496
+Tuned performance by force bin
+Tuned performance by force bin
+Force bin	MAE (N)	Contact recall	Localization accuracy	Frames
+0.05-0.5 N	1.24	85.4%	57.3%	263
+0.5-1 N	0.93	91.3%	71.1%	672
+1-1.5 N	0.69	94.4%	80.6%	1,102
+1.5-2 N	0.41	97.2%	83.1%	1,490
+2-2.5 N	0.28	98.3%	89.6%	1,749
+2.5-3 N	0.53	98.6%	89.8%	1,878
+Combined predictions
+
+When a missed contact produces zero force, combined force MAE changes from 0.716 to 0.522 N and RMSE from 0.913 to 0.684 N. Correct contact and correct ROI occur together on 83.61% of positive frames, compared with 70.50% previously. Sessions retain equal weight. This is an offline combination of research models.
+
+Search design
+
+The frozen grid contains 178 configurations: 62 force, 64 localization and 52 contact candidates. Fifteen unique four-group training subsets support all six nested evaluations, for 2,670 inner model fits, followed by the selected outer fits and final refits. Trees, boosting, support-vector models, logistic regression and neural networks were tested where applicable. Tree depth/leaf size, regularization, kernel settings, and feature packs vary.
+
+Feature packs range from nine positive-light channels to signed light, active fractions, normalized spatial patterns, pixel medians/variation, and local light centroids. The causal variant adds exponential histories with 0.3 s and 1.0 s time constants. Output smoothing uses 0, 0.3 or 1.0 s. Force candidates compare equal-session training with the former session/bin weighting, and train-only residual offsets. Ensembles average the three best tuned families when that improves inner validation.
+
+Thresholds, corrections, features and models are selected entirely inside the outer training groups. The procedure follows nested cross-validation and training-only threshold tuning. Final artifacts are refitted on all eligible manual training data after a complete leave-two-groups-out training search. Their training fit is not presented as held-out accuracy.
+
+Saved model configurations
+Saved model configurations
+Pipeline	Task	Family	Features	Smoothing (s)	Hyperparameters
+Causal tuning	contact	RBF SVC	shape	1	{"C": 1, "gamma_multiplier": 1.0}
+Current-frame tuning	contact	RBF SVC	spatial	0	{"C": 1, "gamma_multiplier": 1.0}
+Causal tuning	contact_fpr5	RBF SVC	temporal	0	{"C": 10, "gamma_multiplier": 1.0}
+Causal tuning	force	HistGB	temporal	0.3	{"max_leaf_nodes": 31, "loss": "squared_error", "l2_regularization": 10}
+Causal tuning	force	Extra Trees	temporal	0	{"min_samples_leaf": 3, "max_features": 0.75}
+Causal tuning	force	XGBoost	temporal	0.3	{"max_depth": 5, "reg_lambda": 20}
+Current-frame tuning	force	Extra Trees	spatial	0	{"min_samples_leaf": 15, "max_features": 0.75}
+Causal tuning	localization	HistGB	invariant	1	{"max_leaf_nodes": 15, "l2_regularization": 10}
+Causal tuning	localization	Extra Trees	invariant	1	{"min_samples_leaf": 10, "max_features": 0.75}
+Causal tuning	localization	Logistic regression	invariant	1	{"C": 0.03}
+Current-frame tuning	localization	HistGB	invariant	0	{"max_leaf_nodes": 15, "l2_regularization": 10}
+Verification and limits
+
+Independent calculations matched 114 metrics. The audit verified identical held-out frame IDs and reference targets, manual feature-partition hashes, complete-session splits, saved model checksums, and a refit that reproduced TEST1 predictions for all three primary tasks. Reloaded inference passed force/target-label invariance, causal-prefix, future-frame perturbation and session-reset checks. Twenty pipeline and existing firewall/preprocessing tests passed.
+
+This development reused manual recordings already examined in previous experiments, so nested evaluation controls this search's fitting leakage but does not create a new prospective test set. Six groups provide limited uncertainty information; paired group-bootstrap results are saved in paired_uncertainty.json and depend on overlapping CV training sets. The original scientific operating-range and live application gates have not been revalidated. No live GUI bundle was replaced.
+
+Recommended use
+
+Use the saved models as the next manual-only research candidates. Review the current-frame results when response latency matters, and use the causal variant only with its documented history/reset behavior. Preserve this model version for prospective manual recordings that include low-force contacts, sustained no-contact periods, changed lighting, and movement between ROIs. Those recordings are needed to establish live accuracy, false alarms, response delay and operating range.

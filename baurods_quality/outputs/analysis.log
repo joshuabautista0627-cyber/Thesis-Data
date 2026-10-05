@@ -1,0 +1,22 @@
+2026-10-05 23:00:30,844 Archive hash e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a
+2026-10-05 23:00:58,073 Loaded 1/83 recordings
+2026-10-05 23:01:17,251 Loaded 16/83 recordings
+2026-10-05 23:01:30,895 Loaded 31/83 recordings
+2026-10-05 23:01:49,289 Loaded 46/83 recordings
+2026-10-05 23:02:09,281 Loaded 61/83 recordings
+2026-10-05 23:02:28,260 Loaded 76/83 recordings
+2026-10-05 23:02:45,908 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:45,910 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:49,242 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:49,244 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:49,246 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:49,252 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:49,253 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:49,259 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:49,262 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:49,263 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:49,267 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:02:49,268 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:03:01,017 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:03:01,020 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-10-05 23:03:05,149 Finished: {"frames": 29318, "recordings": 83, "press_recordings": 72, "no_contact_recordings": 11, "session_labels": ["S3"], "statistical_flags": 23, "performance": {"n": 26786, "covered": 34, "correct": 34, "coverage_percent": 0.1269319793922198, "accuracy_all_percent": 0.1269319793922198, "accuracy_covered_percent": 100.0, "macro_f1": 0.0024393312043253664, "detection_proxy": {"n": 29318, "tp": 34, "fn": 26752, "fp": 0, "tn": 2532}}}

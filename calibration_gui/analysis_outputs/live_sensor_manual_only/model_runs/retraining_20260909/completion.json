@@ -1,0 +1,12 @@
+{
+  "completed_at": "2026-09-09T05:30:16.858169+00:00",
+  "winners": {
+    "force": "Extra Trees",
+    "contact": "Random Forest",
+    "localization": "Logistic regression"
+  },
+  "outer_folds": 6,
+  "fit_subsets": 22,
+  "model_fits": 462,
+  "all_outputs_finite": true
+}

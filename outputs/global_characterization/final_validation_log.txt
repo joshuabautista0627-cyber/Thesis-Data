@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\DLSU\OneDrive\Documents\SOFTWARE CALIBRATION\outputs\global_characterization\finalize_analysis.py", line 26, in <module>
+    g.validate(OUT,e,rec,s,tables)
+  File "C:\Users\DLSU\OneDrive\Documents\SOFTWARE CALIBRATION\global_sensor_characterization.py", line 774, in validate
+    if failures: raise AssertionError(failures)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ['event force maximum mismatch']

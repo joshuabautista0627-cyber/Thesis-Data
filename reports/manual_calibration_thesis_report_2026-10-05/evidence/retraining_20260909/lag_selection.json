@@ -1,0 +1,4284 @@
+[
+  {
+    "train_groups": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "selected_lag_ms": 0,
+    "search": [
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3516301869669836,
+        "mean_inner_mae_N": 1.216213253206023,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4367110384772759,
+        "mean_inner_mae_N": 1.30770109119624,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3680102630296518,
+        "mean_inner_mae_N": 1.2506063043413962,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3321999163806186,
+        "mean_inner_mae_N": 1.217705129641078,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.4249622132241424,
+        "mean_inner_mae_N": 1.260581087242809,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4121103778984438,
+        "mean_inner_mae_N": 1.2480849220336565,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.2240175453286857,
+        "mean_inner_mae_N": 1.216213253206023,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.3141247615358063,
+        "mean_inner_mae_N": 1.30770109119624,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.2456175992270453,
+        "mean_inner_mae_N": 1.2506063043413962,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.188226653486642,
+        "mean_inner_mae_N": 1.217705129641078,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.2370097582467972,
+        "mean_inner_mae_N": 1.260581087242809,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.2492877973164658,
+        "mean_inner_mae_N": 1.2480849220336565,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.2911964390391586,
+        "mean_inner_mae_N": 1.216213253206023,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4175623083939428,
+        "mean_inner_mae_N": 1.30770109119624,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3329282227336714,
+        "mean_inner_mae_N": 1.2506063043413962,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2901541223734638,
+        "mean_inner_mae_N": 1.217705129641078,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.336544746601468,
+        "mean_inner_mae_N": 1.260581087242809,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.317764111702615,
+        "mean_inner_mae_N": 1.2480849220336565,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 0.998008841489264,
+        "mean_inner_mae_N": 1.216213253206023,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.0624062563779346,
+        "mean_inner_mae_N": 1.30770109119624,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.0558691323752165,
+        "mean_inner_mae_N": 1.2506063043413962,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.0602398263235868,
+        "mean_inner_mae_N": 1.217705129641078,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.043807630898828,
+        "mean_inner_mae_N": 1.260581087242809,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.0131774012171013,
+        "mean_inner_mae_N": 1.2480849220336565,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      2,
+      4,
+      5,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4388907793977834,
+        "mean_inner_mae_N": 1.2954414871812263,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5169686455859117,
+        "mean_inner_mae_N": 1.3961417435760741,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4479896861601822,
+        "mean_inner_mae_N": 1.3211798916103488,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3072912000534656,
+        "mean_inner_mae_N": 1.2529753823023542,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.3759016408027944,
+        "mean_inner_mae_N": 1.3037763940904052,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4485592487859298,
+        "mean_inner_mae_N": 1.307216721483314,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.2325933856227205,
+        "mean_inner_mae_N": 1.2954414871812263,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.3098216100995914,
+        "mean_inner_mae_N": 1.3961417435760741,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.247391946718623,
+        "mean_inner_mae_N": 1.3211798916103488,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.1942382925991208,
+        "mean_inner_mae_N": 1.2529753823023542,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.2332827914636761,
+        "mean_inner_mae_N": 1.3037763940904052,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.233272353972711,
+        "mean_inner_mae_N": 1.307216721483314,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.2819567980420947,
+        "mean_inner_mae_N": 1.2954414871812263,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4117693154695594,
+        "mean_inner_mae_N": 1.3961417435760741,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3200901535326597,
+        "mean_inner_mae_N": 1.3211798916103488,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2708516161390024,
+        "mean_inner_mae_N": 1.2529753823023542,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.3266857968149015,
+        "mean_inner_mae_N": 1.3037763940904052,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.3257231303921222,
+        "mean_inner_mae_N": 1.307216721483314,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.228324985662307,
+        "mean_inner_mae_N": 1.2954414871812263,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.3460074031492335,
+        "mean_inner_mae_N": 1.3961417435760741,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.2692477800299302,
+        "mean_inner_mae_N": 1.3211798916103488,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2395204204178276,
+        "mean_inner_mae_N": 1.2529753823023542,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.2792353472802485,
+        "mean_inner_mae_N": 1.3037763940904052,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.2213121527824926,
+        "mean_inner_mae_N": 1.307216721483314,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      2,
+      3,
+      5,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4191664453987587,
+        "mean_inner_mae_N": 1.3187512316916339,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5113914650602007,
+        "mean_inner_mae_N": 1.4307341594010992,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.422162184606791,
+        "mean_inner_mae_N": 1.3448270829909301,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2990609092529553,
+        "mean_inner_mae_N": 1.2939467765909214,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.3763941663301589,
+        "mean_inner_mae_N": 1.365442415023154,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4630305377146153,
+        "mean_inner_mae_N": 1.3653514118350945,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3308993711443362,
+        "mean_inner_mae_N": 1.3187512316916339,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.43121586057032,
+        "mean_inner_mae_N": 1.4307341594010992,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3399715011603164,
+        "mean_inner_mae_N": 1.3448270829909301,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3197956704842744,
+        "mean_inner_mae_N": 1.2939467765909214,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.4210577694440696,
+        "mean_inner_mae_N": 1.365442415023154,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4197795953076775,
+        "mean_inner_mae_N": 1.3653514118350945,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.2651420349379612,
+        "mean_inner_mae_N": 1.3187512316916339,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.41637282438095,
+        "mean_inner_mae_N": 1.4307341594010992,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3395004235835541,
+        "mean_inner_mae_N": 1.3448270829909301,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.315548875873827,
+        "mean_inner_mae_N": 1.2939467765909214,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.3580546330797871,
+        "mean_inner_mae_N": 1.365442415023154,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.3203021870157459,
+        "mean_inner_mae_N": 1.3653514118350945,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.2597970752854797,
+        "mean_inner_mae_N": 1.3187512316916339,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.3639564875929264,
+        "mean_inner_mae_N": 1.4307341594010992,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.2776742226130589,
+        "mean_inner_mae_N": 1.3448270829909301,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2413816507526287,
+        "mean_inner_mae_N": 1.2939467765909214,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.306263091238601,
+        "mean_inner_mae_N": 1.365442415023154,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.258293327302339,
+        "mean_inner_mae_N": 1.3653514118350945,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      2,
+      3,
+      4,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4289800467519853,
+        "mean_inner_mae_N": 1.3193904713721347,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.508473385784969,
+        "mean_inner_mae_N": 1.4248933216456878,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4263037466685853,
+        "mean_inner_mae_N": 1.3335042844472367,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.292929441346231,
+        "mean_inner_mae_N": 1.264406559640028,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.3649066428083616,
+        "mean_inner_mae_N": 1.327921554000069,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4436544662526822,
+        "mean_inner_mae_N": 1.347882681029878,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3253566708670865,
+        "mean_inner_mae_N": 1.3193904713721347,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.421696858951492,
+        "mean_inner_mae_N": 1.4248933216456878,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.335428141294972,
+        "mean_inner_mae_N": 1.3335042844472367,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2985509302536595,
+        "mean_inner_mae_N": 1.264406559640028,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.4010760607401882,
+        "mean_inner_mae_N": 1.327921554000069,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4029020676284896,
+        "mean_inner_mae_N": 1.347882681029878,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.20436352405495,
+        "mean_inner_mae_N": 1.3193904713721347,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.302646136790937,
+        "mean_inner_mae_N": 1.4248933216456878,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.256379033168038,
+        "mean_inner_mae_N": 1.3335042844472367,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2142301323105764,
+        "mean_inner_mae_N": 1.264406559640028,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.2128730282817977,
+        "mean_inner_mae_N": 1.327921554000069,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.2252042724092265,
+        "mean_inner_mae_N": 1.347882681029878,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3188616438145173,
+        "mean_inner_mae_N": 1.3193904713721347,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4667569050553528,
+        "mean_inner_mae_N": 1.4248933216456878,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3159062166573514,
+        "mean_inner_mae_N": 1.3335042844472367,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.251915734649645,
+        "mean_inner_mae_N": 1.264406559640028,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.332830484169929,
+        "mean_inner_mae_N": 1.327921554000069,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.319769917829114,
+        "mean_inner_mae_N": 1.347882681029878,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.1838797015025941,
+        "mean_inner_mae_N": 1.2431572238331021,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.2383138119441146,
+        "mean_inner_mae_N": 1.329892630269996,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.228531904486977,
+        "mean_inner_mae_N": 1.274117771966078,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.1300975172257028,
+        "mean_inner_mae_N": 1.205901194961044,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.1629380405100174,
+        "mean_inner_mae_N": 1.2735295916214033,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.2148020568624833,
+        "mean_inner_mae_N": 1.2852224201516171,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.2731681416555338,
+        "mean_inner_mae_N": 1.2431572238331021,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.363271894622451,
+        "mean_inner_mae_N": 1.329892630269996,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.2826571252032475,
+        "mean_inner_mae_N": 1.274117771966078,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2593340462024016,
+        "mean_inner_mae_N": 1.205901194961044,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.3710140688065375,
+        "mean_inner_mae_N": 1.2735295916214033,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.3750784654070847,
+        "mean_inner_mae_N": 1.2852224201516171,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.1997908432902487,
+        "mean_inner_mae_N": 1.2431572238331021,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.2626192024253622,
+        "mean_inner_mae_N": 1.329892630269996,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.2234650380903296,
+        "mean_inner_mae_N": 1.274117771966078,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.152609646686938,
+        "mean_inner_mae_N": 1.205901194961044,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.2019956373640646,
+        "mean_inner_mae_N": 1.2735295916214033,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.2154879483037395,
+        "mean_inner_mae_N": 1.2852224201516171,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3157902088840316,
+        "mean_inner_mae_N": 1.2431572238331021,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4553656120880563,
+        "mean_inner_mae_N": 1.329892630269996,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3618170200837574,
+        "mean_inner_mae_N": 1.274117771966078,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2815635697291334,
+        "mean_inner_mae_N": 1.205901194961044,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.358170619804994,
+        "mean_inner_mae_N": 1.2735295916214033,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.3355212100331613,
+        "mean_inner_mae_N": 1.2852224201516171,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4212624473064637,
+        "mean_inner_mae_N": 1.2944490734963057,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5029728091433683,
+        "mean_inner_mae_N": 1.396613877615872,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4199744512168568,
+        "mean_inner_mae_N": 1.317029059081051,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2909053175974876,
+        "mean_inner_mae_N": 1.2583246144173372,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.3637975797903514,
+        "mean_inner_mae_N": 1.3228553847131135,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4447839421117437,
+        "mean_inner_mae_N": 1.324613388733013,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3191959682043972,
+        "mean_inner_mae_N": 1.2944490734963057,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4181129975548599,
+        "mean_inner_mae_N": 1.396613877615872,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3283984591998137,
+        "mean_inner_mae_N": 1.317029059081051,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3054792822405044,
+        "mean_inner_mae_N": 1.2583246144173372,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.4077832179489111,
+        "mean_inner_mae_N": 1.3228553847131135,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4016803288017383,
+        "mean_inner_mae_N": 1.324613388733013,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.2088578712575808,
+        "mean_inner_mae_N": 1.2944490734963057,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.2957845668197083,
+        "mean_inner_mae_N": 1.396613877615872,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.2355094557391262,
+        "mean_inner_mae_N": 1.317029059081051,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.1767910646157782,
+        "mean_inner_mae_N": 1.2583246144173372,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.2181100272995264,
+        "mean_inner_mae_N": 1.3228553847131135,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.224935196614175,
+        "mean_inner_mae_N": 1.324613388733013,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.276685263899815,
+        "mean_inner_mae_N": 1.2944490734963057,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4050465170586561,
+        "mean_inner_mae_N": 1.396613877615872,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3287622200252727,
+        "mean_inner_mae_N": 1.317029059081051,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2788733062150317,
+        "mean_inner_mae_N": 1.2583246144173372,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.3288879418267614,
+        "mean_inner_mae_N": 1.3228553847131135,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.3119377952487348,
+        "mean_inner_mae_N": 1.324613388733013,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.2462438168132712,
+        "mean_inner_mae_N": 1.2944490734963057,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.3611524975027678,
+        "mean_inner_mae_N": 1.396613877615872,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.272500709224185,
+        "mean_inner_mae_N": 1.317029059081051,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.2395741014178843,
+        "mean_inner_mae_N": 1.2583246144173372,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.2956981567000165,
+        "mean_inner_mae_N": 1.3228553847131135,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.239729680888673,
+        "mean_inner_mae_N": 1.324613388733013,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "selected_lag_ms": 200,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.9722696418628445,
+        "mean_inner_mae_N": 1.580333481174094,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.0600859772476654,
+        "mean_inner_mae_N": 1.658163224757904,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.653596177644582,
+        "mean_inner_mae_N": 1.4921187921971675,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.880534212137791,
+        "mean_inner_mae_N": 1.5523128706500884,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.289991090040347,
+        "mean_inner_mae_N": 1.7245802547250064,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.4877952225173448,
+        "mean_inner_mae_N": 1.7754861157534516,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5136063395461914,
+        "mean_inner_mae_N": 1.580333481174094,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5406831745699623,
+        "mean_inner_mae_N": 1.658163224757904,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4504739511336422,
+        "mean_inner_mae_N": 1.4921187921971675,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4581755203937057,
+        "mean_inner_mae_N": 1.5523128706500884,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5660693841920168,
+        "mean_inner_mae_N": 1.7245802547250064,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5459457863471486,
+        "mean_inner_mae_N": 1.7754861157534516,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5092411869822286,
+        "mean_inner_mae_N": 1.580333481174094,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5840115017804335,
+        "mean_inner_mae_N": 1.658163224757904,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5200881554318015,
+        "mean_inner_mae_N": 1.4921187921971675,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5078891203094296,
+        "mean_inner_mae_N": 1.5523128706500884,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5933856675636489,
+        "mean_inner_mae_N": 1.7245802547250064,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6122788569116704,
+        "mean_inner_mae_N": 1.7754861157534516,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.326216756305111,
+        "mean_inner_mae_N": 1.580333481174094,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4478722454335549,
+        "mean_inner_mae_N": 1.658163224757904,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3443168845786446,
+        "mean_inner_mae_N": 1.4921187921971675,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.362652629759427,
+        "mean_inner_mae_N": 1.5523128706500884,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.4488748771040134,
+        "mean_inner_mae_N": 1.7245802547250064,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.455924597237643,
+        "mean_inner_mae_N": 1.7754861157534516,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.293928826223939,
+        "mean_inner_mae_N": 1.6908844283479512,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.2591927820910143,
+        "mean_inner_mae_N": 1.7482555752725633,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 2.0257861596062554,
+        "mean_inner_mae_N": 1.6369726183826587,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.9683213669990838,
+        "mean_inner_mae_N": 1.5993671785867245,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.2810367777875746,
+        "mean_inner_mae_N": 1.753006519284655,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.290881357885323,
+        "mean_inner_mae_N": 1.764154449091452,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.6256961253001139,
+        "mean_inner_mae_N": 1.6908844283479512,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6787248020456014,
+        "mean_inner_mae_N": 1.7482555752725633,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.6324360708982506,
+        "mean_inner_mae_N": 1.6369726183826587,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5440680496769454,
+        "mean_inner_mae_N": 1.5993671785867245,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.66850141119147,
+        "mean_inner_mae_N": 1.753006519284655,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.679561717439855,
+        "mean_inner_mae_N": 1.764154449091452,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5105496428221636,
+        "mean_inner_mae_N": 1.6908844283479512,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5907400853521245,
+        "mean_inner_mae_N": 1.7482555752725633,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5429032715154953,
+        "mean_inner_mae_N": 1.6369726183826587,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5157857503813548,
+        "mean_inner_mae_N": 1.5993671785867245,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.603434256561333,
+        "mean_inner_mae_N": 1.753006519284655,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6187655829744942,
+        "mean_inner_mae_N": 1.764154449091452,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3333631190455881,
+        "mean_inner_mae_N": 1.6908844283479512,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.464364631601513,
+        "mean_inner_mae_N": 1.7482555752725633,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3467649715106333,
+        "mean_inner_mae_N": 1.6369726183826587,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3692935472895136,
+        "mean_inner_mae_N": 1.5993671785867245,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.459053631598242,
+        "mean_inner_mae_N": 1.753006519284655,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4674091380661365,
+        "mean_inner_mae_N": 1.764154449091452,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      3,
+      4,
+      6
+    ],
+    "selected_lag_ms": 200,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.015495012878115,
+        "mean_inner_mae_N": 1.6192458143565507,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.10332617543236,
+        "mean_inner_mae_N": 1.6962435770010633,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.8179155763711172,
+        "mean_inner_mae_N": 1.5570486370604402,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.8897306168060577,
+        "mean_inner_mae_N": 1.5618166028055533,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.3423057985950857,
+        "mean_inner_mae_N": 1.7586895170194534,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.2699636113752617,
+        "mean_inner_mae_N": 1.7356246610142847,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.6075775105941008,
+        "mean_inner_mae_N": 1.6192458143565507,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.656652412631598,
+        "mean_inner_mae_N": 1.6962435770010633,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.614000019910592,
+        "mean_inner_mae_N": 1.5570486370604402,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.534062970620231,
+        "mean_inner_mae_N": 1.5618166028055533,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6616568815178978,
+        "mean_inner_mae_N": 1.7586895170194534,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6656452099727763,
+        "mean_inner_mae_N": 1.7356246610142847,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4969210300148947,
+        "mean_inner_mae_N": 1.6192458143565507,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5334408980356389,
+        "mean_inner_mae_N": 1.6962435770010633,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.450360541464467,
+        "mean_inner_mae_N": 1.5570486370604402,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.451605751673196,
+        "mean_inner_mae_N": 1.5618166028055533,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5669165858352077,
+        "mean_inner_mae_N": 1.7586895170194534,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.539621860365526,
+        "mean_inner_mae_N": 1.7356246610142847,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3569897039390921,
+        "mean_inner_mae_N": 1.6192458143565507,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4915548219046566,
+        "mean_inner_mae_N": 1.6962435770010633,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3459184104955844,
+        "mean_inner_mae_N": 1.5570486370604402,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3718670721227293,
+        "mean_inner_mae_N": 1.5618166028055533,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.4638788021296225,
+        "mean_inner_mae_N": 1.7586895170194534,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.467267962343575,
+        "mean_inner_mae_N": 1.7356246610142847,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "selected_lag_ms": 200,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5518207922380813,
+        "mean_inner_mae_N": 1.538390380578397,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.647477006507052,
+        "mean_inner_mae_N": 1.5932700071758656,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4619377254246697,
+        "mean_inner_mae_N": 1.507788655622735,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5615019333475406,
+        "mean_inner_mae_N": 1.5089727284856123,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.9128801337462618,
+        "mean_inner_mae_N": 1.6829734021515552,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.9281049224124505,
+        "mean_inner_mae_N": 1.6838448081233919,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5971700660919972,
+        "mean_inner_mae_N": 1.538390380578397,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6292877082098032,
+        "mean_inner_mae_N": 1.5932700071758656,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.6045204360790506,
+        "mean_inner_mae_N": 1.507788655622735,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.517064111539859,
+        "mean_inner_mae_N": 1.5089727284856123,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.658619484186068,
+        "mean_inner_mae_N": 1.6829734021515552,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6588101436242826,
+        "mean_inner_mae_N": 1.6838448081233919,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4886490548022884,
+        "mean_inner_mae_N": 1.538390380578397,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5103136729575413,
+        "mean_inner_mae_N": 1.5932700071758656,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4397766080049748,
+        "mean_inner_mae_N": 1.507788655622735,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4485785590103955,
+        "mean_inner_mae_N": 1.5089727284856123,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5636330500776714,
+        "mean_inner_mae_N": 1.6829734021515552,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5333263240868342,
+        "mean_inner_mae_N": 1.6838448081233919,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5159216091812204,
+        "mean_inner_mae_N": 1.538390380578397,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5860016410290665,
+        "mean_inner_mae_N": 1.5932700071758656,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5249198529822445,
+        "mean_inner_mae_N": 1.507788655622735,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.508746310044654,
+        "mean_inner_mae_N": 1.5089727284856123,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5967609405962193,
+        "mean_inner_mae_N": 1.6829734021515552,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6151378423700007,
+        "mean_inner_mae_N": 1.6838448081233919,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.1372781821314453,
+        "mean_inner_mae_N": 1.594678734006369,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.1812909778469223,
+        "mean_inner_mae_N": 1.6629356530686485,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.888781466295005,
+        "mean_inner_mae_N": 1.542705056753982,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.9039454103149716,
+        "mean_inner_mae_N": 1.5296780141791835,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.2645126504869095,
+        "mean_inner_mae_N": 1.6860148178176277,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.3657130097811794,
+        "mean_inner_mae_N": 1.704309473100853,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5804932274068142,
+        "mean_inner_mae_N": 1.594678734006369,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6289015746143007,
+        "mean_inner_mae_N": 1.6629356530686485,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5852964439034058,
+        "mean_inner_mae_N": 1.542705056753982,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5060437420087502,
+        "mean_inner_mae_N": 1.5296780141791835,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6377205965711235,
+        "mean_inner_mae_N": 1.6860148178176277,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6362782876044066,
+        "mean_inner_mae_N": 1.704309473100853,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4655503350771468,
+        "mean_inner_mae_N": 1.594678734006369,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5008939524695672,
+        "mean_inner_mae_N": 1.6629356530686485,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.411575019773414,
+        "mean_inner_mae_N": 1.542705056753982,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4162357501142377,
+        "mean_inner_mae_N": 1.5296780141791835,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5284056687117622,
+        "mean_inner_mae_N": 1.6860148178176277,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5072493167923786,
+        "mean_inner_mae_N": 1.704309473100853,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.481274541534128,
+        "mean_inner_mae_N": 1.594678734006369,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5582627216995721,
+        "mean_inner_mae_N": 1.6629356530686485,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5051929433964384,
+        "mean_inner_mae_N": 1.542705056753982,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4794438651214779,
+        "mean_inner_mae_N": 1.5296780141791835,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5673091311095,
+        "mean_inner_mae_N": 1.6860148178176277,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5825159147013337,
+        "mean_inner_mae_N": 1.704309473100853,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3087973838823106,
+        "mean_inner_mae_N": 1.594678734006369,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.44532903871288,
+        "mean_inner_mae_N": 1.6629356530686485,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3226794104016457,
+        "mean_inner_mae_N": 1.542705056753982,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3427213033364804,
+        "mean_inner_mae_N": 1.5296780141791835,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.432126042208843,
+        "mean_inner_mae_N": 1.6860148178176277,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4297908366249665,
+        "mean_inner_mae_N": 1.704309473100853,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.3200606234637977,
+        "mean_inner_mae_N": 1.6962411783792473,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.336801305104416,
+        "mean_inner_mae_N": 1.7723333953421418,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 2.0643150009140756,
+        "mean_inner_mae_N": 1.642385298323441,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 2.076471285644257,
+        "mean_inner_mae_N": 1.621267107606939,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.437342220489646,
+        "mean_inner_mae_N": 1.7737322011169911,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.4282288032450716,
+        "mean_inner_mae_N": 1.802852137890539,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.60769265838434,
+        "mean_inner_mae_N": 1.6962411783792473,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6929955328871626,
+        "mean_inner_mae_N": 1.7723333953421418,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.6157684762846647,
+        "mean_inner_mae_N": 1.642385298323441,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5291440956103326,
+        "mean_inner_mae_N": 1.621267107606939,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.610683602486712,
+        "mean_inner_mae_N": 1.7737322011169911,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6899442595092506,
+        "mean_inner_mae_N": 1.802852137890539,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.512359001211344,
+        "mean_inner_mae_N": 1.6962411783792473,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.592848974423074,
+        "mean_inner_mae_N": 1.7723333953421418,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5251090250330233,
+        "mean_inner_mae_N": 1.642385298323441,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.508925912957093,
+        "mean_inner_mae_N": 1.621267107606939,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5949158844902651,
+        "mean_inner_mae_N": 1.7737322011169911,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.618486749423176,
+        "mean_inner_mae_N": 1.802852137890539,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3448524304575076,
+        "mean_inner_mae_N": 1.6962411783792473,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.466687768953915,
+        "mean_inner_mae_N": 1.7723333953421418,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.364348691062001,
+        "mean_inner_mae_N": 1.642385298323441,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3705271362160734,
+        "mean_inner_mae_N": 1.621267107606939,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.451987097001341,
+        "mean_inner_mae_N": 1.7737322011169911,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4747487393846583,
+        "mean_inner_mae_N": 1.802852137890539,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "selected_lag_ms": 200,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.0323119258561704,
+        "mean_inner_mae_N": 1.6260146395974706,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.188510264798227,
+        "mean_inner_mae_N": 1.722871369053971,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.8309607520928164,
+        "mean_inner_mae_N": 1.5621025132326358,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.9501066714007362,
+        "mean_inner_mae_N": 1.5725073605621356,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.40824763492832,
+        "mean_inner_mae_N": 1.7576342065054527,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.4878655231110827,
+        "mean_inner_mae_N": 1.796349260895512,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5995873081403695,
+        "mean_inner_mae_N": 1.6260146395974706,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6781488914930267,
+        "mean_inner_mae_N": 1.722871369053971,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.6115323326053945,
+        "mean_inner_mae_N": 1.5621025132326358,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5201084275927426,
+        "mean_inner_mae_N": 1.5725073605621356,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6052813216578372,
+        "mean_inner_mae_N": 1.7576342065054527,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6806347191675004,
+        "mean_inner_mae_N": 1.796349260895512,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5015772451920884,
+        "mean_inner_mae_N": 1.6260146395974706,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5305717149618225,
+        "mean_inner_mae_N": 1.722871369053971,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4437789240873729,
+        "mean_inner_mae_N": 1.5621025132326358,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.444785108991636,
+        "mean_inner_mae_N": 1.5725073605621356,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.561904946735758,
+        "mean_inner_mae_N": 1.7576342065054527,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5422751526348302,
+        "mean_inner_mae_N": 1.796349260895512,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.370582079201254,
+        "mean_inner_mae_N": 1.6260146395974706,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4942546049628083,
+        "mean_inner_mae_N": 1.722871369053971,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3621380441449593,
+        "mean_inner_mae_N": 1.5621025132326358,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3750292342634276,
+        "mean_inner_mae_N": 1.5725073605621356,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.455102922699895,
+        "mean_inner_mae_N": 1.7576342065054527,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.474621648668635,
+        "mean_inner_mae_N": 1.796349260895512,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.5121349841966776,
+        "mean_inner_mae_N": 1.7803113745533623,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.637017750492665,
+        "mean_inner_mae_N": 1.8485122278213326,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 2.201218664580279,
+        "mean_inner_mae_N": 1.6899665227099634,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 2.1017845433710827,
+        "mean_inner_mae_N": 1.6362745339996647,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.4631217746274707,
+        "mean_inner_mae_N": 1.803781057317292,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.7851385852425,
+        "mean_inner_mae_N": 1.9040329990928062,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5913699439400188,
+        "mean_inner_mae_N": 1.7803113745533623,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6585147070355086,
+        "mean_inner_mae_N": 1.8485122278213326,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.594824596139391,
+        "mean_inner_mae_N": 1.6899665227099634,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.502216087133342,
+        "mean_inner_mae_N": 1.6362745339996647,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6022580310321262,
+        "mean_inner_mae_N": 1.803781057317292,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6753666090973933,
+        "mean_inner_mae_N": 1.9040329990928062,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4967593332134383,
+        "mean_inner_mae_N": 1.7803113745533623,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5099221130307017,
+        "mean_inner_mae_N": 1.8485122278213326,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4437799121392887,
+        "mean_inner_mae_N": 1.6899665227099634,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4397434897137262,
+        "mean_inner_mae_N": 1.6362745339996647,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5614261661983584,
+        "mean_inner_mae_N": 1.803781057317292,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.538282174747337,
+        "mean_inner_mae_N": 1.9040329990928062,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5209812368633147,
+        "mean_inner_mae_N": 1.7803113745533623,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5885943407264551,
+        "mean_inner_mae_N": 1.8485122278213326,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5200429179808945,
+        "mean_inner_mae_N": 1.6899665227099634,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5013540157805076,
+        "mean_inner_mae_N": 1.6362745339996647,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.588318257411213,
+        "mean_inner_mae_N": 1.803781057317292,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6173446272839944,
+        "mean_inner_mae_N": 1.9040329990928062,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "selected_lag_ms": 200,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.15143378864458,
+        "mean_inner_mae_N": 1.598534087907752,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.2413518954680485,
+        "mean_inner_mae_N": 1.679522146194029,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.9054830433398833,
+        "mean_inner_mae_N": 1.5459072510182672,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.9707791952329166,
+        "mean_inner_mae_N": 1.538604518010945,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.363898325710433,
+        "mean_inner_mae_N": 1.6911122052521939,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.508873411364673,
+        "mean_inner_mae_N": 1.7385779725917163,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5796158800764275,
+        "mean_inner_mae_N": 1.598534087907752,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6578994197687908,
+        "mean_inner_mae_N": 1.679522146194029,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.583609459608476,
+        "mean_inner_mae_N": 1.5459072510182672,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4916489824045545,
+        "mean_inner_mae_N": 1.538604518010945,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5799220538476828,
+        "mean_inner_mae_N": 1.6911122052521939,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6588026492743762,
+        "mean_inner_mae_N": 1.7385779725917163,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.467638077012732,
+        "mean_inner_mae_N": 1.598534087907752,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4963419661005128,
+        "mean_inner_mae_N": 1.679522146194029,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4104142024205206,
+        "mean_inner_mae_N": 1.5459072510182672,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.409633714737977,
+        "mean_inner_mae_N": 1.538604518010945,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5252235875921947,
+        "mean_inner_mae_N": 1.6911122052521939,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5088858144916584,
+        "mean_inner_mae_N": 1.7385779725917163,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4785810158641826,
+        "mean_inner_mae_N": 1.598534087907752,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5557931141597026,
+        "mean_inner_mae_N": 1.679522146194029,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4943620656325498,
+        "mean_inner_mae_N": 1.5459072510182672,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4736074698323558,
+        "mean_inner_mae_N": 1.538604518010945,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5606369627341834,
+        "mean_inner_mae_N": 1.6911122052521939,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5803383855083142,
+        "mean_inner_mae_N": 1.7385779725917163,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3154016779408388,
+        "mean_inner_mae_N": 1.598534087907752,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4462243354730908,
+        "mean_inner_mae_N": 1.679522146194029,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3356674840899068,
+        "mean_inner_mae_N": 1.5459072510182672,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3473532278469211,
+        "mean_inner_mae_N": 1.538604518010945,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.425880096376475,
+        "mean_inner_mae_N": 1.6911122052521939,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4359896023195604,
+        "mean_inner_mae_N": 1.7385779725917163,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.3821628463138773,
+        "mean_inner_mae_N": 1.7485580787886312,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.3711909718985074,
+        "mean_inner_mae_N": 1.812870647478298,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 2.126758676937931,
+        "mean_inner_mae_N": 1.6833524042926666,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 2.103053520797321,
+        "mean_inner_mae_N": 1.6375352431791526,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.5046870383273165,
+        "mean_inner_mae_N": 1.8125120660332859,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.256548271585073,
+        "mean_inner_mae_N": 1.7740946011065202,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5978939276179183,
+        "mean_inner_mae_N": 1.7485580787886312,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6829629787797424,
+        "mean_inner_mae_N": 1.812870647478298,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.6231805910473875,
+        "mean_inner_mae_N": 1.6833524042926666,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5284112697713867,
+        "mean_inner_mae_N": 1.6375352431791526,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6093862639608671,
+        "mean_inner_mae_N": 1.8125120660332859,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6828840945483794,
+        "mean_inner_mae_N": 1.7740946011065202,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.60638284581041,
+        "mean_inner_mae_N": 1.7485580787886312,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.659167673456889,
+        "mean_inner_mae_N": 1.812870647478298,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.623684828281145,
+        "mean_inner_mae_N": 1.6833524042926666,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5363455724392088,
+        "mean_inner_mae_N": 1.6375352431791526,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6616920807184687,
+        "mean_inner_mae_N": 1.8125120660332859,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6664757696109052,
+        "mean_inner_mae_N": 1.7740946011065202,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4077926954123192,
+        "mean_inner_mae_N": 1.7485580787886312,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5381609657780533,
+        "mean_inner_mae_N": 1.812870647478298,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3597855209042025,
+        "mean_inner_mae_N": 1.6833524042926666,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3823306097086943,
+        "mean_inner_mae_N": 1.6375352431791526,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.4742828811264908,
+        "mean_inner_mae_N": 1.8125120660332859,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4904702686817233,
+        "mean_inner_mae_N": 1.7740946011065202,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 3.0544199053667205,
+        "mean_inner_mae_N": 1.9459152507855095,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.9280078399625005,
+        "mean_inner_mae_N": 1.9619694680297313,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 2.5039632455561414,
+        "mean_inner_mae_N": 1.8180293151057394,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 2.237659168167863,
+        "mean_inner_mae_N": 1.695095568653793,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.493631920339815,
+        "mean_inner_mae_N": 1.8418138416600103,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.6519759473152043,
+        "mean_inner_mae_N": 1.9052467078909439,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5891926477998566,
+        "mean_inner_mae_N": 1.9459152507855095,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6632267017078763,
+        "mean_inner_mae_N": 1.9619694680297313,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.6079125364088225,
+        "mean_inner_mae_N": 1.8180293151057394,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5107834204980304,
+        "mean_inner_mae_N": 1.695095568653793,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6056258130696393,
+        "mean_inner_mae_N": 1.8418138416600103,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.678031635895528,
+        "mean_inner_mae_N": 1.9052467078909439,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5973104488004553,
+        "mean_inner_mae_N": 1.9459152507855095,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6335347375141773,
+        "mean_inner_mae_N": 1.9619694680297313,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.6195134686375736,
+        "mean_inner_mae_N": 1.8180293151057394,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5176631682757291,
+        "mean_inner_mae_N": 1.695095568653793,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6597843722683787,
+        "mean_inner_mae_N": 1.8418138416600103,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6617080501248265,
+        "mean_inner_mae_N": 1.9052467078909439,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5427380011750063,
+        "mean_inner_mae_N": 1.9459152507855095,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6231085929343714,
+        "mean_inner_mae_N": 1.9619694680297313,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5407280098204197,
+        "mean_inner_mae_N": 1.8180293151057394,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5142765176735493,
+        "mean_inner_mae_N": 1.695095568653793,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6082132609622082,
+        "mean_inner_mae_N": 1.8418138416600103,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6292711982282166,
+        "mean_inner_mae_N": 1.9052467078909439,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.4498647331738477,
+        "mean_inner_mae_N": 1.6827868044948908,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.4010283810756743,
+        "mean_inner_mae_N": 1.7442446344413256,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 2.1291097379470276,
+        "mean_inner_mae_N": 1.6331067363914769,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 2.048688696971162,
+        "mean_inner_mae_N": 1.5760485741791737,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.3659898333343397,
+        "mean_inner_mae_N": 1.7179172905488567,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.34724443715667,
+        "mean_inner_mae_N": 1.7353403625637003,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5786383765588345,
+        "mean_inner_mae_N": 1.6827868044948908,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.663064873273004,
+        "mean_inner_mae_N": 1.7442446344413256,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5931091765481835,
+        "mean_inner_mae_N": 1.6331067363914769,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4949035730378286,
+        "mean_inner_mae_N": 1.5760485741791737,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.582389165749473,
+        "mean_inner_mae_N": 1.7179172905488567,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6612732869224582,
+        "mean_inner_mae_N": 1.7353403625637003,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5800720246903188,
+        "mean_inner_mae_N": 1.6827868044948908,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6316269355720459,
+        "mean_inner_mae_N": 1.7442446344413256,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5935889575130762,
+        "mean_inner_mae_N": 1.6331067363914769,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5050956659670696,
+        "mean_inner_mae_N": 1.5760485741791737,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6372346419774404,
+        "mean_inner_mae_N": 1.7179172905488567,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6361067924523407,
+        "mean_inner_mae_N": 1.7353403625637003,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4807358719744939,
+        "mean_inner_mae_N": 1.6827868044948908,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5621519091094256,
+        "mean_inner_mae_N": 1.7442446344413256,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5163404902174633,
+        "mean_inner_mae_N": 1.6331067363914769,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4823694485315937,
+        "mean_inner_mae_N": 1.5760485741791737,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5682915318499233,
+        "mean_inner_mae_N": 1.7179172905488567,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5864034758172767,
+        "mean_inner_mae_N": 1.7353403625637003,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3246230160769594,
+        "mean_inner_mae_N": 1.6827868044948908,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.463351073176479,
+        "mean_inner_mae_N": 1.7442446344413256,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3333853197316334,
+        "mean_inner_mae_N": 1.6331067363914769,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3491854863882144,
+        "mean_inner_mae_N": 1.5760485741791737,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.435681279833107,
+        "mean_inner_mae_N": 1.7179172905488567,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.445673820469756,
+        "mean_inner_mae_N": 1.7353403625637003,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.70853360504565,
+        "mean_inner_mae_N": 1.8402397050900643,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.7749879630690417,
+        "mean_inner_mae_N": 1.8854624979852832,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 2.373647366588069,
+        "mean_inner_mae_N": 1.7579704682169286,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 2.2127643715122436,
+        "mean_inner_mae_N": 1.667187375363555,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.683651402666176,
+        "mean_inner_mae_N": 1.8761031248817799,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.7330975877031967,
+        "mean_inner_mae_N": 1.8979343947674026,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5808506705542618,
+        "mean_inner_mae_N": 1.8402397050900643,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6437199021170619,
+        "mean_inner_mae_N": 1.8854624979852832,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.6058803502578174,
+        "mean_inner_mae_N": 1.7579704682169286,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5048946237221095,
+        "mean_inner_mae_N": 1.667187375363555,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6004596738447732,
+        "mean_inner_mae_N": 1.8761031248817799,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6715314373185015,
+        "mean_inner_mae_N": 1.8979343947674026,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5773453913894364,
+        "mean_inner_mae_N": 1.8402397050900643,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6078827540544127,
+        "mean_inner_mae_N": 1.8854624979852832,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.6071862010931808,
+        "mean_inner_mae_N": 1.7579704682169286,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.5086511307722392,
+        "mean_inner_mae_N": 1.667187375363555,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6523969701958532,
+        "mean_inner_mae_N": 1.8761031248817799,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6501447014880557,
+        "mean_inner_mae_N": 1.8979343947674026,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.494229153370909,
+        "mean_inner_mae_N": 1.8402397050900643,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.515259372700617,
+        "mean_inner_mae_N": 1.8854624979852832,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4451679549286478,
+        "mean_inner_mae_N": 1.7579704682169286,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4424393754476286,
+        "mean_inner_mae_N": 1.667187375363555,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.567904452820317,
+        "mean_inner_mae_N": 1.8761031248817799,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.536963852559856,
+        "mean_inner_mae_N": 1.8979343947674026,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.2037937985419056,
+        "mean_inner_mae_N": 1.627160457642119,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.273746423372145,
+        "mean_inner_mae_N": 1.706194365786238,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.9890588272238052,
+        "mean_inner_mae_N": 1.5803863558656008,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.9938207000480128,
+        "mean_inner_mae_N": 1.547698206453393,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.430427499651069,
+        "mean_inner_mae_N": 1.7214834515103896,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.3676000129022436,
+        "mean_inner_mae_N": 1.7188080925837277,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5716713814936876,
+        "mean_inner_mae_N": 1.627160457642119,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6526063000889426,
+        "mean_inner_mae_N": 1.706194365786238,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5889580214807335,
+        "mean_inner_mae_N": 1.5803863558656008,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.48815347560465,
+        "mean_inner_mae_N": 1.547698206453393,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.578470999910973,
+        "mean_inner_mae_N": 1.7214834515103896,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6541216239310352,
+        "mean_inner_mae_N": 1.7188080925837277,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5639155629885304,
+        "mean_inner_mae_N": 1.627160457642119,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.616846824333609,
+        "mean_inner_mae_N": 1.706194365786238,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5824755176603413,
+        "mean_inner_mae_N": 1.5803863558656008,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.499619260944049,
+        "mean_inner_mae_N": 1.547698206453393,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6324399675077066,
+        "mean_inner_mae_N": 1.7214834515103896,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6242234956348078,
+        "mean_inner_mae_N": 1.7188080925837277,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4498391371564514,
+        "mean_inner_mae_N": 1.627160457642119,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.493522814298884,
+        "mean_inner_mae_N": 1.706194365786238,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4109196031575764,
+        "mean_inner_mae_N": 1.5803863558656008,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4077413984312246,
+        "mean_inner_mae_N": 1.547698206453393,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5245171048465624,
+        "mean_inner_mae_N": 1.7214834515103896,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.502882958778244,
+        "mean_inner_mae_N": 1.7188080925837277,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3465824080300206,
+        "mean_inner_mae_N": 1.627160457642119,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4942494668376085,
+        "mean_inner_mae_N": 1.706194365786238,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3305198098055482,
+        "mean_inner_mae_N": 1.5803863558656008,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.349156197239029,
+        "mean_inner_mae_N": 1.547698206453393,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.4415616856356361,
+        "mean_inner_mae_N": 1.7214834515103896,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.445212371672307,
+        "mean_inner_mae_N": 1.7188080925837277,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.6342422307764313,
+        "mean_inner_mae_N": 1.741561584283756,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.6777825438753364,
+        "mean_inner_mae_N": 1.7908072600829388,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 2.2886165607785096,
+        "mean_inner_mae_N": 1.6732508817007408,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 2.118165511007748,
+        "mean_inner_mae_N": 1.591265834040358,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.4610254510238887,
+        "mean_inner_mae_N": 1.751510942112823,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.643449470837142,
+        "mean_inner_mae_N": 1.8002688166859433,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5679692165815213,
+        "mean_inner_mae_N": 1.741561584283756,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6354155994169337,
+        "mean_inner_mae_N": 1.7908072600829388,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5812898146282022,
+        "mean_inner_mae_N": 1.6732508817007408,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4766295000442886,
+        "mean_inner_mae_N": 1.591265834040358,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.575079562491956,
+        "mean_inner_mae_N": 1.751510942112823,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6503163932399947,
+        "mean_inner_mae_N": 1.8002688166859433,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5617607889775382,
+        "mean_inner_mae_N": 1.741561584283756,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5959077581159238,
+        "mean_inner_mae_N": 1.7908072600829388,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.58020178942852,
+        "mean_inner_mae_N": 1.6732508817007408,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4854175014757471,
+        "mean_inner_mae_N": 1.591265834040358,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6294128806016497,
+        "mean_inner_mae_N": 1.751510942112823,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6223095246709671,
+        "mean_inner_mae_N": 1.8002688166859433,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4508646504147436,
+        "mean_inner_mae_N": 1.741561584283756,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.476062501596669,
+        "mean_inner_mae_N": 1.7908072600829388,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4069165485137967,
+        "mean_inner_mae_N": 1.6732508817007408,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4021843107025331,
+        "mean_inner_mae_N": 1.591265834040358,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5248779020988823,
+        "mean_inner_mae_N": 1.751510942112823,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5014276964472912,
+        "mean_inner_mae_N": 1.8002688166859433,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4929710346685452,
+        "mean_inner_mae_N": 1.741561584283756,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5688678974098311,
+        "mean_inner_mae_N": 1.7908072600829388,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5092296951546755,
+        "mean_inner_mae_N": 1.6732508817007408,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.473932346971473,
+        "mean_inner_mae_N": 1.591265834040358,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5671589143477378,
+        "mean_inner_mae_N": 1.751510942112823,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5838409982343213,
+        "mean_inner_mae_N": 1.8002688166859433,
+        "selected": false
+      }
+    ]
+  },
+  {
+    "train_groups": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "selected_lag_ms": 300,
+    "search": [
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 2.277619928093765,
+        "mean_inner_mae_N": 1.5970034431221205,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 2.3124661239212276,
+        "mean_inner_mae_N": 1.6676890917839569,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 2.017324959898192,
+        "mean_inner_mae_N": 1.5563425747252795,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.9818929585103342,
+        "mean_inner_mae_N": 1.5157253125014813,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 2.3452625810178827,
+        "mean_inner_mae_N": 1.661585530806841,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST1",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 2.4175906133000296,
+        "mean_inner_mae_N": 1.6846696554986762,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5595262887324186,
+        "mean_inner_mae_N": 1.5970034431221205,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.6389554267714737,
+        "mean_inner_mae_N": 1.6676890917839569,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5702091589597587,
+        "mean_inner_mae_N": 1.5563425747252795,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4690929553212857,
+        "mean_inner_mae_N": 1.5157253125014813,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.5582038022894917,
+        "mean_inner_mae_N": 1.661585530806841,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST2",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.637081073848567,
+        "mean_inner_mae_N": 1.6846696554986762,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.5489988779912955,
+        "mean_inner_mae_N": 1.5970034431221205,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5995523095443989,
+        "mean_inner_mae_N": 1.6676890917839569,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.5625836803469242,
+        "mean_inner_mae_N": 1.5563425747252795,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4797769813417583,
+        "mean_inner_mae_N": 1.5157253125014813,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.6142174388564692,
+        "mean_inner_mae_N": 1.661585530806841,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST3",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.6035834622188831,
+        "mean_inner_mae_N": 1.6846696554986762,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.430614737473724,
+        "mean_inner_mae_N": 1.5970034431221205,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4708294478679766,
+        "mean_inner_mae_N": 1.6676890917839569,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3835696187664381,
+        "mean_inner_mae_N": 1.5563425747252795,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3799854700308911,
+        "mean_inner_mae_N": 1.5157253125014813,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.4957477455285604,
+        "mean_inner_mae_N": 1.661585530806841,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST4",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.4788314609642939,
+        "mean_inner_mae_N": 1.6846696554986762,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.4607134952620124,
+        "mean_inner_mae_N": 1.5970034431221205,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.5395318250078942,
+        "mean_inner_mae_N": 1.6676890917839569,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.4899177799085608,
+        "mean_inner_mae_N": 1.5563425747252795,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.4531209298517487,
+        "mean_inner_mae_N": 1.5157253125014813,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.540874714899717,
+        "mean_inner_mae_N": 1.661585530806841,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST5",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.5564878784922247,
+        "mean_inner_mae_N": 1.6846696554986762,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 0,
+        "session_balanced_mae_N": 1.3045473311795077,
+        "mean_inner_mae_N": 1.5970034431221205,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 100,
+        "session_balanced_mae_N": 1.4447994175907708,
+        "mean_inner_mae_N": 1.6676890917839569,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 200,
+        "session_balanced_mae_N": 1.3144502504718034,
+        "mean_inner_mae_N": 1.5563425747252795,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 300,
+        "session_balanced_mae_N": 1.3304825799528706,
+        "mean_inner_mae_N": 1.5157253125014813,
+        "selected": true
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 400,
+        "session_balanced_mae_N": 1.4152069022489255,
+        "mean_inner_mae_N": 1.661585530806841,
+        "selected": false
+      },
+      {
+        "inner_validation_group": "TEST6",
+        "lag_ms": 500,
+        "session_balanced_mae_N": 1.414443444168059,
+        "mean_inner_mae_N": 1.6846696554986762,
+        "selected": false
+      }
+    ]
+  }
+]

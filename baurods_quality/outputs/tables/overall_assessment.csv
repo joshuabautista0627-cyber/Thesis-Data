@@ -1,0 +1,9 @@
+Dimension,Assessment,Evidence
+Integrity,Supported,All accepted camera frames and load-cell rows reconcile; no corrupted structured file or duplicate frame key found.
+Taxel coverage,Supported,All nine taxels have eight press recordings; frame counts vary with duration.
+Baseline stability,Qualified,Short no-contact runs are stable in digital V; four saved baseline captures differ materially.
+Repeatability,Qualified,Recording-level dispersion is measurable; physical press IDs and fixed-force repeats are unavailable.
+Timing,Supported for matching,Recorded nearest-sample offsets and interpolated force reconstruct; physical sensor latency is unresolved.
+Generalization,Unresolved,"Only one day, one S3 label and one sensing-skin identifier are present."
+Localization,Limited,The saved rule withholds 99.873% of contact-frame predictions.
+Evaluation splits,Mixed,Later folds hold whole recordings; a legacy output splits all nine recordings across folds.

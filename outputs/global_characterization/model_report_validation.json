@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "metrics_recomputed": 36,
+  "maximum_absolute_difference": 2.3314683517128287e-15,
+  "paired_frame_ids_and_truth_equal": true,
+  "one_outer_fold_per_recording": true,
+  "manual_archive_sha256": "e039dcd49f3390d34dc979490dcf46a6ecc43d9e6a2aec08e4952acc14b5006a",
+  "source_hashes": {
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\outer_predictions.parquet": "ee2e50b43d3dc43474794a65abb3dc51ff9d70874791e0101df3464bedd19329",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\model_comparison.csv": "a10bebd3dffc945f54f4f616b4f2c2fed7ed03ebb1f3e65b78389e1929fc3878",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\force_bin_metrics.csv": "7cbdbd71d53c22f49744cd2d4cb485924a6c758004f3414964958e330596cf9f",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\roi_metrics.csv": "041b728a872a3b9fc2f20dc1eefa1fc448cb21d5c7bb7beb88588ca32775bdd4",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\fold_metrics.csv": "3d7fe72b0e3ef14d080cd36c2f3e1a177e2dd70b09bec1b068c61234abad59c6",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\end_to_end_metrics.json": "454165b9b8745f92bd402b11c20b1e87835b13a5cb0bc50916251c9e4b4c7ab3",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\provenance.json": "f0fa7fdc78bdaae23dd9b1fc2bd47c21530b20f0c5389c8c7b7392429319f3af",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\retraining_20260909\\protocol.json": "31924ffc9ba96124719f2fe4f4e057492716827a0ef4bbbde995f501b5b9f28a",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\outer_predictions.parquet": "fda648280f60ca250e10a2e34e546a1677ae0a7cf0e7a6261c1bb9a3982e1817",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\model_comparison.csv": "4bfdceeee44a4747e258ede624ebd531654c935b317cbf5a751b54595a89418b",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\force_bin_metrics.csv": "b6de5fc45efdde34d6ea81ff87cae99fa01b61fecad49546e0442f74580d4fd1",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\roi_metrics.csv": "df31d07ffb84379ad026790779e0eddc621a9e933052f5d5dc83965ad4a66e04",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\fold_metrics.csv": "3fbc7d9d7ced01aefcb2638d1cba9f6d2fd5a306020759ce36a86d09a7933fed",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\end_to_end_metrics.json": "54b4705b2b1c1ad45c47523e9dcc83f28fc3e78ac438e45f9acda538fcb65043",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\provenance.json": "f0fa7fdc78bdaae23dd9b1fc2bd47c21530b20f0c5389c8c7b7392429319f3af",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\protocol.json": "81ecf501fb217d40f33dc352da1fe123f6a888c4f0a2effad6398375488a523e",
+    "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\inference_timing.json": "5de2b3fd743678edb665916ce290188fce8a1cb8587e06a781f5c78a6f97f1c0",
+    "C:\\Users\\DLSU\\Downloads\\THESIS DATA\\Data Collection\\Manual_Calibration_Models_Technical_Report.pdf": "10e74c002810fe063a351009147b012fb659194f079228fe4d9c84327fc0ec84"
+  },
+  "scope": "Independent arithmetic verification of saved outer predictions; no retraining or prospective validation"
+}

@@ -1,0 +1,43 @@
+{
+  "structure": {
+    "counts": {
+      "blocks": 22,
+      "charts": 4,
+      "html": 0,
+      "metrics": 0,
+      "tables": 6
+    },
+    "html": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\report.html",
+    "ok": true,
+    "title": "Manual calibration model tuning: before and after"
+  },
+  "source": "C:\\Users\\DLSU\\OneDrive\\Documents\\SOFTWARE CALIBRATION\\calibration_gui\\analysis_outputs\\live_sensor_manual_only\\model_runs\\tuning_20260909\\artifact.json",
+  "chartCount": 4,
+  "conversion": "Packaged shared renderer and native SVG extractor, with exact-viewport Chrome adapter",
+  "views": [
+    {
+      "label": "desktop",
+      "title": "Manual calibration model tuning: before and after",
+      "charts": 4,
+      "tables": 10,
+      "bodyWidth": 1200,
+      "viewport": 1200
+    },
+    {
+      "label": "mobile",
+      "title": "Manual calibration model tuning: before and after",
+      "charts": 4,
+      "tables": 10,
+      "bodyWidth": 390,
+      "viewport": 390
+    },
+    {
+      "label": "dark",
+      "title": "Manual calibration model tuning: before and after",
+      "charts": 4,
+      "tables": 10,
+      "bodyWidth": 1200,
+      "viewport": 1200
+    }
+  ]
+}

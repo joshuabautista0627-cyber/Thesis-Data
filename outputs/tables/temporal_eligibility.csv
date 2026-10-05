@@ -1,0 +1,2 @@
+n_press_events,median_samples_per_press,presses_starting_unloaded,presses_ending_unloaded,presses_with_both_unloaded_bounds,camera_dt_median_s,camera_dt_max_s,response_time_status,recovery_time_status,reason
+5357,4,75,51,1,0.13007965,0.2026035,Not quantitatively assessed,Not quantitatively assessed,"Temporal magnification, sparse optical sampling, uncontrolled contact/release and residual load"

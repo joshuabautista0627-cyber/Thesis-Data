@@ -1,0 +1,42 @@
+{
+  "audience": "technical",
+  "delivery_mode": "mcp-app",
+  "as_of": "9 September 2026",
+  "structure": "title; technical summary; definitions before evidence; task comparisons; group/ROI/bin diagnostics; nested validation; exclusions; methods; audit; next steps and open questions",
+  "chart_contracts": [
+    {
+      "id": "force_mae",
+      "question": "Force estimation error",
+      "grain": "force",
+      "type": "horizontal bar",
+      "zero_baseline": true,
+      "source": "comparison"
+    },
+    {
+      "id": "location_f1",
+      "question": "Localization macro F1",
+      "grain": "localization",
+      "type": "horizontal bar",
+      "zero_baseline": true,
+      "source": "comparison"
+    },
+    {
+      "id": "contact_bacc",
+      "question": "Contact detection balanced accuracy",
+      "grain": "contact",
+      "type": "horizontal bar",
+      "zero_baseline": true,
+      "source": "comparison"
+    },
+    {
+      "id": "group_accuracy",
+      "question": "Localization accuracy by held-out group",
+      "grain": "localization_folds",
+      "type": "horizontal bar",
+      "zero_baseline": true,
+      "source": "folds"
+    }
+  ],
+  "repeated_chart_reason": "all four visuals compare discrete categories, not time trends; tables retain exact companion metrics",
+  "tests": "15 passed: test_manual_only_firewall.py and test_manual_only_preprocessing.py"
+}

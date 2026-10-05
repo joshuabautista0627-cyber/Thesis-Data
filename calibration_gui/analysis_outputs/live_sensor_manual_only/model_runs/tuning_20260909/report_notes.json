@@ -1,0 +1,36 @@
+{
+  "delivery_mode": "mcp-app",
+  "audience": "technical",
+  "as_of": "9 September 2026",
+  "source": "Hash-verified manual-only feature store and audited same-row before/after predictions",
+  "chart_contracts": [
+    {
+      "id": "force_chart",
+      "question": "Force mean absolute error",
+      "grain": "force_overview",
+      "zero_baseline": true,
+      "units": "MAE (N)"
+    },
+    {
+      "id": "localization_chart",
+      "question": "Localization macro F1",
+      "grain": "localization_overview",
+      "zero_baseline": true,
+      "units": "Macro F1"
+    },
+    {
+      "id": "contact_chart",
+      "question": "Contact detection balanced accuracy",
+      "grain": "contact_overview",
+      "zero_baseline": true,
+      "units": "Balanced accuracy"
+    },
+    {
+      "id": "groups_chart",
+      "question": "Localization accuracy by TEST group",
+      "grain": "groups",
+      "zero_baseline": true,
+      "units": "Accuracy"
+    }
+  ]
+}
